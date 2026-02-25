@@ -1,0 +1,36 @@
+﻿const gpsMapVariables =
+{
+  ZoomLevel_3_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button32,
+  ZoomLevel_6_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button6,
+  ZoomLevel_15_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button15,
+  ZoomLevel_25_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button25,
+  ZoomLevel_50_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button50,
+  ZoomLevel_100_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button100,
+  ZoomLevel_200_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button200,
+  ZoomLevel_500_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button500,
+  ZoomLevel_1000_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button1000,
+  ZoomLevel_2500_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button2500,
+  GPSStatus : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2,
+  LinearCompass : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.LinearCompass,
+  DirectionLevel : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RadialBubbleLevel,
+  ToggleDrillDesign_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TogglebuttonToggleDrilledDesigns,
+  ToggleMine_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton6,
+  ToggleLabels_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton25,
+  AutoZoom_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton32,
+  HazardImage_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonHazardImage,
+  DrillEnd_Title : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.TextblockDrillEnd,
+  DrillEnd_Camera0 : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.TextblockCamera0,
+  DrillEnd_Camera0_View : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.Border,
+  DrillEnd_Camera1 : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.TextblockCamera1,
+  DrillEnd_Camera1_View : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.Border2,
+  DrillEnd_Load_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Grid.ButtonLoad,
+  NonDrillEnd_Title : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.TextblockNonDrillEnd,
+  NonDrillEnd_Camera0 : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockCamera0,
+  NonDrillEnd_Camera0_View : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border18,
+  NonDrillEnd_Camera1 : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockCamera1,
+  NonDrillEnd_Camera1_View : NameMapping.Sys.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Grid2.StackPanel2.Border,
+  NonDrillEnd_Load_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonLoad,
+  HazardImage_Status : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Grid
+};
+
+module.exports = {gpsMapVariables};

@@ -1,0 +1,32 @@
+﻿
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {setupVariables} = require('SetupPage');
+
+function Test1()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btm.ClickButton();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.SetupButton.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHammerDrill object equals 'HAMMER
+  //DRILL'.
+  verifyWpfControlTextWithExistCheck(setupVariables.HammerDrill_Btn_Label, "HAMMER\r\nDRILL");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHammerDrill, "WPFControlText", cmpEqual, "HAMMER\r\nDRILL");
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton object equals 0.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton, "wState", cmpEqual, 0);
+  //Sets the 'ToggleButton' toggle button to the cbChecked state.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton.ClickButton(cbChecked);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton object equals 1.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton, "wState", cmpEqual, 1);
+  //Sets the 'ToggleButton' toggle button to the cbUnchecked state.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton.ClickButton(cbUnchecked);
+  //Sets the 'ToggleButton2' toggle button to the cbChecked state.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2.ClickButton(cbChecked);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton object equals 0.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton, "wState", cmpEqual, 0);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2 object equals 1.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2, "wState", cmpEqual, 1);
+}

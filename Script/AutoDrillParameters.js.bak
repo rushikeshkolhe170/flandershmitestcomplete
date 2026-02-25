@@ -1,0 +1,400 @@
+﻿
+const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {setupVariables} = require('SetupPage');
+const {logIn, wpfControlText, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck} = require('CommonFunc');
+
+function AutoDrillParameters()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  //Clicks the 'Auto Drill Parameter Button' button.
+  setupVariables.AutoDrillParameter_Btn.ClickButton();
+  aqUtils.Delay(6000);
+  //Caturing the already set values
+  var DrillHoleDepthValue = setupVariables.Parameter_Value.Border2.Child(0).Child(1);
+  var AirPressureDrillingValue = setupVariables.Parameter_Value.Border22.Child(0).Child(1);
+  var BitAirPressureValue = setupVariables.Parameter_Value.Border4.Child(0).Child(1);
+  var BitSpecifiedDownForceLimitValue = setupVariables.Parameter_Value.Border5.Child(0).Child(1);
+  var DrillingFeedDownSpeedReferenceValue = setupVariables.Parameter_Value.Border3.Child(0).Child(1);
+  var TargetDepthSubDrillValue = setupVariables.Parameter_Value.Border.Child(0).Child(1);
+  var DHD = wpfControlText(DrillHoleDepthValue);
+  var APD = wpfControlText(AirPressureDrillingValue);
+  var BAP = wpfControlText(BitAirPressureValue);
+  var BSDFL = wpfControlText(BitSpecifiedDownForceLimitValue);
+  var DFDSR = wpfControlText(DrillingFeedDownSpeedReferenceValue);
+  var TDSD = wpfControlText(TargetDepthSubDrillValue);
+  //Checks whether the 'WPFControlText' property of the first label object equals 'DRILL HOLE DEPTH:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DrillHoleDepth_Label, "DRILL HOLE DEPTH:");
+  //Clicks the first calculator button.
+  setupVariables.DrillHoleDepthCalc_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Calculator Title object equals 'DRILL HOLE DEPTH:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.CalcTitle_Label, "DRILL HOLE DEPTH:");
+  //Clicks the -1 input.
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 100 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 100 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '101' button.
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 100 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 100 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '14' button.
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  setupVariables.CalculatorWindow.Button4.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  setupVariables.ChangeADP_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Confirmation pop up object equals 'Are you sure you want to modify the drill setup? These parameters are VERY important for proper drilling.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.ConfirmationDialogueBox_Text, "Are you sure you want to modify the drill setup?\r\n These parameters are VERY important for proper drilling.");
+   //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Capturing the new change Drill hole depth value and validate it
+  aqUtils.Delay(3000);
+  var DHDA = wpfControlText(DrillHoleDepthValue);
+  if(DHD != DHDA){
+    Log.Message("DrillHoleDepth prevoius: " + DHD);
+    Log.Message("DrillHoleDepth new: " + DHDA);
+    Log.Message("Parameter Values change");
+  } else{
+    Log.Message("DrillHoleDepth prevoius: " + DHD);
+    Log.Message("DrillHoleDepth new: " + DHDA);
+    Log.Warning("Parameter Values are same");
+  }
+  //Setting up previous value again
+  setupVariables.DrillHoleDepthCalc_Btn.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  setupVariables.CalculatorWindow.Button3.ClickButton();
+  setupVariables.CalcAccept_Btn.ClickButton();
+  setupVariables.ChangeADP_Btn.ClickButton();
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the second label object equals 'AIR PRESSURE DRILLING'.
+  verifyWpfControlTextWithExistCheck(setupVariables.AirPressureDrilling_Label, "AIR PRESSURE DRILLING");
+  //Clicks the second calculator button.
+  setupVariables.AirPressureDrillingCalc_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Calculator Title object equals 'AIR PRESSURE DRILLING'.
+  verifyWpfControlTextWithExistCheck(setupVariables.CalcTitle_Label, "AIR PRESSURE DRILLING");
+  //Clicks the -1 input.
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 500 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 500 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '501' button.
+  setupVariables.CalculatorWindow.Button5.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 500 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 500 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '99' button.
+  setupVariables.CalculatorWindow.Button9.ClickButton();
+  setupVariables.CalculatorWindow.Button9.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  setupVariables.ChangeADP_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Confirmation pop up object equals 'Are you sure you want to modify the drill setup? These parameters are VERY important for proper drilling.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.ConfirmationDialogueBox_Text, "Are you sure you want to modify the drill setup?\r\n These parameters are VERY important for proper drilling.");
+   //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Capturing the new change Air Pressure Drilling value and validate it
+  aqUtils.Delay(3000);
+  var APDA = wpfControlText(AirPressureDrillingValue);
+  if(APD != APDA){
+    Log.Message("AirPressureDrilling prevoius: " + APD);
+    Log.Message("AirPressureDrilling new: " + APDA);
+    Log.Message("Parameter Values change");
+  } else{
+    Log.Message("AirPressureDrilling prevoius: " + APD);
+    Log.Message("AirPressureDrilling new: " + APDA);
+    Log.Warning("Parameter Values are same");
+  }
+  //Setting up previous value again
+  setupVariables.AirPressureDrillingCalc_Btn.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalcAccept_Btn.ClickButton();
+  setupVariables.ChangeADP_Btn.ClickButton();
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the third label object equals 'BIT AIR PRESSURE:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.BitAirPressure_Label, "BIT AIR PRESSURE:");
+  //Clicks the third calculator button.
+  setupVariables.BitAirPressureCalc_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Calculator Title object equals 'BIT AIR PRESSURE:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.CalcTitle_Label, "BIT AIR PRESSURE:");
+  //Clicks the -1 input.
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 500 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 500 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '501' button.
+  setupVariables.CalculatorWindow.Button5.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 500 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 500 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '88' button.
+  setupVariables.CalculatorWindow.Button8.ClickButton();
+  setupVariables.CalculatorWindow.Button8.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  setupVariables.ChangeADP_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Confirmation pop up object equals 'Are you sure you want to modify the drill setup? These parameters are VERY important for proper drilling.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.ConfirmationDialogueBox_Text, "Are you sure you want to modify the drill setup?\r\n These parameters are VERY important for proper drilling.");
+   //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Capturing the new change Bit Air Pressure value and validate it
+  aqUtils.Delay(3000);
+  var BAPA = wpfControlText(BitAirPressureValue);
+  if(BAP != BAPA){
+    Log.Message("BitAirPressure prevoius: " + BAP);
+    Log.Message("BitAirPressure new: " + BAPA);
+    Log.Message("Parameter Values change");
+  } else{
+    Log.Message("BitAirPressure prevoius: " + BAP);
+    Log.Message("BitAirPressure new: " + BAPA);
+    Log.Warning("Parameter Values are same");
+  }
+  //Setting up previous value again
+  setupVariables.BitAirPressureCalc_Btn.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalcAccept_Btn.ClickButton();
+  setupVariables.ChangeADP_Btn.ClickButton();
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the fourth label object equals 'BIT SPECIFIED DOWN-FORCE LIMIT:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.BitSpecifiedDownForceLimit_Label, "BIT SPECIFIED DOWN-FORCE LIMIT:");
+  //Clicks the fourth calculator button.
+  setupVariables.BitSpecifiedDownForceLimitCalc_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Calculator Title object equals 'BIT SPECIFIED DOWN-FORCE LIMIT:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.CalcTitle_Label, "BIT SPECIFIED DOWN-FORCE LIMIT:");
+  //Clicks the -1 input.
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 500 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 500 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '501' button.
+  setupVariables.CalculatorWindow.Button5.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 500 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 500 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '64' button.
+  setupVariables.CalculatorWindow.Button6.ClickButton();
+  setupVariables.CalculatorWindow.Button4.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  setupVariables.ChangeADP_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Confirmation pop up object equals 'Are you sure you want to modify the drill setup? These parameters are VERY important for proper drilling.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.ConfirmationDialogueBox_Text, "Are you sure you want to modify the drill setup?\r\n These parameters are VERY important for proper drilling.");
+   //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Capturing the new change Bit Specified Down Force Limit value and validate it
+  aqUtils.Delay(3000);
+  var BSDFLA = wpfControlText(BitSpecifiedDownForceLimitValue);
+  if(BSDFL != BSDFLA){
+    Log.Message("BitSpecifiedDownForceLimit prevoius: " + BSDFL);
+    Log.Message("BitSpecifiedDownForceLimit new: " + BSDFLA);
+    Log.Message("Parameter Values change");
+  } else{
+    Log.Message("BitSpecifiedDownForceLimit prevoius: " + BSDFL);
+    Log.Message("BitSpecifiedDownForceLimit new: " + BSDFLA);
+    Log.Warning("Parameter Values are same");
+  }
+  //Setting up previous value again
+  setupVariables.BitSpecifiedDownForceLimitCalc_Btn.ClickButton();
+  setupVariables.CalculatorWindow.Button3.ClickButton();
+  setupVariables.CalculatorWindow.Button5.ClickButton();
+  setupVariables.CalcAccept_Btn.ClickButton();
+  setupVariables.ChangeADP_Btn.ClickButton();
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the fifth label object equals 'DRILLING FEED DOWN SPEED REFERENCE:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DrillingFeedDownSpeedRef_Label, "DRILLING FEED DOWN SPEED REFERENCE:");
+  //Clicks the fifth calculator button.
+  setupVariables.DrillingFeedDownSpeedRefCalc_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Calculator Title object equals 'DRILLING FEED DOWN SPEED REFERENCE:'.
+  verifyWpfControlTextWithExistCheck(setupVariables.CalcTitle_Label, "DRILLING FEED DOWN SPEED REFERENCE:");
+  //Clicks the -101 input.
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between -100 and 0 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between -100 and 0 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '501' button.
+  setupVariables.CalculatorWindow.Button5.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between -100 and 0 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between -100 and 0 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '-64' button.
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button6.ClickButton();
+  setupVariables.CalculatorWindow.Button4.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  setupVariables.ChangeADP_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Confirmation pop up object equals 'Are you sure you want to modify the drill setup? These parameters are VERY important for proper drilling.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.ConfirmationDialogueBox_Text, "Are you sure you want to modify the drill setup?\r\n These parameters are VERY important for proper drilling.");
+   //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Capturing the new changeDrilling Feed Down Speed Reference value and validate it
+  aqUtils.Delay(3000);
+  var DFDSRA = wpfControlText(DrillingFeedDownSpeedReferenceValue);
+  if(DFDSR != DFDSRA){
+    Log.Message("DrillingFeedDownSpeedReference prevoius: " + DFDSR);
+    Log.Message("DrillingFeedDownSpeedReference new: " + DFDSRA);
+    Log.Message("Parameter Values change");
+  } else{
+    Log.Message("DrillingFeedDownSpeedReference prevoius: " + DFDSR);
+    Log.Message("DrillingFeedDownSpeedReference new: " + DFDSRA);
+    Log.Warning("Parameter Values are same");
+  }
+  //Setting up previous value again
+  setupVariables.DrillingFeedDownSpeedRefCalc_Btn.ClickButton();
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button5.ClickButton();
+  setupVariables.CalcAccept_Btn.ClickButton();
+  setupVariables.ChangeADP_Btn.ClickButton();
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the sixth label object equals 'TARGET DEPTH SUB DRILL'.
+  verifyWpfControlTextWithExistCheck(setupVariables.TargetDepthSubDrill_Label, "TARGET DEPTH SUB DRILL");
+  //Clicks the sixth calculator button.
+  setupVariables.TargetDepthSubDrillCalc_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Calculator Title object equals 'TARGET DEPTH SUB DRILL'.
+  verifyWpfControlTextWithExistCheck(setupVariables.CalcTitle_Label, "TARGET DEPTH SUB DRILL");
+  //Clicks the -1 input.
+  setupVariables.CalculatorWindow.ButtonAddMinus.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 10 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 10 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '501' button.
+  setupVariables.CalculatorWindow.Button5.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the dialogue box object equals 'You must enter a value between 0 and 10 to continue.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "You must enter a value between 0 and 10 to continue.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'ButtonClear' button.
+  setupVariables.CalcClear_Btn.ClickButton();
+  //Clicks the '1' button.
+  setupVariables.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  setupVariables.CalcAccept_Btn.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  setupVariables.ChangeADP_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Confirmation pop up object equals 'Are you sure you want to modify the drill setup? These parameters are VERY important for proper drilling.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.ConfirmationDialogueBox_Text, "Are you sure you want to modify the drill setup?\r\n These parameters are VERY important for proper drilling.");
+   //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Click ok for critical message if it appears
+  if(setupVariables.CriticalMsg_OK.Exists)
+  {
+    setupVariables.CriticalMsg_OK.ClickButton();
+  }
+  //Capturing the new changeDrilling Target Depth Sub Drill value and validate it
+  aqUtils.Delay(3000);
+  var TDSDA = wpfControlText(TargetDepthSubDrillValue);
+  if(TDSD != TDSDA){
+    Log.Message("TargetDepthSubDrill prevoius: " + TDSD);
+    Log.Message("TargetDepthSubDrill new: " + TDSDA);
+    Log.Message("Parameter Values change");
+  } else{
+    Log.Message("TargetDepthSubDrill prevoius: " + TDSD);
+    Log.Message("TargetDepthSubDrill new: " + TDSDA);
+    Log.Warning("Parameter Values are same");
+  }
+  //Setting up previous value again
+  setupVariables.TargetDepthSubDrillCalc_Btn.ClickButton();
+  setupVariables.CalculatorWindow.Button0.ClickButton();
+  setupVariables.CalcAccept_Btn.ClickButton();
+  setupVariables.ChangeADP_Btn.ClickButton();
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Click ok for critical message if it appears
+  if(setupVariables.CriticalMsg_OK.Exists)
+  {
+    setupVariables.CriticalMsg_OK.ClickButton();
+  }
+  //Clicks the 'Back' button
+  setupVariables.Back_Btn.Click();
+  //Close the application.
+  closeHMI();
+}

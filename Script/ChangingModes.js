@@ -1,0 +1,61 @@
+﻿
+//Changing modes with validation
+
+const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {logIn, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, visibilityInBooleanStatus} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {auxControlVariables} = require('AuxControlPage');
+const {maint_HeadLimit_Variables} = require('MaintenancePage');
+
+function ModesChange()
+{
+  //Login into the application.
+  logIn();
+  //Exiting Maintenance mode if it is active
+  if(visibilityInBooleanStatus(auxControlVariables.Nav_MaintenanceModeActive_Text) == true)
+  {
+    //Clicks the 'MaintenanceButton' button.
+    mainOptionVariables.Maint_Btn.ClickButton();
+    //Clicks the 'HeadLimitsButton' button.
+    mainOptionVariables.HeadLimit_Btn.ClickButton();
+    //Click on Exit Maintenance Mode button.
+    maint_HeadLimit_Variables.ExitMaintMode_Btn.ClickButton();
+  }
+  //Clicks the 'AuxiliaryControlButton' button.
+  mainOptionVariables.AuxControl_Btn.ClickButton();
+  //Clicks the 'ButtonDrillMode' button.
+  auxControlVariables.Drill_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Drill Mode Active on nav bar object equals 'DRILL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Nav_DrillModeActive_Text, "DRILL MODE ACTIVE");
+  //Checks whether the 'Enabled' property of the ButtonMaintenanceMode object equals False.
+  verifyElementDisabled(auxControlVariables.MaintMode_Btn);
+  //Clicks the 'ButtonPropelMode' button.
+  auxControlVariables.Propel_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Proppel Mode Active nav bar object equals 'PROPEL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Nav_PropelModeActive_Text, "PROPEL MODE ACTIVE");
+  //Checks whether the 'Enabled' property of the ButtonMaintenanceMode object equals False.
+  verifyElementDisabled(auxControlVariables.MaintMode_Btn);
+  //Clicks the 'ButtonSetupMode' button.
+  auxControlVariables.Setup_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Setup Mode Active nav bar object equals 'SETUP MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Nav_SetupModeActive_Text, "SETUP MODE ACTIVE");
+  //Checks whether the 'Enabled' property of the ButtonMaintenanceMode object equals True.
+  verifyElementEnabled(auxControlVariables.MaintMode_Btn);
+  //Clicks the 'ButtonMaintenanceMode' button.
+  auxControlVariables.MaintMode_Btn.ClickButton();
+  //Going into Maintenance mode
+  maintenanceModePass();
+  //Checks whether the 'WPFControlText' property of the Maintennace Mode Active nav bar object equals 'MAINTENANCE MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Nav_MaintenanceModeActive_Text, "MAINTENANCE MODE ACTIVE");
+  if(visibilityInBooleanStatus(auxControlVariables.Nav_MaintenanceModeActive_Text) == true)
+  {
+    //Clicks the 'MaintenanceButton' button.
+    mainOptionVariables.Maint_Btn.ClickButton();
+    //Clicks the 'HeadLimitsButton' button.
+    mainOptionVariables.HeadLimit_Btn.ClickButton();
+    //Click on Exit Maintenance Mode button.
+    maint_HeadLimit_Variables.ExitMaintMode_Btn.ClickButton();
+  }
+  //Close the application.
+  closeHMI();
+}

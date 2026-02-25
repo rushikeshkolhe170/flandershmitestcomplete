@@ -1,0 +1,141 @@
+﻿
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {wstate, getStatusOfOption, logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, verifyStatusIsOne, verifyStatusIsZero, verifyStatusOfOption} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {setupVariables} = require('SetupPage');
+
+function Test1()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  aqUtils.Delay(5000);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAutoMastControlInOneTouch object equals 'AUTO MAST CONTROL
+  //IN ONE TOUCH'.
+  verifyWpfControlTextWithExistCheck(setupVariables.AutoMastControl_Btn_Label,"AUTO MAST CONTROL\r\nIN ONE TOUCH");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAutoMastControlInOneTouch, "WPFControlText", cmpEqual, "AUTO MAST CONTROL\r\nIN ONE TOUCH");
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton5 object equals 1.
+  //Log.Message("setupVariables: " + JSON.stringify(setupVariables));
+  //Log.Message("AutoMastControl_Toggle_ON Exists: " + setupVariables.AutoMastControl_Toggle_ON.Exists);
+  //Log.Message("AutoMastControl_Toggle_ON Reference: " + JSON.stringify(setupVariables.AutoMastControl_Toggle_ON));
+  //const AMCOT = getStatusOfOption(setupVariables.AutoMastControl_Toggle_ON);
+  //Log.Message("AutoMastControl" + AMCOT);
+  let tog1 = wstate(setupVariables.AutoMastControl_Toggle_ON);
+  //if (aqObject.CheckProperty(setupVariables.AutoMastControl_Toggle_ON, "wState", cmpEqual, 1)){
+  if(tog1 == 1){
+    verifyStatusIsZero(setupVariables.AutoMastControl_Toggle_OFF);
+    setupVariables.AutoMastControl_Toggle_OFF.ClickButton(cbChecked);
+    verifyStatusIsOne(setupVariables.AutoMastControl_Toggle_OFF);
+    setupVariables.AutoMastControl_Toggle_ON.ClickButton(cbChecked);
+  } else {
+    verifyStatusIsOne(setupVariables.AutoMastControl_Toggle_OFF);
+    setupVariables.AutoMastControl_Toggle_ON.ClickButton(cbChecked);
+    verifyStatusIsZero(setupVariables.AutoMastControl_Toggle_OFF);
+    setupVariables.AutoMastControl_Toggle_OFF.ClickButton(cbChecked);
+  }
+  /*
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton5, "wState", cmpEqual, 1);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton24 object equals 0.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton24, "wState", cmpEqual, 0);
+  //Sets the 'ToggleButton24' toggle button to the cbChecked state.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton24.ClickButton(cbChecked);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton5 object equals 0.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton5, "wState", cmpEqual, 0);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton24 object equals 1.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton24, "wState", cmpEqual, 1);
+  //Sets the 'ToggleButton5' toggle button to the cbChecked state.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton5.ClickButton(cbChecked);
+  */
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHammerDrill object equals 'HAMMER
+  //DRILL'.
+  verifyWpfControlTextWithExistCheck(setupVariables.HammerDrill_Btn_Label,"HAMMER\r\nDRILL");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHammerDrill, "WPFControlText", cmpEqual, "HAMMER\r\nDRILL");
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton object equals 0.
+  //Log.Message("HammerDrill_Toggle_ON Exists: " + setupVariables.HammerDrill_Toggle_ON.Exists);
+  //Log.Message("HammerDrill_Toggle_ON Reference: " + JSON.stringify(setupVariables.HammerDrill_Toggle_ON));
+  //const HD = getStatusOfOption(setupVariables.HammerDrill_Toggle_ON);
+  //Log.Message("hammer drill" + HD);
+  let tog2 = wstate(setupVariables.HammerDrill_Toggle_ON);
+  //if (aqObject.CheckProperty(setupVariables.AutoMastControl_Toggle_ON, "wState", cmpEqual, 0)){
+  if(tog2 == 0){
+    verifyStatusIsOne(setupVariables.HammerDrill_Toggle_OFF);
+    setupVariables.HammerDrill_Toggle_ON.ClickButton(cbChecked);
+    verifyStatusIsZero(setupVariables.HammerDrill_Toggle_OFF);
+    setupVariables.HammerDrill_Toggle_OFF.ClickButton(cbChecked);
+  } else {
+    verifyStatusIsZero(setupVariables.HammerDrill_Toggle_OFF);
+    setupVariables.HammerDrill_Toggle_OFF.ClickButton(cbChecked);
+    verifyStatusIsOne(setupVariables.HammerDrill_Toggle_OFF);
+    setupVariables.HammerDrill_Toggle_ON.ClickButton(cbChecked);
+  }
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton, "wState", cmpEqual, 0);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2 object equals 1.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2, "wState", cmpEqual, 1);
+  //Sets the 'ToggleButton' toggle button to the cbChecked state.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton.ClickButton(cbChecked);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton object equals 1.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton, "wState", cmpEqual, 1);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2 object equals 0.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2, "wState", cmpEqual, 0);
+  //Sets the 'ToggleButton2' toggle button to the cbChecked state.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2.ClickButton(cbChecked);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockClayMode object equals 'CLAY
+  //MODE'.
+  verifyWpfControlTextWithExistCheck(setupVariables.ClayMode_Btn_Label,"CLAY\r\nMODE");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockClayMode, "WPFControlText", cmpEqual, "CLAY\r\nMODE");
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton3 object equals 0.
+  var CM = verifyStatusOfOption(setupVariables.ClayMode_Toogle_ON);
+  if(CM == true){
+    verifyStatusIsZero(setupVariables.ClayMode_Toogle_OFF);
+    setupVariables.ClayMode_Toogle_OFF.ClickButton(cbChecked);
+    verifyStatusIsOne(setupVariables.ClayMode_Toogle_OFF);
+    setupVariables.ClayMode_Toogle_ON.ClickButton(cbChecked);
+  } else {
+    verifyStatusIsOne(setupVariables.ClayMode_Toogle_OFF);
+    setupVariables.ClayMode_Toogle_ON.ClickButton(cbChecked);
+    verifyStatusIsZero(setupVariables.ClayMode_Toogle_OFF);
+    setupVariables.ClayMode_Toogle_OFF.ClickButton(cbChecked);
+  }
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton3, "wState", cmpEqual, 0);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton22 object equals 1.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton22, "wState", cmpEqual, 1);
+  //Sets the 'ToggleButton3' toggle button to the cbChecked state.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton3.ClickButton(cbChecked);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton3 object equals 1.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton3, "wState", cmpEqual, 1);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton22 object equals 0.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton22, "wState", cmpEqual, 0);
+  //Sets the 'ToggleButton22' toggle button to the cbChecked state.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton22.ClickButton(cbChecked);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockPeaGravelMode object equals 'PEA GRAVEL
+  //MODE'.
+  verifyWpfControlTextWithExistCheck(setupVariables.PeaGravelMode_Btn_Label,"PEA GRAVEL\r\nMODE");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockPeaGravelMode, "WPFControlText", cmpEqual, "PEA GRAVEL\r\nMODE");
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton4 object equals 0.
+  var PGM = verifyStatusOfOption(setupVariables.PeaGravelMode_Toggle_ON);
+  if(PGM == true){
+    verifyStatusIsZero(setupVariables.PeaGravelMode_Toggle_OFF);
+    setupVariables.PeaGravelMode_Toggle_OFF.ClickButton(cbChecked);
+    verifyStatusIsOne(setupVariables.PeaGravelMode_Toggle_OFF);
+    setupVariables.PeaGravelMode_Toggle_ON.ClickButton(cbChecked);
+  } else {
+    verifyStatusIsOne(setupVariables.PeaGravelMode_Toggle_OFF);
+    setupVariables.PeaGravelMode_Toggle_ON.ClickButton(cbChecked);
+    verifyStatusIsZero(setupVariables.PeaGravelMode_Toggle_OFF);
+    setupVariables.PeaGravelMode_Toggle_OFF.ClickButton(cbChecked);
+  }
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton4, "wState", cmpEqual, 0);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton23 object equals 1.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton23, "wState", cmpEqual, 1);
+  //Sets the 'ToggleButton4' toggle button to the cbChecked state.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton4.ClickButton(cbChecked);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton4 object equals 1.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton4, "wState", cmpEqual, 1);
+  //Checks whether the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton23 object equals 0.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton23, "wState", cmpEqual, 0);
+  //Sets the 'ToggleButton23' toggle button to the cbChecked state.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton23.ClickButton(cbChecked);
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

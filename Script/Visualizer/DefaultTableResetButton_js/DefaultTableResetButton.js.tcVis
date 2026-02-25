@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{AAF5CD37-6555-4A39-9525-1728BB1C1F47}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="16" kind="0" dateTime="46065.2253009259" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.FaultsButton" objectLeft="445" objectTop="1113" objectRight="556" objectBottom="1197" clickPointX="505" clickPointY="1176" imageFileName="tcvi550306249880.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

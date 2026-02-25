@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{57C32FEE-547B-4C71-A616-C6765C15574E}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="12" kind="0" dateTime="46022.2046296296" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.SetupButton" objectLeft="176" objectTop="1132" objectRight="265" objectBottom="1197" clickPointX="-1" clickPointY="-1" imageFileName="tcvi1819608171805211.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="19" kind="0" dateTime="46022.2051041667" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton" objectLeft="531" objectTop="314" objectRight="616" objectBottom="365" clickPointX="-1" clickPointY="-1" imageFileName="tcvi1819648390805216.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="23" kind="0" dateTime="46022.2052430556" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton" objectLeft="531" objectTop="314" objectRight="616" objectBottom="365" clickPointX="603" clickPointY="351" imageFileName="tcvi1819660812805218.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="25" kind="0" dateTime="46022.2053240741" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton2" objectLeft="615" objectTop="314" objectRight="700" objectBottom="365" clickPointX="630" clickPointY="351" imageFileName="tcvi1819668031805220.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

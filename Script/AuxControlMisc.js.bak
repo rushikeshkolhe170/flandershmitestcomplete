@@ -1,0 +1,52 @@
+﻿
+//Enabling and Disabling few options from commssionin for Miscellaneous section with validation
+
+const {config, launchHMI, closeHMI, commissioningPass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainWindowVariables} = require('MainWindowPage');
+const {auxControlVariables} = require('AuxControlPage');
+const {logIn, verifyWpfControlTextWithExistCheck, searchAndSelectCheckboxComm, searchAndDeselectCheckboxComm} = require('CommonFunc');
+
+function AuxControlMisc()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'AuxiliaryControlButton' button.
+  mainOptionVariables.AuxControl_Btn.ClickButton();
+  //Clicks the 'ButtonSetupMode' button.
+  auxControlVariables.Setup_Btn.ClickButton();
+  //Opening commissioning setting
+  commissioningPass();
+  //Searching for 'DustCurtainUpDown' button and select the checkbox if not selected
+  searchAndSelectCheckboxComm("AuxiliaryControlShowDustCurtainUpDown", mainWindowVariables.commDustCurtainUpDown, "AuxiliaryControlShowDustCurtainUpDown");
+  //Searching for 'DustCurtainAutoManual' button and select the checkbox if not selected
+  searchAndSelectCheckboxComm("AuxiliaryControlShowDustCurtainAutoManual", mainWindowVariables.commDustCurtainAutoManual, "AuxiliaryControlShowDustCurtainAutoManual");
+  //Searching for 'AccessLights' button and select the checkbox if not selected
+  searchAndSelectCheckboxComm("AuxiliaryControlShowAccessLightsButtons", mainWindowVariables.commAccessLights, "AuxiliaryControlShowAccessLightsButtons");
+  //Searching for 'StairsUpDown' button and select the checkbox if not selected
+  searchAndSelectCheckboxComm("AuxiliaryControlShowStairsUpDown", mainWindowVariables.commStairsUpDown, "AuxiliaryControlShowStairsUpDown");
+   //Searching for 'StairsUpDown' button and deselect the checkbox if selected
+  searchAndDeselectCheckboxComm("AuxiliaryControlShowUnderCabLightButtons", mainWindowVariables.commCabLight, "AuxiliaryControlShowUnderCabLightButtons");
+  //Closes the 'HwndSource_SeriousWindow' window.
+  mainWindowVariables.CommWindow.Close();
+  //Checks whether the 'WPFControlText' property of the DustCurtain object equals 'DUST CURTAIN'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_DustCurtain_Label, "DUST CURTAIN");
+  //Checks whether the 'WPFControlText' property of the AccessLights object equals 'ACCESS LIGHTS'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_AccessLights_Label, "ACCESS LIGHTS");
+  //Checks whether the 'WPFControlText' property of the Stairs object equals 'STAIRS'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_Stairs_Label, "STAIRS");
+  //Checks whether the 'WPFControlText' property of the GroupboxMachineGrease object equals 'MACHINE GREASE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_MachineGrase_Lable, "MACHINE GREASE");
+  //Checks whether the 'WPFControlText' property of the ButtonCycle object equals 'CYCLE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_Cycle_Btn, "CYCLE");
+  //Checks whether the 'WPFControlText' property of the GroupboxWipers object equals 'WIPERS'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_WipersBox, "WIPERS");
+  //Checks whether the 'WPFControlText' property of the WiperRear object equals 'REAR'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_WiperRear_Label, "REAR");
+  //Checks whether the 'WPFControlText' property of the WiperFrontSide object equals 'FRONT SIDE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_WiperFrontSide_Label, "FRONT SIDE");
+  //Checks whether the 'WPFControlText' property of the WiperLeftSide object equals 'LEFT SIDE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Misc_WiperLeftSide_Label, "LEFT SIDE");
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

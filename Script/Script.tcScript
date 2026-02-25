@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Pages">
+			<child name="SetupPage" key="{41E8C51E-6E7B-4D50-BC8C-AA0CE55FB6BA}" path="SetupPage.js" />
+			<child name="AuxControlPage" key="{9810C0B0-C552-437E-9D87-FF5F60311851}" path="AuxControlPage.js" />
+			<child name="MainWindowPage" key="{5D189F1C-45BB-482A-9EC8-B30AE0724150}" path="MainWindowPage.js" />
+			<child name="MainScreenPage" key="{82B08FF8-F405-458B-A419-DA588BEA3862}" path="MainScreenPage.js" />
+			<child name="MaintenancePage" key="{CBA52D15-F82A-4242-A4CB-AA3709DAB35D}" path="MaintenancePage.js" />
+			<child name="CommonFunc" key="{5FD16AEA-9A10-4E21-AE8C-2CE5B9695E68}" path="CommonFunc.js" />
+			<child name="GlobalVariables" key="{DBE6DA32-13E2-42F5-91CF-2D92E82CB3DB}" path="GlobalVariables.js" />
+			<child name="MainOptionsVariable" key="{BA70DECA-C394-459D-9EBD-5AA66F14A1CB}" path="MainOptionsVariable.js" />
+			<child name="FaultPage" key="{B4E97F2B-88F6-4100-9F83-6553A3F1BF42}" path="FaultPage.js" />
+			<child name="GPSMapPage" key="{B1E82B7F-067D-4A4B-957F-A15B369EA3E3}" path="GPSMapPage.js" />
+			<child name="ProdMonitorPage" key="{E841032A-E6E3-4BCA-AD4F-D61ECAA1E05D}" path="ProdMonitorPage.js" />
+		</folder>
+		<folder name="MainScreen">
+			<child name="MainScreenDrillingOptions" key="{7A4C7D0A-161C-4FB1-8474-2C3F27438E1B}" path="MainScreenDrillingOptions.js" />
+			<child name="ButtonsVisibility" key="{B5C90522-F088-490A-ADB7-A2935693EA68}" path="ButtonsVisibility.js" />
+		</folder>
+		<folder name="SetupScreen">
+			<child name="SetupToggleBtn" key="{B28D06E0-A755-4BF1-AA94-B2E142B8E9DC}" path="SetupToggleBtn.js" />
+			<child name="LanguageChange" key="{51B09587-803D-451D-8112-062B1D2120F8}" path="LanguageChange.js" />
+			<child name="BoundaryImportRemove" key="{24A411E5-CCB9-43EA-BC84-A35C95B39AD4}" path="BoundaryImportRemove.js" />
+			<child name="PatternImportRemove" key="{BB7E6485-DDC8-4108-8350-59BF8A990712}" path="PatternImportRemove.js" />
+			<child name="ConsumableSetup" key="{B87673FD-9471-4D7E-83AA-C4D235A33C6D}" path="ConsumableSetup.js" />
+			<child name="LubricationTiming" key="{24F5C5C5-D8AB-496E-9A71-348D5FD57917}" path="LubricationTiming.js" />
+			<child name="AutoDrillParameters" key="{5F7CCD6B-2159-4969-9035-86F081C61C02}" path="AutoDrillParameters.js" />
+			<child name="ImportPatternDirections" key="{A7093B00-D2B2-40B9-AE6A-7244DFC2178D}" path="ImportPatternDirections.js" />
+		</folder>
+		<folder name="AuxControl">
+			<child name="AuxControlLockUnlock" key="{7EAC920A-D8BB-4532-8240-C5FACE035C0D}" path="AuxControlLockUnlock.js" />
+			<child name="RodSupportVerify" key="{F3FF534B-6709-45DD-8DFD-BCCB1F675DEA}" path="RodSupportVerify.js" />
+			<child name="HMISetupMode" key="{9624D3D4-12E8-4C5B-A5E5-6C265821370F}" path="HMISetupMode.js" />
+			<child name="ChangingModes" key="{D21DE0DB-3B20-4446-831F-BD3391EEB5E3}" path="ChangingModes.js" />
+			<child name="AuxControlMisc" key="{1BF94121-135A-4B1A-A952-0F1447A6F93A}" path="AuxControlMisc.js" />
+			<child name="AuxControlMast" key="{92BF70CD-DEF9-4CDB-8FB4-F71983CE158C}" path="AuxControlMast.js" />
+		</folder>
+		<folder name="MaintenanceScreen">
+			<child name="HeadLimit" key="{2E7FFE11-D764-45EB-914E-FFB44829D150}" path="HeadLimit.js" />
+			<child name="MaintTestIOandKeypadStatus" key="{5773A260-C100-4B7F-8610-21C70CF47E7D}" path="MaintTestIOandKeypadStatus.js" />
+			<child name="SystemInterlockScreens" key="{74F8DE43-6D46-4266-819D-0B3657FE480F}" path="SystemInterlockScreens.js" />
+			<child name="ConsumableMaintenance" key="{91A3EF28-D8A4-4693-AE42-127956E89E12}" path="ConsumableMaintenance.js" />
+			<child name="PropelInterlockScreens" key="{70B3A625-2A56-4DD6-B186-351BC6DEACB1}" path="PropelInterlockScreens.js" />
+			<child name="DrillMastJackSystemInterlockScreens" key="{6B51E8D0-DA35-44F4-8FEC-A94EF30E1B4E}" path="DrillMastJackSystemInterlockScreens.js" />
+			<child name="Joystick" key="{89AC4B83-6756-453D-A81D-42048FFECAEA}" path="Joystick.js" />
+			<child name="SetupHoistResolver" key="{15F22741-DE00-40FE-90BA-52A5F27FA4AE}" path="SetupHoistResolver.js" />
+			<child name="Fluid" key="{AD52C519-02EA-4543-B046-B0622C5FEC74}" path="Fluid.js" />
+			<child name="EngineLog" key="{5854096C-95A5-442D-AEEF-47170554AF77}" path="EngineLog.js" />
+			<child name="MachineMonitor" key="{DF118F1F-6ABA-40E1-B681-502629E72C2B}" path="MachineMonitor.js" />
+		</folder>
+		<folder name="MainWindowScreen">
+			<child name="HMILoginTest" key="{714C57F0-2DB6-4C27-902A-EE27779A8F4F}" path="HMILoginTest.js" />
+			<child name="ByDefaultOptions" key="{99219F1D-7391-4FF1-BA9A-A522171A8107}" path="ByDefaultOptions.js" />
+			<child name="NavBarData" key="{EDC213A6-6C8F-4FE6-B954-8D455B7AB787}" path="NavBarData.js" />
+		</folder>
+		<folder name="Fault">
+			<child name="DefaultTableResetButton" key="{AAF5CD37-6555-4A39-9525-1728BB1C1F47}" path="DefaultTableResetButton.js" />
+			<child name="ActiveHistoryDataCheck" key="{E0FFC4E9-A68E-4EA4-B888-7400FE2F4C50}" path="ActiveHistoryDataCheck.js" />
+		</folder>
+		<folder name="GPSMap">
+			<child name="GPSZoomLevel" key="{5474FAD4-4093-432C-80F0-4D46BE4CD49E}" path="GPSZoomLevel.js" />
+			<child name="DirStatusButtons" key="{AA3056E0-2964-40FC-AAEC-22DA23A43852}" path="DirStatusButtons.js" />
+			<child name="HazardImage" key="{DFF28F63-EE44-4CA4-8C0B-5246B6C7E2F5}" path="HazardImage.js" />
+		</folder>
+		<folder name="ProdMonitor">
+			<child name="ProdMonitorData" key="{FC98EC54-D2D2-44B4-A080-4CC0D7C1AAC9}" path="ProdMonitorData.js" />
+		</folder>
+		<child name="ThemeChange" key="{329621ED-AAC4-43A6-B882-153B83CC159C}" path="ThemeChange.js" />
+		<child name="AuxControlRod" key="{31C016CC-9C5E-451F-958F-9397F3B9D21C}" path="AuxControlRod.js" />
+	</children>
+</Root>

@@ -1,0 +1,128 @@
+﻿
+//Importing Boundary
+
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {logIn, wpfControlText, verifyWpfControlTextWithExistCheck, checkVisibilityAndClick, verifyVisibilityWithExistCheck} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainScreenVariables} = require('MainScreenPage');
+const {setupVariables} = require('SetupPage');
+
+function BoundaryImport()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  //Clicks the 'ButtonImportPattern' button.
+  setupVariables.ImportPattern_Btn.ClickButton();
+  //Clicks the 'ButtonSelectFileToImport' button.
+  setupVariables.SelectFileToImport_Btn.ClickButton();
+  //Creating the generic path to the Boundry.csv file (Make sure file is available in the HMI project file location)
+  var projectDir = Project.Path;
+  var relativeFilePath = "\Boundary.csv";
+  var fullFilePath = projectDir + relativeFilePath;
+  Log.Message("Full file path: " + fullFilePath);
+  //Entering the path in file explorer dialogue directly and selecting the file
+  Aliases.Flanders_Ardvarc_Hmi_Client.dlg.OpenFile(fullFilePath);
+  //Capturing the path showing below the import button
+  var location = wpfControlText(setupVariables.ImportBoxGroup.Child(0).Child(1).Child(0).Child(8).Child(5));
+  //verifying the file path and location showing below the import button
+  if(fullFilePath == location){
+    Log.Message("File path and location shows below the import button is same");
+  } else {
+    Log.Warning("File path and Location shown below import button is differnet");
+  }
+  //Clicks the 'ButtonImport' button.
+  setupVariables.Import_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Dialogue message object equals '4 boundary records were imported.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "4 boundary records were imported.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'MoveBack' object.
+  setupVariables.Back_Btn.Click();
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}
+
+function BoundaryRemove()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  //Clicks the 'ButtonImportPattern' button.
+  setupVariables.ImportPattern_Btn.ClickButton();
+  //Clicks the 'ButtonRemovePatterns' button.
+  setupVariables.RemovePattern_Btn.ClickButton();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ScrollView.ButtonRemovePatterns.ClickButton();
+  //Clicks the 'MoveBack' object.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MoveBack.Click(103, 53);
+  //Clicks the 'ButtonRemovePatterns' button.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ScrollView.ButtonRemovePatterns.ClickButton();
+  
+  var ele = setupVariables.ListBoxItems;
+  var count = ele.ChildCount;
+  for(var i = 0; i<count; i++)
+  {
+    var count1 = ele.Child(i).ChildCount;
+    for(var j = 0; j<count1; j++)
+    {
+      if(wpfControlText(ele.Child(i).Child(j)) == "Boundary")
+      {
+        ele.Child(i).Child(j).Click();
+        break;
+      }
+    }
+  }
+  
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.ListBox.ListBoxItem object equals True.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.ListBox.ListBoxItem, "IsVisible", cmpEqual, true);
+  //Clicks the 0 item of the 'ListBox' list box.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.ListBox.ClickItem(0);
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Path object equals True.
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Path, "IsVisible", cmpEqual, true);
+  //Clicks the 'ButtonRemoveSelectedPatterns' button.
+  setupVariables.RemoveSelectedPattern_Btn.ClickButton();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ScrollView.ButtonRemoveSelectedPatterns.ClickButton();
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.MessageText object equals True.
+  verifyVisibilityWithExistCheck(setupVariables.ConfirmationDialogueBox_Text);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.MessageText, "IsVisible", cmpEqual, true);
+  //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.YesButton.ClickButton();
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageWithOk.MessageWithOk.MessageText object equals True.
+  verifyVisibilityWithExistCheck(setupVariables.DialogueMsg_Text);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageWithOk.MessageWithOk.MessageText, "IsVisible", cmpEqual, true);
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageWithOk.MessageWithOk.OkButton.ClickButton();
+  setupVariables.Back_Btn.Click();
+  //Closes the 'HwndSource_MainWindow' window.
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}
+
+function Test1()
+{
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.ListBox.ListBoxItem.TextblockBoundary object equals True.
+  var ele = Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.ListBox.ListBoxItem;
+  var count = ele.ChildCount;
+  for(var i = 0; i<count; i++)
+  {
+    var count1 = ele.Child(i).ChildCount;
+    for(var j = 0; j<count1; j++)
+    {
+      if(wpfControlText(ele.Child(i).Child(j)) == "Boundary")
+      {
+        ele.Child(i).Child(j).Click();
+        break;
+      }
+    }
+  }
+  
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.ListBox.ListBoxItem.TextblockBoundary, "IsVisible", cmpEqual, true);
+  //Clicks the 0 item of the 'ListBox' list box.
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.ListBox.ClickItem(0);
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl object equals True.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl, "IsVisible", cmpEqual, true);
+}

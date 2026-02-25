@@ -1,0 +1,39 @@
+﻿
+//GPS Status, Linear Bar, Directin Level and Toggle buttons validation and working
+
+const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {gpsMapVariables} = require('GPSMapPage');
+const {logIn, gpsMapToggleButtonsStateChange, wstate, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck} = require('CommonFunc');
+
+function DirectionStatusButtons()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'GpsMapButton' button.
+  mainOptionVariables.GPSMap_Btn.ClickButton();
+  //Checks whether the 'IsVisible' property of the Status object equals True.
+  verifyVisibilityWithExistCheck(gpsMapVariables.GPSStatus);
+  //Checks whether the 'IsVisible' property of the LinearCompass object equals True.
+  verifyVisibilityWithExistCheck(gpsMapVariables.LinearCompass);
+  //Checks whether the 'IsVisible' property of the RadialBubbleLevel object equals True.
+  verifyVisibilityWithExistCheck(gpsMapVariables.DirectionLevel);
+  //Checks whether the 'WPFControlText' property of the ToggleDrilledDesigns button object equals 'TOGGLE DRILLED DESIGNS'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ToggleDrillDesign_Btn, "TOGGLE\r\nDRILLED DESIGNS");
+  //Checks the 'wState' property of the ToggleDrilledDesigns button object and perform operations.
+  gpsMapToggleButtonsStateChange(gpsMapVariables.ToggleDrillDesign_Btn);
+  //Checks whether the 'WPFControlText' property of the ToggleMine button button object equals 'TOGGLE MINE #'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ToggleMine_Btn.Child(0).Child(0), "TOGGLE MINE #");
+  //Checks the 'wState' property of the TOGGLE MINE # button object and perform operations.
+  gpsMapToggleButtonsStateChange(gpsMapVariables.ToggleMine_Btn);
+  //Checks whether the 'WPFControlText' property of the ToggleLabels button button object equals 'TOGGLE LABLES'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ToggleLabels_Btn.Child(0).Child(0), "TOGGLE LABELS");
+  //Checks the 'wState' property of the TOGGLE LABELS button object and perform operations.
+  gpsMapToggleButtonsStateChange(gpsMapVariables.ToggleLabels_Btn);
+  //Checks whether the 'WPFControlText' property of the AutoZoom button button object equals 'AUTO ZOOM'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.AutoZoom_Btn.Child(0).Child(0), "AUTO ZOOM");
+  //Checks the 'wState' property of the AUTO ZOOM button object and perform operations.
+  gpsMapToggleButtonsStateChange(gpsMapVariables.AutoZoom_Btn);
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

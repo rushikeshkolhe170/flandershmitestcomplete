@@ -1,0 +1,77 @@
+﻿
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {maint_HeadLimit_Variables} = require('MaintenancePage');
+const {getStatusOfOption, logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, verifyStatusIsOne, verifyStatusIsZero, verifyStatusOfOption} = require('CommonFunc');
+
+function Test1()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'MaintenanceButton' button.
+  mainOptionVariables.Maint_Btn.ClickButton();
+  //Clicks the 'HeadLimitsButton' button.
+  mainOptionVariables.HeadLimit_Btn.ClickButton();
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LinearGaugeHeadPosition object equals True.
+  verifyVisibilityWithExistCheck(maint_HeadLimit_Variables.HeadLimit_Gauge);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LinearGaugeHeadPosition, "IsVisible", cmpEqual, true);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadPosition object equals 'HEAD POSITION:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.HeadPosition_Label, "HEAD POSITION:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadPosition, "WPFControlText", cmpEqual, "HEAD POSITION:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadUpperLimit object equals 'HEAD UPPER LIMIT:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.HeadUpperLimit_Label, "HEAD UPPER LIMIT:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadUpperLimit, "WPFControlText", cmpEqual, "HEAD UPPER LIMIT:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelUpperSlowDownRange object equals 'UPPER SLOW DOWN RANGE:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.UpperSlowDownRange_Label, "UPPER SLOW DOWN RANGE:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelUpperSlowDownRange, "WPFControlText", cmpEqual, "UPPER SLOW DOWN RANGE:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelPipeRackLimit object equals 'PIPE RACK LIMIT:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.PipeRackLimit_Label, "PIPE RACK LIMIT:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelPipeRackLimit, "WPFControlText", cmpEqual, "PIPE RACK LIMIT:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadMastControlUpper object equals 'HEAD MAST CONTROL UPPER:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.HeadMastControlUpper_Label, "HEAD MAST CONTROL UPPER:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadMastControlUpper, "WPFControlText", cmpEqual, "HEAD MAST CONTROL UPPER:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadMastControlLower object equals 'HEAD MAST CONTROL LOWER:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.HeadMastControlLower_Label, "HEAD MAST CONTROL LOWER:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadMastControlLower, "WPFControlText", cmpEqual, "HEAD MAST CONTROL LOWER:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelAutoDrillStopSetpoint object equals 'AUTO DRILL STOP SETPOINT:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.AutoDrillStopSetpoint_Label, "AUTO DRILL STOP SETPOINT:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelAutoDrillStopSetpoint, "WPFControlText", cmpEqual, "AUTO DRILL STOP SETPOINT:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelPropelLimit object equals 'PROPEL LIMIT:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.PropelLimit_Label, "PROPEL LIMIT:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelPropelLimit, "WPFControlText", cmpEqual, "PROPEL LIMIT:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelPropelDrop object equals 'PROPEL DROP:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.PropelDrop_Label, "PROPEL LIMIT:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelPropelDrop, "WPFControlText", cmpEqual, "PROPEL DROP:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelRodSupportStow object equals 'ROD SUPPORT STOW:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.RodSupportStow_Label, "ROD SUPPORT STOW:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelRodSupportStow, "WPFControlText", cmpEqual, "ROD SUPPORT STOW:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelRodSupportAlarm object equals 'ROD SUPPORT ALARM:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.RodSupportAlarm_Label, "ROD SUPPORT ALARM:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelRodSupportAlarm, "WPFControlText", cmpEqual, "ROD SUPPORT ALARM:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelRodSupportFault object equals 'ROD SUPPORT FAULT:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.RodSupportFault_Label, "ROD SUPPORT FAULT:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelRodSupportFault, "WPFControlText", cmpEqual, "ROD SUPPORT FAULT:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelLower object equals 'LOWER:'.
+  verifyWpfControlTextWithExistCheck(maint_HeadLimit_Variables.Lower_Label, "LOWER:");
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelLower, "WPFControlText", cmpEqual, "LOWER:");
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border object equals True.
+  verifyVisibilityWithExistCheck(maint_HeadLimit_Variables.BorderBox_Label);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border, "IsVisible", cmpEqual, true);
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border object equals True.
+  verifyVisibilityWithExistCheck(maint_HeadLimit_Variables.HeadPositionYellow_Bar);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border, "IsVisible", cmpEqual, true);
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border2 object equals True.
+  verifyVisibilityWithExistCheck(maint_HeadLimit_Variables.HeadPositionGreen_Bar);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border2, "IsVisible", cmpEqual, true);
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border3 object equals True.
+  verifyVisibilityWithExistCheck(maint_HeadLimit_Variables.HeadPositionBlue_Bar);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border3, "IsVisible", cmpEqual, true);
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border4 object equals True.
+  verifyVisibilityWithExistCheck(maint_HeadLimit_Variables.HeadPositionRed_Bar);
+  //qObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border4, "IsVisible", cmpEqual, true);
+  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border5 object equals True.
+  verifyVisibilityWithExistCheck(maint_HeadLimit_Variables.HeadPositionViolet_Bar);
+  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border.Border5, "IsVisible", cmpEqual, true);
+  //Close the application.
+  closeHMI();
+}

@@ -1,0 +1,36 @@
+﻿
+//Enabling brace option from commissioning in mast section with validation
+
+const {config, launchHMI, closeHMI, commissioningPass, maintenanceModePass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainWindowVariables} = require('MainWindowPage');
+const {auxControlVariables} = require('AuxControlPage');
+const {searchAndSelectCheckboxComm, visibilityInBooleanStatus, clickAndHoldButton, criticalMsgOk, logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyVisibilityWithExistCheck} = require('CommonFunc');
+
+function AuxControlMast()
+{
+   //Login into the application.
+  logIn();
+  //Clicks the 'AuxiliaryControlButton' button.
+  mainOptionVariables.AuxControl_Btn.ClickButton();
+  //Selects Mast tab.
+  checkVisibilityAndClick(auxControlVariables.Mast_Tab, "Mast");
+  //Clicks the 'ButtonSetupMode' button.
+  auxControlVariables.Setup_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the SetupModeActive object equals 'SETUP MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.SetupMode_Active_Text, "SETUP MODE ACTIVE");
+  //Open commissioning screen.
+  commissioningPass();
+  //Showing 'AuxiliaryControlShowMastBracePin' from commisshioning
+  searchAndSelectCheckboxComm("AuxiliaryControlShowMastBracePin", mainWindowVariables.commAuxShowMastBrace, "AuxiliaryControlShowMastBracePin");
+  //Closes the 'HwndSource_SeriousWindow' window.
+  mainWindowVariables.CommWindow.Close();
+  //Checks whether the 'WPFControlText' property of the MastVerticalLockPinControl object equals 'MAST VERTICAL LOCK PIN CONTROL'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.MastVerticalLockPin_Label, "MAST VERTICAL\r\nLOCK PIN CONTROL")
+  //Checks whether the 'WPFControlText' property of the MastAngle object equals 'MAST ANGLE'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.MastAngle_Label, "MAST ANGLE");
+  //Checks whether the 'WPFControlText' property of the kMastBraceLockPinControl object equals 'Mast Brace Lock Pin Control'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.MastBraceLockPin_Label, "Mast Brace\r\nLock Pin Control");
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

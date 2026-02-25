@@ -1,0 +1,82 @@
+﻿
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {getStatusOfOption, logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, verifyStatusIsOne, verifyStatusIsZero, verifyStatusOfOption} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {setupVariables} = require('SetupPage');
+
+function autoDrillParameter()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  //Clicks the 'ButtonAutoDrillParameters' button.
+  setupVariables.AutoDrillParameter_Btn.ClickButton();
+  aqUtils.Delay(5000);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label1300 object equals '+13.00'.
+  Log.Message("Old Message: " + oldValue);
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label1300, "WPFControlText", cmpEqual, "+13.00");
+  //Sets the 'VScroll' scroll bar thumb to position 0.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ScrollView.VScroll.Pos = 0;
+  //Clicks the 'Button' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Button.ClickButton();
+  //Clicks the 'Button1' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'Button9' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button9.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.ButtonAccept.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonChangeSetPoints.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.MessageText object equals 'Are you sure you want to modify the drill setup?
+  // These parameters are VERY important for proper drilling.'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.MessageText, "WPFControlText", cmpEqual, "Are you sure you want to modify the drill setup?\r\n These parameters are VERY important for proper drilling.");
+  //Clicks the 'YesLabel' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.YesLabel.Click(14, 16);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label1900 object equals '+19.00'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label1900, "WPFControlText", cmpEqual, "+19.00");
+  //Clicks the 'Button' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Button.ClickButton();
+  //Clicks the 'Button1' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'Button3' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button3.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.ButtonAccept.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonChangeSetPoints.ClickButton();
+  //Clicks the 'YesLabel' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.YesLabel.Click(22, 21);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label1300 object equals '+13.00'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label1300, "WPFControlText", cmpEqual, "+13.00");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label10000 object equals '+100.00'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label10000, "WPFControlText", cmpEqual, "+100.00");
+  //Clicks the 'Button2' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Button2.ClickButton();
+  //Clicks the 'Button1' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button1.ClickButton();
+  //Clicks the 'Button0' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button0.ClickButton();
+  //Clicks the 'Button5' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button5.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.ButtonAccept.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonChangeSetPoints.ClickButton();
+  //Clicks the 'YesLabel' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.YesLabel.Click(5, 11);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label10500 object equals '+105.00'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Label10500, "WPFControlText", cmpEqual, "+105.00");
+  //Clicks the 'Button2' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.Button2.ClickButton();
+  //Clicks the 'Button1' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button1.ClickButton();
+  //Double-clicks the 'Button0' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.Button0.DblClick(33, 17);
+  //Clicks the 'ButtonAccept' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_CalculatorWindow.CalculatorWindow.ButtonAccept.ClickButton();
+  //Clicks the 'ButtonChangeSetPoints' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonChangeSetPoints.ClickButton();
+  //Clicks the 'YesLabel' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion.MessageQuestion.YesLabel.Click(21, 6);
+}

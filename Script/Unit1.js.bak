@@ -1,0 +1,29 @@
+﻿function HMILoginTest()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  TestedApps.Flanders_Ardvarc_Hmi_Client.Run();
+  //Clicks the 0 item of the 'OperatorListBox' list box.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.OperatorListBox.ClickItem(0);
+  //Clicks the 'ChangeOperatorButton' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ChangeOperatorButton.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.MessageText object equals 'The status and status detail must be selected.'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.MessageText, "WPFControlText", cmpEqual, "The status and status detail must be selected.");
+  //Clicks the 'LabelOk' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.LabelOk.Click(19, 17);
+  //Clicks the 0 item of the 'MachineStatusListBox' list box.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusListBox.ClickItem(0);
+  //Clicks the 'ChangeOperatorButton' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ChangeOperatorButton.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.MessageText object equals 'The status must be selected.'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.MessageText, "WPFControlText", cmpEqual, "The status must be selected.");
+  //Clicks the 'ButtonOk' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.ButtonOk.ClickButton();
+  //Clicks the 0 item of the 'MachineStatusDetailListBox' list box.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusDetailListBox.ClickItem(0);
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockSetup object equals False.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockSetup, "Enabled", cmpEqual, false);
+  //Clicks the 'ChangeOperatorButton' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ChangeOperatorButton.ClickButton();
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.SetupButton object equals True.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.SetupButton, "Enabled", cmpEqual, true);
+}

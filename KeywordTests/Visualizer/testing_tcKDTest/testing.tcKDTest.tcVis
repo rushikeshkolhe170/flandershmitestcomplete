@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{C6F49588-2301-44B2-970D-AE41E32FCFB1}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="3" kind="0" dateTime="46017.2887152778" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.OperatorListBox" objectLeft="7" objectTop="91" objectRight="392" objectBottom="1114" clickPointX="-1" clickPointY="-1" imageFileName="tcvi1394882062112366.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="6" kind="0" dateTime="46017.288900463" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusListBox" objectLeft="407" objectTop="91" objectRight="1914" objectBottom="372" clickPointX="-1" clickPointY="-1" imageFileName="tcvi13948982651123612.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="9" kind="0" dateTime="46017.2890393519" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusDetailListBox" objectLeft="407" objectTop="391" objectRight="1914" objectBottom="1050" clickPointX="-1" clickPointY="-1" imageFileName="tcvi13949101251123617.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="10" kind="0" dateTime="46017.2890625" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ChangeOperatorButton" objectLeft="1826" objectTop="1058" objectRight="1915" objectBottom="1123" clickPointX="-1" clickPointY="-1" imageFileName="tcvi13949123121123620.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

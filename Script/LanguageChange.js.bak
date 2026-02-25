@@ -1,0 +1,67 @@
+﻿
+// Language change and validation for changing
+
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainWindowVariables} = require('MainWindowPage');
+const {auxControlVariables} = require('AuxControlPage');
+const {setupVariables} = require('SetupPage');
+
+function languageChnage()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'AuxiliaryControlButton' button.
+  mainOptionVariables.AuxControl_Btn.ClickButton();
+  //Clicks the 'ButtonDrillMode' button.
+  auxControlVariables.Drill_Btn.ClickButton();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'DRILL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "DRILL MODE ACTIVE");
+  //Opens the 'LanguageComboBox' drop-down window.
+  setupVariables.Language_Dropdown.DropDown();
+  //Checks whether the 'IsVisible' property of the Español Chile language object equals True and select it.
+  aqUtils.Delay(2000);
+  checkVisibilityAndClick(setupVariables.EspanolChile_Lang, "Español Chile");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'MODO DE PERFORACIÓN ACTIVO'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "MODO DE PERFORACIÓN ACTIVO");
+  //Opens the 'LanguageComboBox' drop-down window.
+  setupVariables.Language_Dropdown.DropDown();
+  //Checks whether the 'IsVisible' property of the PortuguSDoBrasil language object equals True and select it.
+  aqUtils.Delay(2000);
+  checkVisibilityAndClick(setupVariables.PortBrazil_Lang, "Português do Brasil");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'MODO DE PERFURAÇÃO ATIVADO'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "MODO DE PERFURAÇÃO ATIVADO");
+  //Opens the 'LanguageComboBox' drop-down window.
+  setupVariables.Language_Dropdown.DropDown();
+  //Checks whether the 'IsVisible' property of the South Africa English object equals True and select it.
+  aqUtils.Delay(2000);
+  checkVisibilityAndClick(setupVariables.SAEnglish_Lang, "South Africa English");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'DRILL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "DRILL MODE ACTIVE");
+  //Opens the 'LanguageComboBox' drop-down window.
+  setupVariables.Language_Dropdown.DropDown();
+  //Checks whether the 'IsVisible' property of the UsEnglish language object equals True and select it.
+  aqUtils.Delay(2000);
+  checkVisibilityAndClick(setupVariables.USEnglish_Lang, "US English");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'DRILL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "DRILL MODE ACTIVE");
+  //Opens the 'LanguageComboBox' drop-down window.
+  setupVariables.Language_Dropdown.DropDown();
+  //Checks whether the 'IsVisible' property of the EspaOl Peruano language object equals True and select it.
+  aqUtils.Delay(2000);
+  checkVisibilityAndClick(setupVariables.EspanolPeruano_Lang, "Español Peruano");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'MODO DE PERFORACIÓN ACTIVO'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "MODO DE PERFORACIÓN ACTIVO");
+  //Opens the 'LanguageComboBox' drop-down window.
+  setupVariables.Language_Dropdown.DropDown();
+  //Checks whether the 'IsVisible' property of the Australia English language object equals True and select it.
+  aqUtils.Delay(2000);
+  checkVisibilityAndClick(setupVariables.AUSEnglish_Lang, "Australia English");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'DRILL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "DRILL MODE ACTIVE");
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

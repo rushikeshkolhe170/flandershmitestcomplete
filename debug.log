@@ -1,0 +1,27 @@
+[0122/202623.767:WARNING:chrome_browser_cloud_management_controller.cc(88)] Could not create policy manager as CBCM is not enabled.
+[0122/202624.574:ERROR:command_buffer_proxy_impl.cc(128)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.
+[0122/202625.897:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0122/202625.921:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0122/202625.921:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0122/202625.921:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0122/202625.922:WARNING:browser_info.cc(309)] Returning a speculative frame for 25769803782 [6,6]
+[0122/202626.898:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot set properties of null (setting 'textContent')", source: about:blank (1)
+[0122/202626.990:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot set properties of null (setting 'textContent')", source: https://www.googletagmanager.com/static/service_worker/61k0/sw_iframe.html?origin=https%3A%2F%2Fauth.id.smartbear.com (1)
+[0122/202627.133:INFO:CONSOLE(1)] "Uncaught TypeError: Cannot set properties of null (setting 'textContent')", source: https://auth.id.smartbear.com/u/login/identifier?state=hKFo2SBWUjR4ZFhEWU43TkNGUmN4UHNiUTl1aE5sWDl4Nk9PZ6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGVDVkkzblFKdVQ3bFdhSXdZQUxEeDVNOXp3M3dpcXdro2NpZNkgaDk2VVRreDk1YzZjN1I4d2F1dG9hQ1RjRnpvRWl5Vzg (1)
+[0123/083106.628:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0123/083106.378:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0124/083051.010:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0124/083051.011:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0124/083052.075:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0124/083052.170:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0125/063043.641:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0125/063043.860:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0126/083050.158:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0127/073042.789:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0127/073043.783:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0127/073043.896:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0128/083100.041:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0128/083100.293:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0129/083112.770:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0129/083113.094:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.
+[0129/083115.794:WARNING:dns_config_service_win.cc(583)] Failed to read DnsConfig.

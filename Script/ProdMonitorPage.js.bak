@@ -1,0 +1,8 @@
+﻿const prodMonitor_Variable =
+{
+  ProdMonitorData : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Grid2,
+  NumberofHolesDrilled_Bar : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.BarChart2,
+  
+}
+
+module.exports = {prodMonitor_Variable};

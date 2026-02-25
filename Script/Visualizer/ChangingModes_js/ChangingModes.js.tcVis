@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{D21DE0DB-3B20-4446-831F-BD3391EEB5E3}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="46" kind="0" dateTime="46073.2159606482" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MaintenancePasswordWindow.MaintenancePasswordWindow.ActualPassword" objectLeft="32" objectTop="103" objectRight="281" objectBottom="127" clickPointX="107" clickPointY="112" imageFileName="tcvi6958706712112015.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

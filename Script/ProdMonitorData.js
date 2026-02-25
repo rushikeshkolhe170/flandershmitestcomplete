@@ -1,0 +1,84 @@
+﻿
+// Prod Monitor bars availability validation, Bat Titles validation with available data fetching and printing.
+
+const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {prodMonitor_Variable} = require('ProdMonitorPage');
+const {logIn, visibilityInBooleanStatus, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck, wpfControlText} = require('CommonFunc');
+
+function ProdMonitorData()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'ProductMonitorButton' button.
+  mainOptionVariables.ProdMonitor_Btn.ClickButton();
+  aqUtils.Delay(5000);
+  //Checks whether the 'IsVisible' property of the Number of Holes Drilled Bar object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.NumberofHolesDrilled_Bar);
+  //Capturing Number of Holes Drilled Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(69).Child(0), "NUMBER\r\nOF HOLES\r\nDRILLED");
+  var BestData = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(68).Child(0).Child(0).Child(1));
+  var LastData = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(67).Child(0).Child(0).Child(1));
+  var ThisData = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(66).Child(0).Child(0).Child(1));
+  Log.Message("Number of Holes Dilled Data: This = " + ThisData + ", ,Last = " + LastData + " and Best = " + BestData);
+  //Checks whether the 'IsVisible' property of the Average Penetration Rate Bar object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.AveragePenetrationRate_Bar);
+  //Capturing Average Penetration Rate Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(63).Child(0), "AVERAGE\r\nPENETRATION\r\nRATE");
+  var BestData1 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(62).Child(0).Child(0).Child(1));
+  var LastData1 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(61).Child(0).Child(0).Child(1));
+  var ThisData1 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(60).Child(0).Child(0).Child(1));
+  Log.Message("Average Penetration Rate Data: This = " + ThisData1 + ", ,Last = " + LastData1 + " and Best = " + BestData1);
+  //Checks whether the 'IsVisible' property of the Total Run Time (Minute) Bar object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.TotalRunTime_Bar);
+  //Capturing Total Run Time Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(57).Child(0), "TOTAL\r\nRUN TIME\r\n(MINUTES)");
+  var BestData2 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(56).Child(0).Child(0).Child(1));
+  var LastData2 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(55).Child(0).Child(0).Child(1));
+  var ThisData2 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(54).Child(0).Child(0).Child(1));
+  Log.Message("Total Run Time Data: This = " + ThisData2 + ", ,Last = " + LastData2 + " and Best = " + BestData2);
+  //Checks whether the 'IsVisible' property of the Total Drill Time (Minute) Bar object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.TotalDrillTime_Bar);
+  //Capturing Total Drill Time Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(51).Child(0), "TOTAL\r\nDRILL TIME\r\n(MINUTES)");
+  var BestData3 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(50).Child(0).Child(0).Child(1));
+  var LastData3 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(49).Child(0).Child(0).Child(1));
+  var ThisData3 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(48).Child(0).Child(0).Child(1));
+  Log.Message("Total Drill Time Data: This = " + ThisData3 + ", ,Last = " + LastData3 + " and Best = " + BestData3);
+  //Checks whether the 'IsVisible' property of the Average Drill Time (Minute) Bar object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.AverageDrillTime_Bar);
+  //Capturing Average Drill Time Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(45).Child(0), "AVERAGE\r\nDRILL TIME\r\n(MINUTES)");
+  var BestData4 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(44).Child(0).Child(0).Child(1));
+  var LastData4 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(43).Child(0).Child(0).Child(1));
+  var ThisData4 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(42).Child(0).Child(0).Child(1));
+  Log.Message("Average Drill Time Data: This = " + ThisData4 + ", ,Last = " + LastData4 + " and Best = " + BestData4);
+  //Checks whether the 'IsVisible' property of the Total Propel Time (Minute) Bar object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.TotalPropelTime_Bar);
+  //Capturing Total Propel Time Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(39).Child(0), "TOTAL\r\nPROPEL TIME\r\n(MINUTES)");
+  var BestData5 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(38).Child(0).Child(0).Child(1));
+  var LastData5 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(37).Child(0).Child(0).Child(1));
+  var ThisData5 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(36).Child(0).Child(0).Child(1));
+  Log.Message("Total Propel Time Data: This = " + ThisData5 + ", ,Last = " + LastData5 + " and Best = " + BestData5);
+  //Checks whether the 'IsVisible' property of the Avg. Propel Time/Hole (Minute) Bar Object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.AvgPropelTimeOrHole_Bar);
+  //Capturing Avg. Propel Time/Hole Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(33).Child(0), "AVG. PROPEL\r\nTIME/HOLE\r\n(MINUTES)");
+  var BestData6 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(32).Child(0).Child(0).Child(1));
+  var LastData6 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(31).Child(0).Child(0).Child(1));
+  var ThisData6 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(30).Child(0).Child(0).Child(1));
+  Log.Message("Avg. Propel Time/Hole Data: This = " + ThisData6 + ", ,Last = " + LastData6 + " and Best = " + BestData6);
+  //Checks whether the 'IsVisible' property of the Total Drilled Depth Bar object equals True.
+  verifyVisibilityWithExistCheck(prodMonitor_Variable.TotalDrilledDepth_Bar);
+  //Capturing Total Drilled Depth Data
+  verifyWpfControlTextWithExistCheck(prodMonitor_Variable.ProdMonitorData.Child(27).Child(0), "Total Drilled Depth");
+  var BestData7 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(26).Child(0).Child(0).Child(1));
+  var LastData7 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(25).Child(0).Child(0).Child(1));
+  var ThisData7 = wpfControlText(prodMonitor_Variable.ProdMonitorData.Child(24).Child(0).Child(0).Child(1));
+  Log.Message("Total Drilled Depth Data: This = " + ThisData7 + ", ,Last = " + LastData7 + " and Best = " + BestData7);
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}
+
+

@@ -1,0 +1,79 @@
+﻿
+const {config, launchHMI, closeHMI, commissioningPass, maintenanceModePass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainWindowVariables} = require('MainWindowPage');
+const {auxControlVariables} = require('AuxControlPage');
+const {getWPFControlTextFromGrid, criticalMsgOk, clickAndHoldButton, checkCheckbox,wstate, logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
+
+function Test1()
+{
+  try{
+  //Login into the application.
+  logIn();
+  //Clicks the 'AuxiliaryControlButton' button.
+  mainOptionVariables.AuxControl_Btn.ClickButton();
+  //Selects Mast tab.
+  checkVisibilityAndClick(auxControlVariables.Mast_Tab, "Mast");
+  //Clicks the 'ButtonSetupMode' button.
+  auxControlVariables.Setup_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockSetupModeActive object equals 'SETUP MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.SetupMode_Active_Text, "SETUP MODE ACTIVE")
+  //Open commissioning screen.
+  commissioningPass();
+  //Clicks the 'SearchTextBox' object.
+  mainWindowVariables.CommSearchBox.Click(71, 24);
+  //Enters the text 'AuxiliaryControlShowMastBracePin' in the 'SearchTextBox' text editor.
+  mainWindowVariables.CommSearchBox.SetText("AuxiliaryControlShowMastBracePin");
+  //Clicks the AuxiliaryControlShowMastBracePin item of the 'SettingsListView' list box.
+  checkVisibilityAndClick(mainWindowVariables.commAuxShowMastBrace, "AuxiliaryControlShowMastBracePin");
+  //Get the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.BoolAppSettingCheckBox object.
+  let aval = wstate(mainWindowVariables.CommBoolValueBox);
+  if(aval == 0){
+    //Checked the checkbox
+    checkCheckbox();
+  }
+  //Closes the 'HwndSource_SeriousWindow' window.
+  mainWindowVariables.CommWindow.Close();
+  //Clicks the 'MastVerticalLockPinLock' button.
+  clickAndHoldButton(auxControlVariables.MastVerticalLockPinLock_Btn);
+  if(verifyVisibilityWithExistCheck(mainOptionVariables.Fault_Btn_Border) == true){
+    mainOptionVariables.Fault_Btn.ClickButton();
+    Log.Error(getWPFControlTextFromGrid());
+  }
+  //Clicks the 'MastVerticalLockPinUnlock' button.
+  clickAndHoldButton(auxControlVariables.MastVerticalLockPinUnlock_Btn);
+  //Clicks the 'MastAngleLockPinLock' button.
+  clickAndHoldButton(auxControlVariables.MastAngleLockPinLock_Btn);
+  //Clicks the 'MastAngleLockPinUnlock' button.
+  clickAndHoldButton(auxControlVariables.MastAngleLockPinUnlock_Btn);
+  //Clicks the 'MastBraceLockPinLock' button.
+  clickAndHoldButton(auxControlVariables.MastBraceLockPinLock_Btn);
+  //Clicks the 'MastBraceLockPinUnlock' button.
+  clickAndHoldButton(auxControlVariables.MastBraceLockPinUnlock_Btn);
+  //let count  = Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.TextblockLocked.
+  /*
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.ContentControl object equals True.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.ContentControl, "Enabled", cmpEqual, true);
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.ContentControl object equals True.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.ContentControl, "Enabled", cmpEqual, true);
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.ContentControl2 object equals True.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.ContentControl2, "Enabled", cmpEqual, true);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.TextblockLocked object equals 'LOCKED'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.TextblockLocked, "WPFControlText", cmpEqual, "LOCKED");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.TextblockUnlocked object equals 'UNLOCKED'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.TextblockUnlocked, "WPFControlText", cmpEqual, "UNLOCKED");
+  */
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+  } catch(e) {
+      criticalMsgOk()
+      Log.Error("Error occured: " + e.message);
+       
+  }
+}
+function Test2()
+{
+  //Checks whether the 'Text' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.FaultDataGrid.DataGridRow.TextblockNotAllJacksOnGroundForMastControl object equals 'Not all jacks on ground for Mast Control'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.FaultDataGrid.DataGridRow.TextblockNotAllJacksOnGroundForMastControl, "Text", cmpEqual, "Not all jacks on ground for Mast Control");
+  return Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.FaultDataGrid.DataGridRow.WPFObject("DataGridCell", "Not all jacks on ground for Mast Control", 3).WPFObject("TextBlock", "Not all jacks on ground for Mast Control", 1).WPFControlText;
+}

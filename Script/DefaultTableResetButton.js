@@ -1,0 +1,61 @@
+﻿
+//Default table column headers and reset button functionality with validation
+
+const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {faultPageVariable} = require('FaultPage');
+const {auxControlVariables} = require('AuxControlPage');
+const {logIn, checkVisibilityAndClick, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck, clickAndHoldButton} = require('CommonFunc');
+
+function TableOptionResetButton()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'MainScreenButton' button.
+  mainOptionVariables.MainScreen_Btn.ClickButton();
+  //Clicks the 'FaultsButton' button.
+  mainOptionVariables.Fault_Btn.ClickButton();
+  //Checks whether the 'IsVisible' property of the Fault table object equals True.
+  verifyVisibilityWithExistCheck(faultPageVariable.FaultTable);
+  //Checks whether the 'WPFControlText' property of the Active column title object equals 'ACTIVE'.
+  verifyWpfControlTextWithExistCheck(faultPageVariable.ActiveColumn_Title, "ACTIVE");
+  //Checks whether the 'WPFControlText' property of the Severity column title object equals 'SEVERITY'.
+  verifyWpfControlTextWithExistCheck(faultPageVariable.SeverityColumn_Title, "SEVERITY");
+  //Checks whether the 'WPFControlText' property of the Description column title object equals 'DESCRIPTION'.
+  verifyWpfControlTextWithExistCheck(faultPageVariable.DescriptionColumn_Title, "DESCRIPTION");
+  //Checks whether the 'WPFControlText' property of the PlcAddress column title object equals 'PLC ADDRESS'.
+  verifyWpfControlTextWithExistCheck(faultPageVariable.PLCAddressColumn_Title, "PLC ADDRESS");
+  //Checks whether the 'Exists' property of the first record in fault page object equals True and if yes throw error.
+  if(faultPageVariable.FaultRecordOne.Exists)
+  {
+    Log.Error("There is already a fault available in the table");
+  }
+  //Clicks the 'AuxiliaryControlButton' button.
+  mainOptionVariables.AuxControl_Btn.ClickButton();
+  //Clicks the 'ButtonDrillMode' button.
+  auxControlVariables.Drill_Btn.ClickButton();
+  //Selects the Mast tab of the 'TabControl' tab control.
+  checkVisibilityAndClick(auxControlVariables.Mast_Tab, "Mast");
+  //Click and hold the 'MastVerticalLockPinLock' button.
+  clickAndHoldButton(auxControlVariables.MastVerticalLockPinLock_Btn);
+  //Clicks the 'OkButton' button.
+  faultPageVariable.CriticalMsg_Ok_Btn.ClickButton();
+  //Clicks the 'FaultsButton' button.
+  mainOptionVariables.Fault_Btn.ClickButton();
+  //Checks whether the 'IsVisible' property of the First fault record object equals True.
+  verifyVisibilityWithExistCheck(faultPageVariable.FaultRecordOne);
+  //Clicks the first fault record.
+  faultPageVariable.FaultTable.ClickCell(0, 3);
+  //Checks whether the 'IsVisible' property of the Full description of first fault record object equals True.
+  verifyVisibilityWithExistCheck(faultPageVariable.FaultRecordOne_FullDesc);
+  //Clicks the 'ButtonReset' button.
+  faultPageVariable.Reset_Btn.ClickButton();
+  aqUtils.Delay(4000);
+  //Checks whether the 'Exists' property of the first record in fault page object equals True and if yes throw error.
+  if(faultPageVariable.FaultRecordOne.Exists)
+  {
+    Log.Error("There is already a fault available in the table");
+  }
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

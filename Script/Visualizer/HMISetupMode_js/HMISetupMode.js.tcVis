@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{9624D3D4-12E8-4C5B-A5E5-6C265821370F}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="14" kind="0" dateTime="45967.2591550926" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.AuxiliaryControlButton" objectLeft="1523" objectTop="1012" objectRight="1613" objectBottom="1077" clickPointX="-1" clickPointY="-1" imageFileName="tcvi487934390213169.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="20" kind="0" dateTime="45967.2592939815" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonSetupMode" objectLeft="210" objectTop="117" objectRight="299" objectBottom="182" clickPointX="-1" clickPointY="-1" imageFileName="tcvi4879463282131612.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="26" kind="0" dateTime="45967.2595023148" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonDrillMode" objectLeft="18" objectTop="117" objectRight="107" objectBottom="182" clickPointX="-1" clickPointY="-1" imageFileName="tcvi4879643282131618.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

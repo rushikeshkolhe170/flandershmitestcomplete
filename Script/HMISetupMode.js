@@ -1,0 +1,34 @@
+﻿
+//Changing the mode from Drill to Setup and vice versa with respect to validation of maintenance mode button enable and disable status.
+
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainWindowVariables} = require('MainWindowPage');
+const {auxControlVariables} = require('AuxControlPage');
+
+function HMISetupMode()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'AuxiliaryControlButton' button.
+  mainOptionVariables.AuxControl_Btn.ClickButton();
+  //Clicks the 'ButtonDrillMode' button.
+  auxControlVariables.Drill_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'DRILL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "DRILL MODE ACTIVE");
+  //Clicks the 'ButtonSetupMode' button.
+  auxControlVariables.Setup_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockSetupModeActive object equals 'SETUP MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.SetupMode_Active_Text, "SETUP MODE ACTIVE");
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockMaintenanceMode object equals True.
+  verifyElementEnabled(auxControlVariables.MaintMode_Btn_Text);
+  //Clicks the 'ButtonDrillMode' button.
+  auxControlVariables.Drill_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockDrillModeActive object equals 'DRILL MODE ACTIVE'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.DrillMode_Active_Text, "DRILL MODE ACTIVE");
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockMaintenanceMode object equals False.
+  verifyElementDisabled(auxControlVariables.MaintMode_Btn_Text);
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

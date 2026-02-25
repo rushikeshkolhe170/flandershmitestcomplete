@@ -1,0 +1,76 @@
+﻿
+//Various drilling parameters visibility of wpftext on the main screen.
+
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {logIn, verifyWpfControlTextWithExistCheck, verifyVisibilityWithExistCheck} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainScreenVariables} = require('MainScreenPage');
+
+function MainScreenDrillingOptions()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'MainScreenButton' button.
+  mainOptionVariables.MainScreen_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockRotationTorque object equals 'ROTATION
+  //TORQUE'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.RotationTorque_Meter_Label, "ROTATION\r\nTORQUE");
+  //Check visibility of Rotation Torque linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.RotationTorque_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockRotationSpeed object equals 'ROTATION
+  //SPEED'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.RotationSpeed_Meter_Label, "ROTATION\r\nSPEED");
+  //Check visibility of Rotation Speed linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.RotationSpeed_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockFeedPressure object equals 'FEED
+  //PRESSURE'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.FeedPressure_Meter_Label, "FEED\r\nPRESSURE");
+  //Check visibility of Feed Pressure linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.FeedPressure_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockFeedSpeed object equals 'FEED
+  //SPEED'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.FeedSpeed_Meter_Label, "FEED\r\nSPEED");
+  //Check visibility of Feed Speed linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.FeedSpeed_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockBitAirPressure object equals 'BIT AIR
+  //PRESSURE'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.BitAirPressure_Meter_Label, "BIT AIR\r\nPRESSURE");
+  //Check visibility of Bit Air Pressure linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.BitAirPressure_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHeadPosition object equals 'HEAD POSITION:'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.HeadPosition_Meter_Label, "HEAD POSITION:");
+  //Check visibility of Head Position linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.HeadPosition_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHoleDepth object equals 'HOLE DEPTH'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.HeadDepth_Meter_Label, "HOLE DEPTH");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockBitDepth object equals 'BIT DEPTH'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.BitDepth_Meter_Label, "BIT DEPTH");
+  //Check visibility of Bit Depth linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.BitDepth_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHoleProfile object equals 'HOLE
+  //PROFILE'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.HoleProfile_Meter_Label, "HOLE\r\nPROFILE");
+  //Check visibility of Hole Profile linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.HoleProfile_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockWaterInjection object equals 'WATER
+  //INJECTION'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.WaterInj_Meter_Label, "WATER\r\nINJECTION");
+  //Check visibility of Water Injection linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.WaterInj_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockBitLife object equals 'BITLIFE'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.BitLife_Meter_Label, "BIT\r LIFE");
+  //Check visibility of Bit Life linear gauge
+  verifyVisibilityWithExistCheck(mainScreenVariables.BitLife_Meter_LinearGauge);
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockMainAirTemp object equals 'MAIN AIR TEMP:'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.MainAirTemp_Meter_Label, "MAIN AIR TEMP:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockMastAngle object equals 'MAST
+  //ANGLE'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.MastAngle_Meter_Label, "MAST\r\nANGLE");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockTargetDepth object equals 'TARGET DEPTH:'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.TargetDepth_Meter_Label, "TARGET DEPTH:");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockWaterInjSetpoint object equals 'WATER INJ.
+  //SETPOINT'.
+  verifyWpfControlTextWithExistCheck(mainScreenVariables.WaterInjSetpoint_Meter_Label, "WATER INJ.\r\nSETPOINT");
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

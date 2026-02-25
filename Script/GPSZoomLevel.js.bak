@@ -1,0 +1,65 @@
+﻿
+const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {gpsMapVariables} = require('GPSMapPage');
+const {logIn, checkVisibilityAndClick, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck, clickAndHoldButton} = require('CommonFunc');
+
+function ZoomLevels()
+{
+  //Login into the application.
+  logIn();
+  //Clicks the 'GpsMapButton' button.
+  mainOptionVariables.GPSMap_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the zoom level button 3 object equals '3'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_3_Btn, "3");
+  //Click the zoom level 3.
+  gpsMapVariables.ZoomLevel_3_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 6 object equals '6'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_6_Btn, "6");
+  //Click the zoom level 6.
+  gpsMapVariables.ZoomLevel_6_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 15 object equals '15'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_15_Btn, "15");
+  //Click the zoom level 15.
+  gpsMapVariables.ZoomLevel_15_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 25 object equals '25'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_25_Btn, "25");
+  //Click the zoom level 25.
+  gpsMapVariables.ZoomLevel_25_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 50 object equals '50'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_50_Btn, "50");
+  //Click the zoom level 50.
+  gpsMapVariables.ZoomLevel_50_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 100 object equals '100'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_100_Btn, "100");
+  //Click the zoom level 100.
+  gpsMapVariables.ZoomLevel_100_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 200 object equals '200'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_200_Btn, "200");
+  //Click the zoom level 200.
+  gpsMapVariables.ZoomLevel_200_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 500 object equals '500'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_500_Btn, "500");
+  //Click the zoom level 500.
+  gpsMapVariables.ZoomLevel_500_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 1000 object equals '1000'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_1000_Btn, "1000");
+  //Click the zoom level 1000.
+  gpsMapVariables.ZoomLevel_1000_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the zoom level button 2500 object equals '2500'.
+  verifyWpfControlTextWithExistCheck(gpsMapVariables.ZoomLevel_2500_Btn, "2500");
+  //Click the zoom level 2500.
+  gpsMapVariables.ZoomLevel_2500_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

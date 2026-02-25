@@ -1,0 +1,40 @@
+﻿
+//Login functionality test with negative scenarios covering and pop up validation
+
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {mainWindowVariables} = require('MainWindowPage');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled} = require('CommonFunc');
+
+function HMILoginTest()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  launchHMI();
+  //Clicks the 0 item of the 'OperatorListBox' list box.
+  checkVisibilityAndClick(mainWindowVariables.OperatorA, config.opA);
+  //Clicks the 'ChangeOperatorButton' button.
+  mainWindowVariables.Change_StatusBtn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.MessageText object equals 'The status and status detail must be selected.'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.MessageWindow, "The status and status detail must be selected.");
+  //Clicks the 'ButtonOk' button.
+  mainWindowVariables.MessageWindow_OK.ClickButton();
+  //Clicks the 0 item of the 'MachineStatusListBox' list box.
+  checkVisibilityAndClick(mainWindowVariables.Effective_Time, config.status);
+  //Clicks the 'ChangeOperatorButton' button.
+  mainWindowVariables.Change_StatusBtn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_OperatorScreenMessageWindow.OperatorScreenMessageWindow.MessageText object equals 'The status must be selected.'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.MessageWindow, "The status must be selected.");
+  //Clicks the 'ButtonOk' button.
+  mainWindowVariables.MessageWindow_OK.ClickButton();
+  //Clicks the 0 item of the 'MachineStatusDetailListBox' list box.
+  checkVisibilityAndClick(mainWindowVariables.Operating_Drill_Autonomous, config.statusDetails);
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockSetup object equals False.
+  verifyElementDisabled(mainOptionVariables.Setup_Btn);
+  //Clicks the 'ChangeOperatorButton' button.
+  mainWindowVariables.Change_StatusBtn.ClickButton();
+  aqUtils.Delay(2000);
+  //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.SetupButton object equals True.
+  verifyElementEnabled(mainOptionVariables.Setup_Btn);
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}

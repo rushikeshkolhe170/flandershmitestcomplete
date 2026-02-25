@@ -1,0 +1,82 @@
+﻿
+//Importing Pattern
+//Removing Pattern
+
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
+const {logIn, wpfControlText, verifyWpfControlTextWithExistCheck, checkVisibilityAndClick, verifyVisibilityWithExistCheck} = require('CommonFunc');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainScreenVariables} = require('MainScreenPage');
+const {setupVariables} = require('SetupPage');
+
+function PatternImport()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  //Clicks the 'ButtonImportPattern' button.
+  setupVariables.ImportPattern_Btn.ClickButton();
+  //Clicks the 'ButtonSelectFileToImport' button.
+  setupVariables.SelectFileToImport_Btn.ClickButton();  
+  //Creating the generic path to the Pattern.csv file (Make sure file is available in the HMI project file location)
+  var projectDir = Project.Path;
+  var relativeFilePath = "\Pattern.csv";
+  var fullFilePath = projectDir + relativeFilePath;
+  Log.Message("Full file path: " + fullFilePath);
+  //Entering the path in file explorer dialogue directly and selecting the file
+  Aliases.Flanders_Ardvarc_Hmi_Client.dlg.OpenFile(fullFilePath);
+  //Capturing the path showing below the import button
+  var location = wpfControlText(setupVariables.ImportBoxGroup.Child(0).Child(1).Child(0).Child(8).Child(5));
+  //verifying the file path and location showing below the import button
+  if(fullFilePath == location){
+    Log.Message("File path and location shows below the import button is same");
+  } else {
+    Log.Warning("File path and Location shown below import button is differnet");
+  }
+  //Click the Replace option.
+  setupVariables.ReplaceRadio_Btn.ClickButton();
+  //Clicks the 'ButtonImport' button.
+  setupVariables.Import_Btn.ClickButton();
+  //Delay script execution because file takes time to import
+  aqUtils.Delay(40000);
+  //Checks whether the 'WPFControlText' property of the Dialogue message object equals '1681 pattern records were imported.'.
+  verifyWpfControlTextWithExistCheck(setupVariables.DialogueMsg_Text, "1681 pattern records were imported.");
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'MoveBack' object.
+  setupVariables.Back_Btn.Click();
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}
+
+function PatternRemove()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  logIn();
+  //Clicks the 'SetupButton' button.
+  mainOptionVariables.Setup_Btn.ClickButton();
+  //Clicks the 'ButtonImportPattern' button.
+  setupVariables.ImportPattern_Btn.ClickButton();
+  //Clicks the 'ButtonRemovePatterns' button.
+  setupVariables.RemovePattern_Btn.ClickButton();
+  //Selects the 'Pattern' tab of the 'TabControl' tab control.
+  setupVariables.TabControl.ClickTab("Pattern");
+  //Going through list in Pattern section and selecting all the options.
+  setupVariables.ListBoxItems.Keys("[Home]![End]");
+  //Clicks the 'ButtonRemoveSelectedPatterns' button.
+  setupVariables.RemoveSelectedPattern_Btn.ClickButton();
+  //Checks whether the 'IsVisible' property of the Confirmation Message text object equals True.
+  verifyVisibilityWithExistCheck(setupVariables.ConfirmationDialogueBox_Text);
+  //Clicks the 'YesButton' button.
+  setupVariables.ConfirmationDialogueYES_Btn.ClickButton();
+  //Delay script execution as deletion of pattern takes time
+  aqUtils.Delay(30000);
+  //Checks whether the 'IsVisible' property of the Dialogue box text object equals True.
+  verifyVisibilityWithExistCheck(setupVariables.DialogueMsg_Text);
+  //Clicks the 'OkButtonText' object.
+  setupVariables.DialogueOk_Btn.ClickButton();
+  //Clicks the 'MoveBack' object.
+  setupVariables.Back_Btn.Click();
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+}
