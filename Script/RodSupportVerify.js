@@ -5,7 +5,7 @@ const {config, launchHMI, closeHMI, commissioningPass, maintenanceModePass} = re
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {mainWindowVariables} = require('MainWindowPage');
 const {auxControlVariables} = require('AuxControlPage');
-const {wstate, logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
+const {wstate, logIn, searchAndSelectCheckboxComm, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
 
 function RodSupportVerify()
 {
@@ -15,28 +15,18 @@ function RodSupportVerify()
   mainOptionVariables.AuxControl_Btn.ClickButton();
   //Selects Rod tab.
   checkVisibilityAndClick(auxControlVariables.Rod_Tab, "ROD");
-  //Open commissioning screen.
+  //Open commissioning screen and select few options.
   commissioningPass();
-  //Clicks the 'SearchTextBox' object.
-  mainWindowVariables.CommSearchBox.Click(71, 24);
-  //Enters the text 'rodsupport' in the 'SearchTextBox' text editor.
-  mainWindowVariables.CommSearchBox.SetText("AuxiliaryControlShowRodSupport");
-  //Drags the 'HwndSource_SeriousWindow' object.
-  mainWindowVariables.CommWindow.Drag(893, 238, 353, 6);
-  //Clicks the AuxiliaryControlShowRodSupport item of the 'SettingsListView' list box.
-  checkVisibilityAndClick(mainWindowVariables.commAuxShowRodSupport, "AuxiliaryControlShowRodSupport");
-  //Get the 'wState' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.BoolAppSettingCheckBox object.
-  let aval = wstate(mainWindowVariables.CommBoolValueBox);
-  if(aval == 0){
-    //Sets the state of the 'BoolAppSettingCheckBox' check box to cbChecked.
-    mainWindowVariables.CommBoolValueBox.ClickButton(cbChecked);
-    //Clicks the 'CommitButton' button.
-    mainWindowVariables.CommCommitBtn.ClickButton();
-  }
+  searchAndSelectCheckboxComm("AuxiliaryControlShowRodSupport", mainWindowVariables.commAuxShowRodSupport, "AuxiliaryControlShowRodSupport");
+  searchAndSelectCheckboxComm("AuxiliaryControlShowRodSupportAuto", mainWindowVariables.commAuxRodSupportAuto, "AuxiliaryControlShowRodSupportAuto");
+  searchAndSelectCheckboxComm("AuxiliaryControlShowSecondaryRodSupportTop", mainWindowVariables.commAuxSecRodSupportTop, "AuxiliaryControlShowSecondaryRodSupportTop");
+  searchAndSelectCheckboxComm("AuxiliaryControlShowSecondaryRodSupportBottom", mainWindowVariables.commAuxSecRodSupportBottom, "AuxiliaryControlShowSecondaryRodSupportBottom");
   //Closes the 'HwndSource_SeriousWindow' window.
   mainWindowVariables.CommWindow.Close();
-  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.TextblockRodSupport object equals 'ROD SUPPORT'.
-  verifyWpfControlTextWithExistCheck(auxControlVariables.Rod_Support_Tab, "ROD SUPPORT")
+  //Checks whether the 'WPFControlText' property of the LowerRodSupport object equals 'LOWER ROD SUPPORT'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Rod_LowerRodSupport_Box, "LOWER ROD SUPPORT");
+  //Checks whether the 'WPFControlText' property of the UpperRodSupport object equals 'UPPER ROD SUPPORT'.
+  verifyWpfControlTextWithExistCheck(auxControlVariables.Rod_UpperRodSupport_Box, "UPPER ROD SUPPORT ");
   //Closes the 'HwndSource_MainWindow' window.
   closeHMI();
 }

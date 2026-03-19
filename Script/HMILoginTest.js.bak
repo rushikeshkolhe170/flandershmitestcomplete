@@ -8,6 +8,11 @@ const {checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, verifyElemen
 
 function HMILoginTest()
 {
+  //Checking if the HMI is open and if yes then it will close first and then open
+  if(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Exists){
+    closeHMI();
+  }
+  aqUtils.Delay(3000);
   //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
   launchHMI();
   //Clicks the 0 item of the 'OperatorListBox' list box.

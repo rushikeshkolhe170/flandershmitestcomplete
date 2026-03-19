@@ -7,7 +7,7 @@
   Drill_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonDrillMode,
   Propel_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonPropelMode,
   Rod_Tab : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.TextblockRod,
-  Rod_Support_Tab : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.TextblockRodSupport,
+  //Rod_Support_Tab : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.TextblockRodSupport,
   Mast_Tab : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.TextblockMast,
   MastVerticalLockPin_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Grid.TextblockMastVerticalLockPinControl,
   MastVerticalLockPinUnlock_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.Border.MastVerticalLockPinUnlock,
@@ -57,7 +57,8 @@
   BreakoutWrench_DeployBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonDeploy,
   BreakoutWrench_StowBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonStow,
   BreakoutWrench_UpBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonUp,
-  BreakoutWrench_DownBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonDown
+  BreakoutWrench_DownBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonDown,
+  tabs : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl
 };
 
 module.exports = {auxControlVariables};

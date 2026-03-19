@@ -1,4 +1,6 @@
 ﻿
+//Active and History data check with validation
+
 const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {faultPageVariable} = require('FaultPage');
@@ -12,6 +14,9 @@ function ActiveHistoryData()
   mainOptionVariables.MainScreen_Btn.ClickButton();
   //Clicks the 'FaultsButton' button.
   mainOptionVariables.Fault_Btn.ClickButton();
+  //Clicks the 'ButtonReset' button.
+  faultPageVariable.Reset_Btn.ClickButton();
+  aqUtils.Delay(3000);
   //Check the state of History button as wState is 0.
   var HTabStatus = wstate(faultPageVariable.HistoryTab);
   if(HTabStatus != 0)

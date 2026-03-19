@@ -23,11 +23,20 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="46078.7587482755"/>
+				<Prp name="datetime" type="D" value="46100.6870715625"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{A5AC7654-5EEA-48FD-9FCA-E3CD15A2D834}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [DirStatusButtons\DirectionStatusButtons]"/>
-				<Prp name="relpath" type="S" value="2_25_2026_6_12 PM_35_851\Description.tcLog"/>
+				<Prp name="key" type="S" value="{63AD0BA4-609D-4655-A0B3-D68556434E0C}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MachineUIDetails\MachineUIDetails]"/>
+				<Prp name="relpath" type="S" value="3_19_2026_4_29 PM_22_983\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="46100.6876449653"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{93F75A01-C6CA-4091-A5DB-BAAD553B0B26}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [MachineUIDetails\MachineUIDetails]"/>
+				<Prp name="relpath" type="S" value="3_19_2026_4_30 PM_12_525\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 		</Node>

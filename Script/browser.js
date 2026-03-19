@@ -1,0 +1,122 @@
+﻿
+const {config, launchHMI, closeHMI, commissioningPass, openDiagnosticDashboard} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainWindowVariables} = require('MainWindowPage');
+const {Sandvik412I, Sandvik416I, Sandvik410I} = require('MachinesUIandLabelPage');
+const {preInspectionVariables} = require('PreInspectionPage');
+const {Browser_Variables, Commissioning_Variables} = require('BrowserPage');
+const {searchAndSelectDropdownItemComm, checkVisibilityAndClick, TypeOnKeyboard, visibleInBooleanStatus} = require('CommonFunc');
+
+function machineEle(machineName)
+{ 
+  return Aliases.browser.pageDiagnosticDashboard2["textnode" + machineName];
+}
+
+function browser()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  launchHMI();
+  //open diagnostic dashboard browser.
+  openDiagnosticDashboard();
+  //Clicks the 'linkCommissioning' link.
+  Browser_Variables.CommissioningOption.Click();
+  //Aliases.browser.pageDiagnosticDashboard.navAlarmsOverview.linkCommissioning.Click();
+  //Waits until the browser loads the page and is ready to accept user input.
+  Aliases.browser.pageDiagnosticDashboard2.Wait();
+  //Clicks the 'panelMachineConfiguration' control.
+  Commissioning_Variables.MachineConfiguration_Opt.Click();
+  //If SandvikDR410i is selected then it will select Sandvikdr412i.
+  if(Aliases.browser.pageDiagnosticDashboard2.buttonMachineType.textContent == "SandvikDR410i"){
+    Commissioning_Variables.MachineType_Btn.ClickButton();
+    machineEle("Sandvikdr412i").Click();
+    Browser_Variables.Save1_Btn.ClickButton();
+    Browser_Variables.ConfirmationSave_Btn.ClickButton();
+  }
+  //Clicks the 'buttonAtlascopco275' button.
+  Commissioning_Variables.MachineType_Btn.ClickButton();
+  //Aliases.browser.pageDiagnosticDashboard2.buttonAtlascopco275.ClickButton();
+  //Clicks the 'panelSandvikdr410i' control.
+  machineEle("Sandvikdr410i").Click();
+  //Commissioning_Variables.Sandvik410I_Btn.ClickItem();
+  //Aliases.browser.pageDiagnosticDashboard2.panelSandvikdr410i.Click();
+  //Clicks the 'buttonSave1' button.
+  Browser_Variables.Save1_Btn.ClickButton();
+  //Aliases.browser.pageDiagnosticDashboard2.buttonSave1.ClickButton();
+  //Clicks the 'buttonSave' button.
+  Browser_Variables.ConfirmationSave_Btn.ClickButton();
+  //Aliases.browser.pageDiagnosticDashboard2.buttonSave.ClickButton();
+  //Clicks the 'DesktopWindowXamlSource' object.
+  Aliases.explorer.wndXamlExplorerHostIslandWindow.DesktopWindowXamlSource.Click(1500, 959);
+  //Minimizes the 'BrowserWindow' window.
+  Aliases.browser.BrowserWindow.Minimize();
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  TestedApps.Flanders_Ardvarc_Hmi_Client.Run(1, true);
+  //Clicks the 0 item of the 'OperatorListBox' list box.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.OperatorListBox.ClickItem(0);
+  //Clicks the 0 item of the 'MachineStatusListBox' list box.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusListBox.ClickItem(0);
+  //Sets the 'VScroll' scroll bar thumb to position 0.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusDetailListBox.VScroll.Pos = 0;
+  //Drags the 'Listboxitem300OperatingDelay' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusListBox.Listboxitem300OperatingDelay.Drag(186, 47, 59, 272);
+  //Clicks the 1 item of the 'MachineStatusDetailListBox' list box.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusDetailListBox.ClickItem(1);
+  //Clicks the 'ChangeOperatorButton' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ChangeOperatorButton.ClickButton();
+  //Clicks the 'MachineStatusButton' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusButton.ClickButton();
+}
+
+function selectMachineType(machine)
+{
+  //Clicks the 'buttonAtlascopco275' button.
+  Commissioning_Variables.MachineType_Btn.ClickButton();
+  //Aliases.browser.pageDiagnosticDashboard2.buttonAtlascopco275.ClickButton();
+  //Clicks the 'panelSandvikdr410i' control.
+  machineEle("Sandvikdr410i").Click();
+  //Commissioning_Variables.Sandvik410I_Btn.ClickItem();
+  //Aliases.browser.pageDiagnosticDashboard2.panelSandvikdr410i.Click();
+  //Clicks the 'buttonSave1' button.
+  Browser_Variables.Save1_Btn.ClickButton();
+  //Aliases.browser.pageDiagnosticDashboard2.buttonSave1.ClickButton();
+  //Clicks the 'buttonSave' button.
+  Browser_Variables.ConfirmationSave_Btn.ClickButton();
+}
+
+function Test1()
+{
+  //Opens the specified URL in a running instance of the specified browser.
+  Browsers.Item(btEdge).Navigate("http://wsl.flanders.local/commissioning");
+  Aliases.browser.BrowserWindow.Maximize();
+  //Clicks the 'panelMachineConfiguration' control.
+  Aliases.browser.pageDiagnosticDashboard2.panelMachineConfiguration.Click();
+  //Clicks the 'buttonSandvikdr416i' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSandvikdr416i.ClickButton();
+  //Clicks the 'textnodeSandvikdr410i' control.
+  Aliases.browser.pageDiagnosticDashboard2.textnodeSandvikdr410i.Click();
+  //Clicks the 'buttonSave1' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSave1.ClickButton();
+  //Clicks the 'buttonSave' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSave.ClickButton();
+  //Clicks the 'buttonSandvikdr416i' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSandvikdr416i.ClickButton();
+  //Clicks the 'textnodeSandvikdr412i' control.
+  Aliases.browser.pageDiagnosticDashboard2.textnodeSandvikdr412i.Click();
+  //Clicks the 'buttonSave1' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSave1.ClickButton();
+  //Clicks the 'buttonSave' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSave.ClickButton();
+  //Clicks the 'buttonSandvikdr416i' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSandvikdr416i.ClickButton();
+  //Clicks the 'textnodeSandvikdr416i' control.
+  Aliases.browser.pageDiagnosticDashboard2.textnodeSandvikdr416i.Click();
+  //Clicks the 'buttonSave1' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSave1.ClickButton();
+  //Clicks the 'buttonSave' button.
+  Aliases.browser.pageDiagnosticDashboard2.buttonSave.ClickButton();
+  //Opens the specified URL in a running instance of the specified browser.
+  Browsers.Item(btEdge).Navigate("http://wsl.flanders.local/commissioning");
+  return Aliases.browser.pageDiagnosticDashboard2.buttonMachineType.textContent;
+  //Checks whether the 'Visible' property of the Aliases.browser.pageDiagnosticDashboard2.FindElement("//button[.='SandvikDR410i']") object equals True.
+  aqObject.CheckProperty(Aliases.browser.pageDiagnosticDashboard2.FindElement("//button[.='SandvikDR410i']"), "Visible", cmpEqual, true);
+}

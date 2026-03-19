@@ -47,4 +47,19 @@ function maintenanceModePass(){
   Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MaintenancePasswordWindow.MaintenancePasswordWindow.OkButton.ClickButton();
 }
 
-module.exports = {config, launchHMI, closeHMI, commissioningPass, maintenanceModePass};
+function openDiagnosticDashboard()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  launchHMI();
+  //Clicks the 'Ellipse' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Ellipse.Click(43, 26);
+  //Clicks the 'Button2' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button2.ClickButton();
+  //Clicks the 'BrowserWindow' object.
+  Aliases.browser.BrowserWindow.Click(86, 85);
+  //Opens the specified URL in a running instance of the specified browser.
+  Browsers.Item(btEdge).Navigate("http://wsl.flanders.local/gps/status");
+  Aliases.browser.BrowserWindow.Maximize();
+}
+
+module.exports = {config, launchHMI, closeHMI, commissioningPass, maintenanceModePass, openDiagnosticDashboard};

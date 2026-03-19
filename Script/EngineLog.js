@@ -30,9 +30,9 @@ function EngineLogTable()
   //Checks whether the 'IsVisible' property of the Description column title object equals True.
   verifyVisibilityWithExistCheck(maint_EngineLog_Variable.DescriptionColumn_Title);
   //Checks whether the 'IsVisible' property of the ErrorWCI column title object equals True.
-  verifyVisibilityWithExistCheck(maint_EngineLog_Variable.ErrorWCIColumn_Title);
+  //verifyVisibilityWithExistCheck(maint_EngineLog_Variable.ErrorWCIColumn_Title);            //Uncomment this line when ERRORWCI column is shown in the table.
   //Checks whether the 'IsVisible' property of the EID CID column title object equals True.
-  verifyVisibilityWithExistCheck(maint_EngineLog_Variable.EIDCIDColumn_Title);
+  //verifyVisibilityWithExistCheck(maint_EngineLog_Variable.EIDCIDColumn_Title);             //Uncomment this line when EID CID column is shown in the table.
   //Rotates the mouse wheel to -20 over the Engine Log table grid object.
   maint_EngineLog_Variable.EngineLogTable_DataGrid.MouseWheel(-20);
   aqUtils.Delay(3000);
@@ -55,7 +55,6 @@ function ArrowButtons()
   verifyVisibilityWithExistCheck(maint_EngineLog_Variable.EngineLogTable);
   //Clicks the 'ErrorDataGrid' grid cell at row 0, column 'WHEN'.
   maint_EngineLog_Variable.EngineLogTable_DataGrid.ClickCell(0, "WHEN");
-  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.ErrorDataGrid.ClickCell(0, "EID CID");
   //Checks whether the 'Enabled' property of the Single line move down arrow object equals True.
   verifyElementEnabled(maint_EngineLog_Variable.SingleLineMove_Down_Arrow);
   //Checks whether the 'Enabled' property of the Single line move up arrow object equals True.

@@ -1,0 +1,140 @@
+﻿
+// Preinspection screen with validation.
+
+const {config, launchHMI, closeHMI, commissioningPass} = require('GlobalVariables');
+const {mainOptionVariables} = require('MainOptionsVariable');
+const {mainWindowVariables} = require('MainWindowPage');
+const {preInspectionVariables} = require('PreInspectionPage');
+const {logIn, wpfControlText, verifyWTextWithExistCheck, verifyWpfControlTextWithExistCheck, verifyVisibilityWithExistCheck, searchAndSelectCheckboxComm, checkVisibilityAndClick, TypeOnKeyboard, checkboxCheckedValidate, searchAndDeselectCheckboxComm} = require('CommonFunc');
+
+function PreInspection()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  launchHMI();
+  //Open 'Commissioning screen'.
+  commissioningPass();
+  //Select the 'IsInPreOperationInspection'.
+  searchAndSelectCheckboxComm("IsInPreOperationInspection", mainWindowVariables.commIsInPreOperatorInspection ,"IsInPreOperationInspection");
+  //Select the 'ExcludePreOperationInspection'.
+  searchAndSelectCheckboxComm("ExcludePreOperationInspection", mainWindowVariables.commExcludePreOperationInspection ,"ExcludePreOperationInspection");
+  //Select the 'OperatorSelectRequirePreOperationInspection'.
+  searchAndSelectCheckboxComm("OperatorSelectRequirePreOperationInspection", mainWindowVariables.commOperatorSelectRequirePreOperationInspection ,"OperatorSelectRequirePreOperationInspection");
+  //Closes the 'Commissioning screen' window.
+  mainWindowVariables.CommWindow.Close();
+  //Closes the 'HwndSource_MainWindow' window.
+  closeHMI();
+  aqUtils.Delay(3000);
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  launchHMI();
+  // Operator A selection
+  checkVisibilityAndClick(mainWindowVariables.OperatorA, config.opA);
+  // Machine Status 'Effective Time' selection
+  checkVisibilityAndClick(mainWindowVariables.Effective_Time, config.status);
+  // Machine Status Details 'Operating - Drill - Autonomous' selection
+  checkVisibilityAndClick(mainWindowVariables.Operating_Drill_Autonomous, config.statusDetails);
+  //Clicks the 'ChangeOperatorButton' button.
+  mainWindowVariables.Change_StatusBtn.ClickButton();
+  //Text to add in the description/comment
+  var textToInput = "Test Input";
+  //Opens the 'ComboBox' drop-down window.
+  preInspectionVariables.ShiftDropdown.DropDown();
+  //Checks whether the 'WPFControlText' property of the object equals 'Day'.
+  verifyWpfControlTextWithExistCheck(preInspectionVariables.Day_Shift, "Day");
+  //Checks whether the 'WPFControlText' property of the object equals 'Night'.
+  verifyWpfControlTextWithExistCheck(preInspectionVariables.Night_Shift, "Night");
+  //Clicks the 'description input keyboard' button.
+  preInspectionVariables.Description_Keyboard_Open.ClickButton();
+  preInspectionVariables.Description_Keyboard_Open.ClickButton();
+  //Enter Descripton text
+  TypeOnKeyboard(textToInput);
+  //Checks whether the 'wText' property of the Typed Text object equals 'Test Input'.
+  verifyWTextWithExistCheck(preInspectionVariables.Keyboard_Typed_Text, "Test Input");
+  //Clicks the 'ButtonAccept' button.
+  preInspectionVariables.Keyboard_Accept_Btn.ClickButton();
+  //Clicks the 'description input keyboard' button.
+  preInspectionVariables.Description_Keyboard_Open.ClickButton();
+  //Checks whether the 'wText' property of the Current Text object equals 'test input'.
+  verifyWTextWithExistCheck(preInspectionVariables.Keyboard_Current_text, "Test Input");
+  //Clicks the 'ButtonCancel' button.
+  preInspectionVariables.Keyboard_Cancel_Btn.ClickButton();
+  //Clicks the 'ButtonAccept' button.
+  preInspectionVariables.Inspection_Accept_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the Message Text object equals 'All information must be filled out before saving.'.
+  verifyWpfControlTextWithExistCheck(preInspectionVariables.MessageText, "All information must be filled out before saving.");
+  //Clicks the 'OkButton' button.
+  preInspectionVariables.Popup_OK_Btn.ClickButton();
+  //Sets the state of the 'NA' check box to cbChecked.
+  getBOBox().ClickButton(cbChecked);
+  //Selects the 'Day' item of the 'ComboBox' combo box.
+  preInspectionVariables.ShiftDropdown.ClickItem("Day");
+  //Clicks the 'ButtonAccept' button.
+  preInspectionVariables.Inspection_Accept_Btn.ClickButton();
+  //Clicks the 'ChangeStatusButton' button.
+  mainOptionVariables.Change_Status_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the object equals 'PREVIOUS PRE-OPER INSPECTION'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.PreOperInspection_Btn, "PREVIOUS PRE-OPER\r\nINSPECTION");
+  //Clicks the 'PreviousPreOperationInspectionButton' button.
+  mainWindowVariables.PreOperInspection_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'IsChecked' property of the previously selected checkbox object equals True.
+  checkboxCheckedValidate(getBOBox());
+  //Checked the description is equal to what where input
+  var description = wpfControlText(getPreInspectionDescription());
+  Log.Message(description);
+  if(description == textToInput){
+    Log.Message("Description/Comment is matching");
+  } else {
+    Log.Error("Description/Comment is incorrect in the Pre-oper Inspection");
+  }
+  //Clicks the 'ButtonOk' button.
+  preInspectionVariables.Inspection_OK_Btn.ClickButton();
+  //Checks whether the 'WPFControlText' property of the MyLastPreOperationInspectionButton object equals 'MY LAST PRE-OPER INSPECTION'.
+  verifyWpfControlTextWithExistCheck(mainWindowVariables.LastPreOperInspection_Btn, "MY LAST PRE-OPER\r\nINSPECTION")
+  //Clicks the 'MyLastPreOperationInspectionButton' button.
+  mainWindowVariables.LastPreOperInspection_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'IsChecked' property of the previously selected checkbox object equals True.
+  checkboxCheckedValidate(getBOBox());
+  //Checked the description is equal to what where input
+  var description1 = wpfControlText(getPreInspectionDescription());
+  Log.Message(description1);
+  if(description1 == textToInput){
+    Log.Message("Description/Comment is matching");
+  } else {
+    Log.Error("Description/Comment is incorrect in the Pre-oper Inspection");
+  }
+  //Clicks the 'ButtonOk' button.
+  preInspectionVariables.Inspection_OK_Btn.ClickButton();
+  //Open 'Commissioning screen'.
+  commissioningPass();
+  //DeSelect the 'IsInPreOperationInspection'.
+  searchAndDeselectCheckboxComm("IsInPreOperationInspection", mainWindowVariables.commIsInPreOperatorInspection ,"IsInPreOperationInspection");
+  //DeSelect the 'ExcludePreOperationInspection'.
+  searchAndDeselectCheckboxComm("ExcludePreOperationInspection", mainWindowVariables.commExcludePreOperationInspection ,"ExcludePreOperationInspection");
+  //DeSelect the 'OperatorSelectRequirePreOperationInspection'.
+  searchAndDeselectCheckboxComm("OperatorSelectRequirePreOperationInspection", mainWindowVariables.commOperatorSelectRequirePreOperationInspection ,"OperatorSelectRequirePreOperationInspection");
+  //Closes the 'Commissioning screen' window.
+  mainWindowVariables.CommWindow.Close();
+  //Close the application.
+  closeHMI();
+}
+
+function getPreInspectionDescription(){
+  return preInspectionVariables.UserControl.Child(0).Child(7).Child(0).Child(0);
+}
+
+function getNABox(){
+  return preInspectionVariables.UserControl.Child(0).Child(9).Child(0).Child(1);
+}
+
+function getBOBox(){
+  return preInspectionVariables.UserControl.Child(0).Child(10).Child(0).Child(1);
+}
+
+function getOKBox(){
+  return preInspectionVariables.UserControl.Child(0).Child(11).Child(0).Child(1);
+}
+
+function getPMBox(){
+  return preInspectionVariables.UserControl.Child(0).Child(8).Child(0).Child(1);
+}

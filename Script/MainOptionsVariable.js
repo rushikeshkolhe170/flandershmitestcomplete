@@ -16,7 +16,9 @@
   EngineLog_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.ButtonEngineLog,
   MachineMonitor_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.MachineMonitorButton,
   GPSMap_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.GpsMapButton,
-  ProdMonitor_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ProductMonitorButton
+  ProdMonitor_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ProductMonitorButton,
+  MachineStatus_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusButton,
+  KeyboardWindow : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow
 };
 
 module.exports = {mainOptionVariables};

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{E112F158-AA5F-40C7-BD59-7BEA0C6836A8}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="14" kind="0" dateTime="46091.2598842593" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow" objectLeft="0" objectTop="0" objectRight="1937" objectBottom="1217" clickPointX="-1" clickPointY="-1" imageFileName="tcvi-204015614095001.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="22" kind="0" dateTime="46091.2605787037" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow" objectLeft="0" objectTop="0" objectRight="1125" objectBottom="563" clickPointX="-1" clickPointY="-1" imageFileName="tcvi-2040096562950023.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

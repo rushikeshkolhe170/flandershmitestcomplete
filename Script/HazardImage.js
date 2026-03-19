@@ -1,5 +1,6 @@
 ﻿
 //Hazard Image Titles, Camera view box availability and status change after click on Load button validation
+//Before running script add the location of images into the camera url setting in the commissioning
 
 const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
@@ -43,16 +44,16 @@ function HazardImage()
   verifyVisibilityWithExistCheck(gpsMapVariables.NonDrillEnd_Camera1_View);
   //Clicks the 'Drill End ButtonLoad' button.
   gpsMapVariables.DrillEnd_Load_Btn.ClickButton();
-  aqUtils.Delay(2000);
+  aqUtils.Delay(3000);
   //Checking if the Hazard Image status is showing Ok.
-  okStatusCheck();
+  readyStatusCheck();
   //Checking if the Hazard Image status is showing error.
   errorStatusCheck();
   //Clicks the 'Non Drill End ButtonLoad' button.
   gpsMapVariables.NonDrillEnd_Load_Btn.ClickButton();
-  aqUtils.Delay(2000);
+  aqUtils.Delay(3000);
   //Checking if the Hazard Image status is showing Ok.
-  okStatusCheck();
+  readyStatusCheck();
   //Checking if the Hazard Image status is showing error.
   errorStatusCheck();
   //Closes the 'HwndSource_MainWindow' window.

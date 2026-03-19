@@ -43,8 +43,22 @@
   LowerRod_DeployBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxLowerRodSupport.CloseRodSupport,
   Rod_UpperRodSupport_Box : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxUpperRodSupport,
   UpperRod_StowBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxUpperRodSupport.ButtonStow,
-  UpperRod_DeployBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxUpperRodSupport.ButtonDeploy
-  
+  UpperRod_DeployBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxUpperRodSupport.ButtonDeploy,
+  Rod_PipeGateArm_Box : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeGateArm,
+  PipeGateArm_UpBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeGateArm.ButtonUp,
+  PipeGateArm_DownBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeGateArm.ButtonDown,
+  Rod_PipeRack_Box : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeRack,
+  PipeRack_DeplyBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeRack.ButtonDeploy,
+  PipeRack_StowBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeRack.ButtonStow,
+  PipeRackSelector_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeRack.TextblockPipeRackSelector,
+  RackOneSelect_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeRack.btnRackOneSelect,
+  RackTwoSelect_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxPipeRack.btnRackTwoSelect,
+  Rod_BreakoutWrench_Box : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench,
+  BreakoutWrench_DeployBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonDeploy,
+  BreakoutWrench_StowBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonStow,
+  BreakoutWrench_UpBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonUp,
+  BreakoutWrench_DownBtn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl.GroupboxBreakoutWrench.ButtonDown,
+  tabs : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TabControl
 };
 
 module.exports = {auxControlVariables};

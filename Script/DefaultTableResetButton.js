@@ -5,12 +5,23 @@ const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariab
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {faultPageVariable} = require('FaultPage');
 const {auxControlVariables} = require('AuxControlPage');
-const {logIn, checkVisibilityAndClick, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck, clickAndHoldButton} = require('CommonFunc');
+const {maint_HeadLimit_Variables} = require('MaintenancePage');
+const {logIn, checkVisibilityAndClick, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck, clickAndHoldButton, visibilityInBooleanStatus} = require('CommonFunc');
 
 function TableOptionResetButton()
 {
   //Login into the application.
   logIn();
+  //Exiting Maintenance mode if it is active
+  if(visibilityInBooleanStatus(auxControlVariables.Nav_MaintenanceModeActive_Text) == true)
+  {
+    //Clicks the 'MaintenanceButton' button.
+    mainOptionVariables.Maint_Btn.ClickButton();
+    //Clicks the 'HeadLimitsButton' button.
+    mainOptionVariables.HeadLimit_Btn.ClickButton();
+    //Click on Exit Maintenance Mode button.
+    maint_HeadLimit_Variables.ExitMaintMode_Btn.ClickButton();
+  }
   //Clicks the 'MainScreenButton' button.
   mainOptionVariables.MainScreen_Btn.ClickButton();
   //Clicks the 'FaultsButton' button.
@@ -25,6 +36,8 @@ function TableOptionResetButton()
   verifyWpfControlTextWithExistCheck(faultPageVariable.DescriptionColumn_Title, "DESCRIPTION");
   //Checks whether the 'WPFControlText' property of the PlcAddress column title object equals 'PLC ADDRESS'.
   verifyWpfControlTextWithExistCheck(faultPageVariable.PLCAddressColumn_Title, "PLC ADDRESS");
+  //Clicks the 'ButtonReset' button.
+  faultPageVariable.Reset_Btn.ClickButton();
   //Checks whether the 'Exists' property of the first record in fault page object equals True and if yes throw error.
   if(faultPageVariable.FaultRecordOne.Exists)
   {
@@ -54,7 +67,7 @@ function TableOptionResetButton()
   //Checks whether the 'Exists' property of the first record in fault page object equals True and if yes throw error.
   if(faultPageVariable.FaultRecordOne.Exists)
   {
-    Log.Error("There is already a fault available in the table");
+    Log.Error("Few faults are there which can not get reset");
   }
   //Closes the 'HwndSource_MainWindow' window.
   closeHMI();

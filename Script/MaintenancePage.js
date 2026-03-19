@@ -24,12 +24,13 @@
   ExitMaintMode_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonExitMaintenanceMode,
   SetupHoistResolver_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonSetupHoistResolver,
   SetupHoistResolverPanel : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17,
+  SetupHoistResolverPanel_Title : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelHeadResolverSetup,
   SetupResolverCard_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonSetupResolverCard,
   ResetHoistPosition_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonResetHoistPosition,
   SetCountPer_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonSetCountPerFoot,
   HoistResolverPanelOK_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonOk,
-  HoistResolverPanelBack_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonBack,
-  HoistResolverPanelCancel_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonCancel,
+  HoistResolverPanelClose_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button3,
+  HoistResolverPanelBack_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Button8,
   ConfirmationPopUpSetupResolverCard : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion2.MessageQuestion.MessageText,
   ConfirmationPopUpSetupResolverCardYes_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion2.MessageQuestion.YesButton,
   ConfirmationPopUpResetHoistPos : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageQuestion3.MessageQuestion.MessageText,
@@ -157,7 +158,7 @@ const maint_Fluid_Variable =
 
 const maint_EngineLog_Variable =
 {
-  EngineLogTable : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2,
+  EngineLogTable : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.ErrorDataGrid,
   LampColumn_Title : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.ErrorDataGrid.DatagridcolumnheaderLamp,
   WhenColumn_Title : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.ErrorDataGrid.DatagridcolumnheaderWhen,
   CodeColumn_Title : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.ErrorDataGrid.DatagridcolumnheaderCode,

@@ -40,6 +40,7 @@
   EngineIdle_High : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border6.ToggleButton,
   EngineIdle_Medium : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border6.ToggleButton2,
   EngineIdle_Low : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border6.ToggleButton3,
+  EndHole_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonEndHole,
   OneTouchDrillControlBtn_Border : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border7,
   OneTouchDrillControlBtn_Start : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border7.OneTouchDrillControlStart,
   OneTouchDrillControlBtn_Stop : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border7.OneTouchDrillControlStop,

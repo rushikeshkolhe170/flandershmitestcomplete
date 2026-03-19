@@ -2,10 +2,11 @@
 //IOStatus various screens in the differnet tabs availability on the screen.
 //KeypadStatus various screens in the differnet tabs availability on the screen.
 
-const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {config, launchHMI, closeHMI, maintenanceModePass, commissioningPass} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {maint_MaintTest_Variable} = require('MaintenancePage');
-const {logIn, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
+const {mainWindowVariables} = require('MainWindowPage');
+const {logIn, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, searchAndSelectCheckboxComm} = require('CommonFunc');
 
 function MaintTestIOStatus()
 {
@@ -15,7 +16,7 @@ function MaintTestIOStatus()
   mainOptionVariables.Maint_Btn.ClickButton();
   //Clicks the 'MachineTestButton' button.
   mainOptionVariables.MaintTest_Btn.ClickButton();
-  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockIOStatus object equals True.
+  //Checks whether the 'IsVisible' property of the IOStatus object equals True.
   verifyVisibilityWithExistCheck(maint_MaintTest_Variable.IOStatus_Btn_Label);
   //Clicks the 'ButtonIOStatus' button.
   maint_MaintTest_Variable.IOStatus_Btn.ClickButton();
@@ -41,27 +42,94 @@ function MaintTestKeypadStatus()
 {
   //Login into the application.
   logIn();
+  //Enabling options from commissioning to view all screens.
+  commissioningPass();
+  searchAndSelectCheckboxComm("MaintenanceKeypadLeftTopShow", mainWindowVariables.commMaintenancekeypadlefttopshow, "MaintenanceKeypadLeftTopShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadRightTopShow", mainWindowVariables.commMaintenancekeypadrighttopshow, "MaintenanceKeypadRightTopShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadLeftBottomShow", mainWindowVariables.commMaintenancekeypadleftbottomshow, "MaintenanceKeypadLeftBottomShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadLeftMiddleShow", mainWindowVariables.commMaintenancekeypadleftmiddleshow, "MaintenanceKeypadLeftMiddleShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadRightBottomShow", mainWindowVariables.commMaintenancekeypadrightbottomshow, "MaintenanceKeypadRightBottomShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadRightMiddleShow", mainWindowVariables.commMaintenancekeypadrightmiddleshow, "MaintenanceKeypadRightMiddleShow");
+  //Closes the 'Commissioning screen' window.
+  mainWindowVariables.CommWindow.Close();
   //Clicks the 'MaintenanceButton' button.
   mainOptionVariables.Maint_Btn.ClickButton();
   //Clicks the 'MachineTestButton' button.
   mainOptionVariables.MaintTest_Btn.ClickButton();
   //Checks whether the 'Visible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockKeypadStatus object equals True.
   verifyVisibilityWithExistCheck(maint_MaintTest_Variable.KeypadStatus_Btn_Label);
-  //aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockKeypadStatus, "Visible", cmpEqual, true);
   //Clicks the 'ButtonKeypadStatus' button.
   maint_MaintTest_Variable.KeypadStatus_Btn.ClickButton();
-  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonKeypadStatus.ClickButton();
   //Getting the size of all the tabcontrols on the screen.
   var size = maint_MaintTest_Variable.Status_TabControl.ChildCount;
   //Going through all the tabs one by one and verify the visibility of IODevice module on screen
   for (var i = 0; i <= size-2; i++) {
     maint_MaintTest_Variable.Status_TabControl.ClickTab(i);
     Log.Message("Clicked tab index: " + i);
-    //aqUtils.Delay(3000);
     verifyVisibilityWithExistCheck(maint_MaintTest_Variable.Keypad_Module);
   }  
   //Clicks the 'MoveBack' button.
   maint_MaintTest_Variable.Back_Btn.Click(51, 47);
   //Close the application.
   closeHMI();
+}
+
+function Test1()
+{
+  //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
+  TestedApps.Flanders_Ardvarc_Hmi_Client.Run(1, true);
+  //Clicks the 'Ellipse' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Ellipse.Click(19, 22);
+  //Clicks the 'Button' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button.ClickButton();
+  //Enters text in the 'ActualPassword' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword.SetText(Project.Variables.CommPassword);
+  //Enters '[Enter]' in the 'ActualPassword' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword.Keys("[Enter]");
+  //Clicks the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Click(47, 12);
+  //Enters the text 'MaintenanceKeypadLeftBottomShow' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("MaintenanceKeypadLeftBottomShow");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.TextblockMaintenancekeypadleftbottomshow object equals 'MaintenanceKeypadLeftBottomShow'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.TextblockMaintenancekeypadleftbottomshow, "WPFControlText", cmpEqual, "MaintenanceKeypadLeftBottomShow");
+  //Clicks the 'MainWindow' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Click(61, 24);
+  //Clicks the 'Button' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button.ClickButton();
+  //Enters text in the 'ActualPassword' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword.SetText(Project.Variables.CommPassword);
+  //Clicks the 'OkButton' button.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.OkButton.ClickButton();
+  //Enters '[Hold]~[Tab][Release]' in the 'Sys' object.
+  NameMapping.Sys.Keys("[Hold]~[Tab][Release]");
+  //Clicks the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Click(269, 23);
+  //Enters '^a' in the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Keys("^a");
+  //Enters the text 'MaintenanceKeypadLeftMiddleShow' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("MaintenanceKeypadLeftMiddleShow");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockMaintenancekeypadleftmiddleshow object equals 'MaintenanceKeypadLeftMiddleShow'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockMaintenancekeypadleftmiddleshow, "WPFControlText", cmpEqual, "MaintenanceKeypadLeftMiddleShow");
+  //Clicks the 'DesktopWindowXamlSource' object.
+  Aliases.explorer.wndXamlExplorerHostIslandWindow.DesktopWindowXamlSource.Click(1459, 1088);
+  //Clicks the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Click(300, 24);
+  //Enters '^a' in the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Keys("^a");
+  //Enters the text 'MaintenanceKeypadRightBottomShow' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("MaintenanceKeypadRightBottomShow");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockMaintenancekeypadrightbottomshow object equals 'MaintenanceKeypadRightBottomShow'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockMaintenancekeypadrightbottomshow, "WPFControlText", cmpEqual, "MaintenanceKeypadRightBottomShow");
+  //Minimizes the 'HwndSource_SeriousWindow' window.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.Minimize();
+  //Clicks the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Click(345, 27);
+  //Enters '^a' in the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Keys("^a");
+  //Enters the text 'MaintenanceKeypadRightMiddleShow' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("MaintenanceKeypadRightMiddleShow");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.TextblockMaintenancekeypadrightmiddleshow object equals 'MaintenanceKeypadRightMiddleShow'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.TextblockMaintenancekeypadrightmiddleshow, "WPFControlText", cmpEqual, "MaintenanceKeypadRightMiddleShow");
+  //Minimizes the 'HwndSource_SeriousWindow' window.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.Minimize();
 }

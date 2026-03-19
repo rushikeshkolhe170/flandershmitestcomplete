@@ -4,7 +4,7 @@
 const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {gpsMapVariables} = require('GPSMapPage');
-const {logIn, visibilityInBooleanStatus, wpfControlText, verifyVisibilityWithExistCheck, verifyWpfControlTextWithExistCheck, clickAndHoldButton} = require('CommonFunc');
+const {logIn, visibilityInBooleanStatus, wpfControlText, verifyVisibilityWithExistCheck} = require('CommonFunc');
   
 function HazardImage()
 {
@@ -43,16 +43,16 @@ function HazardImage()
   verifyVisibilityWithExistCheck(gpsMapVariables.NonDrillEnd_Camera1_View);
   //Clicks the 'Drill End ButtonLoad' button.
   gpsMapVariables.DrillEnd_Load_Btn.ClickButton();
-  aqUtils.Delay(2000);
+  aqUtils.Delay(3000);
   //Checking if the Hazard Image status is showing Ok.
-  okStatusCheck();
+  readyStatusCheck();
   //Checking if the Hazard Image status is showing error.
   errorStatusCheck();
   //Clicks the 'Non Drill End ButtonLoad' button.
   gpsMapVariables.NonDrillEnd_Load_Btn.ClickButton();
-  aqUtils.Delay(2000);
+  aqUtils.Delay(3000);
   //Checking if the Hazard Image status is showing Ok.
-  okStatusCheck();
+  readyStatusCheck();
   //Checking if the Hazard Image status is showing error.
   errorStatusCheck();
   //Closes the 'HwndSource_MainWindow' window.

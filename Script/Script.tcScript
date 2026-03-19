@@ -13,6 +13,10 @@
 			<child name="FaultPage" key="{B4E97F2B-88F6-4100-9F83-6553A3F1BF42}" path="FaultPage.js" />
 			<child name="GPSMapPage" key="{B1E82B7F-067D-4A4B-957F-A15B369EA3E3}" path="GPSMapPage.js" />
 			<child name="ProdMonitorPage" key="{E841032A-E6E3-4BCA-AD4F-D61ECAA1E05D}" path="ProdMonitorPage.js" />
+			<child name="MachineStatusPage" key="{EF375B35-4821-4F77-A4C7-3696A3EEFB38}" path="MachineStatusPage.js" />
+			<child name="PreInspectionPage" key="{59B8546B-5D09-437A-A3C0-907CAAF6489A}" path="PreInspectionPage.js" />
+			<child name="MachinesUIandLabelPage" key="{717E1D36-67B6-4979-8493-6B793C251A8F}" path="MachinesUIandLabelPage.js" />
+			<child name="BrowserPage" key="{9BD588FE-228C-4959-A8EE-A7A1C924F622}" path="BrowserPage.js" />
 		</folder>
 		<folder name="MainScreen">
 			<child name="MainScreenDrillingOptions" key="{7A4C7D0A-161C-4FB1-8474-2C3F27438E1B}" path="MainScreenDrillingOptions.js" />
@@ -35,6 +39,7 @@
 			<child name="ChangingModes" key="{D21DE0DB-3B20-4446-831F-BD3391EEB5E3}" path="ChangingModes.js" />
 			<child name="AuxControlMisc" key="{1BF94121-135A-4B1A-A952-0F1447A6F93A}" path="AuxControlMisc.js" />
 			<child name="AuxControlMast" key="{92BF70CD-DEF9-4CDB-8FB4-F71983CE158C}" path="AuxControlMast.js" />
+			<child name="AuxControlRod" key="{31C016CC-9C5E-451F-958F-9397F3B9D21C}" path="AuxControlRod.js" />
 		</folder>
 		<folder name="MaintenanceScreen">
 			<child name="HeadLimit" key="{2E7FFE11-D764-45EB-914E-FFB44829D150}" path="HeadLimit.js" />
@@ -66,7 +71,15 @@
 		<folder name="ProdMonitor">
 			<child name="ProdMonitorData" key="{FC98EC54-D2D2-44B4-A080-4CC0D7C1AAC9}" path="ProdMonitorData.js" />
 		</folder>
+		<folder name="MachineStatus">
+			<child name="MachineStatusMachine" key="{9CF22E4D-7594-4DBE-9698-2240D2D09D29}" path="MachineStatusMachine.js" />
+			<child name="MachineStatusParameters" key="{401428F8-3243-42C3-B4BF-DC9695866451}" path="MachineStatusParameters.js" />
+		</folder>
+		<folder name="PreInspectionScreen">
+			<child name="PreInspection" key="{E112F158-AA5F-40C7-BD59-7BEA0C6836A8}" path="PreInspection.js" />
+		</folder>
 		<child name="ThemeChange" key="{329621ED-AAC4-43A6-B882-153B83CC159C}" path="ThemeChange.js" />
-		<child name="AuxControlRod" key="{31C016CC-9C5E-451F-958F-9397F3B9D21C}" path="AuxControlRod.js" />
+		<child name="MachineUIDetails" key="{70CD3DFE-F648-4CE7-84C0-3C21E8F2E37C}" path="MachineUIDetails.js" />
+		<child name="browser" key="{EE0C3F92-65F4-4E14-A344-4E12597F661A}" path="browser.js" />
 	</children>
 </Root>

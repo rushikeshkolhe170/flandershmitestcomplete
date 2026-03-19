@@ -2,10 +2,10 @@
 //Verifying the table and its column availability on the screen.
 //Verifying working of arrow keys with validation.
 
-const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {config, launchHMI, closeHMI} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {maint_EngineLog_Variable} = require('MaintenancePage');
-const {logIn, verifyWpfControlTextWithExistCheck, verifyVisibilityWithExistCheck, verifyElementEnabled, verifyElementDisabled, isSelectedStatus} = require('CommonFunc');
+const {logIn, verifyVisibilityWithExistCheck, verifyElementEnabled, isSelectedStatus} = require('CommonFunc');
 
 function EngineLogTable()
 {
@@ -55,7 +55,6 @@ function ArrowButtons()
   verifyVisibilityWithExistCheck(maint_EngineLog_Variable.EngineLogTable);
   //Clicks the 'ErrorDataGrid' grid cell at row 0, column 'WHEN'.
   maint_EngineLog_Variable.EngineLogTable_DataGrid.ClickCell(0, "WHEN");
-  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.ErrorDataGrid.ClickCell(0, "EID CID");
   //Checks whether the 'Enabled' property of the Single line move down arrow object equals True.
   verifyElementEnabled(maint_EngineLog_Variable.SingleLineMove_Down_Arrow);
   //Checks whether the 'Enabled' property of the Single line move up arrow object equals True.

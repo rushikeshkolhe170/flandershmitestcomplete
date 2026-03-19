@@ -4,6 +4,7 @@
 const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {maint_Consumable_Variable} = require('MaintenancePage');
+const {setupVariables} = require('SetupPage');
 const {logIn, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
 
 function ConsumableMaintenanceOptions()
@@ -14,6 +15,10 @@ function ConsumableMaintenanceOptions()
   mainOptionVariables.Maint_Btn.ClickButton();
   //Clicks the 'ConsumablesButton' button.
   mainOptionVariables.ConsumableMain_Btn.ClickButton();
+  //If Maintenance mode is active then exiting from it.
+  if(setupVariables.ExitMaintMode_Btn_Label.Enabled){
+    setupVariables.ExitMaintMode_Btn.ClickButton();
+  }
   //Checks whether the 'Enabled' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ScrollView.TextblockChange object equals False.
   verifyElementDisabled(maint_Consumable_Variable.Change_Btn);
   //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ScrollView.TextblockBit object equals True.

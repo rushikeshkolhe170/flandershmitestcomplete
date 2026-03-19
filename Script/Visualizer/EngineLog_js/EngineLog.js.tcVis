@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
-	<data key="{5854096C-95A5-442D-AEEF-47170554AF77}">
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="57" kind="0" dateTime="46063.2322337963" objectName="Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Border2.ErrorDataGrid" objectLeft="21" objectTop="150" objectRight="1779" objectBottom="1002" clickPointX="1546" clickPointY="210" imageFileName="tcvi584730531235680.png" storageFileName="" needUpdate="False" rectColor="255" />
-	</data>
+	<data key="{5854096C-95A5-442D-AEEF-47170554AF77}" />
 </Root>

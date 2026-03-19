@@ -14,6 +14,10 @@ function ConsumableSetupOptions()
   mainOptionVariables.Setup_Btn.ClickButton();
   //Clicks the 'ConsumablesButton' button.
   setupVariables.ConsumableOption_Btn.ClickButton();
+  //If Maintenance mode is active then exiting from it.
+  if(setupVariables.ExitMaintMode_Btn_Label.Enabled){
+    setupVariables.ExitMaintMode_Btn.ClickButton();
+  }
   //Checks whether the 'Enabled' property of the Change Button object equals False.
   verifyElementDisabled(setupVariables.Change_Btn);
   //Checks whether the 'IsVisible' property of the Bit label object equals True.

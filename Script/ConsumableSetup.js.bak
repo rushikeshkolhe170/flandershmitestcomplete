@@ -6,7 +6,7 @@ const {mainOptionVariables} = require('MainOptionsVariable');
 const {setupVariables} = require('SetupPage');
 const {logIn, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
 
-function ConsumableMaintenanceOptions()
+function ConsumableSetupOptions()
 {
   //Login into the application.
   logIn();

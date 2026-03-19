@@ -2,10 +2,11 @@
 //IOStatus various screens in the differnet tabs availability on the screen.
 //KeypadStatus various screens in the differnet tabs availability on the screen.
 
-const {config, launchHMI, closeHMI, maintenanceModePass} = require('GlobalVariables');
+const {config, launchHMI, closeHMI, maintenanceModePass, commissioningPass} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {maint_MaintTest_Variable} = require('MaintenancePage');
-const {logIn, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck} = require('CommonFunc');
+const {mainWindowVariables} = require('MainWindowPage');
+const {logIn, verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, searchAndSelectCheckboxComm} = require('CommonFunc');
 
 function MaintTestIOStatus()
 {
@@ -15,7 +16,7 @@ function MaintTestIOStatus()
   mainOptionVariables.Maint_Btn.ClickButton();
   //Clicks the 'MachineTestButton' button.
   mainOptionVariables.MaintTest_Btn.ClickButton();
-  //Checks whether the 'IsVisible' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockIOStatus object equals True.
+  //Checks whether the 'IsVisible' property of the IOStatus object equals True.
   verifyVisibilityWithExistCheck(maint_MaintTest_Variable.IOStatus_Btn_Label);
   //Clicks the 'ButtonIOStatus' button.
   maint_MaintTest_Variable.IOStatus_Btn.ClickButton();
@@ -33,14 +34,21 @@ function MaintTestIOStatus()
   closeHMI();
 }
 
-/* Before running below script do make sure below options are enabled in the commisioning screen:
-maintenancekeypadlefttopshow, maintenancekeypadleftbottomshow, maintenancekeypadleftmiddleshow
-maintenancekeypadrighttopshow, maintenancekeypadrightbottomshow, maintenancekeypadrightmiddleshow
-*/
+
 function MaintTestKeypadStatus()
 {
   //Login into the application.
   logIn();
+  //Enabling options from commissioning to view all screens.
+  commissioningPass();
+  searchAndSelectCheckboxComm("MaintenanceKeypadLeftTopShow", mainWindowVariables.commMaintenancekeypadlefttopshow, "MaintenanceKeypadLeftTopShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadRightTopShow", mainWindowVariables.commMaintenancekeypadrighttopshow, "MaintenanceKeypadRightTopShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadLeftBottomShow", mainWindowVariables.commMaintenancekeypadleftbottomshow, "MaintenanceKeypadLeftBottomShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadLeftMiddleShow", mainWindowVariables.commMaintenancekeypadleftmiddleshow, "MaintenanceKeypadLeftMiddleShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadRightBottomShow", mainWindowVariables.commMaintenancekeypadrightbottomshow, "MaintenanceKeypadRightBottomShow");
+  searchAndSelectCheckboxComm("MaintenanceKeypadRightMiddleShow", mainWindowVariables.commMaintenancekeypadrightmiddleshow, "MaintenanceKeypadRightMiddleShow");
+  //Closes the 'Commissioning screen' window.
+  mainWindowVariables.CommWindow.Close();
   //Clicks the 'MaintenanceButton' button.
   mainOptionVariables.Maint_Btn.ClickButton();
   //Clicks the 'MachineTestButton' button.

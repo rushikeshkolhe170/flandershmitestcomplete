@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{9576DAFD-0ADD-41A8-9897-C72F150AF6BB}" version="15.0">
 	<children>
-		<child name="HMILoginTest" key="{0B1F44B7-CB79-4D47-8DBD-D861371000D8}" path="HMILoginTest.tcKDTest" />
-		<child name="HMISetupMode" key="{310FBECA-3A0C-438F-A274-9AAE41448F25}" path="HMISetupMode.tcKDTest" />
-		<child name="ThemeChange" key="{79F35DBE-D7E0-4362-8830-467D9414C302}" path="ThemeChange.tcKDTest" />
-		<child name="MainScreenDrillingOptions" key="{B329E984-956F-4C4C-8A22-9372223AA327}" path="MainScreenDrillingOptions.tcKDTest" />
-		<child name="RodSupportVerify" key="{110DC0AB-D797-4EC3-911C-EAA9CA3B7FE6}" path="RodSupportVerify.tcKDTest" />
-		<child name="Test1" key="{3BCF9D05-7AF7-4002-85BB-4AB8EBF3E966}" path="Test1.tcKDTest" />
+		<child name="Test1" key="{1D7ED6D2-6171-4AA5-A3E8-B3204FC082ED}" path="Test1.tcKDTest" />
 	</children>
 </Root>

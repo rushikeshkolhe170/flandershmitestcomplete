@@ -1,0 +1,18 @@
+﻿const preInspectionVariables =
+{
+  ShiftDropdown : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.ComboBox,
+  Day_Shift : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PopupRoot.PopupRoot.NonLogicalAdornerDecorator.ComboboxitemDay,
+  Night_Shift : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PopupRoot.PopupRoot.NonLogicalAdornerDecorator.TextblockNight,
+  Description_Keyboard_Open : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Button5,
+  Keyboard_Accept_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow.ButtonAccept,
+  Keyboard_Cancel_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow.ButtonCancel,
+  Keyboard_Typed_Text : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow.TypedText,
+  Keyboard_Current_text : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow.CurrentValueText,
+  Inspection_Accept_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Grid.StackPanel.ButtonAccept,
+  MessageText : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageWithOk.MessageWithOk.MessageText,
+  Popup_OK_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MessageWithOk.MessageWithOk.OkButton,
+  UserControl : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ItemsControl.UserControl,
+  Inspection_OK_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Border17.Grid.StackPanel.ButtonOk
+}
+
+module.exports = {preInspectionVariables};

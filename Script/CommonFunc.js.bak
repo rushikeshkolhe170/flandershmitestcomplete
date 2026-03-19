@@ -3,9 +3,15 @@ const {config, launchHMI, closeHMI} = require('GlobalVariables');
 const {mainWindowVariables} = require('MainWindowPage');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {auxControlVariables} = require('AuxControlPage');
+const {preInspectionVariables} = require('PreInspectionPage');
 
 function logIn()
 {
+  //Checking if the HMI is open and if yes then it will close first and then open
+  if(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Exists){
+    closeHMI();
+  }
+  aqUtils.Delay(3000);
   //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
   launchHMI();
   // Operator A selection
@@ -16,6 +22,44 @@ function logIn()
   checkVisibilityAndClick(mainWindowVariables.Operating_Drill_Autonomous, config.statusDetails);
   //Clicks the 'ChangeOperatorButton' button.
   mainWindowVariables.Change_StatusBtn.ClickButton();
+  //Select PreInspection details and pass
+  preInspectionPass();
+}
+
+function preInspectionPass()
+{
+  if(preInspectionVariables.ShiftDropdown.Exists){
+    //Clicks the 'description input keyboard' button.
+    preInspectionVariables.Description_Keyboard_Open.ClickButton();
+    //Enter Descripton text
+    TypeOnKeyboard(textToInput);
+    //Clicks the 'ButtonAccept' button.
+    preInspectionVariables.Keyboard_Accept_Btn.ClickButton();
+    //Clicks the 'OkButton' button.
+    preInspectionVariables.Popup_OK_Btn.ClickButton();
+    //Sets the state of the 'NA' check box to cbChecked.
+    getBOBox().ClickButton(cbChecked);
+    //Selects the 'Day' item of the 'ComboBox' combo box.
+    preInspectionVariables.ShiftDropdown.ClickItem("Day");
+    //Clicks the 'ButtonAccept' button.
+    preInspectionVariables.Inspection_Accept_Btn.ClickButton();
+  }
+}
+
+function getNABox(){
+  return preInspectionVariables.UserControl.Child(0).Child(9).Child(0).Child(1);
+}
+
+function getBOBox(){
+  return preInspectionVariables.UserControl.Child(0).Child(10).Child(0).Child(1);
+}
+
+function getOKBox(){
+  return preInspectionVariables.UserControl.Child(0).Child(11).Child(0).Child(1);
+}
+
+function getPMBox(){
+  return preInspectionVariables.UserControl.Child(0).Child(8).Child(0).Child(1);
 }
 
 // Function to check visibility and click on an element
@@ -23,7 +67,7 @@ function checkVisibilityAndClick(element, text) {
   if (element.Exists && aqObject.CheckProperty(element, "IsVisible", cmpEqual, true) && aqObject.CheckProperty(element, "WPFControlText", cmpEqual, text)) {
     element.Click();
   } else {
-    Log.Warning(text + " is not available or not visible.");
+    Log.Error(text + " is not available or not visible.");
   }
 }
 
@@ -136,30 +180,6 @@ function visibilityInBooleanStatus(element){
     } else{
       return false;
     }
-}
-
-function verifyVisibilityAndReturenBool(element) {
-  try {
-    // Check if the element exists
-    if (!element.Exists) {
-      // Log and handle failure if the element doesn't exist
-      Log.Error("Element does not exist: " + element);
-      throw new Error("Element not found: " + element);
-    }
-
-    // Check if the IsVisible property of the element is true
-    if(aqObject.CheckProperty(element, "IsVisible", cmpEqual, true)){
-      return true
-    } else {
-      return false;
-    }
-  } catch (e) {
-    // Handle failure (log the error)
-    Log.Error("Visibility failed for element: " + element);
-    
-    // Rethrow the error to indicate failure
-    throw e;
-  }
 }
 
 function verifyElementEnabled(element) {
@@ -335,9 +355,82 @@ function searchAndDeselectCheckboxComm(searchText, ele, eleWPFText){
   }
 }
 
+function searchAndSelectDropdownItemComm(searchText, ele, eleWPFText, text){
+  //Clicks the 'SearchTextBox' object.
+  mainWindowVariables.CommSearchBox.Click(71, 24);
+  //Selecting already available text.
+  mainWindowVariables.CommSearchBox.Keys("^a");
+  //Enters the text in the 'SearchTextBox' text editor.
+  mainWindowVariables.CommSearchBox.SetText(searchText);
+  //Clicks the item of the 'SettingsListView' list box.
+  checkVisibilityAndClick(ele, eleWPFText);
+  //Select the required option from dropdown.
+  mainWindowVariables.CommOptionDropdown.DropDown();
+  mainWindowVariables.CommOptionDropdown.ClickItem(text);
+  //Clicks the 'CommitButton' button.
+  mainWindowVariables.CommCommitBtn.ClickButton();
+}
+
+function TypeOnKeyboard(text)
+{
+  //var keyboard = Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow;
+  var keyboard = mainOptionVariables.KeyboardWindow;
+
+  var specialKeys = {
+    " ": "ButtonSpace",
+    "\n": "ButtonEnter",
+    "!": "ButtonExclamation",
+    "@": "ButtonAt",
+    "#": "ButtonHash"
+  };
+
+  for (var i = 0; i < text.length; i++)
+  {
+    var ch = text.charAt(i);
+    var buttonName;
+
+    // Handle uppercase letters
+    if (ch.match(/[A-Z]/))
+    {
+      keyboard.ButtonCaps.ClickButton();
+      buttonName = "Button" + ch;
+      keyboard[buttonName].ClickButton();
+      keyboard.ButtonCaps.ClickButton();
+    }
+    // Handle special characters
+    else if (specialKeys[ch] != undefined)
+    {
+      buttonName = specialKeys[ch];
+      keyboard[buttonName].ClickButton();
+    }
+    // Handle normal characters
+    else
+    {
+      buttonName = "Button" + ch.toUpperCase();
+      keyboard[buttonName].ClickButton();
+    }
+
+    if (!keyboard.Exists && !keyboard[buttonName].Exists)
+      Log.Warning("Button not found for character: " + ch)
+      //keyboard[buttonName].ClickButton();
+    //else
+      //Log.Warning("Button not found for character: " + ch);
+  }
+}
+
+function checkboxCheckedValidate(element)
+{
+  if(element.IsChecked == true){
+    Log.Message(element.IsChecked);
+    Log.Message("Element is checked");
+  } else {
+    Log.Error("Element is not Checked");
+  }
+}
+
 module.exports = {logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, 
 verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, 
 verifyStatusIsOne, verifyStatusIsZero, wstate, checkCheckbox, clickAndHoldButton,
-criticalMsgOk, mouseScroll, verifyVisibilityAndReturenBool, wpfControlText, selectFromCommDropdown,
+criticalMsgOk, mouseScroll, wpfControlText, selectFromCommDropdown,
 isSelectedStatus, gpsMapToggleButtonsStateChange, visibilityInBooleanStatus, verifyWTextWithExistCheck, 
-searchAndSelectCheckboxComm, searchAndDeselectCheckboxComm};
+searchAndSelectCheckboxComm, searchAndDeselectCheckboxComm, searchAndSelectDropdownItemComm, TypeOnKeyboard, checkboxCheckedValidate};
