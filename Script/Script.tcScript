@@ -78,8 +78,13 @@
 		<folder name="PreInspectionScreen">
 			<child name="PreInspection" key="{E112F158-AA5F-40C7-BD59-7BEA0C6836A8}" path="PreInspection.js" />
 		</folder>
+		<folder name="MachineDetails">
+			<child name="MachineUIDetails" key="{70CD3DFE-F648-4CE7-84C0-3C21E8F2E37C}" path="MachineUIDetails.js" />
+		</folder>
+		<folder name="AutoDrillParameterBrowser">
+			<child name="DrillHoleDepth" key="{EE0C3F92-65F4-4E14-A344-4E12597F661A}" path="DrillHoleDepth.js" />
+			<child name="CollaringCompressorVolumeCommand" key="{F18B3B23-10F3-4D4C-8939-DF48EF1DDB07}" path="CollaringCompressorVolumeCommand.js" />
+		</folder>
 		<child name="ThemeChange" key="{329621ED-AAC4-43A6-B882-153B83CC159C}" path="ThemeChange.js" />
-		<child name="MachineUIDetails" key="{70CD3DFE-F648-4CE7-84C0-3C21E8F2E37C}" path="MachineUIDetails.js" />
-		<child name="browser" key="{EE0C3F92-65F4-4E14-A344-4E12597F661A}" path="browser.js" />
 	</children>
 </Root>

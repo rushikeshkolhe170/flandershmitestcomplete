@@ -14,6 +14,7 @@ function logIn()
   aqUtils.Delay(3000);
   //Runs the "Flanders_Ardvarc_Hmi_Client" tested application.
   launchHMI();
+  aqUtils.Delay(3000);
   // Operator A selection
   checkVisibilityAndClick(mainWindowVariables.OperatorA, config.opA);
   // Machine Status 'Effective Time' selection
@@ -95,9 +96,9 @@ function selectFromCommDropdown(text){
 function checkCheckbox(){
   
   //Sets the state of the 'BoolAppSettingCheckBox' check box to cbChecked.
-    mainWindowVariables.CommBoolValueBox.ClickButton(cbChecked);
-    //Clicks the 'CommitButton' button.
-    mainWindowVariables.CommCommitBtn.ClickButton();
+  mainWindowVariables.CommBoolValueBox.ClickButton(cbChecked);
+  //Clicks the 'CommitButton' button.
+  mainWindowVariables.CommCommitBtn.ClickButton();
 }
 
 function mouseScroll(element, range){
@@ -287,6 +288,11 @@ function wstate(element){
   return element.wState;
 }
 
+function wText(element){
+  
+  return element.wText;
+}
+
 function wpfControlText(element){
   
   return element.WPFControlText;
@@ -349,6 +355,18 @@ function searchAndSelectCheckboxComm(searchText, ele, eleWPFText){
     //Clicks the 'CommitButton' button.
     mainWindowVariables.CommCommitBtn.ClickButton();
   }
+}
+
+function searchAndSelectSettingInComm(searchText, ele, eleWPFText){
+  //Clicks the 'SearchTextBox' object.
+  mainWindowVariables.CommSearchBox.Click(71, 24);
+  //Selecting already available text.
+  mainWindowVariables.CommSearchBox.Keys("^a");
+  //Enters the text in the 'SearchTextBox' text editor.
+  mainWindowVariables.CommSearchBox.SetText(searchText);
+  aqUtils.Delay(3000);
+  //Clicks the item of the 'SettingsListView' list box.
+  checkVisibilityAndClick(ele, eleWPFText);
 }
 
 function searchAndDeselectCheckboxComm(searchText, ele, eleWPFText){
@@ -443,9 +461,55 @@ function checkboxCheckedValidate(element)
   }
 }
 
+function browserToggleSwitchStatus(element)
+{
+  // Wait until element exists & is visible
+  if (!element.Exists) {
+    Log.Error("Element not found");
+  }
+  
+  element.WaitProperty("Visible", true, 5000);
+  
+  var state = element.getAttribute("aria-checked");
+
+  if (state == "true") {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+function browserAttributeValue(element, att)
+{
+  // Wait until element exists & is visible
+  if (!element.Exists) {
+    Log.Error("Element not found");
+  }
+  
+  element.WaitProperty("Visible", true, 5000);
+  
+  var value = element.getAttribute(att);
+  return value;
+}
+
+function scrollIntoViewBrowser(element)
+{
+  // Wait until element exists & is visible
+  if (!element.Exists) {
+    Log.Error("Element not found");
+  }
+  
+  element.WaitProperty("Visible", true, 5000);
+  
+  element.scrollIntoView(true);
+  aqUtils.Delay(3000);
+  //Aliases.browser.pageDiagnosticDashboard2.Keys("[Up][Up][Up][Up][Up][Up][Up]");
+}
+
 module.exports = {logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, 
 verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, 
-verifyStatusIsOne, verifyStatusIsZero, wstate, checkCheckbox, clickAndHoldButton,
+verifyStatusIsOne, verifyStatusIsZero, wstate, wText, checkCheckbox, clickAndHoldButton,
 criticalMsgOk, mouseScroll, wpfControlText, selectFromCommDropdown,
 isSelectedStatus, gpsMapToggleButtonsStateChange, visibilityInBooleanStatus, verifyWTextWithExistCheck, 
-searchAndSelectCheckboxComm, searchAndDeselectCheckboxComm, searchAndSelectDropdownItemComm, TypeOnKeyboard, checkboxCheckedValidate};
+searchAndSelectCheckboxComm, searchAndSelectSettingInComm, searchAndDeselectCheckboxComm, searchAndSelectDropdownItemComm, TypeOnKeyboard, checkboxCheckedValidate,
+browserToggleSwitchStatus, scrollIntoViewBrowser, browserAttributeValue};

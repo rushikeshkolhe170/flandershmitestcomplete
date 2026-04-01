@@ -20,7 +20,17 @@
 <Nodes version="1">
 	<Node name="root">
 		<Node name="folders"/>
-		<Node name="logs"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="46149.8780355671"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2E434BC0-A3E5-4C5D-9B34-AF90E17BD46C}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [CollaringCompressorVolumeCommand\CollaringCompressorVolumeCommand]"/>
+				<Prp name="relpath" type="S" value="5_7_2026_9_04 PM_22_273\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

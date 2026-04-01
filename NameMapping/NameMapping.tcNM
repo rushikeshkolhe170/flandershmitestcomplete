@@ -136,6 +136,15 @@
 									</Child>
 								</Children>
 							</Child>
+							<Child Name="wndShell_LightDismissOverlay" Key="{D741380B-762B-4C8A-9026-80E0E8C37EF9}">
+								<Image FileName="-495901996" Left="0" Top="0" Right="1920" Bottom="1920" />
+								<TypeInfo Item0="{E2667265-C053-452C-96A8-033EF60B22EB}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Shell_LightDismissOverlay" />
+									</Property>
+								</Properties>
+							</Child>
 						</Children>
 					</Child>
 					<Child Name="Flanders_Ardvarc_Hmi_Client" Key="{7FAB7580-7ED5-46FF-93CA-F5FC443AEFA0}">
@@ -8781,6 +8790,40 @@
 																									</Child>
 																								</Children>
 																							</Child>
+																							<Child Name="Group_283" Key="{A470FA41-86D0-4E0A-95ED-0D91843E27C7}" ExtendedFind="True">
+																								<Image FileName="1119894420" Left="621" Top="409" Right="687" Bottom="479" />
+																								<Properties>
+																									<Property Name="WPFControlName">
+																										<Value Value="Group_283" />
+																									</Property>
+																								</Properties>
+																								<Children>
+																									<Child Name="Path" Key="{1B80CFA5-1F33-4D82-80A3-6A91886377ED}" ExtendedFind="True">
+																										<Image FileName="1119894420" Left="621" Top="409" Right="687" Bottom="479" />
+																										<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																										<Properties>
+																											<Property Name="ClrFullClassName">
+																												<Value Value="System.Windows.Shapes.Path" />
+																											</Property>
+																											<Property Name="WPFControlOrdinalNo">
+																												<Value Value="3" Type="0" />
+																											</Property>
+																										</Properties>
+																									</Child>
+																								</Children>
+																							</Child>
+																							<Child Name="Path2" Key="{254DB2BF-0355-4083-98AD-27C5FC20735D}" ExtendedFind="True">
+																								<Image FileName="-1862511032" Left="764" Top="387" Right="806" Bottom="515" />
+																								<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																								<Properties>
+																									<Property Name="ClrFullClassName">
+																										<Value Value="System.Windows.Shapes.Path" />
+																									</Property>
+																									<Property Name="WPFControlOrdinalNo">
+																										<Value Value="3" Type="0" />
+																									</Property>
+																								</Properties>
+																							</Child>
 																						</Children>
 																					</Child>
 																					<Child Name="Rectangle5" Key="{08A2BBFB-7958-49D9-96A7-783C177D830B}" ExtendedFind="True">
@@ -8840,6 +8883,132 @@
 																							</Property>
 																							<Property Name="WPFControlOrdinalNo">
 																								<Value Value="41" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path9" Key="{C5FA15CC-A1AA-4187-821B-E133FC1517BD}" ExtendedFind="True">
+																						<Image FileName="672162967" Left="672" Top="489" Right="748" Bottom="600" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="6" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path10" Key="{C5A3FBA3-B3FF-4F38-A2CD-56348FA5D62D}" ExtendedFind="True">
+																						<Image FileName="1638714003" Left="614" Top="496" Right="695" Bottom="615" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="89" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path11" Key="{36A74D08-1889-4ECC-B753-EBAC366B8C91}" ExtendedFind="True">
+																						<Image FileName="694934599" Left="664" Top="407" Right="760" Bottom="452" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="33" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path12" Key="{8C35E9EA-2181-4410-8397-D1AEB3576C21}" ExtendedFind="True">
+																						<Image FileName="61078642" Left="569" Top="663" Right="619" Bottom="780" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="83" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path13" Key="{72A5EEF6-B0F2-4B02-BB9D-46F5B75F5EAA}" ExtendedFind="True">
+																						<Image FileName="1916142521" Left="603" Top="188" Right="765" Bottom="249" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="1" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path14" Key="{B135ABAB-EA1D-4FA2-9699-99972FDA355F}" ExtendedFind="True">
+																						<Image FileName="-1992519362" Left="868" Top="192" Right="979" Bottom="237" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="78" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path15" Key="{3FEAFE2A-6C74-4185-A59D-DFACEB79A20C}" ExtendedFind="True">
+																						<Image FileName="1519614" Left="978" Top="206" Right="1019" Bottom="275" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="85" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path_97" Key="{AFFD17F5-C990-4650-AB5E-BA019022DF68}" ExtendedFind="True">
+																						<Image FileName="522629308" Left="772" Top="476" Right="826" Bottom="610" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="WPFControlName">
+																								<Value Value="Path_97" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path16" Key="{59651D79-A31C-4D62-80C8-F77440E7C6AE}" ExtendedFind="True">
+																						<Image FileName="-810511492" Left="1005" Top="603" Right="1064" Bottom="631" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="119" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path_233" Key="{4246C2F9-27B9-4FF5-9DEC-7FF227898B28}" ExtendedFind="True">
+																						<Image FileName="35688467" Left="1065" Top="614" Right="1083" Bottom="626" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="WPFControlName">
+																								<Value Value="Path_233" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path17" Key="{6DB6474A-E338-4A07-91E6-079E6E0F05A2}" ExtendedFind="True">
+																						<Image FileName="-481055946" Left="636" Top="409" Right="682" Bottom="506" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="432" Type="0" />
 																							</Property>
 																						</Properties>
 																					</Child>
@@ -9454,6 +9623,564 @@
 																					</Property>
 																				</Properties>
 																			</Child>
+																			<Child Name="Rectangle17" Key="{DDE1E5A8-96E6-4B6F-AF8A-A3F5D6FEEC60}" ExtendedFind="True">
+																				<Image FileName="292993313" Left="675" Top="365" Right="737" Bottom="476" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="17" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle18" Key="{E5531E8F-708D-435F-82C3-2339F1BDBA73}" ExtendedFind="True">
+																				<Image FileName="-2096086356" Left="832" Top="572" Right="864" Bottom="645" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="20" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle19" Key="{9C95E0A7-D177-4F66-9BDA-8D46308086EE}" ExtendedFind="True">
+																				<Image FileName="647370624" Left="675" Top="661" Right="753" Bottom="703" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="18" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle20" Key="{51E84938-66A4-47FC-B52E-4B4EA506A4BC}" ExtendedFind="True">
+																				<Image FileName="-818925586" Left="663" Top="776" Right="753" Bottom="813" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="19" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockHammerOilTank" Key="{DAD45FFA-0194-4A74-9F63-CE41489A5237}" ExtendedFind="True">
+																				<Image FileName="1664492644" Left="936" Top="286" Right="1316" Bottom="310" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="HAMMER OIL TANK" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockFuelTank" Key="{1C10446E-AFFD-46C0-B79B-64A315ADB644}" ExtendedFind="True">
+																				<Image FileName="1837844259" Left="936" Top="399" Right="1316" Bottom="423" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="FUEL TANK" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockWaterTank" Key="{3FE36E01-23E1-496A-A816-573FA8D18946}" ExtendedFind="True">
+																				<Image FileName="-1896040082" Left="221" Top="705" Right="401" Bottom="752" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="570041005400450052000D000A00540041004E004B00" Type="7" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="ToggleButton5" Key="{919CEE7B-828A-432E-81DC-000D910C1D56}" ExtendedFind="True">
+																				<Image FileName="-1891593742" Left="487" Top="697" Right="543" Bottom="813" />
+																				<TypeInfo Item0="{A79FE3A9-B4A7-4671-B34E-3642F141268F}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.Primitives.ToggleButton" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="9" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockGroundPressure" Key="{13ACF8C0-6DC1-4090-BFFF-2A586FC4BD53}" ExtendedFind="True">
+																				<Image FileName="-1688729930" Left="275" Top="157" Right="489" Bottom="182" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="GROUND PRESSURE" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="6" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockGroundPressure2" Key="{BCCA9485-2F0E-4514-91EB-2042CA5A4EF5}" ExtendedFind="True">
+																				<Image FileName="2063734003" Left="1075" Top="157" Right="1236" Bottom="182" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="GROUND PRESSURE" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="8" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockGroundPressure3" Key="{B89569A7-3A14-4A47-86B7-2BD55F2057F0}" ExtendedFind="True">
+																				<Image FileName="1111716711" Left="325" Top="982" Right="486" Bottom="1007" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="GROUND PRESSURE" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="12" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockGroundPressure4" Key="{4DA435EE-2D2E-47C7-92EB-4011D0A60951}" ExtendedFind="True">
+																				<Image FileName="1764711616" Left="1075" Top="982" Right="1236" Bottom="1007" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="GROUND PRESSURE" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="10" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockSetpoint" Key="{1EB3FDFB-C7DB-4B1D-BD4E-AF8AF407132F}" ExtendedFind="True">
+																				<Image FileName="-973019967" Left="275" Top="220" Right="492" Bottom="244" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="SETPOINT" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="7" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockSetpoint2" Key="{B0D6425F-2820-45B7-9D22-79360B663858}" ExtendedFind="True">
+																				<Image FileName="-97819328" Left="1075" Top="220" Right="1155" Bottom="244" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="SETPOINT" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="9" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockSetpoint3" Key="{347B9ACF-E823-48C7-9D48-469B73660409}" ExtendedFind="True">
+																				<Image FileName="8896326" Left="387" Top="1045" Right="468" Bottom="1069" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="SETPOINT" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="13" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockSetpoint4" Key="{0B993D82-00E2-4966-A5C2-982636124546}" ExtendedFind="True">
+																				<Image FileName="1775880708" Left="1075" Top="1045" Right="1155" Bottom="1069" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="SETPOINT" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="11" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockOilTemp" Key="{927AB69F-101F-4C03-B2EA-43664507C1FB}" ExtendedFind="True">
+																				<Image FileName="194743663" Left="258" Top="472" Right="509" Bottom="497" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="OIL TEMP" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle21" Key="{1494EFC5-6768-4FE1-9584-A6B4402E59FD}" ExtendedFind="True">
+																				<Image FileName="-1875405716" Left="776" Top="405" Right="843" Bottom="517" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="1" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockFireSuppressor" Key="{532DF620-D1A3-43A6-AE09-47970948532B}" ExtendedFind="True">
+																				<Image FileName="-1419408991" Left="867" Top="199" Right="1091" Bottom="223" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="FIRE SUPPRESSOR" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockPumpFilters" Key="{AA1476C6-5B5A-4F0D-B6A6-6C5B828960AF}" ExtendedFind="True">
+																				<Image FileName="-582327663" Left="980" Top="774" Right="1178" Bottom="798" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="PUMP FILTERS" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle22" Key="{169C4FEE-8081-497D-B4BF-1C8EC0E6CCDA}" ExtendedFind="True">
+																				<Image FileName="509039872" Left="742" Top="401" Right="808" Bottom="483" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="528" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle23" Key="{59C79C51-2965-4795-9300-32D81536A3FA}" ExtendedFind="True">
+																				<Image FileName="180053835" Left="863" Top="501" Right="899" Bottom="570" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="529" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle24" Key="{7F0ADFCC-EAEF-47C3-8464-9409B63D6E55}" ExtendedFind="True">
+																				<Image FileName="-1588494484" Left="862" Top="570" Right="901" Bottom="642" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="530" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle25" Key="{52C3922C-E467-4CAF-84BA-B3F55357569A}" ExtendedFind="True">
+																				<Image FileName="1384598573" Left="642" Top="480" Right="682" Bottom="626" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="532" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockEngineLoad" Key="{3C37861F-C6B6-4D4A-BE28-516ACEFE3FC9}" ExtendedFind="True">
+																				<Image FileName="-1179439344" Left="360" Top="649" Right="567" Bottom="673" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="ENGINE LOAD" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Path2" Key="{B9039C01-9690-4AD6-AE21-F9117D75CA39}" ExtendedFind="True">
+																				<Image FileName="-783803655" Left="738" Top="476" Right="806" Bottom="616" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Path" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="5" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle26" Key="{BC278017-3952-401A-B0D2-C24211B8BAF8}" ExtendedFind="True">
+																				<Image FileName="-1323563397" Left="738" Top="660" Right="802" Bottom="692" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="533" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle27" Key="{21F47802-E967-43E5-8766-B6F28946E928}" ExtendedFind="True">
+																				<Image FileName="1581860234" Left="862" Top="680" Right="902" Bottom="782" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="173" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle28" Key="{FF621825-270A-45D3-ABA7-2014DD93EC2C}" ExtendedFind="True">
+																				<Image FileName="-1086942186" Left="870" Top="436" Right="880" Bottom="527" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="76" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle29" Key="{4CE859BF-C95D-47F4-9833-0ECA2B1CD253}" ExtendedFind="True">
+																				<Image FileName="929354637" Left="877" Top="431" Right="886" Bottom="531" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="81" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Path3" Key="{3F5889CD-57BD-41BC-8C6D-87ED0A5D0079}" ExtendedFind="True">
+																				<Image FileName="-1525091166" Left="865" Top="536" Right="906" Bottom="653" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Path" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="175" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle30" Key="{7C6D0112-94E9-4CFD-A28F-E94F6F58EFC2}" ExtendedFind="True">
+																				<Image FileName="627257231" Left="953" Top="589" Right="982" Bottom="647" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="97" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Path4" Key="{B7929F35-BFF3-4128-81CB-91763C56612C}" ExtendedFind="True">
+																				<Image FileName="-911165131" Left="991" Top="481" Right="1056" Bottom="589" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Path" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="227" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle31" Key="{43A8F15F-B0C6-4780-A968-68E221A70154}" ExtendedFind="True">
+																				<Image FileName="-1347942185" Left="870" Top="436" Right="880" Bottom="527" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="82" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle32" Key="{261E1565-B300-49D4-839A-AAAD15B9B18D}" ExtendedFind="True">
+																				<Image FileName="1749487584" Left="877" Top="431" Right="886" Bottom="531" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="87" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle33" Key="{40148A0C-1F75-41F6-9011-E056B455F872}" ExtendedFind="True">
+																				<Image FileName="-805432904" Left="953" Top="589" Right="982" Bottom="647" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="103" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockACAirFilter" Key="{2AAE496B-6C91-4321-9839-CC563CCF08E6}" ExtendedFind="True">
+																				<Image FileName="-735309033" Left="286" Top="384" Right="493" Bottom="408" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="A/C AIR FILTER" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleAirCompressorAirFilterTouch" Key="{C223B1DF-580D-4766-ABB0-DED34A6CDF9F}" ExtendedFind="True">
+																				<Image FileName="1963656840" Left="646" Top="310" Right="682" Bottom="391" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleAirCompressorAirFilterTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleEngineAirFilterTouch" Key="{65442373-8302-4734-827C-9FDA003AD47A}" ExtendedFind="True">
+																				<Image FileName="334127199" Left="867" Top="310" Right="898" Bottom="391" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleEngineAirFilterTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockHydraulicTankIsolation" Key="{8C0E2E71-5B90-4F84-9FF1-693E5E054C40}" ExtendedFind="True">
+																				<Image FileName="357955455" Left="118" Top="749" Right="497" Bottom="773" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="HYDRAULIC TANK ISOLATION" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleHydraulicTankIsolationTouch" Key="{58131955-BD3A-4603-8EAB-03DE7C4FD725}" ExtendedFind="True">
+																				<Image FileName="748900829" Left="800" Top="831" Right="834" Bottom="865" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleHydraulicTankIsolationTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle34" Key="{2DD6AB0A-24EC-41B2-BB42-0F23C961DA22}" ExtendedFind="True">
+																				<Image FileName="1079472694" Left="797" Top="316" Right="826" Bottom="343" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="15" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle35" Key="{9560A014-99CD-4C9F-A22D-95429E3CE19E}" ExtendedFind="True">
+																				<Image FileName="-1235342355" Left="737" Top="306" Right="798" Bottom="331" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="14" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle36" Key="{A7428CDB-4EDF-446A-A18F-CD1D8F048385}" ExtendedFind="True">
+																				<Image FileName="1991332074" Left="716" Top="392" Right="771" Bottom="451" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="13" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle37" Key="{E5D5DE4D-3295-4422-9AE5-432824D34200}" ExtendedFind="True">
+																				<Image FileName="-1679781948" Left="806" Top="849" Right="851" Bottom="927" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="16" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
 																		</Children>
 																	</Child>
 																	<Child Name="Grid" Key="{7725AE48-1E77-4A73-BFEF-653FF4C3C8AE}" ExtendedFind="True">
@@ -9703,6 +10430,18 @@
 																				<Properties>
 																					<Property Name="ClrFullClassName">
 																						<Value Value="Flanders.Ardvarc.Hmi.Client.RadialBubbleLevel" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockPleaseUseCommissioningSettingsToS" Key="{8C09B61E-4E23-4028-BFAB-AB9DBFAFCF67}" ExtendedFind="True">
+																				<Image FileName="-1453331914" Left="663" Top="560" Right="1167" Bottom="648" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="50006C0065006100730065002000750073006500200063006F006D006D0069007300730069006F006E0069006E0067002000730065007400740069006E006700730020000A00200074006F002000730065006C006500630074002000610020004D0061006300680069006E00650020004D006F00640065006C00" Type="7" />
 																					</Property>
 																				</Properties>
 																			</Child>
@@ -11748,6 +12487,42 @@
 																	</Property>
 																</Properties>
 															</Child>
+															<Child Name="LabelAuxpump1" Key="{94966D0C-AA29-498F-B6B7-363C40B751AE}" ExtendedFind="True">
+																<Image FileName="253568656" Left="425" Top="601" Right="510" Bottom="625" />
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.Label" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="AuxPump1" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="LabelAuxpump2" Key="{57A1E483-77E7-460E-B0E5-DE25B872A6EF}" ExtendedFind="True">
+																<Image FileName="1935402817" Left="787" Top="621" Right="875" Bottom="645" />
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.Label" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="AuxPump2" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="LabelFanpump" Key="{6CECBEA6-C096-43FB-9F92-64F119EFDBAD}" ExtendedFind="True">
+																<Image FileName="1666689224" Left="787" Top="552" Right="862" Bottom="576" />
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.Label" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="FanPump" />
+																	</Property>
+																</Properties>
+															</Child>
 														</Children>
 													</Child>
 													<Child Name="StackPanel" Key="{F968F4AF-D3BC-400C-BB6D-9C5A695F5278}">
@@ -12237,6 +13012,30 @@
 																			</Property>
 																		</Properties>
 																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillholedepthbmode" Key="{70EBA420-F562-4B58-B6CF-6669756C868B}" ExtendedFind="True">
+																		<Image FileName="1396658381" Left="25" Top="224" Right="510" Bottom="265" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillHoleDepthBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin" Key="{863399AE-E781-48F9-9229-3B622A93A4BE}" ExtendedFind="True">
+																		<Image FileName="-345286920" Left="25" Top="224" Right="580" Bottom="265" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
 																</Children>
 															</Child>
 															<Child Name="TextblockAuxiliarycontrolshowmastbracepin" Key="{465079C0-6706-40DD-B448-12B440803FC0}" ExtendedFind="True">
@@ -12506,6 +13305,114 @@
 																			</Property>
 																		</Properties>
 																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowdrillholedepth" Key="{48EDDAF1-D8E1-400E-8827-4408FF565271}" ExtendedFind="True">
+																		<Image FileName="766796341" Left="25" Top="178" Right="488" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowDrillHoleDepth" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillholedepthbmode" Key="{A4827B49-482F-4665-A4EB-BB12A9B27FD0}" ExtendedFind="True">
+																		<Image FileName="675407770" Left="25" Top="178" Right="510" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillHoleDepthBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillholedepthbmode2" Key="{81FA65ED-C559-4F27-A06E-E21AB746C9F4}" ExtendedFind="True">
+																		<Image FileName="1811493562" Left="25" Top="178" Right="582" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillHoleDepthBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillholedepthminim" Key="{FC01EA4D-E5BF-42B2-B0B6-9104A89CDC5E}" ExtendedFind="True">
+																		<Image FileName="-1210690100" Left="25" Top="178" Right="543" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillHoleDepthMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin" Key="{2828A3F7-EDFD-4196-8DA8-E923E995009B}" ExtendedFind="True">
+																		<Image FileName="2080456064" Left="25" Top="178" Right="558" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin2" Key="{A1711E72-F52A-4CD1-947E-E3BA663538DE}" ExtendedFind="True">
+																		<Image FileName="-262899122" Left="25" Top="178" Right="580" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin3" Key="{9142D584-0589-48D5-ACB6-4B15C989821C}" ExtendedFind="True">
+																		<Image FileName="-365272677" Left="25" Top="178" Right="652" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin4" Key="{7F49037C-5F37-44A9-A441-F60DD53EF322}" ExtendedFind="True">
+																		<Image FileName="1353027761" Left="25" Top="178" Right="618" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin5" Key="{280BFDE7-3A08-4653-9C97-F0A2955F0708}" ExtendedFind="True">
+																		<Image FileName="-1998497357" Left="25" Top="178" Right="613" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
 																</Children>
 															</Child>
 															<Child Name="ListViewItem3" Key="{5E5FF341-D20A-44FC-8AC2-8BAA0B9224D0}" ExtendedFind="True">
@@ -12543,6 +13450,30 @@
 																			</Property>
 																			<Property Name="WPFControlText">
 																				<Value Value="MaintenanceKeypadLeftMiddleShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillholedepthminim" Key="{0151ED41-7FCF-42F5-972E-15DBACB88D91}" ExtendedFind="True">
+																		<Image FileName="622161970" Left="25" Top="317" Right="543" Bottom="357" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillHoleDepthMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin" Key="{9865D3AB-4BBC-40F8-A96A-2238A477B91D}" ExtendedFind="True">
+																		<Image FileName="1218912492" Left="25" Top="317" Right="613" Bottom="357" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringMinimum" />
 																			</Property>
 																		</Properties>
 																	</Child>
@@ -12685,6 +13616,30 @@
 																			</Property>
 																		</Properties>
 																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillholedepthbmode" Key="{4DF5F6B0-B2CC-489D-946B-B140F1B9E01C}" ExtendedFind="True">
+																		<Image FileName="808041565" Left="25" Top="363" Right="582" Bottom="404" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillHoleDepthBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin" Key="{05C5E80C-E7C3-4CA1-859B-D19950555928}" ExtendedFind="True">
+																		<Image FileName="887565215" Left="25" Top="363" Right="652" Bottom="404" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
 																</Children>
 															</Child>
 															<Child Name="ListViewItem13" Key="{61B27C14-464F-4248-82C0-5B08E0C3CB1A}" ExtendedFind="True">
@@ -12800,6 +13755,69 @@
 																	</Property>
 																</Properties>
 															</Child>
+															<Child Name="TextblockAutodrillsetupdrillholedepthallow" Key="{AE022DF9-DBBE-4C97-9A62-AEEC225CA1E6}" ExtendedFind="True">
+																<Image FileName="-787933812" Left="25" Top="409" Right="595" Bottom="450" />
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.TextBlock" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="AutoDrillSetupDrillHoleDepthAllowDecimal" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="TextblockAutodrillsetupdrillholedepthmaxim" Key="{ACA18705-A1F3-4614-9A5F-55C4FFE136EC}" ExtendedFind="True">
+																<Image FileName="-1809851105" Left="25" Top="270" Right="548" Bottom="311" />
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.TextBlock" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="AutoDrillSetupDrillHoleDepthMaximum" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="ListViewItem16" Key="{5BDAB99C-9EEC-4D68-8CD8-34FC770C6461}" ExtendedFind="True">
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.ListViewItem" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="" />
+																	</Property>
+																	<Property Name="WPFControlOrdinalNo">
+																		<Value Value="3" Type="0" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="TextblockAutodrillsetupairpressurecollarin" Key="{31451693-3A83-4FC6-886F-8ACAEB2EB75F}" ExtendedFind="True">
+																		<Image FileName="-1943938065" Left="25" Top="270" Right="618" Bottom="311" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCollaringMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																</Children>
+															</Child>
+															<Child Name="TextblockAutodrillsetupairpressurecollarin" Key="{658D2904-F9FD-4BA9-A3F9-C9F3F4029B04}" ExtendedFind="True">
+																<Image FileName="-699701890" Left="25" Top="409" Right="666" Bottom="450" />
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.TextBlock" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="AutoDrillSetupAirPressureCollaringAllowDecimal" />
+																	</Property>
+																</Properties>
+															</Child>
 														</Children>
 													</Child>
 													<Child Name="BoolAppSettingCheckBox" Key="{7CB06403-5F9E-49AE-81FE-66362425DD08}" ExtendedFind="True">
@@ -12826,6 +13844,15 @@
 														<Properties>
 															<Property Name="WPFControlName">
 																<Value Value="EnumAppSettingComboBox" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="FloatAppSettingTextBox" Key="{D5CE0755-4612-478E-8F31-7DF5FD06049C}" ExtendedFind="True">
+														<Image FileName="1567471752" Left="828" Top="314" Right="892" Bottom="356" />
+														<TypeInfo Item0="{2FE71598-89E8-43B1-97F5-1B9F358C638C}" />
+														<Properties>
+															<Property Name="WPFControlName">
+																<Value Value="FloatAppSettingTextBox" />
 															</Property>
 														</Properties>
 													</Child>
@@ -13027,6 +14054,33 @@
 												<Properties>
 													<Property Name="WPFControlName">
 														<Value Value="Button8" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="MaximumValue" Key="{9F95ACAE-ACA0-45D9-95ED-A530CC586657}" ExtendedFind="True">
+												<Image FileName="-457916203" Left="407" Top="540" Right="473" Bottom="572" />
+												<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="MaximumValue" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="MinimumValue" Key="{B0A7FCE8-2180-498E-889E-BC0232C02AC3}" ExtendedFind="True">
+												<Image FileName="-457916203" Left="410" Top="502" Right="473" Bottom="534" />
+												<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="MinimumValue" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="ButtonDot" Key="{72021982-60A5-4416-9045-A5290B4B4C96}" ExtendedFind="True">
+												<Image FileName="-457916203" Left="241" Top="396" Right="347" Bottom="492" />
+												<TypeInfo Item0="{DF0359C3-D458-4D92-B059-84BE7483B2EF}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="ButtonDot" />
 													</Property>
 												</Properties>
 											</Child>
@@ -14816,6 +15870,54 @@
 															</Property>
 														</Properties>
 													</Child>
+													<Child Name="ComboboxitemBucyrus49r" Key="{F2011E83-D573-4E7E-8681-15891CD13EDC}" ExtendedFind="True">
+														<Image FileName="1702913599" Left="5" Top="52" Right="421" Bottom="98" />
+														<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.ComboBoxItem" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="Bucyrus49R" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="ComboboxitemCat6640" Key="{A1973E7D-393F-46BF-98CC-65B7B640A952}" ExtendedFind="True">
+														<Image FileName="1394883801" Left="5" Top="276" Right="421" Bottom="322" />
+														<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.ComboBoxItem" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="Cat6640" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="ComboboxitemCat6540" Key="{D4ADAFED-73C7-4C48-AAFD-E7A7B503B8F9}" ExtendedFind="True">
+														<Image FileName="-1842241575" Left="5" Top="52" Right="421" Bottom="98" />
+														<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.ComboBoxItem" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="Cat6540" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="ComboboxitemPh320et200sp" Key="{C90119C3-5D2F-40BB-8488-58DD7A8D83F7}" ExtendedFind="True">
+														<Image FileName="-725763956" Left="5" Top="97" Right="421" Bottom="143" />
+														<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.ComboBoxItem" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="PH320et200sp" />
+															</Property>
+														</Properties>
+													</Child>
 												</Children>
 											</Child>
 										</Children>
@@ -15171,6 +16273,18 @@
 										<Selectors>
 											<Selector>
 												<Value Value="//a[.=&apos;Commissioning&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAlarmsOverview" Key="{4C0AFEE6-CD69-494A-948A-D2CC4E7D8007}">
+										<Image FileName="44874352" Left="5" Top="100" Right="1915" Bottom="1135" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//body[contains(., &apos;Alarms Overview&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//body" />
 											</Selector>
 										</Selectors>
 									</Child>
@@ -15641,6 +16755,267 @@
 											</Selector>
 										</Selectors>
 									</Child>
+									<Child Name="panelUi" Key="{30BA980A-953E-477F-A83F-FBCB1B631B80}">
+										<Image FileName="-1497059042" Left="306" Top="401" Right="604" Bottom="444" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;UI&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@title=&apos;DR411/UI&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonAutoDrillParameters" Key="{F6301234-EB50-4F3D-A9FC-BB8F04CE0A09}">
+										<Image FileName="401085269" Left="982" Top="312" Right="1205" Bottom="355" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Auto Drill Parameters&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="numberinput" Key="{964D4683-BF6D-44F1-B7E4-D24FEDB8123A}">
+										<Image FileName="400931323" Left="1513" Top="668" Right="1687" Bottom="716" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[12]//input[@value=&apos;100&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//input[@type=&apos;number&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//input[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="numberinput2" Key="{2E32752E-958D-4353-AFCA-09B627586CF2}">
+										<Image FileName="-643575485" Left="1513" Top="770" Right="1687" Bottom="818" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[12]//input[@value=&apos;0&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//div[3]//input[@type=&apos;number&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//div[3]//input[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//div[3]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSwitch" Key="{69EF64D2-AC51-4643-B732-585DDE51FF98}">
+										<Image FileName="1488170170" Left="1512" Top="871" Right="1556" Bottom="896" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[12]//div[4]//button[@value=&apos;on&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//div[4]//button[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div[@id=&apos;dynamic-card-grid&apos;]/div[12]//div[4]//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSwitch2" Key="{66EF1A05-6785-449A-94C7-10B0857FDE36}">
+										<Image FileName="-1739864199" Left="1512" Top="931" Right="1556" Bottom="956" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[12]//div[5]//button[@value=&apos;on&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//div[5]//button[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div[@id=&apos;dynamic-card-grid&apos;]/div[12]//div[5]//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSave4" Key="{0CC0A4CB-4B81-4FA3-860F-DFCB39A71C5D}">
+										<Image FileName="1077470194" Left="1752" Top="220" Right="1855" Bottom="272" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Save (4)&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[@title=&apos;4 pending change(s)&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//main//div[2]/div//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelDrillHoleDepth" Key="{0F6252E3-D140-4880-B21D-60769C192971}">
+										<Image FileName="-510294746" Left="1269" Top="548" Right="1849" Bottom="1063" />
+										<TypeInfo Item0="{FCA70BFD-2F66-4807-A82A-CE96579D3C73}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[12]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelShow" Key="{CD5AE75D-A032-4CF5-89CA-1FA8B00AE2A9}">
+										<Image FileName="838362500" Left="1284" Top="603" Right="1834" Bottom="1048" />
+										<TypeInfo Item0="{FCA70BFD-2F66-4807-A82A-CE96579D3C73}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@id=&apos;dynamic-card-grid&apos;]/div[12]/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelDrillHoleDepth2" Key="{5FE49190-C4AC-4422-BDDC-920EFBF1EB3B}">
+										<Image FileName="-1257213600" Left="1269" Top="548" Right="1849" Bottom="1063" />
+										<TypeInfo Item0="{FCA70BFD-2F66-4807-A82A-CE96579D3C73}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[12]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco2714jackwithst" Key="{6DBFD08B-0C44-4E35-A5B2-E21A16B68B4F}">
+										<Image FileName="-2087549380" Left="932" Top="290" Right="1174" Bottom="315" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco2714JackWithStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[5]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelAtlascopco2714jackwithstair" Key="{327109BC-46F5-4FB2-99D2-A50509D1A45E}">
+										<Image FileName="-2087549380" Left="902" Top="283" Right="1204" Bottom="323" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;AtlasCopco2714JackWithStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[.=&apos;AtlasCopco2714JackWithStairs&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelSandvikdr410i3" Key="{8B776C56-C9DC-469E-8E1C-BFB55218B529}">
+										<Image FileName="670151262" Left="902" Top="459" Right="1204" Bottom="499" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div/div[29]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeSandvikdr410i2" Key="{0E81D3B1-4A5D-4E0B-AA56-C865572B3456}">
+										<Image FileName="640211423" Left="932" Top="466" Right="1050" Bottom="491" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[29]/span[2]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeDrillHoleDepth" Key="{E38B22AA-1986-49DF-A950-3ED951BD1A3D}">
+										<Image FileName="1837137477" Left="1284" Top="563" Right="1834" Bottom="593" />
+										<TypeInfo Item0="{FCA70BFD-2F66-4807-A82A-CE96579D3C73}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h1[.=&apos;Drill Hole Depth&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//h1[contains(@class, &apos;rt-Heading&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]//div[12]//h1" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSwitch3" Key="{3E4ADB77-2D97-4A14-B29C-2A93B1DF259D}">
+										<Image FileName="-1158865615" Left="1508" Top="615" Right="1552" Bottom="640" />
+										<TypeInfo Item0="{04B654D8-F853-47D0-8617-04E1CF84ABB8}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[12]//button[@value=&apos;on&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//button[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div[@id=&apos;dynamic-card-grid&apos;]/div[12]//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="numberinput3" Key="{89B77318-35D2-4E1C-900B-D1D03AE8F322}">
+										<Image FileName="1626993238" Left="1500" Top="543" Right="1674" Bottom="591" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@value=&apos;99&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//input[@type=&apos;number&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//input[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelMin1Max100" Key="{E563D6D3-2567-40C8-99F8-854B9E4E06BE}">
+										<Image FileName="-749931877" Left="1499" Top="596" Right="1796" Bottom="619" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[text()=&apos;Min: 1 • Max: 100&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCollaringPluggedAirPress" Key="{E350AD08-13B4-4C27-8104-EFB7D6679D40}">
+										<Image FileName="87554283" Left="680" Top="554" Right="1230" Bottom="584" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h1[.=&apos;Collaring Plugged Air Pressure Limit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[11]//h1[contains(@class, &apos;rt-Heading&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]//div[11]//h1" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringPluggedAirPressure" Key="{53176937-9EEE-4512-9A31-6D1FF10C4F63}">
+										<Image FileName="-1121453984" Left="665" Top="539" Right="1245" Bottom="1054" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[11]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringCompressorVolume" Key="{BA4CDDB6-9858-4D63-B790-1A20CBFECDC0}">
+										<Image FileName="-1017625486" Left="665" Top="514" Right="1235" Bottom="1029" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
 								</Children>
 							</Child>
 							<Child Name="wndChrome_WidgetWin_1" Key="{0E48C02A-83BE-4B9B-8B62-F480EE00411F}">
@@ -15652,6 +17027,88 @@
 									</Property>
 									<Property Name="WndCaption">
 										<Value Value="Reload site?" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="pageDiagnosticDashboard3" Key="{DE3B368B-9180-4E0A-9BE9-32B6A44F5568}">
+								<Image FileName="-1543843198" Left="5" Top="100" Right="1915" Bottom="1135" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://wsl.flanders.local/login" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textbox" Key="{C584A128-BBA9-4F9A-9770-38E58BB2DA63}">
+										<Image FileName="-1543843198" Left="700" Top="535" Right="1220" Bottom="580" />
+										<TypeInfo Item0="{514EFBFF-0E89-479B-8955-1C68D400D0DA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div/input[contains(@class, &apos;flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="passwordbox" Key="{F3218F8E-9D56-42B6-A9ED-1D494A737D9B}">
+										<Image FileName="-438330211" Left="700" Top="600" Right="1220" Bottom="645" />
+										<TypeInfo Item0="{514EFBFF-0E89-479B-8955-1C68D400D0DA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@type=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input[contains(@class, &apos;flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonLogin" Key="{B2A1AE1B-10FB-497E-B9C2-290CB88AF117}">
+										<Image FileName="-1250935983" Left="730" Top="665" Right="1190" Bottom="710" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Login&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;inline-flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeLogin" Key="{3B23DD7D-D0C9-41FC-9D31-58787553A32C}">
+										<Image FileName="1693916385" Left="700" Top="495" Right="1220" Bottom="535" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h2[.=&apos;Login&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//h2[contains(@class, &apos;text-2xl&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//h2" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="BrowserWindow3" Key="{17DEC953-C7E0-40A6-9596-8B82125FF920}">
+								<Image FileName="-460642803" Left="-9" Top="-9" Right="1929" Bottom="1149" />
+								<TypeInfo Item0="{3AE18FBC-0C38-4F05-8CFB-5CD1EF4696EA}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="BrowserWindow" />
+									</Property>
+									<Property Name="ObjectIdentifier">
+										<Value Value="1" Type="0" />
 									</Property>
 								</Properties>
 							</Child>
@@ -15672,6 +17129,985 @@
 										<Value Value="CASCADIA_HOSTING_WINDOW_CLASS" />
 									</Property>
 								</Properties>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="msedge" Key="{263DCC34-1207-4141-87EE-3455784614A6}">
+						<TypeInfo Item0="{D37200C4-B837-4D71-B0FC-1ADACF7F2284}" />
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="msedge" />
+							</Property>
+							<Property Name="Index">
+								<Value Value="1" Type="0" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndChrome_WidgetWin_1" Key="{01A3C686-8BDC-4F7E-BA15-6F1EF84D7545}">
+								<Image FileName="1853215521" Left="0" Top="0" Right="1938" Bottom="1158" />
+								<TypeInfo Item0="{E4764E75-C17F-497A-B2DC-C38A70862C4C}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Chrome_WidgetWin_1" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Item" Key="{5748AED2-B632-4405-9D59-A43DE49DB3D3}">
+										<Image FileName="1853215521" Left="5" Top="100" Right="1915" Bottom="1135" />
+										<TypeInfo Item0="{46FB948C-CF31-4D7E-AE21-FDBC6A293124}" />
+									</Child>
+									<Child Name="Item2" Key="{672A67B4-F59C-46BA-82D0-0506F074F3C3}">
+										<TypeInfo Item0="{46FB948C-CF31-4D7E-AE21-FDBC6A293124}" />
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageDiagnosticDashboard" Key="{C8C91788-785E-4CDF-9FF1-74D9556C0F0C}">
+								<Image FileName="-735910517" Left="5" Top="100" Right="1915" Bottom="1135" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://wsl.flanders.local/login" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textbox" Key="{EA7B3015-3636-4886-8B1D-0F518D4FF552}">
+										<Image FileName="-735910517" Left="700" Top="535" Right="1220" Bottom="580" />
+										<TypeInfo Item0="{514EFBFF-0E89-479B-8955-1C68D400D0DA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div/input[contains(@class, &apos;flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="passwordbox" Key="{8B916A3B-B242-4047-BE03-00D15820A8E1}">
+										<Image FileName="58698537" Left="700" Top="600" Right="1220" Bottom="645" />
+										<TypeInfo Item0="{514EFBFF-0E89-479B-8955-1C68D400D0DA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@type=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input[contains(@class, &apos;flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonLogin" Key="{57CC2986-8540-4EBB-B810-43E3A6EDF748}">
+										<Image FileName="1740316303" Left="730" Top="665" Right="1190" Bottom="710" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Login&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;inline-flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageDiagnosticDashboard2" Key="{73F4B11C-A52D-4DBE-990E-9E3DB432DD4E}">
+								<Image FileName="-735910517" Left="5" Top="100" Right="1915" Bottom="1135" />
+								<TypeInfo Item0="{E8D5833C-8818-4CB1-9F20-EE642A013E6E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://wsl.flanders.local/gps/status" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="navAlarmsOverview" Key="{A04C75B1-C6E8-4AC6-B6E6-1130D039CEEC}">
+										<Image FileName="1663103665" Left="5" Top="230" Right="254" Bottom="1135" />
+										<Selectors>
+											<Selector>
+												<Value Value="//nav[contains(., &apos;Alarms Overview&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//nav[contains(@class, &apos;flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//nav" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCommissioning" Key="{FF2F06D6-44CB-459F-83CB-3003FFFE594F}">
+										<Image FileName="1663103665" Left="35" Top="480" Right="179" Bottom="510" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Commissioning&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//a[4]/span[contains(@class, &apos;ml-3&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageDiagnosticDashboard3" Key="{224E5D06-05D5-460A-B888-28F915D011A4}">
+								<Image FileName="-735910517" Left="5" Top="100" Right="1915" Bottom="1135" />
+								<TypeInfo Item0="{E8D5833C-8818-4CB1-9F20-EE642A013E6E}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://wsl.flanders.local/commissioning" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="panelUi" Key="{5600B1DC-4F38-493D-92E3-B350AAD724F5}">
+										<Image FileName="-1497059042" Left="306" Top="401" Right="604" Bottom="444" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;UI&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@title=&apos;DR411/UI&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonAutoDrillParameters" Key="{AAA62068-D76E-401A-9A0A-E1E1939ABACC}">
+										<Image FileName="-130024396" Left="982" Top="312" Right="1205" Bottom="355" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Auto Drill Parameters&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonAtlascopco2714jackwithstai" Key="{67408011-05F5-4A50-BBFC-DA4B21731D96}">
+										<Image FileName="-723982078" Left="917" Top="459" Right="1208" Bottom="499" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;AtlasCopco2714JackWithStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//main//div[2]//div//button[@role=&apos;combobox&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div//button[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;dynamic-card-grid&apos;]/div//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco271maststairs" Key="{B5396A17-7F5C-4259-B219-23E723DEA927}">
+										<Image FileName="-501104647" Left="932" Top="506" Right="1133" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco271MastStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[6]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelAtlascopco2714jackwithstair" Key="{7B8ADFD0-7DEA-4EE6-91B2-B3D6FB4C315E}">
+										<Image FileName="-2088006851" Left="902" Top="459" Right="1204" Bottom="499" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div/div/div/div/div/div/div[5]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelAtlascopco271maststairs" Key="{2922EE33-72F3-4619-AF43-087B4329C5C2}">
+										<Image FileName="-501104647" Left="902" Top="499" Right="1204" Bottom="539" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[.=&apos;AtlasCopco271MastStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[.=&apos;AtlasCopco271MastStairs&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco2714jackwithst" Key="{C0F72ACA-89EF-4277-BCA5-AC17FDBB6931}">
+										<Image FileName="1817994332" Left="932" Top="466" Right="1174" Bottom="491" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[5]/span[2]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco271maststairs2" Key="{96E0977B-BDD7-4410-8BA4-D47994A964E0}">
+										<Image FileName="-448371667" Left="932" Top="466" Right="1133" Bottom="491" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[6]/span[2]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonAtlascopco271maststairs" Key="{F2B1FB3B-69D2-4CF6-8B56-C5351C5247D8}">
+										<Image FileName="2063379599" Left="917" Top="459" Right="1167" Bottom="499" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;AtlasCopco271MastStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//main//div[2]//div//button[@role=&apos;combobox&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div//button[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;dynamic-card-grid&apos;]/div//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco2714jackwithst2" Key="{B0992ED5-7C0E-4A26-8B3B-B5AD36DE6AE6}">
+										<Image FileName="542963655" Left="932" Top="426" Right="1174" Bottom="451" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco2714JackWithStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[5]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeSandvikdr412i" Key="{C45006EE-8135-4971-9302-6C877025D009}">
+										<Image FileName="-129869978" Left="932" Top="1040" Right="1050" Bottom="1065" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;SandvikDR412i&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[30]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeSandvikdr410i" Key="{450BCB58-558D-436B-A7D4-D1B5D384D2FA}">
+										<Image FileName="-397429798" Left="932" Top="1000" Right="1050" Bottom="1025" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;SandvikDR410i&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[29]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeSandvikdr416i" Key="{6C221A6A-607F-4760-8014-4B3C844D6802}">
+										<Image FileName="-67873867" Left="932" Top="1080" Right="1050" Bottom="1105" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;SandvikDR416i&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[31]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco235" Key="{AFFB31EA-73AE-4076-A643-660C47F8C449}">
+										<Image FileName="1016202700" Left="932" Top="306" Right="1051" Bottom="331" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco235&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/div/div/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco2713jack" Key="{ABBF18A7-EF33-4AE7-94E3-1F18AA563416}">
+										<Image FileName="-2019626284" Left="932" Top="506" Right="1094" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco2713Jack&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[3]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco2714jack" Key="{45E328A0-B343-4128-9FBE-3A542D619F5B}">
+										<Image FileName="-2050764686" Left="932" Top="506" Right="1094" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco2714Jack&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[4]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeEpiroc271e" Key="{EBBEF475-D9C5-4B1E-8DF1-6B4FE0B23A52}">
+										<Image FileName="1292806327" Left="932" Top="506" Right="1019" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Epiroc271E&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[7]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco275" Key="{07B97145-9AC7-45DC-9D65-38EF60409936}">
+										<Image FileName="-13202418" Left="932" Top="506" Right="1051" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco275&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[8]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco275maststairs" Key="{86C71E59-7241-4F80-AE33-5BB8D9A297FC}">
+										<Image FileName="1337311658" Left="932" Top="506" Right="1133" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco275MastStairs&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[9]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco351" Key="{3945D05B-568E-4462-8840-43894601EA22}">
+										<Image FileName="1858191615" Left="932" Top="506" Right="1051" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco351&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[10]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopco351e" Key="{9705437F-5C87-4BDA-8FAD-1F8B3F5DA7AC}">
+										<Image FileName="-842729745" Left="932" Top="506" Right="1060" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopco351E&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[11]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopcod65" Key="{F095487A-2ABF-439B-8C79-80C3A7AAC12A}">
+										<Image FileName="338637575" Left="932" Top="506" Right="1054" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopcoD65&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopcodml" Key="{47D619E6-9103-40DB-A841-3DA880A0DC71}">
+										<Image FileName="1427838049" Left="932" Top="506" Right="1059" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopcoDML&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[13]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAtlascopcodmlhp" Key="{7D2C9D62-2823-4196-B4A8-ACBE5DF18DEF}">
+										<Image FileName="1549590417" Left="932" Top="506" Right="1082" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AtlasCopcoDMLHP&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[14]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeBucyrus49r" Key="{C0156400-2A55-4988-B38B-7BB9E2ABCA03}">
+										<Image FileName="-35500928" Left="932" Top="506" Right="1024" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Bucyrus49R&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[15]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeBucyrusskss16" Key="{ACBB3CDF-1569-4129-AE2A-DE8A1BF9BB55}">
+										<Image FileName="-1831813635" Left="932" Top="506" Right="1052" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;BucyrusSKSS16&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[16]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCat6250" Key="{5AB9F236-6BAB-4AE0-819B-D5FCB1FD8EE8}">
+										<Image FileName="982756089" Left="932" Top="506" Right="997" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Cat6250&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[17]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCat6310" Key="{E51066F7-C7CA-4467-A07F-BD55C0A30FA6}">
+										<Image FileName="1753380446" Left="932" Top="506" Right="997" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Cat6310&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[18]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCat6420" Key="{1190C218-42F0-44C1-AF09-D25440465C5E}">
+										<Image FileName="-218535812" Left="932" Top="506" Right="997" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Cat6420&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[19]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCat6640" Key="{53B44FE6-2D1D-4FAB-A86D-E200E5A16DF8}">
+										<Image FileName="-753894833" Left="932" Top="506" Right="997" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Cat6640&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[20]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCat6640siemens" Key="{B51B1491-55AD-4A00-BFC2-BC47758524AE}">
+										<Image FileName="1745500559" Left="932" Top="506" Right="1063" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Cat6640Siemens&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[21]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCat6420fiveestops" Key="{C3D1CDE9-264D-4F80-81DC-43D20F93DB57}">
+										<Image FileName="1171756721" Left="932" Top="506" Right="1082" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Cat6420FiveEStops&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[22]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCat6540" Key="{F897A3C5-0C2C-46F8-A3EC-8E1DEB514224}">
+										<Image FileName="1932183991" Left="932" Top="506" Right="997" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Cat6540&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[23]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodePh120" Key="{BEE0623C-5F3D-447D-9B0E-D2D93AECAF78}">
+										<Image FileName="-1500157143" Left="932" Top="506" Right="984" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;PH120&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[24]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodePh320xpc" Key="{B2951F2F-2DB0-4169-935B-C2C8FBECCAA7}">
+										<Image FileName="-1911732047" Left="932" Top="506" Right="1016" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;PH320XPC&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[25]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodePh320et200sp" Key="{5E49D383-7EAF-46C8-A59B-2D97CEE88C53}">
+										<Image FileName="-466087457" Left="932" Top="506" Right="1047" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;PH320et200sp&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[26]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeSandvikd90" Key="{8F29B159-6357-4C4F-9FB7-041E492A2E02}">
+										<Image FileName="1501409856" Left="932" Top="506" Right="1026" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;SandvikD90&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[27]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeSandvikdr460" Key="{3B963442-4FCE-44FF-93C7-27B6C653CA83}">
+										<Image FileName="-141971209" Left="932" Top="506" Right="1046" Bottom="531" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;SandvikDR460&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[28]/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelDrillHoleDepth" Key="{455AA907-19AA-49D2-8B80-7D4A10B9DC69}">
+										<Image FileName="669248035" Left="1260" Top="539" Right="1840" Bottom="1054" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[12]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSwitch" Key="{1EC052FC-4D53-433B-9879-89EF2512E01C}">
+										<Image FileName="-1524017093" Left="1499" Top="606" Right="1543" Bottom="631" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[12]//button[@value=&apos;on&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//button[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div[@id=&apos;dynamic-card-grid&apos;]/div[12]//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelShow" Key="{A69923C2-AD6D-4B17-9167-C07014EC05D1}">
+										<Image FileName="751342121" Left="1266" Top="594" Right="1806" Bottom="654" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[@id=&apos;dynamic-card-grid&apos;]/div[12]/div/div/div" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="numberinput" Key="{88069619-2378-4F0F-BC49-4D79AB52CA62}">
+										<Image FileName="165813247" Left="1513" Top="643" Right="1687" Bottom="691" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[2]/div/div/div[2]/div//input[@type=&apos;number&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div/div/div[2]/div//input[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div/div/div[2]/div//input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panel" Key="{6CCCAFAF-C28C-4E50-855B-260F025E876E}">
+										<Image FileName="1898711333" Left="1512" Top="581" Right="1815" Bottom="616" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[2]/div[2]/div[@id=&apos;dynamic-card-grid&apos;]/div[2]//div[2]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSwitch2" Key="{A5BC70FC-6A40-4393-903A-AE2B96A5660E}">
+										<Image FileName="1116330156" Left="1512" Top="581" Right="1556" Bottom="606" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[2]/div/div/div/div/button[@value=&apos;on&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div/div/div/div/button[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div[@id=&apos;dynamic-card-grid&apos;]/div[2]//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSave1" Key="{B18CA92B-8AC2-4CBF-B834-46EE45FD7583}">
+										<Image FileName="569182991" Left="1752" Top="220" Right="1855" Bottom="272" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Save (1)&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[@title=&apos;1 pending change(s)&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//main//div[2]/div//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonSave" Key="{D8911C4B-F407-4926-A609-DB8AF1AA75A3}">
+										<Image FileName="546544119" Left="1253" Top="722" Right="1323" Bottom="762" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Save&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;rt-variant-solid&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeDrillHoleDepth" Key="{C78BCDB8-1E32-4BB6-9972-47F31C3EAA69}">
+										<Image FileName="1400787934" Left="1275" Top="554" Right="1825" Bottom="584" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//h1[.=&apos;Drill Hole Depth&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[12]//h1[contains(@class, &apos;rt-Heading&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]//div[12]//h1" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageDiagnosticDashboard4" Key="{AB056A0A-ACB2-40ED-AC0D-9D2058B01CF8}">
+								<Image FileName="1687862864" Left="5" Top="100" Right="1915" Bottom="1135" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://wsl.flanders.local/login/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="panelLogin" Key="{DE7E76B6-497D-4850-8A06-7FE86C249DD4}">
+										<Image FileName="1687862864" Left="5" Top="100" Right="1915" Bottom="1135" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;min-h-screen&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textbox" Key="{877EFD3F-0170-4676-A3AD-5F511141CD8A}">
+										<Image FileName="-1660210657" Left="700" Top="535" Right="1220" Bottom="580" />
+										<TypeInfo Item0="{514EFBFF-0E89-479B-8955-1C68D400D0DA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div/input[contains(@class, &apos;flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="passwordbox" Key="{F279F182-EC45-481D-9A4F-C81F3A02AFCE}">
+										<Image FileName="1247182013" Left="700" Top="600" Right="1220" Bottom="645" />
+										<TypeInfo Item0="{514EFBFF-0E89-479B-8955-1C68D400D0DA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@type=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input[contains(@class, &apos;flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonLogin" Key="{3272F9E3-938B-4323-885C-A2C2B19EFD67}">
+										<Image FileName="-1954423860" Left="730" Top="665" Right="1190" Bottom="710" />
+										<TypeInfo Item0="{A4629000-55BB-45AB-B51C-DF790C0C04AC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//button[.=&apos;Login&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;inline-flex&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="ms_teams" Key="{A583C1F4-FF22-4E93-9CC9-B3474C8BB257}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="ms-teams" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndTeamsWebView" Key="{C97B9263-6617-4752-A30B-07687C5AEC05}">
+								<Image FileName="-1973848954" Left="0" Top="0" Right="1536" Bottom="864" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="TeamsWebView" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Chat | Parmjeet Kumar | Microsoft Teams" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Chrome_WidgetWin_0" Key="{2F187DD8-65CC-41FA-AE49-2D1862D3D6BC}">
+										<Image FileName="-1973848954" Left="9" Top="0" Right="1527" Bottom="855" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Chrome_WidgetWin_0" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Chrome_WidgetWin_0" Key="{ABE62E9F-966E-4B85-99B3-92A0A49FF567}">
+												<Image FileName="-1973848954" Left="1359" Top="10" Right="1528" Bottom="20" />
+												<TypeInfo Item0="{5D560902-EFE9-4DEE-AB3F-44F991645155}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="Chrome_WidgetWin_0" />
+													</Property>
+													<Property Name="WndCaption">
+														<Value Value="" />
+													</Property>
+													<Property Name="Index">
+														<Value Value="13" Type="0" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="wndTeamsWebView2" Key="{6DB2FDAF-0143-4999-8F3C-0FC105B833BD}">
+								<Image FileName="-921308782" Left="0" Top="0" Right="1509" Bottom="913" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="TeamsWebView" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Chat | Rushikesh Kolhe (You) | Microsoft Teams" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Chrome_WidgetWin_0" Key="{5A5D68D6-DCC0-4E80-BB33-FE5FC69D5FF1}">
+										<Image FileName="-921308782" Left="9" Top="0" Right="1500" Bottom="904" />
+										<Properties>
+											<Property Name="WndClass">
+												<Value Value="Chrome_WidgetWin_0" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Chrome_WidgetWin_0" Key="{1D0E1159-0658-422C-91CA-E8E3BEE6EF47}">
+												<Image FileName="-921308782" Left="1332" Top="20" Right="1500" Bottom="39" />
+												<TypeInfo Item0="{5D560902-EFE9-4DEE-AB3F-44F991645155}" />
+												<Properties>
+													<Property Name="WndClass">
+														<Value Value="Chrome_WidgetWin_0" />
+													</Property>
+													<Property Name="WndCaption">
+														<Value Value="" />
+													</Property>
+													<Property Name="Index">
+														<Value Value="13" Type="0" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="InputApp" Key="{0B03F5FA-C7CC-4999-B530-05588B75AB40}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="InputApp" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndWindowsUICoreCoreWindow" Key="{902C9353-A22E-46D4-A5D3-B250AA7C9DAB}">
+								<Image FileName="-184123604" Left="0" Top="0" Right="450" Bottom="500" />
+								<TypeInfo Item0="{E2667265-C053-452C-96A8-033EF60B22EB}" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="Windows.UI.Core.CoreWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Windows Input Experience" />
+									</Property>
+								</Properties>
+							</Child>
+							<Child Name="pageEmojiAndMoreMenu" Key="{2D16403F-BE24-4C6C-B890-6C938C0DB64C}">
+								<Image FileName="-2086740939" Left="0" Top="40" Right="450" Bottom="500" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://inputsuggestions.msdxcdn.microsoft.com/_version_/WindowsInternal.ComposableShell.Experiences.SuggestionUI.min.html" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textnodeExpandedViewContentLists" Key="{3047731D-B75A-423E-B5FE-B054500F8C1C}">
+										<Image FileName="-2086740939" Left="0" Top="122" Right="450" Bottom="2928" />
+										<Selectors>
+											<Selector>
+												<Value Value="#expanded-view-content-lists" />
+											</Selector>
+											<Selector>
+												<Value Value="//ul[contains(., &apos;Clipboard&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//ul[contains(@class, &apos;expanded-view-content-lists&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;expanded-view-content&apos;]/ul" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeExpandedViewListContaine" Key="{4D712A3C-EE10-49EE-8829-4B8C92E819E5}">
+										<Image FileName="-2086740939" Left="0" Top="122" Right="450" Bottom="2928" />
+										<Selectors>
+											<Selector>
+												<Value Value="#expanded-view-list-container-ClipboardHistory" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[contains(., &apos;Clipboard&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[contains(@class, &apos;expanded-view-content-lists-item-container&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//ul[@id=&apos;expanded-view-content-lists&apos;]/li" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAutodrillsetupdrillholed" Key="{E4075E81-128F-476C-B24D-FE515E4DC165}">
+										<Image FileName="-2086740939" Left="20" Top="280" Right="430" Bottom="380" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div/div/ul/li[2]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeAutodrillsetupdrillholed2" Key="{750FC43D-DE4B-49A3-9A0B-644E860DD847}">
+										<Image FileName="-2086740939" Left="33" Top="293" Right="375" Bottom="370" />
+										<TypeInfo Item0="{A63EFF07-B6C4-46D1-A3AD-35099CB75C32}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;AutoDrillSetupDrillHoleDepthMaximum&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[2]/div/span[contains(@class, &apos;clipboard-history-items-list-item-text&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[@id=&apos;expanded-view-list-container-ClipboardHistory&apos;]//li[2]/div/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;expanded-view-content&apos;]//div/ul/li[2]/div/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCollaringPluggedAirPress" Key="{0EADA30F-39ED-473B-963C-8DAB700A0FC9}">
+										<Image FileName="235512662" Left="20" Top="253" Right="430" Bottom="353" />
+										<Selectors>
+											<Selector>
+												<Value Value="//ul/li[10]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="textnodeCollaringPluggedAirPress2" Key="{0DFCC29C-4FFC-4FD2-BC9A-964E07EEF1F4}">
+										<Image FileName="235512662" Left="33" Top="266" Right="375" Bottom="343" />
+										<TypeInfo Item0="{A63EFF07-B6C4-46D1-A3AD-35099CB75C32}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//span[.=&apos;Collaring Plugged Air Pressure Limit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[10]/div/span[contains(@class, &apos;clipboard-history-items-list-item-text&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[@id=&apos;expanded-view-list-container-ClipboardHistory&apos;]//li[10]/div/span" />
+											</Selector>
+											<Selector>
+												<Value Value="//li[10]/div/span" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
 							</Child>
 						</Children>
 					</Child>
@@ -15697,6 +18133,7 @@
 			<Child Name="wndXamlExplorerHostIslandWindow2" Owner="{E66ABD31-9A58-4ECB-A6E4-652A9E27EA04}">
 				<Child Name="DesktopWindowXamlSource" Owner="{B4033AA5-D2C7-4F43-A449-2873BA4A10E9}" />
 			</Child>
+			<Child Name="wndShell_LightDismissOverlay" Owner="{D741380B-762B-4C8A-9026-80E0E8C37EF9}" />
 		</Child>
 		<Child Name="Flanders_Ardvarc_Hmi_Client" Owner="{7FAB7580-7ED5-46FF-93CA-F5FC443AEFA0}">
 			<Child Name="HwndSource_MainWindow" Owner="{009681D8-A0B1-4FCC-AD1A-EAE264EC830D}">
@@ -16722,6 +19159,68 @@
 					<Child Name="RectangleHydraulicTankTouch" Owner="{BBD5F320-9891-4C77-97EF-2A0A73A70975}" />
 					<Child Name="RectangleHydraulicDrainFilterTouch" Owner="{B251352C-D221-4E1C-B41F-D61CBB9A01FB}" />
 					<Child Name="RectangleHyRectangleDeviceFlashingReddraulicDrainFilterTouch" Owner="{D4D60416-1F25-415F-B3DB-DBA7980CBD6A}" />
+					<Child Name="TextblockPleaseUseCommissioningSettingsToS" Owner="{8C09B61E-4E23-4028-BFAB-AB9DBFAFCF67}" />
+					<Child Name="Rectangle17" Owner="{DDE1E5A8-96E6-4B6F-AF8A-A3F5D6FEEC60}" />
+					<Child Name="Path92" Owner="{C5FA15CC-A1AA-4187-821B-E133FC1517BD}" />
+					<Child Name="Rectangle18" Owner="{E5531E8F-708D-435F-82C3-2339F1BDBA73}" />
+					<Child Name="Rectangle19" Owner="{9C95E0A7-D177-4F66-9BDA-8D46308086EE}" />
+					<Child Name="Rectangle20" Owner="{51E84938-66A4-47FC-B52E-4B4EA506A4BC}" />
+					<Child Name="TextblockHammerOilTank2" Owner="{DAD45FFA-0194-4A74-9F63-CE41489A5237}" />
+					<Child Name="TextblockFuelTank" Owner="{1C10446E-AFFD-46C0-B79B-64A315ADB644}" />
+					<Child Name="Path102" Owner="{C5A3FBA3-B3FF-4F38-A2CD-56348FA5D62D}" />
+					<Child Name="TextblockWaterTank2" Owner="{3FE36E01-23E1-496A-A816-573FA8D18946}" />
+					<Child Name="ToggleButton52" Owner="{919CEE7B-828A-432E-81DC-000D910C1D56}" />
+					<Child Name="TextblockGroundPressure" Owner="{13ACF8C0-6DC1-4090-BFFF-2A586FC4BD53}" />
+					<Child Name="TextblockGroundPressure2" Owner="{BCCA9485-2F0E-4514-91EB-2042CA5A4EF5}" />
+					<Child Name="TextblockGroundPressure3" Owner="{B89569A7-3A14-4A47-86B7-2BD55F2057F0}" />
+					<Child Name="TextblockGroundPressure4" Owner="{4DA435EE-2D2E-47C7-92EB-4011D0A60951}" />
+					<Child Name="TextblockSetpoint" Owner="{1EB3FDFB-C7DB-4B1D-BD4E-AF8AF407132F}" />
+					<Child Name="TextblockSetpoint2" Owner="{B0D6425F-2820-45B7-9D22-79360B663858}" />
+					<Child Name="TextblockSetpoint3" Owner="{347B9ACF-E823-48C7-9D48-469B73660409}" />
+					<Child Name="TextblockSetpoint4" Owner="{0B993D82-00E2-4966-A5C2-982636124546}" />
+					<Child Name="TextblockOilTemp" Owner="{927AB69F-101F-4C03-B2EA-43664507C1FB}" />
+					<Child Name="Rectangle21" Owner="{1494EFC5-6768-4FE1-9584-A6B4402E59FD}" />
+					<Child Name="TextblockFireSuppressor" Owner="{532DF620-D1A3-43A6-AE09-47970948532B}" />
+					<Child Name="Path112" Owner="{36A74D08-1889-4ECC-B753-EBAC366B8C91}" />
+					<Child Name="Path122" Owner="{8C35E9EA-2181-4410-8397-D1AEB3576C21}" />
+					<Child Name="TextblockPumpFilters" Owner="{AA1476C6-5B5A-4F0D-B6A6-6C5B828960AF}" />
+					<Child Name="Path20" Owner="{1B80CFA5-1F33-4D82-80A3-6A91886377ED}" />
+					<Child Name="Path132" Owner="{72A5EEF6-B0F2-4B02-BB9D-46F5B75F5EAA}" />
+					<Child Name="Path25" Owner="{254DB2BF-0355-4083-98AD-27C5FC20735D}" />
+					<Child Name="Rectangle222" Owner="{169C4FEE-8081-497D-B4BF-1C8EC0E6CCDA}" />
+					<Child Name="Rectangle232" Owner="{59C79C51-2965-4795-9300-32D81536A3FA}" />
+					<Child Name="Rectangle24" Owner="{7F0ADFCC-EAEF-47C3-8464-9409B63D6E55}" />
+					<Child Name="Rectangle25" Owner="{52C3922C-E467-4CAF-84BA-B3F55357569A}" />
+					<Child Name="TextblockEngineLoad" Owner="{3C37861F-C6B6-4D4A-BE28-516ACEFE3FC9}" />
+					<Child Name="Path26" Owner="{B9039C01-9690-4AD6-AE21-F9117D75CA39}" />
+					<Child Name="Rectangle26" Owner="{BC278017-3952-401A-B0D2-C24211B8BAF8}" />
+					<Child Name="Rectangle27" Owner="{21F47802-E967-43E5-8766-B6F28946E928}" />
+					<Child Name="Path142" Owner="{B135ABAB-EA1D-4FA2-9699-99972FDA355F}" />
+					<Child Name="Path152" Owner="{3FEAFE2A-6C74-4185-A59D-DFACEB79A20C}" />
+					<Child Name="Path_97" Owner="{AFFD17F5-C990-4650-AB5E-BA019022DF68}" />
+					<Child Name="Path162" Owner="{59651D79-A31C-4D62-80C8-F77440E7C6AE}" />
+					<Child Name="Path_233" Owner="{4246C2F9-27B9-4FF5-9DEC-7FF227898B28}" />
+					<Child Name="Rectangle28" Owner="{FF621825-270A-45D3-ABA7-2014DD93EC2C}" />
+					<Child Name="Rectangle29" Owner="{4CE859BF-C95D-47F4-9833-0ECA2B1CD253}" />
+					<Child Name="Path33" Owner="{3F5889CD-57BD-41BC-8C6D-87ED0A5D0079}" />
+					<Child Name="Rectangle30" Owner="{7C6D0112-94E9-4CFD-A28F-E94F6F58EFC2}" />
+					<Child Name="Path43" Owner="{B7929F35-BFF3-4128-81CB-91763C56612C}" />
+					<Child Name="Rectangle31" Owner="{43A8F15F-B0C6-4780-A968-68E221A70154}" />
+					<Child Name="Rectangle322" Owner="{261E1565-B300-49D4-839A-AAAD15B9B18D}" />
+					<Child Name="Rectangle332" Owner="{40148A0C-1F75-41F6-9011-E056B455F872}" />
+					<Child Name="TextblockACAirFilter" Owner="{2AAE496B-6C91-4321-9839-CC563CCF08E6}" />
+					<Child Name="RectangleAirCompressorAirFilterTouch" Owner="{C223B1DF-580D-4766-ABB0-DED34A6CDF9F}" />
+					<Child Name="RectangleEngineAirFilterTouch" Owner="{65442373-8302-4734-827C-9FDA003AD47A}" />
+					<Child Name="TextblockHydraulicTankIsolation" Owner="{8C0E2E71-5B90-4F84-9FF1-693E5E054C40}" />
+					<Child Name="RectangleHydraulicTankIsolationTouch" Owner="{58131955-BD3A-4603-8EAB-03DE7C4FD725}" />
+					<Child Name="Rectangle34" Owner="{2DD6AB0A-24EC-41B2-BB42-0F23C961DA22}" />
+					<Child Name="Rectangle35" Owner="{9560A014-99CD-4C9F-A22D-95429E3CE19E}" />
+					<Child Name="Path172" Owner="{6DB6474A-E338-4A07-91E6-079E6E0F05A2}" />
+					<Child Name="Rectangle36" Owner="{A7428CDB-4EDF-446A-A18F-CD1D8F048385}" />
+					<Child Name="Rectangle37" Owner="{E5D5DE4D-3295-4422-9AE5-432824D34200}" />
+					<Child Name="LabelAuxpump12" Owner="{94966D0C-AA29-498F-B6B7-363C40B751AE}" />
+					<Child Name="LabelAuxpump22" Owner="{57A1E483-77E7-460E-B0E5-DE25B872A6EF}" />
+					<Child Name="LabelFanpump2" Owner="{6CECBEA6-C096-43FB-9F92-64F119EFDBAD}" />
 				</Child>
 			</Child>
 			<Child Name="HwndSource_OperatorScreenMessageWindow" Owner="{AB37F3C3-58FB-4559-83D5-19E73EBF0FA4}">
@@ -16773,10 +19272,21 @@
 								<Child Name="TextblockMaintenancekeypadleftmiddleshow" Owner="{A258AB87-5032-4D05-BD02-AB191C54622B}" />
 								<Child Name="TextblockMaintenancekeypadrightbottomshow" Owner="{CE866FB2-750A-4897-83A4-A5FB4E5D86E5}" />
 								<Child Name="TextblockExcludepreoperationinspection" Owner="{C38B94E5-6958-4E12-9663-7EE540F8D097}" />
+								<Child Name="TextblockAutodrillsetupshowdrillholedepth" Owner="{48EDDAF1-D8E1-400E-8827-4408FF565271}" />
+								<Child Name="TextblockAutodrillsetupdrillholedepthbmode" Owner="{A4827B49-482F-4665-A4EB-BB12A9B27FD0}" />
+								<Child Name="TextblockAutodrillsetupdrillholedepthbmode2" Owner="{81FA65ED-C559-4F27-A06E-E21AB746C9F4}" />
+								<Child Name="TextblockAutodrillsetupdrillholedepthminim" Owner="{FC01EA4D-E5BF-42B2-B0B6-9104A89CDC5E}" />
+								<Child Name="TextblockAutodrillsetupairpressurecollarin" Owner="{2828A3F7-EDFD-4196-8DA8-E923E995009B}" />
+								<Child Name="TextblockAutodrillsetupairpressurecollarin2" Owner="{A1711E72-F52A-4CD1-947E-E3BA663538DE}" />
+								<Child Name="TextblockAutodrillsetupairpressurecollarin3" Owner="{9142D584-0589-48D5-ACB6-4B15C989821C}" />
+								<Child Name="TextblockAutodrillsetupairpressurecollarin4" Owner="{7F49037C-5F37-44A9-A441-F60DD53EF322}" />
+								<Child Name="TextblockAutodrillsetupairpressurecollarin5" Owner="{280BFDE7-3A08-4653-9C97-F0A2955F0708}" />
 							</Child>
 							<Child Name="ListViewItem3" Owner="{5E5FF341-D20A-44FC-8AC2-8BAA0B9224D0}">
 								<Child Name="TextblockAuxiliarycontrolshowsecondaryrods" Owner="{E379A570-FA48-4947-BB7F-DDA53C61A8B9}" />
 								<Child Name="TextblockMaintenancekeypadleftmiddleshow" Owner="{EEBE6ABC-4866-4068-ADBD-12306828FBC3}" />
+								<Child Name="TextblockAutodrillsetupdrillholedepthminim" Owner="{0151ED41-7FCF-42F5-972E-15DBACB88D91}" />
+								<Child Name="TextblockAutodrillsetupairpressurecollarin" Owner="{9865D3AB-4BBC-40F8-A96A-2238A477B91D}" />
 							</Child>
 							<Child Name="ListViewItem4" Owner="{5DC73806-AB27-4DD5-881D-5874567F063E}" />
 							<Child Name="ListViewItem5" Owner="{C2872919-EC87-44EB-96D6-E864E57CE985}" />
@@ -16789,6 +19299,8 @@
 							<Child Name="TextblockAuxiliarycontrolshowwindowwiper" Owner="{B6B66A23-AE78-4F20-BA97-F2855FE96B36}" />
 							<Child Name="ListViewItem12" Owner="{6A3589EA-ACDB-4E9F-856F-1913EE8E1DA3}">
 								<Child Name="TextblockMaintenancekeypadrightbottomshow" Owner="{92B8051B-BC3E-4054-B24D-6F5410DADD8A}" />
+								<Child Name="TextblockAutodrillsetupdrillholedepthbmode" Owner="{4DF5F6B0-B2CC-489D-946B-B140F1B9E01C}" />
+								<Child Name="TextblockAutodrillsetupairpressurecollarin" Owner="{05C5E80C-E7C3-4CA1-859B-D19950555928}" />
 							</Child>
 							<Child Name="ListViewItem13" Owner="{61B27C14-464F-4248-82C0-5B08E0C3CB1A}" />
 							<Child Name="ListViewItem14" Owner="{EC511FFD-7F81-48B8-B644-04455EE929DB}" />
@@ -16804,10 +19316,19 @@
 							<Child Name="TextblockMaintenancekeypadrightmiddleshow" Owner="{369695F5-CEFF-4FFF-BA2F-72028ED496EF}" />
 							<Child Name="TextblockAuxiliarycontrolshowrodsupportaut" Owner="{5D3F89C8-3BAF-4DE6-942C-9529151A4409}" />
 							<Child Name="TextblockAuxiliarycontrolshowsecondaryrods2" Owner="{117ACCFF-C685-45E0-9427-D05903B00C05}" />
+							<Child Name="TextblockAutodrillsetupdrillholedepthbmode" Owner="{70EBA420-F562-4B58-B6CF-6669756C868B}" />
+							<Child Name="TextblockAutodrillsetupdrillholedepthallow" Owner="{AE022DF9-DBBE-4C97-9A62-AEEC225CA1E6}" />
+							<Child Name="TextblockAutodrillsetupdrillholedepthmaxim" Owner="{ACA18705-A1F3-4614-9A5F-55C4FFE136EC}" />
+							<Child Name="ListViewItem16" Owner="{5BDAB99C-9EEC-4D68-8CD8-34FC770C6461}">
+								<Child Name="TextblockAutodrillsetupairpressurecollarin" Owner="{31451693-3A83-4FC6-886F-8ACAEB2EB75F}" />
+							</Child>
+							<Child Name="TextblockAutodrillsetupairpressurecollarin" Owner="{863399AE-E781-48F9-9229-3B622A93A4BE}" />
+							<Child Name="TextblockAutodrillsetupairpressurecollarin2" Owner="{658D2904-F9FD-4BA9-A3F9-C9F3F4029B04}" />
 						</Child>
 						<Child Name="BoolAppSettingCheckBox" Owner="{7CB06403-5F9E-49AE-81FE-66362425DD08}" />
 						<Child Name="CommitButton" Owner="{D3E8CA84-313B-4D0D-B8A1-DFD533367348}" />
 						<Child Name="EnumAppSettingComboBox" Owner="{E7975E3B-55B1-4C7E-95B7-17EF81BC3351}" />
+						<Child Name="FloatAppSettingTextBox" Owner="{D5CE0755-4612-478E-8F31-7DF5FD06049C}" />
 					</Child>
 				</Child>
 			</Child>
@@ -16834,6 +19355,9 @@
 					<Child Name="ButtonDelete" Owner="{ED17BBE5-60F9-437A-BF40-051AE047A1CC}" />
 					<Child Name="ButtonAddMinus" Owner="{A302A589-C82B-4B15-A333-6E106B260FEE}" />
 					<Child Name="Button8" Owner="{FB8E6969-E34B-4756-B0DF-FEAF324118CD}" />
+					<Child Name="MaximumValue" Owner="{9F95ACAE-ACA0-45D9-95ED-A530CC586657}" />
+					<Child Name="MinimumValue" Owner="{B0A7FCE8-2180-498E-889E-BC0232C02AC3}" />
+					<Child Name="ButtonDot" Owner="{72021982-60A5-4416-9045-A5290B4B4C96}" />
 				</Child>
 			</Child>
 			<Child Name="HwndSource_MessageQuestion" Owner="{BAEFE5AB-3208-4E07-B1E2-2452625DFF75}">
@@ -17005,6 +19529,10 @@
 						<Child Name="ComboboxitemAtlascopco275maststairs" Owner="{D4D92ADF-B184-4219-B573-2BA2A3C64DCD}" />
 						<Child Name="ComboboxitemAtlascopco351" Owner="{5D2C2547-B5ED-4348-8B38-8DF774F3A5CF}" />
 						<Child Name="ComboboxitemAtlascopco2714jack" Owner="{24BAC345-5CFB-4490-A33F-F8F462DE69FD}" />
+						<Child Name="ComboboxitemBucyrus49r" Owner="{F2011E83-D573-4E7E-8681-15891CD13EDC}" />
+						<Child Name="ComboboxitemCat6640" Owner="{A1973E7D-393F-46BF-98CC-65B7B640A952}" />
+						<Child Name="ComboboxitemCat6540" Owner="{D4ADAFED-73C7-4C48-AAFD-E7A7B503B8F9}" />
+						<Child Name="ComboboxitemPh320et200sp" Owner="{C90119C3-5D2F-40BB-8488-58DD7A8D83F7}" />
 					</Child>
 				</Child>
 			</Child>
@@ -17053,6 +19581,7 @@
 					<Child Name="textnodeCommissioning" Owner="{9229793C-F860-4B98-BFE5-8AAAE28EF63F}" />
 					<Child Name="linkCommissioning" Owner="{CB6F1CA7-3082-4E1B-864B-84989FAD8BD0}" />
 				</Child>
+				<Child Name="textnodeAlarmsOverview" Owner="{4C0AFEE6-CD69-494A-948A-D2CC4E7D8007}" />
 			</Child>
 			<Child Name="pageDiagnosticDashboard2" Owner="{31F6C638-26AB-4A27-8087-ED16AFDA3C56}">
 				<Child Name="buttonSandvikDr412i" Owner="{D809F1F3-5B3D-4A84-9EB1-60F53C491A72}" />
@@ -17093,11 +19622,137 @@
 				<Child Name="textnodeSandvikdr412i" Owner="{A9E3EF5E-4939-4989-AD06-BC06BB1A713C}" />
 				<Child Name="textnodeSandvikdr416i" Owner="{448EA4A3-746A-47B4-9A3A-C1A0AF546F03}" />
 				<Child Name="buttonSandvikdr410i3" Owner="{AD43773D-1F08-417A-B5CC-F10CB1F8A339}" />
+				<Child Name="panelUi" Owner="{30BA980A-953E-477F-A83F-FBCB1B631B80}" />
+				<Child Name="buttonAutoDrillParameters" Owner="{F6301234-EB50-4F3D-A9FC-BB8F04CE0A09}" />
+				<Child Name="numberinput" Owner="{964D4683-BF6D-44F1-B7E4-D24FEDB8123A}" />
+				<Child Name="numberinput2" Owner="{2E32752E-958D-4353-AFCA-09B627586CF2}" />
+				<Child Name="buttonSwitch" Owner="{69EF64D2-AC51-4643-B732-585DDE51FF98}" />
+				<Child Name="buttonSwitch2" Owner="{66EF1A05-6785-449A-94C7-10B0857FDE36}" />
+				<Child Name="buttonSave4" Owner="{0CC0A4CB-4B81-4FA3-860F-DFCB39A71C5D}" />
+				<Child Name="panelDrillHoleDepth" Owner="{0F6252E3-D140-4880-B21D-60769C192971}" />
+				<Child Name="panelShow" Owner="{CD5AE75D-A032-4CF5-89CA-1FA8B00AE2A9}" />
+				<Child Name="panelDrillHoleDepth2" Owner="{5FE49190-C4AC-4422-BDDC-920EFBF1EB3B}" />
+				<Child Name="textnodeAtlascopco2714jackwithst" Owner="{6DBFD08B-0C44-4E35-A5B2-E21A16B68B4F}" />
+				<Child Name="panelAtlascopco2714jackwithstair" Owner="{327109BC-46F5-4FB2-99D2-A50509D1A45E}" />
+				<Child Name="panelSandvikdr410i3" Owner="{8B776C56-C9DC-469E-8E1C-BFB55218B529}" />
+				<Child Name="textnodeSandvikdr410i2" Owner="{0E81D3B1-4A5D-4E0B-AA56-C865572B3456}" />
+				<Child Name="textnodeDrillHoleDepth" Owner="{E38B22AA-1986-49DF-A950-3ED951BD1A3D}" />
+				<Child Name="buttonSwitch3" Owner="{3E4ADB77-2D97-4A14-B29C-2A93B1DF259D}" />
+				<Child Name="numberinput3" Owner="{89B77318-35D2-4E1C-900B-D1D03AE8F322}" />
+				<Child Name="panelMin1Max100" Owner="{E563D6D3-2567-40C8-99F8-854B9E4E06BE}" />
+				<Child Name="textnodeCollaringPluggedAirPress" Owner="{E350AD08-13B4-4C27-8104-EFB7D6679D40}" />
+				<Child Name="panelCollaringPluggedAirPressure" Owner="{53176937-9EEE-4512-9A31-6D1FF10C4F63}" />
+				<Child Name="panelCollaringCompressorVolume" Owner="{BA4CDDB6-9858-4D63-B790-1A20CBFECDC0}" />
 			</Child>
 			<Child Name="wndChrome_WidgetWin_1" Owner="{0E48C02A-83BE-4B9B-8B62-F480EE00411F}" />
+			<Child Name="pageDiagnosticDashboard3" Owner="{DE3B368B-9180-4E0A-9BE9-32B6A44F5568}">
+				<Child Name="textbox" Owner="{C584A128-BBA9-4F9A-9770-38E58BB2DA63}" />
+				<Child Name="passwordbox" Owner="{F3218F8E-9D56-42B6-A9ED-1D494A737D9B}" />
+				<Child Name="buttonLogin" Owner="{B2A1AE1B-10FB-497E-B9C2-290CB88AF117}" />
+				<Child Name="textnodeLogin" Owner="{3B23DD7D-D0C9-41FC-9D31-58787553A32C}" />
+			</Child>
+			<Child Name="BrowserWindow3" Owner="{17DEC953-C7E0-40A6-9596-8B82125FF920}" />
 		</Child>
 		<Child Name="WindowsTerminal" Owner="{2B88C009-8C06-4D01-A6DF-EA94F43742EA}">
 			<Child Name="wndCASCADIA_HOSTING_WINDOW_CLASS" Owner="{E6C0566B-02D6-48FE-962D-F37BCD946E5B}" />
+		</Child>
+		<Child Name="msedge" Owner="{263DCC34-1207-4141-87EE-3455784614A6}">
+			<Child Name="wndChrome_WidgetWin_1" Owner="{01A3C686-8BDC-4F7E-BA15-6F1EF84D7545}">
+				<Child Name="Item" Owner="{5748AED2-B632-4405-9D59-A43DE49DB3D3}" />
+				<Child Name="Item2" Owner="{672A67B4-F59C-46BA-82D0-0506F074F3C3}" />
+			</Child>
+			<Child Name="pageDiagnosticDashboard" Owner="{C8C91788-785E-4CDF-9FF1-74D9556C0F0C}">
+				<Child Name="textbox" Owner="{EA7B3015-3636-4886-8B1D-0F518D4FF552}" />
+				<Child Name="passwordbox" Owner="{8B916A3B-B242-4047-BE03-00D15820A8E1}" />
+				<Child Name="buttonLogin" Owner="{57CC2986-8540-4EBB-B810-43E3A6EDF748}" />
+			</Child>
+			<Child Name="pageDiagnosticDashboard2" Owner="{73F4B11C-A52D-4DBE-990E-9E3DB432DD4E}">
+				<Child Name="navAlarmsOverview" Owner="{A04C75B1-C6E8-4AC6-B6E6-1130D039CEEC}">
+					<Child Name="textnodeCommissioning" Owner="{FF2F06D6-44CB-459F-83CB-3003FFFE594F}" />
+				</Child>
+			</Child>
+			<Child Name="pageDiagnosticDashboard3" Owner="{224E5D06-05D5-460A-B888-28F915D011A4}">
+				<Child Name="panelUi" Owner="{5600B1DC-4F38-493D-92E3-B350AAD724F5}" />
+				<Child Name="buttonAutoDrillParameters" Owner="{AAA62068-D76E-401A-9A0A-E1E1939ABACC}" />
+				<Child Name="buttonAtlascopco2714jackwithstai" Owner="{67408011-05F5-4A50-BBFC-DA4B21731D96}" />
+				<Child Name="textnodeAtlascopco271maststairs" Owner="{B5396A17-7F5C-4259-B219-23E723DEA927}" />
+				<Child Name="panelAtlascopco2714jackwithstair" Owner="{7B8ADFD0-7DEA-4EE6-91B2-B3D6FB4C315E}" />
+				<Child Name="panelAtlascopco271maststairs" Owner="{2922EE33-72F3-4619-AF43-087B4329C5C2}" />
+				<Child Name="textnodeAtlascopco2714jackwithst" Owner="{C0F72ACA-89EF-4277-BCA5-AC17FDBB6931}" />
+				<Child Name="textnodeAtlascopco271maststairs2" Owner="{96E0977B-BDD7-4410-8BA4-D47994A964E0}" />
+				<Child Name="buttonAtlascopco271maststairs" Owner="{F2B1FB3B-69D2-4CF6-8B56-C5351C5247D8}" />
+				<Child Name="textnodeAtlascopco2714jackwithst2" Owner="{B0992ED5-7C0E-4A26-8B3B-B5AD36DE6AE6}" />
+				<Child Name="textnodeSandvikdr412i" Owner="{C45006EE-8135-4971-9302-6C877025D009}" />
+				<Child Name="textnodeSandvikdr410i" Owner="{450BCB58-558D-436B-A7D4-D1B5D384D2FA}" />
+				<Child Name="textnodeSandvikdr416i" Owner="{6C221A6A-607F-4760-8014-4B3C844D6802}" />
+				<Child Name="textnodeAtlascopco235" Owner="{AFFB31EA-73AE-4076-A643-660C47F8C449}" />
+				<Child Name="textnodeAtlascopco2713jack" Owner="{ABBF18A7-EF33-4AE7-94E3-1F18AA563416}" />
+				<Child Name="textnodeAtlascopco2714jack" Owner="{45E328A0-B343-4128-9FBE-3A542D619F5B}" />
+				<Child Name="textnodeEpiroc271e" Owner="{EBBEF475-D9C5-4B1E-8DF1-6B4FE0B23A52}" />
+				<Child Name="textnodeAtlascopco275" Owner="{07B97145-9AC7-45DC-9D65-38EF60409936}" />
+				<Child Name="textnodeAtlascopco275maststairs" Owner="{86C71E59-7241-4F80-AE33-5BB8D9A297FC}" />
+				<Child Name="textnodeAtlascopco351" Owner="{3945D05B-568E-4462-8840-43894601EA22}" />
+				<Child Name="textnodeAtlascopco351e" Owner="{9705437F-5C87-4BDA-8FAD-1F8B3F5DA7AC}" />
+				<Child Name="textnodeAtlascopcod65" Owner="{F095487A-2ABF-439B-8C79-80C3A7AAC12A}" />
+				<Child Name="textnodeAtlascopcodml" Owner="{47D619E6-9103-40DB-A841-3DA880A0DC71}" />
+				<Child Name="textnodeAtlascopcodmlhp" Owner="{7D2C9D62-2823-4196-B4A8-ACBE5DF18DEF}" />
+				<Child Name="textnodeBucyrus49r" Owner="{C0156400-2A55-4988-B38B-7BB9E2ABCA03}" />
+				<Child Name="textnodeBucyrusskss16" Owner="{ACBB3CDF-1569-4129-AE2A-DE8A1BF9BB55}" />
+				<Child Name="textnodeCat6250" Owner="{5AB9F236-6BAB-4AE0-819B-D5FCB1FD8EE8}" />
+				<Child Name="textnodeCat6310" Owner="{E51066F7-C7CA-4467-A07F-BD55C0A30FA6}" />
+				<Child Name="textnodeCat6420" Owner="{1190C218-42F0-44C1-AF09-D25440465C5E}" />
+				<Child Name="textnodeCat6640" Owner="{53B44FE6-2D1D-4FAB-A86D-E200E5A16DF8}" />
+				<Child Name="textnodeCat6640siemens" Owner="{B51B1491-55AD-4A00-BFC2-BC47758524AE}" />
+				<Child Name="textnodeCat6420fiveestops" Owner="{C3D1CDE9-264D-4F80-81DC-43D20F93DB57}" />
+				<Child Name="textnodeCat6540" Owner="{F897A3C5-0C2C-46F8-A3EC-8E1DEB514224}" />
+				<Child Name="textnodePh120" Owner="{BEE0623C-5F3D-447D-9B0E-D2D93AECAF78}" />
+				<Child Name="textnodePh320xpc" Owner="{B2951F2F-2DB0-4169-935B-C2C8FBECCAA7}" />
+				<Child Name="textnodePh320et200sp" Owner="{5E49D383-7EAF-46C8-A59B-2D97CEE88C53}" />
+				<Child Name="textnodeSandvikd90" Owner="{8F29B159-6357-4C4F-9FB7-041E492A2E02}" />
+				<Child Name="textnodeSandvikdr460" Owner="{3B963442-4FCE-44FF-93C7-27B6C653CA83}" />
+				<Child Name="panelDrillHoleDepth" Owner="{455AA907-19AA-49D2-8B80-7D4A10B9DC69}" />
+				<Child Name="buttonSwitch" Owner="{1EC052FC-4D53-433B-9879-89EF2512E01C}" />
+				<Child Name="panelShow" Owner="{A69923C2-AD6D-4B17-9167-C07014EC05D1}" />
+				<Child Name="numberinput" Owner="{88069619-2378-4F0F-BC49-4D79AB52CA62}" />
+				<Child Name="panel" Owner="{6CCCAFAF-C28C-4E50-855B-260F025E876E}" />
+				<Child Name="buttonSwitch2" Owner="{A5BC70FC-6A40-4393-903A-AE2B96A5660E}" />
+				<Child Name="buttonSave1" Owner="{B18CA92B-8AC2-4CBF-B834-46EE45FD7583}" />
+				<Child Name="buttonSave" Owner="{D8911C4B-F407-4926-A609-DB8AF1AA75A3}" />
+				<Child Name="textnodeDrillHoleDepth" Owner="{C78BCDB8-1E32-4BB6-9972-47F31C3EAA69}" />
+			</Child>
+			<Child Name="pageDiagnosticDashboard4" Owner="{AB056A0A-ACB2-40ED-AC0D-9D2058B01CF8}">
+				<Child Name="panelLogin" Owner="{DE7E76B6-497D-4850-8A06-7FE86C249DD4}" />
+				<Child Name="textbox" Owner="{877EFD3F-0170-4676-A3AD-5F511141CD8A}" />
+				<Child Name="passwordbox" Owner="{F279F182-EC45-481D-9A4F-C81F3A02AFCE}" />
+				<Child Name="buttonLogin" Owner="{3272F9E3-938B-4323-885C-A2C2B19EFD67}" />
+			</Child>
+		</Child>
+		<Child Name="ms_teams" Owner="{A583C1F4-FF22-4E93-9CC9-B3474C8BB257}">
+			<Child Name="wndTeamsWebView" Owner="{C97B9263-6617-4752-A30B-07687C5AEC05}">
+				<Child Name="Chrome_WidgetWin_0" Owner="{2F187DD8-65CC-41FA-AE49-2D1862D3D6BC}">
+					<Child Name="Chrome_WidgetWin_0" Owner="{ABE62E9F-966E-4B85-99B3-92A0A49FF567}" />
+				</Child>
+			</Child>
+			<Child Name="wndTeamsWebView2" Owner="{6DB2FDAF-0143-4999-8F3C-0FC105B833BD}">
+				<Child Name="Chrome_WidgetWin_0" Owner="{5A5D68D6-DCC0-4E80-BB33-FE5FC69D5FF1}">
+					<Child Name="Chrome_WidgetWin_0" Owner="{1D0E1159-0658-422C-91CA-E8E3BEE6EF47}" />
+				</Child>
+			</Child>
+		</Child>
+		<Child Name="InputApp" Owner="{0B03F5FA-C7CC-4999-B530-05588B75AB40}">
+			<Child Name="wndWindowsUICoreCoreWindow" Owner="{902C9353-A22E-46D4-A5D3-B250AA7C9DAB}" />
+			<Child Name="pageEmojiAndMoreMenu" Owner="{2D16403F-BE24-4C6C-B890-6C938C0DB64C}">
+				<Child Name="textnodeExpandedViewContentLists" Owner="{3047731D-B75A-423E-B5FE-B054500F8C1C}">
+					<Child Name="textnodeExpandedViewListContaine" Owner="{4D712A3C-EE10-49EE-8829-4B8C92E819E5}">
+						<Child Name="textnodeAutodrillsetupdrillholed" Owner="{E4075E81-128F-476C-B24D-FE515E4DC165}">
+							<Child Name="textnodeAutodrillsetupdrillholed2" Owner="{750FC43D-DE4B-49A3-9A0B-644E860DD847}" />
+						</Child>
+						<Child Name="textnodeCollaringPluggedAirPress" Owner="{0EADA30F-39ED-473B-963C-8DAB700A0FC9}">
+							<Child Name="textnodeCollaringPluggedAirPress2" Owner="{0DFCC29C-4FFC-4FD2-BC9A-964E07EEF1F4}" />
+						</Child>
+					</Child>
+				</Child>
+			</Child>
 		</Child>
 	</LogicalNodes>
 </Root>

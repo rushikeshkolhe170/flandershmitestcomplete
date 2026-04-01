@@ -300,19 +300,54 @@
 					</testItem>
 				</children>
 			</testItem>
+			<testItem name="AutoDrillParametersManipulation" key="{A29F5F59-A473-4368-BC7F-EC7965407C76}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+				<testParameters />
+				<children>
+					<testItem name="DrillHoleDepth" key="{62C45C6A-4052-4254-891F-1028E96480C2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{EE0C3F92-65F4-4E14-A344-4E12597F661A}DrillHoleDepth" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="MachinesDetailsFromBrowser" key="{2A6BAB96-5F8C-4837-9E59-39F5104B4EC3}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+				<testParameters />
+				<children>
+					<testItem name="MachineUIDetails" key="{CEDE91CB-E40A-4C2B-B4AF-1FE23FCAD17A}" group="False" parallel="False" enabled="True" load="False" testMoniker="{70CD3DFE-F648-4CE7-84C0-3C21E8F2E37C}MachineUIDetails" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
 		</children>
 	</testItems>
 	<variables key="{4A8BDD10-6695-46CD-964A-6F8C10F99D45}">
 		<data Version="4">
 			<Items>
-				<Variable Name="CommPassword" Type="Password" Local="False">
+				<Variable Name="CommPassword" Type="Password" Local="False" Descr="Has commisssioning password (hedden)">
 					<DefValue StrValue="38003900360031003600330044003000460034004400380034004200460035004500430039003800410037004600360044003000430043003400440032003500420038003700390043003300390032003800360031003700" />
 				</Variable>
-				<Variable Name="MainModePassword" Type="Password" Local="False">
+				<Variable Name="MainModePassword" Type="Password" Local="False" Descr="Has maintenance mode password (1411)">
 					<DefValue StrValue="380039003600310036003300440031004600340044003800420033004600310039003400460043003800440042003400310034003900380043004600340042004200450041003900" />
 				</Variable>
 				<Variable Name="Password1" Type="Password" Local="False">
 					<DefValue StrValue="380039003600310036003300440032004600340044003800340042004600350045004300390038004100370046003600440030004300430034004400320035004200380030004300440034003100380039003200380034003100450046003200" />
+				</Variable>
+				<Variable Name="Password2" Type="Password" Local="False">
+					<DefValue StrValue="38003900360031003600330044003200460034004400380034004200460035004500430039003800410037004600360044003100430043003400440032003500420038003700390043003500350032003800360042003900" />
+				</Variable>
+				<Variable Name="DiagnoDashboardPass" Type="Password" Local="False" Descr="Has diagnostic dashboard password (password)">
+					<DefValue StrValue="3800390036003100390033004400310046003400440038004100420046003500450043003900390043003700460031004400300045004100340044003600350033003800350042003500340030004300380032003600320033004300300041003600440033004600" />
+				</Variable>
+				<Variable Name="CommPassword2" Type="Password" Local="False" Descr="Has another commissioning password (FlandersOnly!234)">
+					<DefValue StrValue="380039003600310044003300440031004600340044003800460033004600360036004300390043004100370039003300440041004600420038003300370038004600360031004300460041003700410041004300300034004500430036004200440043004300380043004400300041003200440042003900420044003400410032004200420039003800320031003900310043004400380045003300410038004300340043003900" />
+				</Variable>
+				<Variable Name="browserType1" Type="String" Local="False" Descr="Run Diagnostic Dashboard on Edge">
+					<DefValue StrValue="edge" />
+				</Variable>
+				<Variable Name="browserType2" Type="String" Local="False" Descr="Run Diagnostic Dashboard on Chrome">
+					<DefValue StrValue="chrome" />
 				</Variable>
 			</Items>
 		</data>

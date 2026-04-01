@@ -35,6 +35,21 @@
 					<Node name="var2">
 						<Prp name="name" type="S" value="Password1"/>
 					</Node>
+					<Node name="var3">
+						<Prp name="name" type="S" value="Password2"/>
+					</Node>
+					<Node name="var4">
+						<Prp name="name" type="S" value="DiagnoDashboardPass"/>
+					</Node>
+					<Node name="var5">
+						<Prp name="name" type="S" value="CommPassword2"/>
+					</Node>
+					<Node name="var6">
+						<Prp name="name" type="S" value="browserType1"/>
+					</Node>
+					<Node name="var7">
+						<Prp name="name" type="S" value="browserType2"/>
+					</Node>
 				</Node>
 				<Prp name="version" type="I" value="4"/>
 			</Node>

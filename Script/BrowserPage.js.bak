@@ -1,16 +1,83 @@
 ﻿const Browser_Variables =
 {
-  CommissioningOption : Aliases.browser.pageDiagnosticDashboard.navAlarmsOverview.linkCommissioning,
-  Save1_Btn : Aliases.browser.pageDiagnosticDashboard2.buttonSave1,
-  ConfirmationSave_Btn : Aliases.browser.pageDiagnosticDashboard2.buttonSave
+  Page : Aliases.browser.pageDiagnosticDashboard2,
+  CommissioningOption : function() {
+    return Aliases.browser.pageDiagnosticDashboard.FindElement("//a[@href='/commissioning']");
+  },
+  Save_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//button[starts-with(text(),'Save')]");
+  },
+  ConfirmationSave_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//button[text()='Save']");
+  }
 };
 
 const Commissioning_Variables =
 {
-  MachineConfiguration_Opt : Aliases.browser.pageDiagnosticDashboard2.panelMachineConfiguration,
-  MachineType_Btn : Aliases.browser.pageDiagnosticDashboard2.buttonMachineType,
-  //Sandvik410I_Btn : Aliases.browser.pageDiagnosticDashboard2.panel+"Sandvikdr410i",
+  MachineConfiguration_Opt : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//div[text()='Machine Configuration']");
+  },
+  UI_Opt : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//div[text()='UI']");
+  }
+}
+
+const MachineConfig_Variables =
+{
+  MachineType_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[text()='Machine Type']/../div/div/div[2]//div/button/span");
+  }
+}
+
+const UI_Variables =
+{
+  AutoDrillParameter_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//button[text()='Auto Drill Parameters']");
+  }
+}
+
+const AutoDrillPara_Variables =
+{
+  DrillHoleDepth_Panel : Aliases.browser.pageDiagnosticDashboard2.panelDrillHoleDepth,
+  CollaringCompressorVolumeCommand_Panel : Aliases.browser.pageDiagnosticDashboard2.panelCollaringPluggedAirPressure,
+  //h1[.='Collaring Plugged Air Pressure Limit']
+  DrillHoleDepthShow_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Drill Hole Depth']/../div/div/div[2]/button");
+  },
+  DrillHoleDepthMax_Value : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Drill Hole Depth']/../div/div[2]/div[2]/div/div/input");
+  },
+  DrillHoleDepthMin_Value : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Drill Hole Depth']/../div/div[3]/div[2]/div/div/input");
+  },
+  DrillHoleDepthAllowDecimal_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Drill Hole Depth']/../div/div[4]/div[2]/button");
+  },
+  DrillHoleDepthIsPercent_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Drill Hole Depth']/../div/div[5]/div[2]/button");
+  },
+  DrillHoleDepthshowPercentSign_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Drill Hole Depth']/../div/div[6]/div[2]/button");
+  },
+  CollaringCompressorVolumeCommandShow_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Collaring Compressor Volume Command']/../div/div/div[2]/button");
+  },
+  CollaringCompressorVolumeCommandMax_Value : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Collaring Compressor Volume Command']/../div/div[2]/div[2]/div/div/input");
+  },
+  CollaringCompressorVolumeCommandMin_Value : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Collaring Compressor Volume Command']/../div/div[3]/div[2]/div/div/input");
+  },
+  CollaringCompressorVolumeCommandAllowDecimal_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Collaring Compressor Volume Command']/../div/div[4]/div[2]/button");
+  },
+  CollaringCompressorVolumeCommandIsPercent_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Collaring Compressor Volume Command']/../div/div[5]/div[2]/button");
+  },
+  CollaringCompressorVolumeCommandshowPercentSign_Btn : function() {
+    return Aliases.browser.pageDiagnosticDashboard2.FindElement("//h1[.='Collaring Compressor Volume Command']/../div/div[6]/div[2]/button");
+  }
   
 }
 
-module.exports = {Browser_Variables, Commissioning_Variables};
+module.exports = {Browser_Variables, Commissioning_Variables, MachineConfig_Variables, UI_Variables, AutoDrillPara_Variables};
