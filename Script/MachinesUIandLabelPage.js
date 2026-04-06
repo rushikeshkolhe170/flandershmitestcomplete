@@ -1,6 +1,8 @@
 ﻿
 const {verifyWpfControlTextWithExistCheck, verifyVisibilityWithExistCheck} = require('CommonFunc');
-const {machineStatusVariables, Sandvik410I_Variables, Sandvik416I_Variables, AtlasCopco2714JackWithStairs_Variables, AtlasCopco271MastStairs_Variables, Epiroc271E_Variables} = require('MachineStatusPage');
+const {machineStatusVariables, Sandvik410I_Variables, Sandvik416I_Variables, AtlasCopco2714JackWithStairs_Variables, AtlasCopco271MastStairs_Variables, Epiroc271E_Variables,
+AtlasCopco351E_Variables, AtlasCopco351_Variables, Cat6420_Variables, Cat6420FiveEStops_Variables, AtlasCopco235_Variables, AtlasCopco2713Jack_Variables,
+AtlasCopco2714Jack_Variables, AtlasCopco275_Variables} = require('MachineStatusPage');
 
 function Sandvik412I()
 {
@@ -313,4 +315,349 @@ function Epiroc271E()
   verifyVisibilityWithExistCheck(Epiroc271E_Variables.LubeLevel_UI);
 }
 
-module.exports = {Sandvik412I, Sandvik410I, Sandvik416I, AtlasCopco2714JackWithStairs, AtlasCopco271MastStairs, Epiroc271E};
+function AtlasCopco351E()
+{
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351E_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'WPFControlText' property of the AirTemp object equals 'AIR TEMP'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351E_Variables.AirTemp_Label, "AIR TEMP");
+  //Checks whether the 'IsVisible' property of the RECEIVER AIR TANK PSI and AIR TEMP part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351E_Variables.ReceiverAirTankPSIandAirTemp_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351E_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351E_Variables.AirComp_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351E_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'IsVisible' property of the ENGINE RPM object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351E_Variables.EngineRPM_UI);
+}
+
+function AtlasCopco351()
+{
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.AirComp_UI);
+  //Checks whether the 'WPFControlText' property of the AirTemp object equals 'AIR TEMP'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.AirTemp_Label, "AIR TEMP");
+  //Checks whether the 'IsVisible' property of the AIR TEMP part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.AirTemp_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'IsVisible' property of the ENGINE RPM part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.EngineRPM_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicRadiator object equals 'HYDRAULIC RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.HydRadiator_Label, "HYDRAULIC RADIATOR");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.HydRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressorRadiator object equals 'AIR COMPRESSOR RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.AirCompRadiator_Label, "AIR COMPRESSOR RADIATOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.AirCompRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRadiator object equals 'ENGINE RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.EngineRadiator_Label, "ENGINE RADIATOR");
+  //Checks whether the 'IsVisible' property of the ENGINE RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.EngineRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTank2 object equals 'HYDRAULIC TANK'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.HydTank_Label, "HYDRAULIC TANK");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TANK part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.HydTank_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicPumps2 object equals 'HYDRAULIC PUMPS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.HydPump_Label, "HYDRAULIC PUMPS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC PUMPS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.HydPump_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicDrainFilters object equals 'HYDRAULIC DRAIN FILTERS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.HydDrainFilter_Label, "HYDRAULIC DRAIN FILTERS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC DRAIN FILTERS part 1 object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.HydDrainFilter1_UI);
+  //Checks whether the 'IsVisible' property of the HYDRAULIC DRAIN FILTERS part 2 object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco351_Variables.HydDrainFilter2_UI);
+  //Clicks the 'Button4' button.
+  AtlasCopco351_Variables.OtherOption_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the NcsPortA object equals 'NCS PORT A'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.NCSPortA_Label, "NCS PORT A");
+  //Checks whether the 'WPFControlText' property of the NcsPortB2 object equals 'NCS PORT B'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.NCSPortB_Label, "NCS PORT B");
+  //Checks whether the 'WPFControlText' property of the CsPortA object equals 'CS PORT A'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.CSPortA_Label, "CS PORT A");
+  //Checks whether the 'WPFControlText' property of the CsPortB2 object equals 'CS PORT B'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco351_Variables.CSPortB_Label, "CS PORT B");
+  //Clicks the 'ButtonClose2' button.
+  AtlasCopco351_Variables.OtherOptClose_Btn.ClickButton();
+}
+
+function Cat6420()
+{
+  //Checks whether the 'WPFControlText' property of the HydraulicRadiator object equals 'HYDRAULIC RADIATOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.HydRadiator_Label, "HYDRAULIC RADIATOR");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.HydRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRadiator object equals 'ENGINE RADIATOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.EngineRadiator_Label, "ENGINE RADIATOR");
+  //Checks whether the 'IsVisible' property of the ENGINE RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.EngineRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressorRadiator object equals 'AIR COMPRESSOR RADIATOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.AirCompRadiator_Label, "AIR COMPRESSOR RADIATOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.AirCompRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirTemp object equals 'AIR TEMP'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.AirTemp_Label, "AIR TEMP");
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR TEMP and AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.AirTempAirComp_UI);
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'IsVisible' property of the ENGINE RPM part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.EngineRPM_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicPumps2 object equals 'HYDRAULIC PUMPS'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.HydPump_Label, "HYDRAULIC PUMPS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC PUMPS part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.HydPump_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTank2 object equals 'HYDRAULIC TANK'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.HydTank_Label, "HYDRAULIC TANK");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TANK part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.HydTank_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTemp object equals 'HYDRAULIC TEMP'.
+  verifyWpfControlTextWithExistCheck(Cat6420_Variables.HydTemp_Label, "HYDRAULIC TEMP");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TEMP part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420_Variables.HydTemp_UI);
+}
+
+function Cat6420FiveEStops()
+{
+  //Checks whether the 'WPFControlText' property of the HydraulicRadiator object equals 'HYDRAULIC RADIATOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.HydRadiator_Label, "HYDRAULIC RADIATOR");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.HydRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRadiator object equals 'ENGINE RADIATOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.EngineRadiator_Label, "ENGINE RADIATOR");
+  //Checks whether the 'IsVisible' property of the ENGINE RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.EngineRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressorRadiator object equals 'AIR COMPRESSOR RADIATOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.AirCompRadiator_Label, "AIR COMPRESSOR RADIATOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.AirCompRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirTemp object equals 'AIR TEMP'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.AirTemp_Label, "AIR TEMP");
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR TEMP and AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.AirTempAirComp_UI);
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'IsVisible' property of the ENGINE RPM part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.EngineRPM_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicPumps2 object equals 'HYDRAULIC PUMPS'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.HydPump_Label, "HYDRAULIC PUMPS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC PUMPS part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.HydPump_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTank2 object equals 'HYDRAULIC TANK'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.HydTank_Label, "HYDRAULIC TANK");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TANK part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.HydTank_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTemp object equals 'HYDRAULIC TEMP'.
+  verifyWpfControlTextWithExistCheck(Cat6420FiveEStops_Variables.HydTemp_Label, "HYDRAULIC TEMP");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TEMP part object equals True.
+  verifyVisibilityWithExistCheck(Cat6420FiveEStops_Variables.HydTemp_UI);
+}
+
+function AtlasCopco235()
+{
+  //Checks whether the 'WPFControlText' property of the EngineAirFilter object equals 'ENGINE AIR FILTER'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco235_Variables.EngineAirFilter_Label, "ENGINE AIR FILTER");
+  //Checks whether the 'IsVisible' property of the ENGINE AIR FILTER part 1 object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco235_Variables.EngineAirFilter1_UI);
+  //Checks whether the 'IsVisible' property of the ENGINE AIR FILTER part 2 object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco235_Variables.EngineAirFilter2_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressorFilter object equals 'AIR COMPRESSOR FILTER'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco235_Variables.AirCompFilter_Label, "AIR COMPRESSOR FILTER");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR FILTER part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco235_Variables.AirCompFilter_UI);
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco235_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'IsVisible' property of the RECEIVER AIR TANK PSI part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco235_Variables.ReceiverAirTankPSI_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco235_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco235_Variables.AirComp_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco235_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'IsVisible' property of the ENGINE RPM part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco235_Variables.EngineRPM_UI);
+}
+
+function AtlasCopco2713Jack()
+{
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'WPFControlText' property of the HydraulicRadiator object equals 'HYDRAULIC RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.HydRadiator_Label, "HYDRAULIC RADIATOR");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.HydRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRadiator object equals 'ENGINE RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.EngineRadiator_Label, "ENGINE RADIATOR");
+  //Checks whether the 'IsVisible' property of the ENGINE RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.EngineRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressorRadiator object equals 'AIR COMPRESSOR RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.AirCompRadiator_Label, "AIR COMPRESSOR RADIATOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.AirCompRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirTemp object equals 'AIR TEMP'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.AirTemp_Label, "AIR TEMP");
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR TEMP and AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.AirTempAirComp_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'WPFControlText' property of the HydraulicPumps2 object equals 'HYDRAULIC PUMPS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.HydPump_Label, "HYDRAULIC PUMPS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC PUMPS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.HydPump_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicReturnFilters object equals 'HYDRAULIC RETURN FILTERS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.HydReturnFilters_Label, "HYDRAULIC RETURN FILTERS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RETURN FILTERS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.HydReturnFilters_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTank2 object equals 'HYDRAULIC TANK'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.HydTank_Label, "HYDRAULIC TANK");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TANK part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.HydTank_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicDrainFilters object equals 'HYDRAULIC DRAIN FILTERS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.HydDrainFilter_Label, "HYDRAULIC DRAIN FILTERS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC DRAIN FILTERS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2713Jack_Variables.HydDrainFilter_UI);
+  //Checks whether the 'WPFControlText' property of the LubeLevel2 object equals 'LUBE LEVEL'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.LubeLevel_Label, "LUBE LEVEL");
+  //Clicks the 'Button4' button.
+  AtlasCopco2713Jack_Variables.OtherOption_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the NcsPortA object equals 'NCS PORT A'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.NCSPortA_Label, "NCS PORT A");
+  //Checks whether the 'WPFControlText' property of the NcsPortB2 object equals 'NCS PORT B'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.NCSPortB_Label, "NCS PORT B");
+  //Checks whether the 'WPFControlText' property of the CsPortA object equals 'CS PORT A'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.CSPortA_Label, "CS PORT A");
+  //Checks whether the 'WPFControlText' property of the CsPortB2 object equals 'CS PORT B'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2713Jack_Variables.CSPortB_Label, "CS PORT B");
+  //Clicks the 'ButtonClose2' button.
+  AtlasCopco2713Jack_Variables.OtherOptClose_Btn.ClickButton();
+}
+
+function AtlasCopco2714Jack()
+{
+  //Checks whether the 'WPFControlText' property of the HydraulicRadiator object equals 'HYDRAULIC RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.HydRadiator_Label, "HYDRAULIC RADIATOR");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.HydRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRadiator object equals 'ENGINE RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.EngineRadiator_Label, "ENGINE RADIATOR");
+  //Checks whether the 'IsVisible' property of the ENGINE RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.EngineRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressorRadiator object equals 'AIR COMPRESSOR RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.AirCompRadiator_Label, "AIR COMPRESSOR RADIATOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.AirCompRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'WPFControlText' property of the AirTemp object equals 'AIR TEMP'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.AirTemp_Label, "AIR TEMP");
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR TEMP and AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.AirTempAirComp_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'WPFControlText' property of the HydraulicReturnFilters object equals 'HYDRAULIC RETURN FILTERS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.HydReturnFilters_Label, "HYDRAULIC RETURN FILTERS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RETURN FILTERS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.HydReturnFilters_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTank2 object equals 'HYDRAULIC TANK'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.HydTank_Label, "HYDRAULIC TANK");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TANK part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.HydTank_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicDrainFilters object equals 'HYDRAULIC DRAIN FILTERS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.HydDrainFilter_Label, "HYDRAULIC DRAIN FILTERS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC DRAIN FILTERS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.HydDrainFilter_UI);
+  //Checks whether the 'WPFControlText' property of the LubeLevel2 object equals 'LUBE LEVEL'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.LubeLevel_Label, "LUBE LEVEL");
+  //Checks whether the 'WPFControlText' property of the HydraulicPumps2 object equals 'HYDRAULIC PUMPS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.HydPump_Label, "HYDRAULIC PUMPS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC PUMPS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco2714Jack_Variables.HydPump_UI);
+  //Clicks the 'Button4' button.
+  AtlasCopco2714Jack_Variables.OtherOption_Btn.ClickButton();
+  aqUtils.Delay(3000);
+  //Checks whether the 'WPFControlText' property of the NcsPortA object equals 'NCS PORT A'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.NCSPortA_Label, "NCS PORT A");
+  //Checks whether the 'WPFControlText' property of the NcsPortB2 object equals 'NCS PORT B'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.NCSPortB_Label, "NCS PORT B");
+  //Checks whether the 'WPFControlText' property of the CsPortA object equals 'CS PORT A'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.CSPortA_Label, "CS PORT A");
+  //Checks whether the 'WPFControlText' property of the CsPortB2 object equals 'CS PORT B'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco2714Jack_Variables.CSPortB_Label, "CS PORT B");
+  //Clicks the 'ButtonClose2' button.
+  AtlasCopco2714Jack_Variables.OtherOptClose_Btn.ClickButton();
+}
+
+function AtlasCopco275()
+{
+  //Checks whether the 'WPFControlText' property of the ReceiverAirTankPsi object equals 'RECEIVER AIR TANK PSI'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.ReceiverAirTankPSI_Label, "RECEIVER AIR TANK PSI");
+  //Checks whether the 'IsVisible' property of the RECEIVER AIR TANK PSI part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.ReceiverAirTankPSI_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicRadiator object equals 'HYDRAULIC RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.HydRadiator_Label, "HYDRAULIC RADIATOR");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.HydRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRadiator object equals 'ENGINE RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.EngineRadiator_Label, "ENGINE RADIATOR");
+  //Checks whether the 'IsVisible' property of the ENGINE RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.EngineRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirCompressorRadiator object equals 'AIR COMPRESSOR RADIATOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.AirCompRadiator_Label, "AIR COMPRESSOR RADIATOR");
+  //Checks whether the 'IsVisible' property of the AIR COMPRESSOR RADIATOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.AirCompRadiator_UI);
+  //Checks whether the 'WPFControlText' property of the AirTemp object equals 'AIR TEMP'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.AirTemp_Label, "AIR TEMP");
+  //Checks whether the 'WPFControlText' property of the AirCompressor object equals 'AIR COMPRESSOR'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.AirComp_Label, "AIR COMPRESSOR");
+  //Checks whether the 'IsVisible' property of the AIR TEMP and AIR COMPRESSOR part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.AirTempAirComp_UI);
+  //Checks whether the 'WPFControlText' property of the EngineRpm object equals 'ENGINE RPM'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.EngineRPM_Label, "ENGINE RPM");
+  //Checks whether the 'IsVisible' property of the ENGINE RPM part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.EngineRPM_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicPumps2 object equals 'HYDRAULIC PUMPS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.HydPump_Label, "HYDRAULIC PUMPS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC PUMPS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.HydPump_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicReturnFilters object equals 'HYDRAULIC RETURN FILTERS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.HydReturnFilters_Label, "HYDRAULIC RETURN FILTERS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC RETURN FILTERS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.HydReturnFilters_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicTank2 object equals 'HYDRAULIC TANK'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.HydTank_Label, "HYDRAULIC TANK");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC TANK part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.HydTank_UI);
+  //Checks whether the 'WPFControlText' property of the HydraulicDrainFilters object equals 'HYDRAULIC DRAIN FILTERS'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.HydDrainFilter_Label, "HYDRAULIC DRAIN FILTERS");
+  //Checks whether the 'IsVisible' property of the HYDRAULIC DRAIN FILTERS part object equals True.
+  verifyVisibilityWithExistCheck(AtlasCopco275_Variables.HydDrainFilter_UI);
+  //Checks whether the 'WPFControlText' property of the LubeLevel2 object equals 'LUBE LEVEL'.
+  verifyWpfControlTextWithExistCheck(AtlasCopco275_Variables.LubeLevel_Label, "LUBE LEVEL");
+}
+
+module.exports = {Sandvik412I, Sandvik410I, Sandvik416I, AtlasCopco2714JackWithStairs, AtlasCopco271MastStairs, Epiroc271E, AtlasCopco351E, AtlasCopco351, Cat6420, Cat6420FiveEStops,
+AtlasCopco235, AtlasCopco2713Jack, AtlasCopco2714Jack, AtlasCopco275};
+

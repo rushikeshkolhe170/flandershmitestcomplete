@@ -8728,6 +8728,59 @@
 																									</Property>
 																								</Properties>
 																							</Child>
+																							<Child Name="Rectangle_1249" Key="{E262704D-1337-42BE-AFDB-E6464ADF79A2}" ExtendedFind="True">
+																								<Image FileName="-1722324090" Left="862" Top="425" Right="908" Bottom="454" />
+																								<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																								<Properties>
+																									<Property Name="WPFControlName">
+																										<Value Value="Rectangle_1249" />
+																									</Property>
+																								</Properties>
+																							</Child>
+																							<Child Name="Group_463" Key="{14F587E8-792B-45DA-BD6F-F8877DE91123}" ExtendedFind="True">
+																								<Image FileName="1893749029" Left="711" Top="357" Right="770" Bottom="417" />
+																								<Properties>
+																									<Property Name="WPFControlName">
+																										<Value Value="Group_463" />
+																									</Property>
+																								</Properties>
+																								<Children>
+																									<Child Name="Path" Key="{7E15D89B-8FE5-4C98-BC30-5AE97FB6F679}" ExtendedFind="True">
+																										<Image FileName="1893749029" Left="711" Top="357" Right="770" Bottom="416" />
+																										<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																										<Properties>
+																											<Property Name="ClrFullClassName">
+																												<Value Value="System.Windows.Shapes.Path" />
+																											</Property>
+																											<Property Name="WPFControlOrdinalNo">
+																												<Value Value="3" Type="0" />
+																											</Property>
+																										</Properties>
+																									</Child>
+																								</Children>
+																							</Child>
+																							<Child Name="Group_346" Key="{81BEF73B-D3B7-4774-864C-C42A800F9C4B}" ExtendedFind="True">
+																								<Image FileName="723074096" Left="612" Top="514" Right="690" Bottom="627" />
+																								<Properties>
+																									<Property Name="WPFControlName">
+																										<Value Value="Group_346" />
+																									</Property>
+																								</Properties>
+																								<Children>
+																									<Child Name="Path" Key="{4898C5AE-4111-4CDA-B74E-285E4FDCAF89}" ExtendedFind="True">
+																										<Image FileName="723074096" Left="612" Top="528" Right="689" Bottom="626" />
+																										<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																										<Properties>
+																											<Property Name="ClrFullClassName">
+																												<Value Value="System.Windows.Shapes.Path" />
+																											</Property>
+																											<Property Name="WPFControlOrdinalNo">
+																												<Value Value="3" Type="0" />
+																											</Property>
+																										</Properties>
+																									</Child>
+																								</Children>
+																							</Child>
 																						</Children>
 																					</Child>
 																					<Child Name="Rectangle5" Key="{08A2BBFB-7958-49D9-96A7-783C177D830B}" ExtendedFind="True">
@@ -8739,6 +8792,54 @@
 																							</Property>
 																							<Property Name="WPFControlOrdinalNo">
 																								<Value Value="338" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path7" Key="{0404C707-AFA5-4CB9-B6F9-AA73A0BB0EDA}" ExtendedFind="True">
+																						<Image FileName="-1528698350" Left="592" Top="431" Right="693" Bottom="464" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="10" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Rectangle6" Key="{7B198657-36FC-44BE-BE7A-D3C08CCE2528}" ExtendedFind="True">
+																						<Image FileName="-1989386331" Left="467" Top="445" Right="527" Bottom="591" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Rectangle" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="123" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Path8" Key="{70990733-29FF-4E5A-A57E-4BB41AFC6EA2}" ExtendedFind="True">
+																						<Image FileName="1857062489" Left="764" Top="744" Right="790" Bottom="769" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Path" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="390" Type="0" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="Rectangle7" Key="{2E9D740F-F809-4763-AE95-F030A8CE9598}" ExtendedFind="True">
+																						<Image FileName="754297030" Left="871" Top="779" Right="918" Bottom="883" />
+																						<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Shapes.Rectangle" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="41" Type="0" />
 																							</Property>
 																						</Properties>
 																					</Child>
@@ -9065,6 +9166,291 @@
 																					</Property>
 																					<Property Name="WPFControlOrdinalNo">
 																						<Value Value="7" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle" Key="{4C8C0825-ECCF-4A09-97D8-BF208922FB46}" ExtendedFind="True">
+																				<Image FileName="-1310160887" Left="613" Top="372" Right="668" Bottom="431" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="2" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle2" Key="{05E9D30D-263E-4AC0-992A-D97AB58353D3}" ExtendedFind="True">
+																				<Image FileName="-1644154350" Left="472" Top="292" Right="518" Bottom="362" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="6" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle3" Key="{4FB082F5-257D-48F7-8478-F70DCC5ADB45}" ExtendedFind="True">
+																				<Image FileName="-813907176" Left="472" Top="366" Right="518" Bottom="436" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="5" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle4" Key="{28ADF8ED-4D48-4C1F-A268-32E49F990FF6}" ExtendedFind="True">
+																				<Image FileName="-782768204" Left="742" Top="570" Right="786" Bottom="663" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="4" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle5" Key="{835F30D3-D336-47A9-9A69-72557A1A2B0C}" ExtendedFind="True">
+																				<Image FileName="393427175" Left="697" Top="657" Right="723" Bottom="686" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="8" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle6" Key="{FEDB1096-A9FE-42FA-BEAF-E35D2339B8DB}" ExtendedFind="True">
+																				<Image FileName="1345199757" Left="588" Top="657" Right="614" Bottom="686" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="7" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle7" Key="{21A89163-A587-4F68-AF49-D06D29C0EE2D}" ExtendedFind="True">
+																				<Image FileName="1688264774" Left="825" Top="349" Right="901" Bottom="366" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="23" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle8" Key="{8BFC80A5-63D8-486C-A8DC-7852AA56024C}" ExtendedFind="True">
+																				<Image FileName="1541751025" Left="700" Top="342" Right="826" Bottom="363" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="25" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle9" Key="{FDF30A51-DD97-48C5-B5CC-9C1AB7D08C99}" ExtendedFind="True">
+																				<Image FileName="2144302985" Left="700" Top="372" Right="899" Bottom="390" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="22" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle10" Key="{D5AD1FE3-408A-4CF3-80D6-22797BA62C8C}" ExtendedFind="True">
+																				<Image FileName="-875286582" Left="767" Top="479" Right="808" Bottom="552" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="21" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle11" Key="{406BF4A9-D739-4F6B-BCA2-6CD030F88102}" ExtendedFind="True">
+																				<Image FileName="-1507717707" Left="872" Top="784" Right="917" Bottom="833" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="24" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="TextblockHydraulicTemp" Key="{0C8FADEA-4BDD-4B1A-B58A-C332F8478704}" ExtendedFind="True">
+																				<Image FileName="1633329727" Left="1020" Top="849" Right="1326" Bottom="873" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.TextBlock" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="HYDRAULIC TEMP" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle12" Key="{1C934959-5142-4C49-81F6-8B53DFB961B1}" ExtendedFind="True">
+																				<Image FileName="1282038931" Left="825" Top="349" Right="901" Bottom="366" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="31" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle13" Key="{FF4CD38E-E7E6-4781-BBAD-B81BDADA49C4}" ExtendedFind="True">
+																				<Image FileName="1542431753" Left="700" Top="342" Right="826" Bottom="363" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="33" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle14" Key="{AEE7BA74-6C8A-4EEF-AB10-236E8C1386F1}" ExtendedFind="True">
+																				<Image FileName="-1591017051" Left="700" Top="372" Right="899" Bottom="390" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="30" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle15" Key="{8B83C2A0-A4E5-46E3-B42F-8A77F1860684}" ExtendedFind="True">
+																				<Image FileName="1968887467" Left="767" Top="479" Right="808" Bottom="552" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="29" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="Rectangle16" Key="{44704FE3-57EB-4A8B-9D5F-663F5057B2DC}" ExtendedFind="True">
+																				<Image FileName="-119591019" Left="872" Top="784" Right="917" Bottom="833" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Shapes.Rectangle" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="32" Type="0" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleHydraulicRadiatorTouch" Key="{2C986EB9-6BEA-475B-833D-BFF56546B628}" ExtendedFind="True">
+																				<Image FileName="-1214142475" Left="480" Top="240" Right="531" Bottom="316" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleHydraulicRadiatorTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleEngineRadiatorTouch" Key="{5158D73A-6B5C-4DC7-86CA-B4545AF2436B}" ExtendedFind="True">
+																				<Image FileName="758751562" Left="480" Top="315" Right="531" Bottom="385" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleEngineRadiatorTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleAirCompressorRadiatorTouch" Key="{6464C96F-ED94-4487-B2CE-0DC905F1F1F7}" ExtendedFind="True">
+																				<Image FileName="1480825398" Left="480" Top="370" Right="531" Bottom="440" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleAirCompressorRadiatorTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleAirCompressorTouch" Key="{E4CCAA6B-F766-4213-9DD7-B261787CDD2E}" ExtendedFind="True">
+																				<Image FileName="-587684975" Left="667" Top="410" Right="727" Bottom="451" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleAirCompressorTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleHydraulicPumpsTouch" Key="{F1C2603F-E61C-45D1-AD17-56B7DDA07DC9}" ExtendedFind="True">
+																				<Image FileName="-133481544" Left="661" Top="661" Right="731" Bottom="718" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleHydraulicPumpsTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleHydraulicReturnFilterTouch" Key="{C620E9AF-84FC-4B91-BA8E-94BCD7AF3A3B}" ExtendedFind="True">
+																				<Image FileName="1845353469" Left="488" Top="645" Right="558" Bottom="673" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleHydraulicReturnFilterTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleHydraulicTankTouch" Key="{BBD5F320-9891-4C77-97EF-2A0A73A70975}" ExtendedFind="True">
+																				<Image FileName="-1640693932" Left="488" Top="669" Right="558" Bottom="747" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleHydraulicTankTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleHydraulicDrainFilterTouch" Key="{B251352C-D221-4E1C-B41F-D61CBB9A01FB}" ExtendedFind="True">
+																				<Image FileName="-400652519" Left="488" Top="745" Right="558" Bottom="773" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleHydraulicDrainFilterTouch" />
+																					</Property>
+																				</Properties>
+																			</Child>
+																			<Child Name="RectangleHyRectangleDeviceFlashingReddraulicDrainFilterTouch" Key="{D4D60416-1F25-415F-B3DB-DBA7980CBD6A}" ExtendedFind="True">
+																				<Image FileName="553572455" Left="565" Top="745" Right="634" Bottom="773" />
+																				<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																				<Properties>
+																					<Property Name="WPFControlName">
+																						<Value Value="RectangleHyRectangleDeviceFlashingReddraulicDrainFilterTouch" />
 																					</Property>
 																				</Properties>
 																			</Child>
@@ -11519,6 +11905,17 @@
 																<Value Value="ButtonClose" />
 															</Property>
 														</Properties>
+														<Children>
+															<Child Name="ControlOnBottomText" Key="{B0F3BA55-1831-4B7A-BA8F-1608F3FE9EDA}" ExtendedFind="True">
+																<Image FileName="-1413325221" Left="857" Top="577" Right="918" Bottom="607" />
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="WPFControlName">
+																		<Value Value="ControlOnBottomText" />
+																	</Property>
+																</Properties>
+															</Child>
+														</Children>
 													</Child>
 												</Children>
 											</Child>
@@ -14396,6 +14793,29 @@
 															</Property>
 														</Properties>
 													</Child>
+													<Child Name="ComboboxitemAtlascopco351" Key="{5D2C2547-B5ED-4348-8B38-8DF774F3A5CF}" ExtendedFind="True">
+														<Image FileName="300356839" Left="5" Top="7" Right="421" Bottom="53" />
+														<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.ComboBoxItem" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="AtlasCopco351" />
+															</Property>
+														</Properties>
+													</Child>
+													<Child Name="ComboboxitemAtlascopco2714jack" Key="{24BAC345-5CFB-4490-A33F-F8F462DE69FD}" ExtendedFind="True">
+														<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.ComboBoxItem" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="AtlasCopco2714Jack" />
+															</Property>
+														</Properties>
+													</Child>
 												</Children>
 											</Child>
 										</Children>
@@ -16257,7 +16677,9 @@
 					<Child Name="LabelNcsPortB2" Owner="{1FB4EB67-9CDC-46F1-85F8-B0FCD8CC8318}" />
 					<Child Name="LabelCsPortA" Owner="{10D21A2A-33E6-44BC-B4B2-280F902AF6F6}" />
 					<Child Name="LabelCsPortB2" Owner="{DE57FEA9-099B-42C9-A15C-C867EF30D34E}" />
-					<Child Name="ButtonClose2" Owner="{ABAC7C58-9DC5-49C4-B688-BE3802503AE5}" />
+					<Child Name="ButtonClose2" Owner="{ABAC7C58-9DC5-49C4-B688-BE3802503AE5}">
+						<Child Name="ControlOnBottomText" Owner="{B0F3BA55-1831-4B7A-BA8F-1608F3FE9EDA}" />
+					</Child>
 					<Child Name="Rectangle22" Owner="{F4832F1F-5062-4FF3-9C00-563B93B2223B}" />
 					<Child Name="Path62" Owner="{60590B0E-47A5-472D-992C-330F8C8E11A9}" />
 					<Child Name="Rectangle32" Owner="{641EA499-541D-4CE5-A141-5F47740A59E7}" />
@@ -16267,6 +16689,39 @@
 					<Child Name="ToggleButton33" Owner="{BE1ECB68-5154-4235-AACD-ED0075A6AEA6}" />
 					<Child Name="ToggleButton42" Owner="{BBC0D086-A016-4EA5-80BD-66326DD15C44}" />
 					<Child Name="Rectangle5" Owner="{08A2BBFB-7958-49D9-96A7-783C177D830B}" />
+					<Child Name="Rectangle_1249" Owner="{E262704D-1337-42BE-AFDB-E6464ADF79A2}" />
+					<Child Name="Rectangle6" Owner="{4C8C0825-ECCF-4A09-97D8-BF208922FB46}" />
+					<Child Name="Path72" Owner="{0404C707-AFA5-4CB9-B6F9-AA73A0BB0EDA}" />
+					<Child Name="Rectangle23" Owner="{05E9D30D-263E-4AC0-992A-D97AB58353D3}" />
+					<Child Name="Rectangle33" Owner="{4FB082F5-257D-48F7-8478-F70DCC5ADB45}" />
+					<Child Name="Rectangle62" Owner="{7B198657-36FC-44BE-BE7A-D3C08CCE2528}" />
+					<Child Name="Rectangle43" Owner="{28ADF8ED-4D48-4C1F-A268-32E49F990FF6}" />
+					<Child Name="Rectangle52" Owner="{835F30D3-D336-47A9-9A69-72557A1A2B0C}" />
+					<Child Name="Rectangle63" Owner="{FEDB1096-A9FE-42FA-BEAF-E35D2339B8DB}" />
+					<Child Name="Rectangle7" Owner="{21A89163-A587-4F68-AF49-D06D29C0EE2D}" />
+					<Child Name="Rectangle8" Owner="{8BFC80A5-63D8-486C-A8DC-7852AA56024C}" />
+					<Child Name="Rectangle9" Owner="{FDF30A51-DD97-48C5-B5CC-9C1AB7D08C99}" />
+					<Child Name="Rectangle10" Owner="{D5AD1FE3-408A-4CF3-80D6-22797BA62C8C}" />
+					<Child Name="Path83" Owner="{70990733-29FF-4E5A-A57E-4BB41AFC6EA2}" />
+					<Child Name="Rectangle11" Owner="{406BF4A9-D739-4F6B-BCA2-6CD030F88102}" />
+					<Child Name="TextblockHydraulicTemp" Owner="{0C8FADEA-4BDD-4B1A-B58A-C332F8478704}" />
+					<Child Name="Rectangle72" Owner="{2E9D740F-F809-4763-AE95-F030A8CE9598}" />
+					<Child Name="Rectangle12" Owner="{1C934959-5142-4C49-81F6-8B53DFB961B1}" />
+					<Child Name="Rectangle13" Owner="{FF4CD38E-E7E6-4781-BBAD-B81BDADA49C4}" />
+					<Child Name="Rectangle14" Owner="{AEE7BA74-6C8A-4EEF-AB10-236E8C1386F1}" />
+					<Child Name="Rectangle15" Owner="{8B83C2A0-A4E5-46E3-B42F-8A77F1860684}" />
+					<Child Name="Rectangle16" Owner="{44704FE3-57EB-4A8B-9D5F-663F5057B2DC}" />
+					<Child Name="Path18" Owner="{7E15D89B-8FE5-4C98-BC30-5AE97FB6F679}" />
+					<Child Name="Path19" Owner="{4898C5AE-4111-4CDA-B74E-285E4FDCAF89}" />
+					<Child Name="RectangleHydraulicRadiatorTouch" Owner="{2C986EB9-6BEA-475B-833D-BFF56546B628}" />
+					<Child Name="RectangleEngineRadiatorTouch" Owner="{5158D73A-6B5C-4DC7-86CA-B4545AF2436B}" />
+					<Child Name="RectangleAirCompressorRadiatorTouch" Owner="{6464C96F-ED94-4487-B2CE-0DC905F1F1F7}" />
+					<Child Name="RectangleAirCompressorTouch" Owner="{E4CCAA6B-F766-4213-9DD7-B261787CDD2E}" />
+					<Child Name="RectangleHydraulicPumpsTouch" Owner="{F1C2603F-E61C-45D1-AD17-56B7DDA07DC9}" />
+					<Child Name="RectangleHydraulicReturnFilterTouch" Owner="{C620E9AF-84FC-4B91-BA8E-94BCD7AF3A3B}" />
+					<Child Name="RectangleHydraulicTankTouch" Owner="{BBD5F320-9891-4C77-97EF-2A0A73A70975}" />
+					<Child Name="RectangleHydraulicDrainFilterTouch" Owner="{B251352C-D221-4E1C-B41F-D61CBB9A01FB}" />
+					<Child Name="RectangleHyRectangleDeviceFlashingReddraulicDrainFilterTouch" Owner="{D4D60416-1F25-415F-B3DB-DBA7980CBD6A}" />
 				</Child>
 			</Child>
 			<Child Name="HwndSource_OperatorScreenMessageWindow" Owner="{AB37F3C3-58FB-4559-83D5-19E73EBF0FA4}">
@@ -16548,6 +17003,8 @@
 						<Child Name="ComboboxitemPh120" Owner="{6365D6FF-4275-4C87-9560-F39CD3086885}" />
 						<Child Name="ComboboxitemReichdrill700d" Owner="{7EB14FE3-132D-4D98-92A3-CC2A1B749123}" />
 						<Child Name="ComboboxitemAtlascopco275maststairs" Owner="{D4D92ADF-B184-4219-B573-2BA2A3C64DCD}" />
+						<Child Name="ComboboxitemAtlascopco351" Owner="{5D2C2547-B5ED-4348-8B38-8DF774F3A5CF}" />
+						<Child Name="ComboboxitemAtlascopco2714jack" Owner="{24BAC345-5CFB-4490-A33F-F8F462DE69FD}" />
 					</Child>
 				</Child>
 			</Child>

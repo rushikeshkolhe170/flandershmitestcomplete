@@ -2,7 +2,8 @@
 const {config, launchHMI, closeHMI, commissioningPass} = require('GlobalVariables');
 const {mainOptionVariables} = require('MainOptionsVariable');
 const {mainWindowVariables} = require('MainWindowPage');
-const {Sandvik412I, Sandvik416I, Sandvik410I, AtlasCopco2714JackWithStairs, AtlasCopco271MastStairs} = require('MachinesUIandLabelPage');
+const {Sandvik412I, Sandvik416I, Sandvik410I, AtlasCopco2714JackWithStairs, AtlasCopco271MastStairs, Epiroc271E, AtlasCopco351E, AtlasCopco351, Cat6420,
+Cat6420FiveEStops, AtlasCopco235, AtlasCopco2713Jack, AtlasCopco2714Jack} = require('MachinesUIandLabelPage');
 const {preInspectionVariables} = require('PreInspectionPage');
 //const {Browser_Variables, Commissioning_Variables} = require('BrowserPage');
 const {logIn, searchAndSelectDropdownItemComm, checkVisibilityAndClick, TypeOnKeyboard} = require('CommonFunc');
@@ -32,6 +33,7 @@ function MachineUIDetails()
   }
   */
   aqUtils.Delay(3000);
+  
   /*
   //Selecting Sandvikdr412i machine
   selectMachineType("Sandvikdr412i2");
@@ -52,6 +54,7 @@ function MachineUIDetails()
   //Closed HMI
   ////closeHMI();
   ////aqUtils.Delay(3000);
+  
   /*
   //Selecting Sandvikdr416i machine
   selectMachineType("Sandvikdr416i");
@@ -72,6 +75,7 @@ function MachineUIDetails()
   //Closed HMI
   ////closeHMI();
   ////aqUtils.Delay(3000);
+  
   /*
   //Selecting Sandvikdr410i machine
   selectMachineType("Sandvikdr410i");
@@ -92,6 +96,7 @@ function MachineUIDetails()
   //Closed HMI
   ////closeHMI();
   ////aqUtils.Delay(3000);
+  
   /*
   //Selecting AtlasCopco2714JackWithStairs machine
   selectMachineType("AtlasCopco2714JackWithStairs");
@@ -112,6 +117,7 @@ function MachineUIDetails()
   //Closed HMI
   ////closeHMI();
   ////aqUtils.Delay(3000);
+  
   /*
   //Selecting AtlasCopco271MastStairs machine
   selectMachineType("AtlasCopco271MastStairs");
@@ -125,14 +131,181 @@ function MachineUIDetails()
   aqUtils.Delay(3000);
   */
   //Verifying machine "AtlasCopco271MastStairs"
-  veryfingMachine("AtlasCopco271MastStairs");
-  aqUtils.Delay(3000);
+  ////veryfingMachine("AtlasCopco271MastStairs");
+  ////aqUtils.Delay(3000);
   //Verifying AtlasCopco271MastStairs ui and label
-  AtlasCopco271MastStairs();
+  ////AtlasCopco271MastStairs();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
+  
+  /*
+  //Selecting Epiroc271E machine
+  selectMachineType("Epiroc271E");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: Epiroc271E");
+  //Verifying Epiroc271E ui and label
+  Epiroc271E();
   //Closed HMI
   closeHMI();
   aqUtils.Delay(3000);
+  */
+  //Verifying machine "Epiroc271E"
+  ////veryfingMachine("Epiroc271E");
+  ////aqUtils.Delay(3000);
+  //Verifying Epiroc271E ui and label
+  ////Epiroc271E();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
   
+  /*
+  //Selecting AtlasCopco351E machine
+  selectMachineType("AtlasCopco351E");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: AtlasCopco351E");
+  //Verifying AtlasCopco351E ui and label
+  AtlasCopco351E();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
+  */
+  //Verifying machine "AtlasCopco351E"
+  ////veryfingMachine("AtlasCopco351E");
+  ////aqUtils.Delay(3000);
+  //Verifying AtlasCopco351E ui and label
+  ////AtlasCopco351E();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
+  
+  /*
+  //Selecting AtlasCopco351 machine
+  selectMachineType("AtlasCopco351");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: AtlasCopco351");
+  //Verifying AtlasCopco351 ui and label
+  AtlasCopco351();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
+  */
+  //Verifying machine "AtlasCopco351"
+  ////veryfingMachine("AtlasCopco351");
+  ////aqUtils.Delay(3000);
+  //Verifying AtlasCopco351 ui and label
+  ////AtlasCopco351();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
+  
+  /*
+  //Selecting Cat6420 machine
+  selectMachineType("Cat6420");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: Cat6420");
+  //Verifying Cat6420 ui and label
+  Cat6420();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
+  */
+  //Verifying machine "Cat6420"
+  ////veryfingMachine("Cat6420");
+  ////aqUtils.Delay(3000);
+  //Verifying Cat6420 ui and label
+  ////Cat6420();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
+  
+  /*
+  //Selecting Cat6420FiveEStops machine
+  selectMachineType("Cat6420FiveEStops");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: Cat6420FiveEStops");
+  //Verifying Cat6420FiveEStops ui and label
+  Cat6420FiveEStops();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
+  */
+  //Verifying machine "Cat6420FiveEStops"
+  ////veryfingMachine("Cat6420FiveEStops");
+  ////aqUtils.Delay(3000);
+  //Verifying Cat6420FiveEStops ui and label
+  ////Cat6420FiveEStops();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
+  
+  /*
+  //Selecting AtlasCopco235 machine
+  selectMachineType("AtlasCopco235");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: AtlasCopco235");
+  //Verifying AtlasCopco235 ui and label
+  AtlasCopco235();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
+  */
+  //Verifying machine "AtlasCopco235"
+  ////veryfingMachine("AtlasCopco235");
+  ////aqUtils.Delay(3000);
+  //Verifying AtlasCopco235 ui and label
+  ////AtlasCopco235();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
+  
+  /*
+  //Selecting AtlasCopco2713Jack machine
+  selectMachineType("AtlasCopco2713Jack");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: AtlasCopco2713Jack");
+  //Verifying AtlasCopco2713Jack ui and label
+  AtlasCopco2713Jack();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
+  */
+  //Verifying machine "AtlasCopco2713Jack"
+  ////veryfingMachine("AtlasCopco2713Jack");
+  ////aqUtils.Delay(3000);
+  //Verifying AtlasCopco2713Jack ui and label
+  ////AtlasCopco2713Jack();
+  //Closed HMI
+  ////closeHMI();
+  ////aqUtils.Delay(3000);
+  
+  /*
+  //Selecting AtlasCopco2714Jack machine
+  selectMachineType("AtlasCopco2714Jack");
+  logIn();
+  mainOptionVariables.MachineStatus_Btn.ClickButton();
+  Log.Message("Verification started for the machine: AtlasCopco2714Jack");
+  //Verifying AtlasCopco2714Jack ui and label
+  AtlasCopco2714Jack();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
+  */
+  //Verifying machine "AtlasCopco2714Jack"
+  veryfingMachine("AtlasCopco2714Jack");
+  aqUtils.Delay(3000);
+  //Verifying AtlasCopco2714Jack ui and label
+  AtlasCopco2714Jack();
+  //Closed HMI
+  closeHMI();
+  aqUtils.Delay(3000);
 }
 
 function machineEle(machineName)

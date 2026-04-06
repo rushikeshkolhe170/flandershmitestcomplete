@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{13B57203-2498-4364-8165-D07E12910CD7}">
+	<children>
+		<child name="HMI" key="{D8ACD615-E5AC-46E3-B61E-0CDA59C19225}" path="HMI.mds" />
+	</children>
+	<testItems key="{2DC9E830-1A14-4BC7-B717-92D7D67D4174}">
+		<children>
+			<testItem key="{D8ACD615-E5AC-46E3-B61E-0CDA59C19225}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{FDB74DD6-E98E-4D3D-98A2-1490347A8B9F}" />
+	<analysis key="{33C9DFF3-5B09-4D15-A778-1459F4EEDF29}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

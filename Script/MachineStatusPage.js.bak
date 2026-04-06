@@ -153,4 +153,191 @@ const AtlasCopco271MastStairs_Variables =
   OtherOptClose_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonClose2
 };
 
-module.exports = {machineStatusVariables, Sandvik410I_Variables, Sandvik416I_Variables, AtlasCopco2714JackWithStairs_Variables, AtlasCopco271MastStairs_Variables};
+const Epiroc271E_Variables =
+{
+  HydRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicRadiator,
+  HydRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton7,
+  AirCompRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressorRadiator,
+  AirCompRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton6,
+  AirTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirTemp,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirTempAirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton25,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  ReceiverAirTankPSI_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle42,
+  MotorRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockMotorRpm,
+  MotorRPM_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path17,
+  HydPump_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicPumps2,
+  HydPump_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton32,
+  HydReturnFilter_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicReturnFilters,
+  HydReturnFilter_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton33,
+  HydTank_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTank2,
+  HydTank_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path32,
+  HydDrainFilter_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicDrainFilters,
+  HydDrainFilter_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton42,
+  LubeLevel_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockLubeLevel2,
+  LubeLevel_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle5
+};
+
+const AtlasCopco351E_Variables =
+{
+  AirTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirTemp,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton7,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  ReceiverAirTankPSIandAirTemp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle_1249,
+  EngineRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRpm,
+  EngineRPM_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path17
+};
+
+const AtlasCopco351_Variables =
+{
+  HydRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicRadiator,
+  HydRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle23,
+  EngineRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRadiator,
+  EngineRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle62,
+  AirCompRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressorRadiator,
+  AirCompRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle33,
+  AirTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirTemp,
+  AirTemp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path72,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle6,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  EngineRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRpm,
+  EngineRPM_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path23,
+  HydTank_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTank2,
+  HydTank_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle43,
+  HydDrainFilter_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicDrainFilters,
+  HydDrainFilter1_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle52,
+  HydDrainFilter2_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle63,
+  HydPump_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicPumps2,
+  HydPump_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle2,
+  OtherOption_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Button4,
+  NCSPortA_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelNcsPortA,
+  NCSPortB_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelNcsPortB2,
+  CSPortA_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelCsPortA,
+  CSPortB_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelCsPortB2,
+  OtherOptClose_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonClose2
+};
+
+const Cat6420_Variables =
+{
+  HydRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicRadiator,
+  HydRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle7,
+  EngineRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRadiator,
+  EngineRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle8,
+  AirCompRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressorRadiator,
+  AirCompRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle9,
+  AirTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirTemp,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirTempAirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle10,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  EngineRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRpm,
+  EngineRPM_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path9,
+  HydTank_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTank2,
+  HydTank_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle11,
+  HydTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTemp,
+  HydTemp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle72,
+  HydPump_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicPumps2,
+  HydPump_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path83
+};
+
+const Cat6420FiveEStops_Variables =
+{
+  HydRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicRadiator,
+  HydRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle12,
+  EngineRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRadiator,
+  EngineRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle13,
+  AirCompRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressorRadiator,
+  AirCompRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle14,
+  AirTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirTemp,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirTempAirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle15,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  EngineRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRpm,
+  EngineRPM_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path9,
+  HydTank_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTank2,
+  HydTank_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle16,
+  HydTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTemp,
+  HydTemp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Rectangle72,
+  HydPump_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicPumps2,
+  HydPump_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path83
+};
+
+const AtlasCopco235_Variables =
+{
+  EngineAirFilter_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineAirFilter,
+  EngineAirFilter1_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton6,
+  EngineAirFilter2_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton25,
+  AirCompFilter_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressorFilter,
+  AirCompFilter_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton7,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ToggleButton32,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  ReceiverAirTankPSI_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path18,
+  EngineRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRpm,
+  EngineRPM_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Path19
+};
+
+const AtlasCopco2713Jack_Variables =
+{
+  HydRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicRadiator,
+  HydRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicRadiatorTouch,
+  EngineRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRadiator,
+  EngineRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleEngineRadiatorTouch,
+  AirCompRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressorRadiator,
+  AirCompRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleAirCompressorRadiatorTouch,
+  AirTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirTemp,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirTempAirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleAirCompressorTouch,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  EngineRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRpm,
+  HydReturnFilters_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicReturnFilters,
+  HydReturnFilters_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicReturnFilterTouch,
+  HydTank_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTank2,
+  HydTank_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicTankTouch,
+  HydDrainFilter_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicDrainFilters,
+  HydDrainFilter_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicDrainFilterTouch,
+  HydPump_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicPumps2,
+  HydPump_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicPumpsTouch,
+  LubeLevel_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockLubeLevel2,
+  OtherOption_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Button4,
+  NCSPortA_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelNcsPortA,
+  NCSPortB_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelNcsPortB2,
+  CSPortA_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelCsPortA,
+  CSPortB_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelCsPortB2,
+  OtherOptClose_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonClose2
+};
+
+const AtlasCopco2714Jack_Variables =
+{
+  HydRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicRadiator,
+  HydRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicRadiatorTouch,
+  EngineRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRadiator,
+  EngineRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleEngineRadiatorTouch,
+  AirCompRadiator_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressorRadiator,
+  AirCompRadiator_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleAirCompressorRadiatorTouch,
+  AirTemp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirTemp,
+  AirComp_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockAirCompressor,
+  AirTempAirComp_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleAirCompressorTouch,
+  ReceiverAirTankPSI_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockReceiverAirTankPsi,
+  EngineRPM_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockEngineRpm,
+  HydReturnFilters_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicReturnFilters,
+  HydReturnFilters_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicReturnFilterTouch,
+  HydTank_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicTank2,
+  HydTank_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicTankTouch,
+  HydDrainFilter_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicDrainFilters,
+  HydDrainFilter_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHyRectangleDeviceFlashingReddraulicDrainFilterTouch,
+  HydPump_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockHydraulicPumps2,
+  HydPump_UI : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.RectangleHydraulicPumpsTouch,
+  LubeLevel_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.TextblockLubeLevel2,
+  OtherOption_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Button4,
+  NCSPortA_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelNcsPortA,
+  NCSPortB_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelNcsPortB2,
+  CSPortA_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelCsPortA,
+  CSPortB_Label : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.LabelCsPortB2,
+  OtherOptClose_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ButtonClose2
+};
+
+module.exports = {machineStatusVariables, Sandvik410I_Variables, Sandvik416I_Variables, AtlasCopco2714JackWithStairs_Variables, AtlasCopco271MastStairs_Variables,
+Epiroc271E_Variables, AtlasCopco351E_Variables, AtlasCopco351_Variables, Cat6420_Variables, Cat6420FiveEStops_Variables, AtlasCopco235_Variables, AtlasCopco2713Jack_Variables,
+AtlasCopco2714Jack_Variables};
