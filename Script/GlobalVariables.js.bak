@@ -1,4 +1,7 @@
-﻿var config = {
+﻿
+const {mainOptionVariables} = require('MainOptionsVariable');
+
+var config = {
 
   drillNo: '411',
   opA: 'Operator A',
@@ -28,24 +31,28 @@ function commissioningPass(){
   
   //Entering commissioning screen opening password
   //Clicks the 'MainWindow' object.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Click(48, 25);
+  mainOptionVariables.ArdvarcLogo.Click();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Click(48, 25);
   //Clicks the 'Button' button.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button.ClickButton();
+  mainOptionVariables.Commissioning_Btn.ClickButton();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button.ClickButton();
   //Enters text in the 'ActualPassword' text editor.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword.SetText(Project.Variables.CommPassword2);
+  mainOptionVariables.CommPass_Box.SetText(Project.Variables.CommPassword2);
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword.SetText(Project.Variables.CommPassword2);
   //Enters '[Enter]' in the 'ActualPassword' object.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword.Keys("[Enter]");
+  mainOptionVariables.CommPass_Box.Keys("[Enter]");
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword.Keys("[Enter]");
 }
 
 function maintenanceModePass(){
   
   //Entering Maintenance mode password
   //Clicks the 'ActualPassword' object.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MaintenancePasswordWindow.MaintenancePasswordWindow.ActualPassword.Click(77, 3);
+  mainOptionVariables.MainModePass_Box.Click();
   //Enters text in the 'ActualPassword' text editor.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MaintenancePasswordWindow.MaintenancePasswordWindow.ActualPassword.SetText(Project.Variables.MainModePassword);
+  mainOptionVariables.MainModePass_Box.SetText(Project.Variables.MainModePassword);
   //Clicks the 'OkButton' button.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MaintenancePasswordWindow.MaintenancePasswordWindow.OkButton.ClickButton();
+  mainOptionVariables.MainModePass_Ok_Btn.ClickButton();
 }
 
 function openDiagnosticDashboard()
@@ -54,15 +61,15 @@ function openDiagnosticDashboard()
   launchHMI();
   aqUtils.Delay(2000);
   //Clicks the 'Ellipse' object.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Ellipse.Click(43, 26);
+  mainOptionVariables.ArdvarcLogo.Click();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Ellipse.Click(43, 26);
   //Clicks the 'Button2' button.
-  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button2.ClickButton();
-  //Clicks the 'BrowserWindow' object.
-  Aliases.browser.BrowserWindow.Click(86, 85);
+  mainOptionVariables.DiagnoDash_Btn.ClickButton();
+  //Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button2.ClickButton();
   //Opens the specified URL in a running instance of the specified browser.
   Browsers.Item(Project.Variables.browserType1).Navigate("http://wsl.flanders.local/login");
   Aliases.browser.pageDiagnosticDashboard3.Wait();
-  Browsers.Item(Project.Variables.browserType1).BrowserWindow.Maximize();
+  Aliases.browser.BrowserWindow.Maximize();
   if(Aliases.browser.pageDiagnosticDashboard3.textbox.Exists){
     //Clicks the 'textbox' control.
     Aliases.browser.pageDiagnosticDashboard3.textbox.Click();

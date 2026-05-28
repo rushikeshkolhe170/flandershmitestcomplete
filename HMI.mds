@@ -10,312 +10,397 @@
 	<config language="{90F89436-9452-4F95-9882-6B5210079F13}" />
 	<testItems key="{86F642B0-82CD-4776-B83E-9DA922502F2C}" version="14">
 		<children>
-			<testItem name="ThemeChange" key="{00BA4D9F-B189-422A-83EC-3AA7403ECF02}" group="False" parallel="False" enabled="True" load="False" testMoniker="{329621ED-AAC4-43A6-B882-153B83CC159C}ThemeChange" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children />
-			</testItem>
-			<testItem name="GPSMap" key="{A49B203B-E211-4852-9712-5217874D8CF2}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="DirectionStatusButtons" key="{06DCC118-C5BA-4050-8EC2-CF1A2869DF34}" group="False" parallel="False" enabled="True" load="False" testMoniker="{AA3056E0-2964-40FC-AAEC-22DA23A43852}DirectionStatusButtons" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="ZoomLevels" key="{291D051A-2D87-4CF6-A8AF-6CCB71E5FD92}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5474FAD4-4093-432C-80F0-4D46BE4CD49E}ZoomLevels" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="HazardImage" key="{28A4955F-60B1-4043-8CCD-0DC86026A14B}" group="False" parallel="False" enabled="True" load="False" testMoniker="{DFF28F63-EE44-4CA4-8C0B-5246B6C7E2F5}HazardImage" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="AuxControl" key="{2DD897A4-FCDC-400B-80A8-D7B77195766E}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="AuxControlLockUnlock" key="{346FDC25-12C9-422F-832F-518E84911BB9}" group="False" parallel="False" enabled="True" load="False" testMoniker="{7EAC920A-D8BB-4532-8240-C5FACE035C0D}AuxControlLockUnlock" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="AuxControlMast" key="{805CABDE-63F8-42EF-B40D-F0A65D49FC50}" group="False" parallel="False" enabled="True" load="False" testMoniker="{92BF70CD-DEF9-4CDB-8FB4-F71983CE158C}AuxControlMast" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="AuxControlMisc" key="{DD0B94CC-2EE5-4248-A166-EBEE04FDE530}" group="False" parallel="False" enabled="True" load="False" testMoniker="{1BF94121-135A-4B1A-A952-0F1447A6F93A}AuxControlMisc" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="AuxControlRod" key="{4AF63A84-C0EE-48E3-81F2-C5281EAB1517}" group="False" parallel="False" enabled="True" load="False" testMoniker="{31C016CC-9C5E-451F-958F-9397F3B9D21C}AuxControlRod" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="ModesChange" key="{BD187504-1BE7-41F6-9E0E-3F8C58E821D9}" group="False" parallel="False" enabled="True" load="False" testMoniker="{D21DE0DB-3B20-4446-831F-BD3391EEB5E3}ModesChange" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="HMISetupMode" key="{238C3213-DCDF-4109-8272-EA2111A0AC5A}" group="False" parallel="False" enabled="True" load="False" testMoniker="{9624D3D4-12E8-4C5B-A5E5-6C265821370F}HMISetupMode" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="RodSupportVerify" key="{AE00430A-6003-4B52-B18E-E9CB503D7250}" group="False" parallel="False" enabled="True" load="False" testMoniker="{F3FF534B-6709-45DD-8DFD-BCCB1F675DEA}RodSupportVerify" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="Fault" key="{B87E9D23-F706-49FA-A16F-1E7BDF316068}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="ActiveHistoryData" key="{254C2F69-FDB9-4AFB-A00D-9B833C1419FE}" group="False" parallel="False" enabled="True" load="False" testMoniker="{E0FFC4E9-A68E-4EA4-B888-7400FE2F4C50}ActiveHistoryData" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="TableOptionResetButton" key="{58786BF4-94BF-4027-82CD-A6C5F5A71150}" group="False" parallel="False" enabled="True" load="False" testMoniker="{AAF5CD37-6555-4A39-9525-1728BB1C1F47}TableOptionResetButton" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="MachineStatus" key="{0B9895A8-5C4E-4765-803F-E067A5D77534}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="MachineStatusMachine" key="{B1199CBE-1D5D-4827-9368-5D33FE1841F2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{9CF22E4D-7594-4DBE-9698-2240D2D09D29}MachineStatusMachine" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="MachineStatusParameters" key="{626818C8-64D5-426E-8280-47906060A6FC}" group="False" parallel="False" enabled="True" load="False" testMoniker="{401428F8-3243-42C3-B4BF-DC9695866451}MachineStatusParameters" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="MainScreen" key="{B12A97BB-CF4E-42EA-B254-426FD1147EDB}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="ButtonsVisibility" key="{BB979B38-F8DF-4BC3-B08C-7BB3FE3EC0A1}" group="False" parallel="False" enabled="True" load="False" testMoniker="{B5C90522-F088-490A-ADB7-A2935693EA68}ButtonsVisibility" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="MainScreenDrillingOptions" key="{7F388C65-30EA-42A4-A878-041303AAA068}" group="False" parallel="False" enabled="True" load="False" testMoniker="{7A4C7D0A-161C-4FB1-8474-2C3F27438E1B}MainScreenDrillingOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="MaintenanceScreen" key="{700660A6-F0CE-4CB0-A837-8618E4D9358F}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="ConsumableMaintenanceOptions" key="{C9319D99-C9BA-4797-8146-91CDC1AAF6D4}" group="False" parallel="False" enabled="True" load="False" testMoniker="{91A3EF28-D8A4-4693-AE42-127956E89E12}ConsumableMaintenanceOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="DrillMastJackSystemInterlock" key="{B53DC1F8-DDE9-4D59-B229-479911F1B28C}" group="False" parallel="False" enabled="True" load="False" testMoniker="{6B51E8D0-DA35-44F4-8FEC-A94EF30E1B4E}DrillMastJackSystemInterlock" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="EngineLogTable" key="{A6F30DB2-7A21-43D2-A9B1-D7BDFE469E34}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5854096C-95A5-442D-AEEF-47170554AF77}EngineLogTable" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="ArrowButtons" key="{12552B6A-8B70-462C-8359-D09A1E75132F}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5854096C-95A5-442D-AEEF-47170554AF77}ArrowButtons" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="Fluid" key="{8B6062F6-C99B-4F10-B128-5329747E3EAA}" group="False" parallel="False" enabled="True" load="False" testMoniker="{AD52C519-02EA-4543-B046-B0622C5FEC74}Fluid" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="HeadLimitOptions" key="{B4015D7E-643C-4986-86F2-209C45A1F2C5}" group="False" parallel="False" enabled="True" load="False" testMoniker="{2E7FFE11-D764-45EB-914E-FFB44829D150}HeadLimitOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="Joystick" key="{6F2A0748-8B66-47B3-9271-92EFCFE1B566}" group="False" parallel="False" enabled="True" load="False" testMoniker="{89AC4B83-6756-453D-A81D-42048FFECAEA}Joystick" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="MachineMonitor" key="{C7288272-7AE8-4ED4-AFA4-9C42A0EA3B7F}" group="False" parallel="False" enabled="True" load="False" testMoniker="{DF118F1F-6ABA-40E1-B681-502629E72C2B}MachineMonitor" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="MaintTestIOStatus" key="{EA73BCB8-2649-4BC6-9E02-BE3D1D4BD7EB}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5773A260-C100-4B7F-8610-21C70CF47E7D}MaintTestIOStatus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="MaintTestKeypadStatus" key="{A220658D-B947-4AFF-8181-814083D58E9A}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5773A260-C100-4B7F-8610-21C70CF47E7D}MaintTestKeypadStatus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="PropelInterlockScreens" key="{86C8770D-10CC-43FE-A490-275FE08008D2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{70B3A625-2A56-4DD6-B186-351BC6DEACB1}PropelInterlockScreens" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="SetupHoistResolver" key="{DEA68227-1989-4AFB-9F4E-4246976335AF}" group="False" parallel="False" enabled="True" load="False" testMoniker="{15F22741-DE00-40FE-90BA-52A5F27FA4AE}SetupHoistResolver" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="SystemInterlockScreens" key="{1C285420-CCB9-4A24-9191-D73A0BF56B2B}" group="False" parallel="False" enabled="True" load="False" testMoniker="{74F8DE43-6D46-4266-819D-0B3657FE480F}SystemInterlockScreens" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="MainWindowScreen" key="{18A866BE-B92F-4B01-94C1-6EFAC379C4B4}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="DateTimeVerandLogo" key="{C5CB6A90-9C9A-4393-8DB7-F73D978E6668}" group="False" parallel="False" enabled="True" load="False" testMoniker="{99219F1D-7391-4FF1-BA9A-A522171A8107}DateTimeVerandLogo" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="DrillAndHoleNumber" key="{909A531D-A53F-4F40-B64D-0BBAB78271ED}" group="False" parallel="False" enabled="True" load="False" testMoniker="{99219F1D-7391-4FF1-BA9A-A522171A8107}DrillAndHoleNumber" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="HMILoginTest" key="{658C2C00-DF39-4414-8D01-8C6DDE4DCC50}" group="False" parallel="False" enabled="True" load="False" testMoniker="{714C57F0-2DB6-4C27-902A-EE27779A8F4F}HMILoginTest" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="NavBarData" key="{A6127FA6-E069-49DB-98E0-379AD570361C}" group="False" parallel="False" enabled="True" load="False" testMoniker="{EDC213A6-6C8F-4FE6-B954-8D455B7AB787}NavBarData" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="ProdMonitor" key="{047E3AB9-8B69-4F2F-BB77-32FF17EB4D29}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="ProdMonitorData" key="{2AA9F92D-C3B6-47F1-8FD8-2F288B828F08}" group="False" parallel="False" enabled="True" load="False" testMoniker="{FC98EC54-D2D2-44B4-A080-4CC0D7C1AAC9}ProdMonitorData" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="SetupScreen" key="{9467B0FF-4369-45FC-91B3-CF9F43DE06BE}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="AutoDrillParameters" key="{B8C7A092-12EF-4871-97F9-A260AAB7CFEA}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5F7CCD6B-2159-4969-9035-86F081C61C02}AutoDrillParameters" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="BoundaryImport" key="{53939FAB-0AF9-46CE-9B93-4F186141FD16}" group="False" parallel="False" enabled="True" load="False" testMoniker="{24A411E5-CCB9-43EA-BC84-A35C95B39AD4}BoundaryImport" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="BoundaryRemove" key="{4956B132-2D48-46D6-A7F5-2DEC87860986}" group="False" parallel="False" enabled="True" load="False" testMoniker="{24A411E5-CCB9-43EA-BC84-A35C95B39AD4}BoundaryRemove" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="ConsumableSetupOptions" key="{3C88AE70-76A1-4B50-8AA2-EAB655EB62F4}" group="False" parallel="False" enabled="True" load="False" testMoniker="{B87673FD-9471-4D7E-83AA-C4D235A33C6D}ConsumableSetupOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="ImportPatternDirections" key="{8AF278DC-29BD-4F09-93F1-A0FF3FB53BEB}" group="False" parallel="False" enabled="True" load="False" testMoniker="{A7093B00-D2B2-40B9-AE6A-7244DFC2178D}ImportPatternDirections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="languageChnage" key="{CAE4921D-6178-4104-94AB-0DD6A474BA34}" group="False" parallel="False" enabled="True" load="False" testMoniker="{51B09587-803D-451D-8112-062B1D2120F8}languageChnage" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="LubricationTimeChange" key="{1F08DB37-DBD7-4495-9ED4-BC27C4843A28}" group="False" parallel="False" enabled="True" load="False" testMoniker="{24F5C5C5-D8AB-496E-9A71-348D5FD57917}LubricationTimeChange" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="PatternImport" key="{A55045F6-56C4-4811-8450-2B513E30645F}" group="False" parallel="False" enabled="True" load="False" testMoniker="{BB7E6485-DDC8-4108-8350-59BF8A990712}PatternImport" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="PatternRemove" key="{B905CBCA-7ACF-44C6-BC13-B46B3C2E1850}" group="False" parallel="False" enabled="True" load="False" testMoniker="{BB7E6485-DDC8-4108-8350-59BF8A990712}PatternRemove" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-					<testItem name="toggleButtons" key="{2F5B64AE-8A89-4EEA-9267-0BC55E51DC0D}" group="False" parallel="False" enabled="True" load="False" testMoniker="{B28D06E0-A755-4BF1-AA94-B2E142B8E9DC}toggleButtons" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="PreInspectionScreen" key="{59DD0D29-B352-420E-804E-34EFF07CC7E3}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<environments activeCloud="SWT" />
-				<children>
-					<testItem name="PreInspection" key="{38912C4E-C050-41A6-A64D-DDEA8FC2CDAD}" group="False" parallel="False" enabled="True" load="False" testMoniker="{E112F158-AA5F-40C7-BD59-7BEA0C6836A8}PreInspection" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="AutoDrillParametersManipulation" key="{A29F5F59-A473-4368-BC7F-EC7965407C76}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<children>
-					<testItem name="DrillHoleDepth" key="{62C45C6A-4052-4254-891F-1028E96480C2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{EE0C3F92-65F4-4E14-A344-4E12597F661A}DrillHoleDepth" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="CBT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
 			<testItem name="MachinesDetailsFromBrowser" key="{2A6BAB96-5F8C-4837-9E59-39F5104B4EC3}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="MachineUIDetails" key="{CEDE91CB-E40A-4C2B-B4AF-1FE23FCAD17A}" group="False" parallel="False" enabled="True" load="False" testMoniker="{70CD3DFE-F648-4CE7-84C0-3C21E8F2E37C}MachineUIDetails" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="OverallHMItest" key="{53F5E1D8-0ED9-49A0-9544-DD02F57302B3}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+				<testParameters />
+				<children>
+					<testItem name="ThemeChange" key="{00BA4D9F-B189-422A-83EC-3AA7403ECF02}" group="False" parallel="False" enabled="True" load="False" testMoniker="{329621ED-AAC4-43A6-B882-153B83CC159C}ThemeChange" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="GPSMap" key="{A49B203B-E211-4852-9712-5217874D8CF2}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="DirectionStatusButtons" key="{06DCC118-C5BA-4050-8EC2-CF1A2869DF34}" group="False" parallel="False" enabled="True" load="False" testMoniker="{AA3056E0-2964-40FC-AAEC-22DA23A43852}DirectionStatusButtons" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="ZoomLevels" key="{291D051A-2D87-4CF6-A8AF-6CCB71E5FD92}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5474FAD4-4093-432C-80F0-4D46BE4CD49E}ZoomLevels" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="HazardImage" key="{28A4955F-60B1-4043-8CCD-0DC86026A14B}" group="False" parallel="False" enabled="True" load="False" testMoniker="{DFF28F63-EE44-4CA4-8C0B-5246B6C7E2F5}HazardImage" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="AuxControl" key="{2DD897A4-FCDC-400B-80A8-D7B77195766E}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="AuxControlLockUnlock" key="{346FDC25-12C9-422F-832F-518E84911BB9}" group="False" parallel="False" enabled="True" load="False" testMoniker="{7EAC920A-D8BB-4532-8240-C5FACE035C0D}AuxControlLockUnlock" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="AuxControlMast" key="{805CABDE-63F8-42EF-B40D-F0A65D49FC50}" group="False" parallel="False" enabled="True" load="False" testMoniker="{92BF70CD-DEF9-4CDB-8FB4-F71983CE158C}AuxControlMast" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="AuxControlMisc" key="{DD0B94CC-2EE5-4248-A166-EBEE04FDE530}" group="False" parallel="False" enabled="True" load="False" testMoniker="{1BF94121-135A-4B1A-A952-0F1447A6F93A}AuxControlMisc" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="AuxControlRod" key="{4AF63A84-C0EE-48E3-81F2-C5281EAB1517}" group="False" parallel="False" enabled="True" load="False" testMoniker="{31C016CC-9C5E-451F-958F-9397F3B9D21C}AuxControlRod" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="ModesChange" key="{BD187504-1BE7-41F6-9E0E-3F8C58E821D9}" group="False" parallel="False" enabled="True" load="False" testMoniker="{D21DE0DB-3B20-4446-831F-BD3391EEB5E3}ModesChange" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="HMISetupMode" key="{238C3213-DCDF-4109-8272-EA2111A0AC5A}" group="False" parallel="False" enabled="True" load="False" testMoniker="{9624D3D4-12E8-4C5B-A5E5-6C265821370F}HMISetupMode" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="RodSupportVerify" key="{AE00430A-6003-4B52-B18E-E9CB503D7250}" group="False" parallel="False" enabled="True" load="False" testMoniker="{F3FF534B-6709-45DD-8DFD-BCCB1F675DEA}RodSupportVerify" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Fault" key="{B87E9D23-F706-49FA-A16F-1E7BDF316068}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="ActiveHistoryData" key="{254C2F69-FDB9-4AFB-A00D-9B833C1419FE}" group="False" parallel="False" enabled="True" load="False" testMoniker="{E0FFC4E9-A68E-4EA4-B888-7400FE2F4C50}ActiveHistoryData" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="TableOptionResetButton" key="{58786BF4-94BF-4027-82CD-A6C5F5A71150}" group="False" parallel="False" enabled="True" load="False" testMoniker="{AAF5CD37-6555-4A39-9525-1728BB1C1F47}TableOptionResetButton" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="MachineStatus" key="{0B9895A8-5C4E-4765-803F-E067A5D77534}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="MachineStatusMachine" key="{B1199CBE-1D5D-4827-9368-5D33FE1841F2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{9CF22E4D-7594-4DBE-9698-2240D2D09D29}MachineStatusMachine" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
+							<testItem name="MachineStatusParameters" key="{626818C8-64D5-426E-8280-47906060A6FC}" group="False" parallel="False" enabled="True" load="False" testMoniker="{401428F8-3243-42C3-B4BF-DC9695866451}MachineStatusParameters" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="MainScreen" key="{B12A97BB-CF4E-42EA-B254-426FD1147EDB}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="ButtonsVisibility" key="{BB979B38-F8DF-4BC3-B08C-7BB3FE3EC0A1}" group="False" parallel="False" enabled="True" load="False" testMoniker="{B5C90522-F088-490A-ADB7-A2935693EA68}ButtonsVisibility" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="MainScreenDrillingOptions" key="{7F388C65-30EA-42A4-A878-041303AAA068}" group="False" parallel="False" enabled="True" load="False" testMoniker="{7A4C7D0A-161C-4FB1-8474-2C3F27438E1B}MainScreenDrillingOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="MaintenanceScreen" key="{700660A6-F0CE-4CB0-A837-8618E4D9358F}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="ConsumableMaintenanceOptions" key="{C9319D99-C9BA-4797-8146-91CDC1AAF6D4}" group="False" parallel="False" enabled="True" load="False" testMoniker="{91A3EF28-D8A4-4693-AE42-127956E89E12}ConsumableMaintenanceOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="DrillMastJackSystemInterlock" key="{B53DC1F8-DDE9-4D59-B229-479911F1B28C}" group="False" parallel="False" enabled="True" load="False" testMoniker="{6B51E8D0-DA35-44F4-8FEC-A94EF30E1B4E}DrillMastJackSystemInterlock" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="EngineLogTable" key="{A6F30DB2-7A21-43D2-A9B1-D7BDFE469E34}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5854096C-95A5-442D-AEEF-47170554AF77}EngineLogTable" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="ArrowButtons" key="{12552B6A-8B70-462C-8359-D09A1E75132F}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5854096C-95A5-442D-AEEF-47170554AF77}ArrowButtons" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="Fluid" key="{8B6062F6-C99B-4F10-B128-5329747E3EAA}" group="False" parallel="False" enabled="True" load="False" testMoniker="{AD52C519-02EA-4543-B046-B0622C5FEC74}Fluid" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="HeadLimitOptions" key="{B4015D7E-643C-4986-86F2-209C45A1F2C5}" group="False" parallel="False" enabled="True" load="False" testMoniker="{2E7FFE11-D764-45EB-914E-FFB44829D150}HeadLimitOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="Joystick" key="{6F2A0748-8B66-47B3-9271-92EFCFE1B566}" group="False" parallel="False" enabled="True" load="False" testMoniker="{89AC4B83-6756-453D-A81D-42048FFECAEA}Joystick" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="MachineMonitor" key="{C7288272-7AE8-4ED4-AFA4-9C42A0EA3B7F}" group="False" parallel="False" enabled="True" load="False" testMoniker="{DF118F1F-6ABA-40E1-B681-502629E72C2B}MachineMonitor" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
+							<testItem name="MaintTestIOStatus" key="{EA73BCB8-2649-4BC6-9E02-BE3D1D4BD7EB}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5773A260-C100-4B7F-8610-21C70CF47E7D}MaintTestIOStatus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="MaintTestKeypadStatus" key="{A220658D-B947-4AFF-8181-814083D58E9A}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5773A260-C100-4B7F-8610-21C70CF47E7D}MaintTestKeypadStatus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="PropelInterlockScreens" key="{86C8770D-10CC-43FE-A490-275FE08008D2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{70B3A625-2A56-4DD6-B186-351BC6DEACB1}PropelInterlockScreens" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="SetupHoistResolver" key="{DEA68227-1989-4AFB-9F4E-4246976335AF}" group="False" parallel="False" enabled="True" load="False" testMoniker="{15F22741-DE00-40FE-90BA-52A5F27FA4AE}SetupHoistResolver" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="SystemInterlockScreens" key="{1C285420-CCB9-4A24-9191-D73A0BF56B2B}" group="False" parallel="False" enabled="True" load="False" testMoniker="{74F8DE43-6D46-4266-819D-0B3657FE480F}SystemInterlockScreens" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="MainWindowScreen" key="{18A866BE-B92F-4B01-94C1-6EFAC379C4B4}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="DateTimeVerandLogo" key="{C5CB6A90-9C9A-4393-8DB7-F73D978E6668}" group="False" parallel="False" enabled="True" load="False" testMoniker="{99219F1D-7391-4FF1-BA9A-A522171A8107}DateTimeVerandLogo" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="DrillAndHoleNumber" key="{909A531D-A53F-4F40-B64D-0BBAB78271ED}" group="False" parallel="False" enabled="True" load="False" testMoniker="{99219F1D-7391-4FF1-BA9A-A522171A8107}DrillAndHoleNumber" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="HMILoginTest" key="{658C2C00-DF39-4414-8D01-8C6DDE4DCC50}" group="False" parallel="False" enabled="True" load="False" testMoniker="{714C57F0-2DB6-4C27-902A-EE27779A8F4F}HMILoginTest" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="NavBarData" key="{A6127FA6-E069-49DB-98E0-379AD570361C}" group="False" parallel="False" enabled="True" load="False" testMoniker="{EDC213A6-6C8F-4FE6-B954-8D455B7AB787}NavBarData" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="ProdMonitor" key="{047E3AB9-8B69-4F2F-BB77-32FF17EB4D29}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="ProdMonitorData" key="{2AA9F92D-C3B6-47F1-8FD8-2F288B828F08}" group="False" parallel="False" enabled="True" load="False" testMoniker="{FC98EC54-D2D2-44B4-A080-4CC0D7C1AAC9}ProdMonitorData" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="SetupScreen" key="{9467B0FF-4369-45FC-91B3-CF9F43DE06BE}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="AutoDrillParameters" key="{B8C7A092-12EF-4871-97F9-A260AAB7CFEA}" group="False" parallel="False" enabled="True" load="False" testMoniker="{5F7CCD6B-2159-4969-9035-86F081C61C02}AutoDrillParameters" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="BoundaryImport" key="{53939FAB-0AF9-46CE-9B93-4F186141FD16}" group="False" parallel="False" enabled="True" load="False" testMoniker="{24A411E5-CCB9-43EA-BC84-A35C95B39AD4}BoundaryImport" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="BoundaryRemove" key="{4956B132-2D48-46D6-A7F5-2DEC87860986}" group="False" parallel="False" enabled="True" load="False" testMoniker="{24A411E5-CCB9-43EA-BC84-A35C95B39AD4}BoundaryRemove" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="ConsumableSetupOptions" key="{3C88AE70-76A1-4B50-8AA2-EAB655EB62F4}" group="False" parallel="False" enabled="True" load="False" testMoniker="{B87673FD-9471-4D7E-83AA-C4D235A33C6D}ConsumableSetupOptions" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="ImportPatternDirections" key="{8AF278DC-29BD-4F09-93F1-A0FF3FB53BEB}" group="False" parallel="False" enabled="True" load="False" testMoniker="{A7093B00-D2B2-40B9-AE6A-7244DFC2178D}ImportPatternDirections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="languageChnage" key="{CAE4921D-6178-4104-94AB-0DD6A474BA34}" group="False" parallel="False" enabled="True" load="False" testMoniker="{51B09587-803D-451D-8112-062B1D2120F8}languageChnage" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="LubricationTimeChange" key="{1F08DB37-DBD7-4495-9ED4-BC27C4843A28}" group="False" parallel="False" enabled="True" load="False" testMoniker="{24F5C5C5-D8AB-496E-9A71-348D5FD57917}LubricationTimeChange" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="PatternImport" key="{A55045F6-56C4-4811-8450-2B513E30645F}" group="False" parallel="False" enabled="True" load="False" testMoniker="{BB7E6485-DDC8-4108-8350-59BF8A990712}PatternImport" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="PatternRemove" key="{B905CBCA-7ACF-44C6-BC13-B46B3C2E1850}" group="False" parallel="False" enabled="True" load="False" testMoniker="{BB7E6485-DDC8-4108-8350-59BF8A990712}PatternRemove" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+							<testItem name="toggleButtons" key="{2F5B64AE-8A89-4EEA-9267-0BC55E51DC0D}" group="False" parallel="False" enabled="True" load="False" testMoniker="{B28D06E0-A755-4BF1-AA94-B2E142B8E9DC}toggleButtons" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="CBT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="PreInspectionScreen" key="{59DD0D29-B352-420E-804E-34EFF07CC7E3}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children>
+							<testItem name="PreInspection" key="{38912C4E-C050-41A6-A64D-DDEA8FC2CDAD}" group="False" parallel="False" enabled="True" load="False" testMoniker="{E112F158-AA5F-40C7-BD59-7BEA0C6836A8}PreInspection" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
+						</children>
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="AutoDrillParametersManipulation" key="{A29F5F59-A473-4368-BC7F-EC7965407C76}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+				<testParameters />
+				<children>
+					<testItem name="AirPressureCycleTransition" key="{B1A21633-6EFA-4487-A13D-F159B1751BFB}" group="False" parallel="False" enabled="True" load="False" testMoniker="{2AE03F2D-1E44-45A1-AC9A-995BA37F464D}AirPressureCycleTransition" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="BitSpecifiedDownForceLimit" key="{57A8867B-44EF-436B-8D97-18057B7C99A1}" group="False" parallel="False" enabled="True" load="False" testMoniker="{ED37BBBC-4E62-4FC1-A8E6-317E0A366EF3}BitSpecifiedDownForceLimit" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="BottomOfHoleWaterDistance" key="{BA031252-5287-4305-BDC3-91FE36C2D661}" group="False" parallel="False" enabled="True" load="False" testMoniker="{381B770F-4105-4967-A4B3-5D314814DE4A}BottomOfHoleWaterDistance" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="BottomOfHoleWaterSetpoint" key="{D6FBDAC2-2946-4D1D-A977-8274B6ED629B}" group="False" parallel="False" enabled="True" load="False" testMoniker="{8A2553E5-42DD-4C4E-A28B-7F60F9C5165E}BottomOfHoleWaterSetpoint" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="CollaringCompressorVolumeCommand" key="{36EAC95D-5FC3-4AEE-B2F4-20EB3F937128}" group="False" parallel="False" enabled="True" load="False" testMoniker="{F18B3B23-10F3-4D4C-8939-DF48EF1DDB07}CollaringCompressorVolumeCommand" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="CollaringDepth" key="{C75EAA43-54DD-490F-9CF6-8206D94FD25E}" group="False" parallel="False" enabled="True" load="False" testMoniker="{61CA69F4-6E4E-433C-98AE-6A6C2D727E70}CollaringDepth" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="CollaringDownForceLimit" key="{BEDC564A-2338-4683-962A-451B20706D68}" group="False" parallel="False" enabled="True" load="False" testMoniker="{0C1C1CE6-7B5E-4FC3-808D-07C9D3761AE7}CollaringDownForceLimit" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="CollaringMaxPenetrationSpeed" key="{B1CA42B2-C282-4A0C-B5DF-F47367166E76}" group="False" parallel="False" enabled="True" load="False" testMoniker="{E71CA08C-ADBD-4583-8D77-126F14630B1E}CollaringMaxPenetrationSpeed" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="DrillHoleDepth" key="{63BA3E69-E919-4E30-97C8-37AEB06769EF}" group="False" parallel="False" enabled="True" load="False" testMoniker="{EE0C3F92-65F4-4E14-A344-4E12597F661A}DrillHoleDepth" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="DrillingCompressorVolumeCommand" key="{F6F774AD-0849-4880-8472-1AA8B20D62C2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{51008115-0EF3-4DE0-9B6F-241827D7449E}DrillingCompressorVolumeCommand" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="DrillingHoistDownSpeedReference" key="{35B11EE6-A977-4F59-A738-D205F599CFAF}" group="False" parallel="False" enabled="True" load="False" testMoniker="{6CA78F62-2975-4E4F-82B4-6873B064BF0A}DrillingHoistDownSpeedReference" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="DrillingMaxPenetrationSpeed" key="{9B77D505-021C-4814-B846-CEE69ED47421}" group="False" parallel="False" enabled="True" load="False" testMoniker="{EBAE32FB-FC02-4DB1-90D7-256CDB48F359}DrillingMaxPenetrationSpeed" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="EndOfHoleWaterOffSetpoint" key="{96C66065-E043-4166-BD07-8BA4A921E82A}" group="False" parallel="False" enabled="True" load="False" testMoniker="{CE96A9A4-E041-44B7-95C2-F9AC315639D6}EndOfHoleWaterOffSetpoint" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="GroundDetectForceSetpoint" key="{B59D0581-F40A-4FA5-A333-692705F9B9B4}" group="False" parallel="False" enabled="True" load="False" testMoniker="{31C24910-5BDD-4F8A-9D9E-1202BA0AD40D}GroundDetectForceSetpoint" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="GroundDetectHoistSpeedReference" key="{DBB09D72-A2CF-4501-94D0-1486557FF249}" group="False" parallel="False" enabled="True" load="False" testMoniker="{E9C32AD6-9DA8-4161-B813-BF0604DC9E61}GroundDetectHoistSpeedReference" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="HoistHighSpeedDownReference" key="{2A56B2CE-7A5C-49A0-BE8D-86C9D1BD51E4}" group="False" parallel="False" enabled="True" load="False" testMoniker="{D7F40FAA-D11C-4BAB-98E3-B658A90BD8E6}HoistHighSpeedDownReference" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
+						<children />
+					</testItem>
+					<testItem name="HoistHighSpeedUpReference" key="{96596C89-0016-4EB6-9D8A-54E95F31B0B2}" group="False" parallel="False" enabled="True" load="False" testMoniker="{84072B75-8F60-4A58-B477-8DAA4E7DC96D}HoistHighSpeedUpReference" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="CBT" />
 						<children />
 					</testItem>
 				</children>

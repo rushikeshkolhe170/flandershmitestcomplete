@@ -84,6 +84,21 @@
 		<folder name="AutoDrillParameterBrowser">
 			<child name="DrillHoleDepth" key="{EE0C3F92-65F4-4E14-A344-4E12597F661A}" path="DrillHoleDepth.js" />
 			<child name="CollaringCompressorVolumeCommand" key="{F18B3B23-10F3-4D4C-8939-DF48EF1DDB07}" path="CollaringCompressorVolumeCommand.js" />
+			<child name="AirPressureCycleTransition" key="{2AE03F2D-1E44-45A1-AC9A-995BA37F464D}" path="AirPressureCycleTransition.js" />
+			<child name="DrillingCompressorVolumeCommand" key="{51008115-0EF3-4DE0-9B6F-241827D7449E}" path="DrillingCompressorVolumeCommand.js" />
+			<child name="BitSpecifiedDownForceLimit" key="{ED37BBBC-4E62-4FC1-A8E6-317E0A366EF3}" path="BitSpecifiedDownForceLimit.js" />
+			<child name="BottomOfHoleWaterDistance" key="{381B770F-4105-4967-A4B3-5D314814DE4A}" path="BottomOfHoleWaterDistance.js" />
+			<child name="BottomOfHoleWaterSetpoint" key="{8A2553E5-42DD-4C4E-A28B-7F60F9C5165E}" path="BottomOfHoleWaterSetpoint.js" />
+			<child name="CollaringDepth" key="{61CA69F4-6E4E-433C-98AE-6A6C2D727E70}" path="CollaringDepth.js" />
+			<child name="CollaringDownForceLimit" key="{0C1C1CE6-7B5E-4FC3-808D-07C9D3761AE7}" path="CollaringDownForceLimit.js" />
+			<child name="CollaringMaxPenetrationSpeed" key="{E71CA08C-ADBD-4583-8D77-126F14630B1E}" path="CollaringMaxPenetrationSpeed.js" />
+			<child name="DrillingHoistDownSpeedReference" key="{6CA78F62-2975-4E4F-82B4-6873B064BF0A}" path="DrillingHoistDownSpeedReference.js" />
+			<child name="DrillingMaxPenetrationSpeed" key="{EBAE32FB-FC02-4DB1-90D7-256CDB48F359}" path="DrillingMaxPenetrationSpeed.js" />
+			<child name="EndOfHoleWaterOffSetpoint" key="{CE96A9A4-E041-44B7-95C2-F9AC315639D6}" path="EndOfHoleWaterOffSetpoint.js" />
+			<child name="GroundDetectForceSetpoint" key="{31C24910-5BDD-4F8A-9D9E-1202BA0AD40D}" path="GroundDetectForceSetpoint.js" />
+			<child name="GroundDetectHoistSpeedReference" key="{E9C32AD6-9DA8-4161-B813-BF0604DC9E61}" path="GroundDetectHoistSpeedReference.js" />
+			<child name="HoistHighSpeedDownReference" key="{D7F40FAA-D11C-4BAB-98E3-B658A90BD8E6}" path="HoistHighSpeedDownReference.js" />
+			<child name="HoistHighSpeedUpReference" key="{84072B75-8F60-4A58-B477-8DAA4E7DC96D}" path="HoistHighSpeedUpReference.js" />
 		</folder>
 		<child name="ThemeChange" key="{329621ED-AAC4-43A6-B882-153B83CC159C}" path="ThemeChange.js" />
 	</children>

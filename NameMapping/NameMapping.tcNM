@@ -5541,6 +5541,42 @@
 																			</Child>
 																		</Children>
 																	</Child>
+																	<Child Name="ButtonEnterMaintenanceMode2" Key="{62D63464-C655-463D-94AB-3B7673A9CF7C}" ExtendedFind="True">
+																		<Image FileName="-1706434666" Left="25" Top="445" Right="295" Bottom="515" />
+																		<TypeInfo Item0="{DF0359C3-D458-4D92-B059-84BE7483B2EF}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.Button" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="45004E005400450052000D000A004D00410049004E00540045004E0041004E004300450020004D004F0044004500" Type="7" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="ButtonExitMaintenanceMode2" Key="{C4D66BDB-FEF9-4199-9262-45458C1E5096}" ExtendedFind="True">
+																		<Image FileName="-472241668" Left="25" Top="445" Right="295" Bottom="515" />
+																		<TypeInfo Item0="{DF0359C3-D458-4D92-B059-84BE7483B2EF}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.Button" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="45005800490054000D000A004D00410049004E00540045004E0041004E004300450020004D004F0044004500" Type="7" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="ButtonMachineBypasses" Key="{7CF491FC-6C7E-4933-8F43-488883C64930}" ExtendedFind="True">
+																		<Image FileName="-480954294" Left="25" Top="534" Right="295" Bottom="604" />
+																		<TypeInfo Item0="{DF0359C3-D458-4D92-B059-84BE7483B2EF}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.Button" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="MACHINE BYPASSES" />
+																			</Property>
+																		</Properties>
+																	</Child>
 																</Children>
 															</Child>
 														</Children>
@@ -10490,6 +10526,17 @@
 																	</Property>
 																</Properties>
 															</Child>
+															<Child Name="AutoDrillParameters" Key="{9E9BED4A-4717-4153-BBBC-F1F511A0DD94}" ExtendedFind="True">
+																<Image FileName="-1847108205" Left="0" Top="124" Right="1921" Bottom="1053" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="Flanders.Ardvarc.Hmi.Client.AutoDrillParameters" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="" />
+																	</Property>
+																</Properties>
+															</Child>
 														</Children>
 													</Child>
 													<Child Name="LabelHeadResolverSetup" Key="{70393330-60B8-434C-9EDD-F0CC9CC91830}" ExtendedFind="True">
@@ -10839,6 +10886,18 @@
 																					</Property>
 																				</Properties>
 																			</Child>
+																			<Child Name="Button" Key="{DAE70CAE-7C4E-44F2-86F5-B32F444EFF58}" ExtendedFind="True">
+																				<Image FileName="2022237353" Left="807" Top="851" Right="911" Bottom="921" />
+																				<TypeInfo Item0="{1390DB92-9738-4512-9E5A-E3B68C53EDCC}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.Button" />
+																					</Property>
+																					<Property Name="WPFControlText">
+																						<Value Value="..." />
+																					</Property>
+																				</Properties>
+																			</Child>
 																		</Children>
 																	</Child>
 																	<Child Name="TextblockMastVerticalLockPinControl" Key="{07301089-CA04-44F0-9AE3-5EF991BD2E3F}" ExtendedFind="True">
@@ -10898,6 +10957,14 @@
 																			</Property>
 																			<Property Name="WPFControlText">
 																				<Value Value="4E004F004E002D004300410042000D000A005300490044004500" Type="7" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="ScrollView" Key="{3ACC3102-4395-475A-AB32-3E7A428623DA}" ExtendedFind="True">
+																		<Image FileName="391969607" Left="88" Top="180" Right="1832" Bottom="1008" />
+																		<Properties>
+																			<Property Name="WPFControlName">
+																				<Value Value="ScrollView" />
 																			</Property>
 																		</Properties>
 																	</Child>
@@ -12581,6 +12648,20 @@
 																<Value Value="1" Type="0" />
 															</Property>
 														</Properties>
+														<Children>
+															<Child Name="Path" Key="{ABD8C990-9E29-44D7-9604-127A8D5202C1}" ExtendedFind="True">
+																<Image FileName="-2028958315" Left="7" Top="7" Right="65" Bottom="46" />
+																<TypeInfo Item0="{D884F03F-5D02-45E1-A149-196E2A1954DF}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Shapes.Path" />
+																	</Property>
+																	<Property Name="WPFControlOrdinalNo">
+																		<Value Value="1" Type="0" />
+																	</Property>
+																</Properties>
+															</Child>
+														</Children>
 													</Child>
 													<Child Name="BackgroundImage" Key="{748B8F81-0A19-44BB-81B6-C1225860DE31}">
 														<Image FileName="856359942" Left="439" Top="53" Right="1930" Bottom="1140" />
@@ -12801,6 +12882,20 @@
 														<Value Value="5" Type="0" />
 													</Property>
 												</Properties>
+												<Children>
+													<Child Name="Textblock" Key="{C2AC664C-F295-430F-AC1A-8511675BA562}" ExtendedFind="True">
+														<Image FileName="294002663" Left="517" Top="54" Right="626" Bottom="88" />
+														<TypeInfo Item0="{D884F03F-5D02-45E1-A149-196E2A1954DF}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Controls.TextBlock" />
+															</Property>
+															<Property Name="WPFControlText">
+																<Value Value="🩺" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
 											</Child>
 										</Children>
 									</Child>
@@ -13413,6 +13508,1086 @@
 																			</Property>
 																		</Properties>
 																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecycletra" Key="{E292915D-B775-473E-A0AC-B8ADD9B833B8}" ExtendedFind="True">
+																		<Image FileName="-128099590" Left="25" Top="178" Right="638" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCycleTransitionShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecycletra2" Key="{8A2764C6-457D-4D8E-B389-B28F241E8960}" ExtendedFind="True">
+																		<Image FileName="-1418429520" Left="25" Top="178" Right="660" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCycleTransitionBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecycletra3" Key="{2EE304B1-C84E-4425-808B-EB4AC5C812A0}" ExtendedFind="True">
+																		<Image FileName="-1430329515" Left="25" Top="178" Right="732" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCycleTransitionBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecycletra4" Key="{56ADEF2F-B1F9-4A10-A4B1-328CDA11DFDB}" ExtendedFind="True">
+																		<Image FileName="1232525464" Left="25" Top="178" Right="745" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCycleTransitionAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecycletra5" Key="{88967F12-880B-4545-9BA8-5824C4F697A8}" ExtendedFind="True">
+																		<Image FileName="-731085583" Left="25" Top="178" Right="698" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCycleTransitionMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressurecycletra6" Key="{9E8F1FAB-8C0C-409F-8D8B-892E81327FF2}" ExtendedFind="True">
+																		<Image FileName="1548148245" Left="25" Top="178" Right="693" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCycleTransitionMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressuredrilling" Key="{343F64F6-0A86-43D9-97FD-919B113AADA9}" ExtendedFind="True">
+																		<Image FileName="-1580987870" Left="25" Top="178" Right="535" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureDrillingShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressuredrilling2" Key="{B4839496-D04A-4922-8025-8C0A4223ED7A}" ExtendedFind="True">
+																		<Image FileName="-604458270" Left="25" Top="178" Right="629" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureDrillingBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressuredrilling3" Key="{C5115A3E-A9BD-4FCB-8728-02A0617C6504}" ExtendedFind="True">
+																		<Image FileName="-1707780538" Left="25" Top="178" Right="557" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureDrillingBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressuredrilling4" Key="{741EB17D-B71A-4B00-93E0-C2EB57D5E912}" ExtendedFind="True">
+																		<Image FileName="81985394" Left="25" Top="178" Right="643" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureDrillingAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressuredrilling5" Key="{4C474713-4E6C-437C-900C-641B4D1D24F7}" ExtendedFind="True">
+																		<Image FileName="-299460149" Left="25" Top="178" Right="595" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureDrillingMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupairpressuredrilling6" Key="{EFD6CF54-884B-4D49-873C-D98E880F2B33}" ExtendedFind="True">
+																		<Image FileName="-1326446466" Left="25" Top="178" Right="590" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureDrillingMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowbitspecificdown" Key="{6768033F-84F2-4B88-9DB6-DC77266E956A}" ExtendedFind="True">
+																		<Image FileName="307507997" Left="25" Top="178" Right="641" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowBitSpecificDownForceLimit" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbitspecificdownforc" Key="{25022044-FB65-425F-80E2-2F6CA8862DC2}" ExtendedFind="True">
+																		<Image FileName="932444933" Left="25" Top="178" Right="663" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBitSpecificDownForceLimitBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbitspecificdownforc2" Key="{DAA3CCA6-0576-49D9-975D-CDCA41EDC338}" ExtendedFind="True">
+																		<Image FileName="1139978885" Left="25" Top="178" Right="735" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBitSpecificDownForceLimitBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbitspecificdownforc3" Key="{3402B0F1-47FD-4B6E-A28B-59C52F69034F}" ExtendedFind="True">
+																		<Image FileName="1163254156" Left="25" Top="178" Right="749" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBitSpecificDownForceLimitAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbitspecificdownforc4" Key="{C61AC70C-FDBD-4A19-8FB7-9ED6D6E3113E}" ExtendedFind="True">
+																		<Image FileName="562316509" Left="25" Top="178" Right="701" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBitSpecificDownForceLimitMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbitspecificdownforc5" Key="{B3F27534-F8DA-4469-8D79-5CDA5F62B20F}" ExtendedFind="True">
+																		<Image FileName="1176900864" Left="25" Top="178" Right="696" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBitSpecificDownForceLimitMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterdi" Key="{6F2E8E4D-011D-46BC-A0C9-8BD7B53D7531}" ExtendedFind="True">
+																		<Image FileName="874892694" Left="25" Top="178" Right="675" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterDistanceShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterdi2" Key="{4952A8C8-1925-40A9-9B7E-3A39BAE718E8}" ExtendedFind="True">
+																		<Image FileName="-835172958" Left="25" Top="178" Right="769" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterDistanceBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterdi3" Key="{5079FA72-AB27-472B-954A-E26E1D84B005}" ExtendedFind="True">
+																		<Image FileName="-2082094632" Left="25" Top="178" Right="697" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterDistanceBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterdi4" Key="{19E03BBD-5DE4-4D09-AC7D-7EA1B93CD2A9}" ExtendedFind="True">
+																		<Image FileName="-110741285" Left="25" Top="178" Right="783" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterDistanceAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterdi5" Key="{10EF0A28-D624-4F06-9848-8AC817E0FA96}" ExtendedFind="True">
+																		<Image FileName="1033436294" Left="25" Top="178" Right="735" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterDistanceMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterdi6" Key="{C9720A5E-9988-4268-B2A2-8C8CB363CFC6}" ExtendedFind="True">
+																		<Image FileName="142754511" Left="25" Top="178" Right="730" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterDistanceMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterse" Key="{FD9CA789-6E3B-4349-AC7E-7FE50FE8BFAF}" ExtendedFind="True">
+																		<Image FileName="2082802260" Left="25" Top="178" Right="674" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterSetpointShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterse2" Key="{BAD32A0D-8BF4-4B2E-B2AA-FD36FEFE2B4F}" ExtendedFind="True">
+																		<Image FileName="-864454476" Left="25" Top="178" Right="768" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterSetpointBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterse3" Key="{07E1C96B-8F29-485D-8050-09307B6161B8}" ExtendedFind="True">
+																		<Image FileName="-1323885768" Left="25" Top="178" Right="696" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterSetpointBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterse4" Key="{0D3D7A20-B972-4BEF-B2D7-DF0E35D8A647}" ExtendedFind="True">
+																		<Image FileName="809618406" Left="25" Top="178" Right="781" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterSetpointAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterse5" Key="{1FC1A298-020B-40FD-8029-476F6E7574C0}" ExtendedFind="True">
+																		<Image FileName="-1829748045" Left="25" Top="178" Right="734" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterSetpointMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupbottomofholewaterse6" Key="{A0964A0A-C8D2-4F75-A2C5-88C48EAF0FB5}" ExtendedFind="True">
+																		<Image FileName="-1866454358" Left="25" Top="178" Right="729" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupBottomOfHoleWaterSetpointMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowcollaringdepth" Key="{6F932F55-D843-49CF-BF30-11B5383DD148}" ExtendedFind="True">
+																		<Image FileName="911753388" Left="25" Top="178" Right="491" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowCollaringDepth" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdepthbmode" Key="{7A0D1469-23D4-4AF9-A88C-3DE774C0FC9A}" ExtendedFind="True">
+																		<Image FileName="-278050296" Left="25" Top="178" Right="513" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDepthBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdepthbmode2" Key="{3C3A2B13-DE56-476F-B907-F08AACACE511}" ExtendedFind="True">
+																		<Image FileName="2088943981" Left="25" Top="178" Right="585" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDepthBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdepthallow" Key="{D306BBAD-CBB1-47B2-8B35-97EB2E3ADE5B}" ExtendedFind="True">
+																		<Image FileName="862515086" Left="25" Top="178" Right="599" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDepthAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdepthmaxim" Key="{786E896C-BFD9-41ED-AEBE-FEAFF91DA85A}" ExtendedFind="True">
+																		<Image FileName="-166809414" Left="25" Top="178" Right="551" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDepthMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdepthminim" Key="{9E6D412F-2F3F-4E9F-8412-8174F17E7483}" ExtendedFind="True">
+																		<Image FileName="-1974285339" Left="25" Top="178" Right="546" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDepthMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowcollaringdownfo" Key="{135B92E3-4080-4FCF-9AE6-EE4FC7F5149D}" ExtendedFind="True">
+																		<Image FileName="-1676567450" Left="25" Top="178" Right="624" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowCollaringDownForceLimit" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdownforcel" Key="{A38D8140-1330-4808-BE53-9C0FD184D2C1}" ExtendedFind="True">
+																		<Image FileName="-1478447596" Left="25" Top="178" Right="646" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDownForceLimitBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdownforcel2" Key="{B33412F7-FBCA-4A86-A89A-6F08A85ADBFC}" ExtendedFind="True">
+																		<Image FileName="790599658" Left="25" Top="178" Right="718" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDownForceLimitBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdownforcel3" Key="{46D0FB53-F7B0-4C39-ACE3-F2F9753F2EDA}" ExtendedFind="True">
+																		<Image FileName="-880831580" Left="25" Top="178" Right="731" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDownForceLimitAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdownforcel4" Key="{67AE071F-42C7-4095-991E-22FF5087B774}" ExtendedFind="True">
+																		<Image FileName="1819199365" Left="25" Top="178" Right="684" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDownForceLimitMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringdownforcel5" Key="{91C7BC2C-E4A4-4D61-8903-03FADCE5E10C}" ExtendedFind="True">
+																		<Image FileName="471032827" Left="25" Top="178" Right="679" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringDownForceLimitMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowcollaringmaxspe" Key="{8B7FA61F-6923-4135-802D-2A125C654F75}" ExtendedFind="True">
+																		<Image FileName="29842702" Left="25" Top="178" Right="549" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowCollaringMaxSpeed" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringmaxspeedbm" Key="{CA326C1F-8C56-43DD-A2DF-2B0894359AD5}" ExtendedFind="True">
+																		<Image FileName="256321366" Left="25" Top="178" Right="569" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringmaxSpeedBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringmaxspeedbm2" Key="{F87A7CF2-9616-47ED-A247-A78A832C5D1D}" ExtendedFind="True">
+																		<Image FileName="-1229166182" Left="25" Top="178" Right="641" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringmaxSpeedBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringmaxspeedal" Key="{343CDC3E-7DB4-44E4-ACC4-4379E36D17DE}" ExtendedFind="True">
+																		<Image FileName="903659916" Left="25" Top="178" Right="655" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringmaxSpeedAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringmaxspeedma" Key="{FDE2A539-1780-4EFF-9476-7ED2AF248C67}" ExtendedFind="True">
+																		<Image FileName="-1639487914" Left="25" Top="178" Right="608" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringMaxSpeedMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupcollaringmaxspeedmi" Key="{D788AC75-816D-42AF-BD76-384EBA7C6F2E}" ExtendedFind="True">
+																		<Image FileName="-979889668" Left="25" Top="178" Right="603" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupCollaringMaxSpeedMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowdrillinghoistdo" Key="{CB44BAD7-3FEB-4572-A255-3A3512F44A6A}" ExtendedFind="True">
+																		<Image FileName="1867491808" Left="25" Top="178" Right="746" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowDrillingHoistDownSpeedReference" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillinghoistdownsp" Key="{C977F846-1730-4B34-9477-96E39C9B203F}" ExtendedFind="True">
+																		<Image FileName="1267493167" Left="25" Top="178" Right="768" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingHoistDownSpeedReferenceBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillinghoistdownsp2" Key="{DF62EF0D-0C2D-480F-AE3B-DA55C6188144}" ExtendedFind="True">
+																		<Image FileName="-2012160828" Left="25" Top="178" Right="840" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingHoistDownSpeedReferenceBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillinghoistdownsp3" Key="{46232832-4BC6-42C8-8548-AA6DAC066CF2}" ExtendedFind="True">
+																		<Image FileName="2132571687" Left="25" Top="178" Right="853" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingHoistDownSpeedReferenceAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillinghoistdownsp4" Key="{4E8BAF0B-32AD-4000-B5C8-C5AEEA58C26A}" ExtendedFind="True">
+																		<Image FileName="1559932960" Left="25" Top="178" Right="806" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingHoistDownSpeedReferenceMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillinghoistdownsp5" Key="{65B03A61-E67F-4A65-B64E-6C2D33CF2851}" ExtendedFind="True">
+																		<Image FileName="1105207660" Left="25" Top="178" Right="801" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingHoistDownSpeedReferenceMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowdrillingmaxspee" Key="{53D2EC2C-1852-4506-B067-2F9E4EFF52E8}" ExtendedFind="True">
+																		<Image FileName="1168674707" Left="25" Top="178" Right="525" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowDrillingMaxSpeed" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillingmaxspeedbmo" Key="{1EDDFCBF-69E2-4879-A968-D930FE284022}" ExtendedFind="True">
+																		<Image FileName="1486598864" Left="25" Top="178" Right="547" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingMaxSpeedBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillingmaxspeedbmo2" Key="{095DD305-1FC0-46CF-B732-873700E585ED}" ExtendedFind="True">
+																		<Image FileName="-1182552771" Left="25" Top="178" Right="619" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingMaxSpeedBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillingmaxspeedall" Key="{5AF6855F-7B34-4FFA-A4B0-DC979F7B7929}" ExtendedFind="True">
+																		<Image FileName="-2058046569" Left="25" Top="178" Right="633" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingMaxSpeedAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillingmaxspeedmax" Key="{0776DE80-DE17-4A11-A489-870F4FA483A9}" ExtendedFind="True">
+																		<Image FileName="465568065" Left="25" Top="178" Right="585" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingMaxSpeedMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupdrillingmaxspeedmin" Key="{3FD5D65F-4C33-4B5A-9AE3-CF2049EC5233}" ExtendedFind="True">
+																		<Image FileName="1921978310" Left="25" Top="178" Right="580" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupDrillingMaxSpeedMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupendofholewateroffse" Key="{8DFF147B-89FC-4599-B2B2-2BEFD8B043CC}" ExtendedFind="True">
+																		<Image FileName="-236963567" Left="25" Top="178" Right="761" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupEndOfHoleWaterOffSetpointBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupendofholewateroffse2" Key="{90B42AD0-71EB-499A-8137-6E9ADB1C3D48}" ExtendedFind="True">
+																		<Image FileName="-62140309" Left="25" Top="178" Right="688" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupEndOfHoleWaterOffSetpointBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupendofholewateroffse3" Key="{F0FDAECD-180E-4735-9C02-DBE50343DF36}" ExtendedFind="True">
+																		<Image FileName="-650260106" Left="25" Top="178" Right="774" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupEndOfHoleWaterOffSetpointAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupendofholewateroffse4" Key="{F5F3C7E0-540C-407E-A660-FAFE53946AC9}" ExtendedFind="True">
+																		<Image FileName="-1434702064" Left="25" Top="178" Right="726" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupEndOfHoleWaterOffSetpointMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupendofholewateroffse5" Key="{D2BBC7F7-F47B-4214-A381-91C09E9DC9F0}" ExtendedFind="True">
+																		<Image FileName="-2126771728" Left="25" Top="178" Right="721" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupEndOfHoleWaterOffSetpointMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowendofholewaters" Key="{976DF682-EEC3-4921-813F-79BC9CE04F87}" ExtendedFind="True">
+																		<Image FileName="-575580035" Left="25" Top="178" Right="625" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowEndOfHoleWaterSetpoint" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetectforcese" Key="{B305E004-8E06-477C-96E0-5F5793C8E015}" ExtendedFind="True">
+																		<Image FileName="-599678227" Left="25" Top="178" Right="756" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectForceSetpointBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetectforcese2" Key="{1580B0D1-7E76-4F4D-BBA6-469A25B76844}" ExtendedFind="True">
+																		<Image FileName="-582733356" Left="25" Top="178" Right="684" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectForceSetpointBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetectforcese3" Key="{003F22B3-FA20-4583-AD92-7950ACC52BF2}" ExtendedFind="True">
+																		<Image FileName="-1340685265" Left="25" Top="178" Right="722" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectForceSetpointMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetectforcese4" Key="{F58FD8D2-ECC3-4EAA-93CF-4742963CFFC9}" ExtendedFind="True">
+																		<Image FileName="391583165" Left="25" Top="178" Right="717" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectForceSetpointMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetectforcese5" Key="{9C25D6B5-EB61-4B12-9FC1-A97CB86DF45F}" ExtendedFind="True">
+																		<Image FileName="-1483360624" Left="25" Top="178" Right="769" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectForceSetpointAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowgrounddetectfor" Key="{DB8A247D-DB76-4D66-9520-F8F65171A894}" ExtendedFind="True">
+																		<Image FileName="1935780622" Left="25" Top="178" Right="662" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowGroundDetectForceSetpoint" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetecthoistsp" Key="{7F9E1BB6-EB9F-491D-95B8-02B162D90069}" ExtendedFind="True">
+																		<Image FileName="-50742552" Left="25" Top="178" Right="782" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectHoistSpeedReferenceBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetecthoistsp2" Key="{C9D9784A-BDA5-4532-9E53-FCD49396D115}" ExtendedFind="True">
+																		<Image FileName="-1240965583" Left="25" Top="178" Right="855" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectHoistSpeedReferenceBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetecthoistsp3" Key="{3AA00BE6-B250-440C-9BE4-EB00FDC0CE0A}" ExtendedFind="True">
+																		<Image FileName="-1286715395" Left="25" Top="178" Right="868" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectHoistSpeedReferenceAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetecthoistsp4" Key="{D693DC55-9D3F-4A77-89EB-2CE2D489C456}" ExtendedFind="True">
+																		<Image FileName="607931243" Left="25" Top="178" Right="820" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectHoistSpeedReferenceMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupgrounddetecthoistsp5" Key="{E8DFD3D7-3E4A-4F62-AE51-76F9A7F4CD0C}" ExtendedFind="True">
+																		<Image FileName="-751817466" Left="25" Top="178" Right="816" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupGroundDetectHoistSpeedReferenceMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowgrounddetecthoi" Key="{5B6FB13C-D16A-467D-AC1D-81A3CC311CDD}" ExtendedFind="True">
+																		<Image FileName="121371547" Left="25" Top="178" Right="761" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowGroundDetectHoistSpeedReference" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowhoisthighspeedd" Key="{4D632105-B03E-4C43-B990-1523745C987F}" ExtendedFind="True">
+																		<Image FileName="-582102396" Left="25" Top="178" Right="714" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowHoistHighSpeedDownReference" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeeddownr" Key="{FCF06C56-60F8-4FBD-BBF6-588B01C51290}" ExtendedFind="True">
+																		<Image FileName="2021969402" Left="25" Top="178" Right="736" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedDownReferenceBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeeddownr2" Key="{A5F2D0D9-7472-4EB0-9120-D84FCBD7DA40}" ExtendedFind="True">
+																		<Image FileName="1434622205" Left="25" Top="178" Right="808" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedDownReferenceBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeeddownr3" Key="{E7E71AB0-B210-4BAF-A9D6-C2F68FC22EBF}" ExtendedFind="True">
+																		<Image FileName="1636785418" Left="25" Top="178" Right="821" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedDownReferenceAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeeddownr4" Key="{9A79EB2D-D4DA-4C0A-BA39-05A2E0527E02}" ExtendedFind="True">
+																		<Image FileName="-435439408" Left="25" Top="178" Right="774" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedDownReferenceMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeeddownr5" Key="{3A8EB1D8-B1E0-4362-B5D0-75C32C2A3912}" ExtendedFind="True">
+																		<Image FileName="-1537119211" Left="25" Top="178" Right="769" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedDownReferenceMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeedupref" Key="{3EC87E13-7FEE-4347-8366-8A8BA80E244A}" ExtendedFind="True">
+																		<Image FileName="597715691" Left="25" Top="178" Right="735" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedUpReferenceMaximum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeedupref2" Key="{634C3C76-E881-44A8-8ED5-74C93BD7EEAB}" ExtendedFind="True">
+																		<Image FileName="-1111594596" Left="25" Top="178" Right="730" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedUpReferenceMinimum" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeedupref3" Key="{4B8E6879-EBD2-4428-87FF-5EC9EC9D0A9A}" ExtendedFind="True">
+																		<Image FileName="774913644" Left="25" Top="178" Right="697" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedUpReferenceBmode" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeedupref4" Key="{B6209BB3-A5DB-420B-9E6C-B08F0B05271B}" ExtendedFind="True">
+																		<Image FileName="-1767043047" Left="25" Top="178" Right="769" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedUpReferenceBmodeShow" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetuphoisthighspeedupref5" Key="{667742D1-C677-4684-BA82-92D42D959ED7}" ExtendedFind="True">
+																		<Image FileName="-1891813684" Left="25" Top="178" Right="782" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupHoistHighSpeedUpReferenceAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="TextblockAutodrillsetupshowhoisthighspeedu" Key="{7ECF463A-325A-4A26-B767-A6949CFB2B5F}" ExtendedFind="True">
+																		<Image FileName="-1982533008" Left="25" Top="178" Right="675" Bottom="219" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupShowHoistHighSpeedUpReference" />
+																			</Property>
+																		</Properties>
+																	</Child>
 																</Children>
 															</Child>
 															<Child Name="ListViewItem3" Key="{5E5FF341-D20A-44FC-8AC2-8BAA0B9224D0}" ExtendedFind="True">
@@ -13655,6 +14830,20 @@
 																		<Value Value="8" Type="0" />
 																	</Property>
 																</Properties>
+																<Children>
+																	<Child Name="TextblockAutodrillsetupairpressurecycletra" Key="{425402D0-18C3-40B9-98F1-D6FC48788C78}" ExtendedFind="True">
+																		<Image FileName="-197918388" Left="25" Top="501" Right="745" Bottom="542" />
+																		<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.TextBlock" />
+																			</Property>
+																			<Property Name="WPFControlText">
+																				<Value Value="AutoDrillSetupAirPressureCycleTransitionAllowDecimal" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																</Children>
 															</Child>
 															<Child Name="ListViewItem14" Key="{EC511FFD-7F81-48B8-B644-04455EE929DB}" ExtendedFind="True">
 																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
@@ -13815,6 +15004,34 @@
 																	</Property>
 																	<Property Name="WPFControlText">
 																		<Value Value="AutoDrillSetupAirPressureCollaringAllowDecimal" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="ListViewItem17" Key="{FA085F52-D898-486A-8BCD-8D6D3E0342BD}" ExtendedFind="True">
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.ListViewItem" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="" />
+																	</Property>
+																	<Property Name="WPFControlOrdinalNo">
+																		<Value Value="9" Type="0" />
+																	</Property>
+																</Properties>
+															</Child>
+															<Child Name="ListViewItem18" Key="{D02685C6-4E87-455C-92E3-5383261D9716}" ExtendedFind="True">
+																<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+																<Properties>
+																	<Property Name="ClrFullClassName">
+																		<Value Value="System.Windows.Controls.ListViewItem" />
+																	</Property>
+																	<Property Name="WPFControlText">
+																		<Value Value="" />
+																	</Property>
+																	<Property Name="WPFControlOrdinalNo">
+																		<Value Value="6" Type="0" />
 																	</Property>
 																</Properties>
 															</Child>
@@ -14081,6 +15298,24 @@
 												<Properties>
 													<Property Name="WPFControlName">
 														<Value Value="ButtonDot" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="MinimumBorder" Key="{D982AED3-DAEA-43B1-B0FB-AAE77A1B44F0}" ExtendedFind="True">
+												<Image FileName="1692305181" Left="250" Top="501" Right="477" Bottom="535" />
+												<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="MinimumBorder" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="MaximumBorder" Key="{0DEE1FFA-F8A1-4C58-A705-9A1502A71A6C}" ExtendedFind="True">
+												<Image FileName="1692305181" Left="250" Top="539" Right="477" Bottom="573" />
+												<TypeInfo Item0="{38D2EF0D-44C8-45C3-BA94-ADDC8F4F858E}" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="MaximumBorder" />
 													</Property>
 												</Properties>
 											</Child>
@@ -17016,6 +18251,132 @@
 											</Selector>
 										</Selectors>
 									</Child>
+									<Child Name="panelAirPressureCycleTransition" Key="{056C750F-6327-4EDF-936C-A2F228FEFB29}">
+										<Image FileName="1926936885" Left="1260" Top="514" Right="1840" Bottom="1029" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[2]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelBitSpecifiedDownForceLimit" Key="{90AE0A22-414A-41F8-AFC7-1916F0F66CED}">
+										<Image FileName="-25687262" Left="1260" Top="669" Right="1840" Bottom="1184" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[4]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelBottomOfHoleWaterDistance" Key="{80DED0B2-6288-42C2-9D31-E2C8BBEACF6C}">
+										<Image FileName="-1056126207" Left="1260" Top="449" Right="1840" Bottom="964" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[6]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelBottomOfHoleWaterSetpoint" Key="{696B2A71-04F4-4D50-A79A-E3C9450F80A5}">
+										<Image FileName="18177355" Left="665" Top="604" Right="1245" Bottom="1119" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[7]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringDepth" Key="{12B50887-08A5-4D8B-8352-3A9D9A045A14}">
+										<Image FileName="-1709354783" Left="1260" Top="479" Right="1840" Bottom="994" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[8]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringDownForceLimit" Key="{D6349B1A-7F96-440D-AB1B-11A5F527C6F1}">
+										<Image FileName="-936571983" Left="665" Top="634" Right="1245" Bottom="1149" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[9]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringMaxPenetrationSpee" Key="{86E790FC-7E31-4C50-B028-ECE6AE092451}">
+										<Image FileName="-1343474590" Left="1260" Top="509" Right="1840" Bottom="1024" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[10]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelDrillingMaxPenetrationSpeed" Key="{5BCF8E7C-EB8C-4C7C-AAE6-80F39260346F}">
+										<Image FileName="-450077074" Left="1260" Top="569" Right="1840" Bottom="1084" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[14]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelEndOfHoleWaterOffSetpoint" Key="{1ACC25E7-4339-499C-8B77-C9FDFDAA6528}">
+										<Image FileName="-293604092" Left="665" Top="724" Right="1245" Bottom="1239" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[15]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelDrillingHoistDownSpeed" Key="{DDEADDDB-7457-42BD-8A2A-B5EDD2B6EC4A}">
+										<Image FileName="-133948166" Left="665" Top="569" Right="1245" Bottom="1084" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[13]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelGroundDetectForceSetpoint" Key="{18BA555F-2D47-48BA-BB6E-34E4E9942EF4}">
+										<Image FileName="-1545718044" Left="1260" Top="474" Right="1840" Bottom="989" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[16]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelGroundDetectHoistSpeed" Key="{29AF6EBA-9A75-4305-A5BF-939DE08B0825}">
+										<Image FileName="-1545718044" Left="665" Top="1004" Right="1245" Bottom="1519" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[17]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelHoistHighSpeedDownReference" Key="{04507D11-C8AE-463C-AB83-387E7A83791F}">
+										<Image FileName="1248996495" Left="1260" Top="504" Right="1840" Bottom="1019" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[18]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelHoistHighSpeedUpReference" Key="{EB19281C-0BA6-4612-A315-CD67585CAB82}">
+										<Image FileName="1248996495" Left="665" Top="1034" Right="1245" Bottom="1549" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[19]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
 								</Children>
 							</Child>
 							<Child Name="wndChrome_WidgetWin_1" Key="{0E48C02A-83BE-4B9B-8B62-F480EE00411F}">
@@ -17111,6 +18472,31 @@
 										<Value Value="1" Type="0" />
 									</Property>
 								</Properties>
+							</Child>
+							<Child Name="pageDiagnosticDashboard4" Key="{D0E5E48F-B82A-4F50-AA29-5C30A86BE330}">
+								<Image FileName="-1525540048" Left="5" Top="142" Right="1915" Bottom="1135" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="http://wsl.flanders.local/login/" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="textnodeLogin" Key="{E3B529E5-2F2E-4E93-BCC1-185E37BB01E9}">
+										<Image FileName="1990030617" Left="5" Top="100" Right="1915" Bottom="1135" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//body[contains(., &apos;Login&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//body" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
 							</Child>
 						</Children>
 					</Child>
@@ -17838,6 +19224,87 @@
 											</Selector>
 										</Selectors>
 									</Child>
+									<Child Name="panelAirPressureCycleTransition" Key="{A988138C-6288-46DF-908E-E45D6F85F0E0}">
+										<Image FileName="-818353661" Left="1251" Top="514" Right="1821" Bottom="1029" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[2]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelDrillingCompressorVolume" Key="{7106E296-9B83-450D-86DB-D3D9C1645937}">
+										<Image FileName="1419641589" Left="665" Top="669" Right="1245" Bottom="1184" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[3]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelBottomOfHoleWaterDistance" Key="{E430FEE9-47E0-4E3D-8071-8DF9A0D95057}">
+										<Image FileName="-750748790" Left="1251" Top="449" Right="1821" Bottom="964" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[6]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringDepth" Key="{5B01804F-8928-48C1-B768-6BCEC0872354}">
+										<Image FileName="1926868304" Left="1260" Top="604" Right="1840" Bottom="1119" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[8]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringDownForceLimit" Key="{AC5EEE82-925F-4CEC-9EF5-ACED6C429015}">
+										<Image FileName="912094980" Left="665" Top="509" Right="1245" Bottom="1024" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[9]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelCollaringMaxPenetrationSpee" Key="{25F425F7-98E5-4465-A7FB-5AEAA00F2B3D}">
+										<Image FileName="353718792" Left="1251" Top="509" Right="1821" Bottom="1024" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[10]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelGroundDetectForceSetpoint" Key="{FD96D591-B088-4BB7-BE36-7693A162C270}">
+										<Image FileName="-989434281" Left="1251" Top="500" Right="1821" Bottom="1015" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[16]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelGroundDetectHoistSpeed" Key="{3DF33D21-67A6-4AA8-9B6D-D82BE2FBB6C9}">
+										<Image FileName="280159203" Left="665" Top="530" Right="1235" Bottom="1045" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[17]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="panelHoistHighSpeedDownReference" Key="{2B8EAFD4-4F0D-4846-B2C3-23A0860745A2}">
+										<Image FileName="-1545718044" Left="1260" Top="1004" Right="1840" Bottom="1519" />
+										<TypeInfo Item0="{F8B02CC5-36E7-40B5-8014-FC85F6AD5AFA}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//div[contains(@class, &apos;rt-reset&apos;)]/div[18]/div[contains(@class, &apos;rt-reset&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
 								</Children>
 							</Child>
 							<Child Name="pageDiagnosticDashboard4" Key="{AB056A0A-ACB2-40ED-AC0D-9D2058B01CF8}">
@@ -18489,6 +19956,7 @@
 						<Child Name="Item21" Owner="{2C876070-B19D-4760-8E22-33C861238943}" />
 						<Child Name="Item22" Owner="{B0D3DE84-EF06-4481-A1BB-82242AEB0C17}" />
 						<Child Name="UserControl" Owner="{1914D885-048D-4A4A-9E72-CB13EFA645E9}" />
+						<Child Name="Button7" Owner="{DAE70CAE-7C4E-44F2-86F5-B32F444EFF58}" />
 					</Child>
 					<Child Name="ScrollView" Owner="{10F8047F-9B2E-4C79-8880-26C741F8575A}">
 						<Child Name="TextblockChange" Owner="{A47C311C-6835-4BFA-8292-B01A635704A0}" />
@@ -18830,6 +20298,7 @@
 							<Child Name="TextblockMastBraceLockPinControl" Owner="{B33935F7-4B5D-42AD-AECA-78DC59989B9F}" />
 							<Child Name="TextblockCurrentStatus" Owner="{97E44FAE-E5DC-41DE-A945-5FE81F8AEB54}" />
 							<Child Name="TextblockNonCabSide" Owner="{B9E9ED6A-C1C1-4427-B270-7085B121F0CB}" />
+							<Child Name="ScrollView" Owner="{3ACC3102-4395-475A-AB32-3E7A428623DA}" />
 						</Child>
 						<Child Name="ComboBox" Owner="{ABDBD299-A617-4734-97C9-190699F2FBC3}" />
 						<Child Name="FluidsButton" Owner="{3E74B780-E822-4DB2-BA6B-83ACC24CE9BE}" />
@@ -19062,7 +20531,9 @@
 					<Child Name="RowDefinition" Owner="{CEDBF4D1-BECB-420A-B6F7-2DFF12BED04D}" />
 					<Child Name="RowDefinition2" Owner="{152D884D-00AC-4EA0-AAEC-1EE73312FAB9}" />
 					<Child Name="ColumnDefinition" Owner="{4FE773D0-AE0A-4A13-8D7E-11027CF0B63B}" />
-					<Child Name="Viewbox" Owner="{EB1E05AE-E403-4A2C-90EE-F9EF9FC8888D}" />
+					<Child Name="Viewbox" Owner="{EB1E05AE-E403-4A2C-90EE-F9EF9FC8888D}">
+						<Child Name="Path" Owner="{ABD8C990-9E29-44D7-9604-127A8D5202C1}" />
+					</Child>
 					<Child Name="BackgroundImage" Owner="{748B8F81-0A19-44BB-81B6-C1225860DE31}" />
 					<Child Name="OperatorScreen" Owner="{5C42B863-CDA3-4A81-893D-0D1EBF408F02}">
 						<Child Name="PreviousPreOperationInspectionButton" Owner="{62007200-072B-4CB5-AD5E-CBCB204374FA}" />
@@ -19221,6 +20692,10 @@
 					<Child Name="LabelAuxpump12" Owner="{94966D0C-AA29-498F-B6B7-363C40B751AE}" />
 					<Child Name="LabelAuxpump22" Owner="{57A1E483-77E7-460E-B0E5-DE25B872A6EF}" />
 					<Child Name="LabelFanpump2" Owner="{6CECBEA6-C096-43FB-9F92-64F119EFDBAD}" />
+					<Child Name="AutoDrillParameters" Owner="{9E9BED4A-4717-4153-BBBC-F1F511A0DD94}" />
+					<Child Name="ButtonEnterMaintenanceMode2" Owner="{62D63464-C655-463D-94AB-3B7673A9CF7C}" />
+					<Child Name="ButtonExitMaintenanceMode2" Owner="{C4D66BDB-FEF9-4199-9262-45458C1E5096}" />
+					<Child Name="ButtonMachineBypasses" Owner="{7CF491FC-6C7E-4933-8F43-488883C64930}" />
 				</Child>
 			</Child>
 			<Child Name="HwndSource_OperatorScreenMessageWindow" Owner="{AB37F3C3-58FB-4559-83D5-19E73EBF0FA4}">
@@ -19233,7 +20708,9 @@
 			<Child Name="HwndSource_TopLeftWindow" Owner="{667993E6-9C13-4E9B-A1F5-87711989D531}">
 				<Child Name="TopLeftWindow" Owner="{D4EB157E-6DB5-43FB-B5BC-ED818672F873}">
 					<Child Name="Button" Owner="{529193AD-167E-4B44-ABDD-9EC41AE6244E}" />
-					<Child Name="Button2" Owner="{D40AC9F1-CBC9-46A6-BF85-EDBE9D0D3B6A}" />
+					<Child Name="Button2" Owner="{D40AC9F1-CBC9-46A6-BF85-EDBE9D0D3B6A}">
+						<Child Name="Textblock" Owner="{C2AC664C-F295-430F-AC1A-8511675BA562}" />
+					</Child>
 				</Child>
 			</Child>
 			<Child Name="HwndSource_PasswordWindow" Owner="{73F43EB2-3C8B-454E-93A6-0AE45E5A8E9D}">
@@ -19281,6 +20758,96 @@
 								<Child Name="TextblockAutodrillsetupairpressurecollarin3" Owner="{9142D584-0589-48D5-ACB6-4B15C989821C}" />
 								<Child Name="TextblockAutodrillsetupairpressurecollarin4" Owner="{7F49037C-5F37-44A9-A441-F60DD53EF322}" />
 								<Child Name="TextblockAutodrillsetupairpressurecollarin5" Owner="{280BFDE7-3A08-4653-9C97-F0A2955F0708}" />
+								<Child Name="TextblockAutodrillsetupairpressurecycletra" Owner="{E292915D-B775-473E-A0AC-B8ADD9B833B8}" />
+								<Child Name="TextblockAutodrillsetupairpressurecycletra2" Owner="{8A2764C6-457D-4D8E-B389-B28F241E8960}" />
+								<Child Name="TextblockAutodrillsetupairpressurecycletra3" Owner="{2EE304B1-C84E-4425-808B-EB4AC5C812A0}" />
+								<Child Name="TextblockAutodrillsetupairpressurecycletra4" Owner="{56ADEF2F-B1F9-4A10-A4B1-328CDA11DFDB}" />
+								<Child Name="TextblockAutodrillsetupairpressurecycletra5" Owner="{88967F12-880B-4545-9BA8-5824C4F697A8}" />
+								<Child Name="TextblockAutodrillsetupairpressurecycletra6" Owner="{9E8F1FAB-8C0C-409F-8D8B-892E81327FF2}" />
+								<Child Name="TextblockAutodrillsetupairpressuredrilling" Owner="{343F64F6-0A86-43D9-97FD-919B113AADA9}" />
+								<Child Name="TextblockAutodrillsetupairpressuredrilling2" Owner="{B4839496-D04A-4922-8025-8C0A4223ED7A}" />
+								<Child Name="TextblockAutodrillsetupairpressuredrilling3" Owner="{C5115A3E-A9BD-4FCB-8728-02A0617C6504}" />
+								<Child Name="TextblockAutodrillsetupairpressuredrilling4" Owner="{741EB17D-B71A-4B00-93E0-C2EB57D5E912}" />
+								<Child Name="TextblockAutodrillsetupairpressuredrilling5" Owner="{4C474713-4E6C-437C-900C-641B4D1D24F7}" />
+								<Child Name="TextblockAutodrillsetupairpressuredrilling6" Owner="{EFD6CF54-884B-4D49-873C-D98E880F2B33}" />
+								<Child Name="TextblockAutodrillsetupshowbitspecificdown" Owner="{6768033F-84F2-4B88-9DB6-DC77266E956A}" />
+								<Child Name="TextblockAutodrillsetupbitspecificdownforc" Owner="{25022044-FB65-425F-80E2-2F6CA8862DC2}" />
+								<Child Name="TextblockAutodrillsetupbitspecificdownforc2" Owner="{DAA3CCA6-0576-49D9-975D-CDCA41EDC338}" />
+								<Child Name="TextblockAutodrillsetupbitspecificdownforc3" Owner="{3402B0F1-47FD-4B6E-A28B-59C52F69034F}" />
+								<Child Name="TextblockAutodrillsetupbitspecificdownforc4" Owner="{C61AC70C-FDBD-4A19-8FB7-9ED6D6E3113E}" />
+								<Child Name="TextblockAutodrillsetupbitspecificdownforc5" Owner="{B3F27534-F8DA-4469-8D79-5CDA5F62B20F}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterdi" Owner="{6F2E8E4D-011D-46BC-A0C9-8BD7B53D7531}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterdi2" Owner="{4952A8C8-1925-40A9-9B7E-3A39BAE718E8}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterdi3" Owner="{5079FA72-AB27-472B-954A-E26E1D84B005}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterdi4" Owner="{19E03BBD-5DE4-4D09-AC7D-7EA1B93CD2A9}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterdi5" Owner="{10EF0A28-D624-4F06-9848-8AC817E0FA96}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterdi6" Owner="{C9720A5E-9988-4268-B2A2-8C8CB363CFC6}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterse" Owner="{FD9CA789-6E3B-4349-AC7E-7FE50FE8BFAF}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterse2" Owner="{BAD32A0D-8BF4-4B2E-B2AA-FD36FEFE2B4F}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterse3" Owner="{07E1C96B-8F29-485D-8050-09307B6161B8}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterse4" Owner="{0D3D7A20-B972-4BEF-B2D7-DF0E35D8A647}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterse5" Owner="{1FC1A298-020B-40FD-8029-476F6E7574C0}" />
+								<Child Name="TextblockAutodrillsetupbottomofholewaterse6" Owner="{A0964A0A-C8D2-4F75-A2C5-88C48EAF0FB5}" />
+								<Child Name="TextblockAutodrillsetupshowcollaringdepth" Owner="{6F932F55-D843-49CF-BF30-11B5383DD148}" />
+								<Child Name="TextblockAutodrillsetupcollaringdepthbmode" Owner="{7A0D1469-23D4-4AF9-A88C-3DE774C0FC9A}" />
+								<Child Name="TextblockAutodrillsetupcollaringdepthbmode2" Owner="{3C3A2B13-DE56-476F-B907-F08AACACE511}" />
+								<Child Name="TextblockAutodrillsetupcollaringdepthallow" Owner="{D306BBAD-CBB1-47B2-8B35-97EB2E3ADE5B}" />
+								<Child Name="TextblockAutodrillsetupcollaringdepthmaxim" Owner="{786E896C-BFD9-41ED-AEBE-FEAFF91DA85A}" />
+								<Child Name="TextblockAutodrillsetupcollaringdepthminim" Owner="{9E6D412F-2F3F-4E9F-8412-8174F17E7483}" />
+								<Child Name="TextblockAutodrillsetupshowcollaringdownfo" Owner="{135B92E3-4080-4FCF-9AE6-EE4FC7F5149D}" />
+								<Child Name="TextblockAutodrillsetupcollaringdownforcel" Owner="{A38D8140-1330-4808-BE53-9C0FD184D2C1}" />
+								<Child Name="TextblockAutodrillsetupcollaringdownforcel2" Owner="{B33412F7-FBCA-4A86-A89A-6F08A85ADBFC}" />
+								<Child Name="TextblockAutodrillsetupcollaringdownforcel3" Owner="{46D0FB53-F7B0-4C39-ACE3-F2F9753F2EDA}" />
+								<Child Name="TextblockAutodrillsetupcollaringdownforcel4" Owner="{67AE071F-42C7-4095-991E-22FF5087B774}" />
+								<Child Name="TextblockAutodrillsetupcollaringdownforcel5" Owner="{91C7BC2C-E4A4-4D61-8903-03FADCE5E10C}" />
+								<Child Name="TextblockAutodrillsetupshowcollaringmaxspe" Owner="{8B7FA61F-6923-4135-802D-2A125C654F75}" />
+								<Child Name="TextblockAutodrillsetupcollaringmaxspeedbm" Owner="{CA326C1F-8C56-43DD-A2DF-2B0894359AD5}" />
+								<Child Name="TextblockAutodrillsetupcollaringmaxspeedbm2" Owner="{F87A7CF2-9616-47ED-A247-A78A832C5D1D}" />
+								<Child Name="TextblockAutodrillsetupcollaringmaxspeedal" Owner="{343CDC3E-7DB4-44E4-ACC4-4379E36D17DE}" />
+								<Child Name="TextblockAutodrillsetupcollaringmaxspeedma" Owner="{FDE2A539-1780-4EFF-9476-7ED2AF248C67}" />
+								<Child Name="TextblockAutodrillsetupcollaringmaxspeedmi" Owner="{D788AC75-816D-42AF-BD76-384EBA7C6F2E}" />
+								<Child Name="TextblockAutodrillsetupshowdrillinghoistdo" Owner="{CB44BAD7-3FEB-4572-A255-3A3512F44A6A}" />
+								<Child Name="TextblockAutodrillsetupdrillinghoistdownsp" Owner="{C977F846-1730-4B34-9477-96E39C9B203F}" />
+								<Child Name="TextblockAutodrillsetupdrillinghoistdownsp2" Owner="{DF62EF0D-0C2D-480F-AE3B-DA55C6188144}" />
+								<Child Name="TextblockAutodrillsetupdrillinghoistdownsp3" Owner="{46232832-4BC6-42C8-8548-AA6DAC066CF2}" />
+								<Child Name="TextblockAutodrillsetupdrillinghoistdownsp4" Owner="{4E8BAF0B-32AD-4000-B5C8-C5AEEA58C26A}" />
+								<Child Name="TextblockAutodrillsetupdrillinghoistdownsp5" Owner="{65B03A61-E67F-4A65-B64E-6C2D33CF2851}" />
+								<Child Name="TextblockAutodrillsetupshowdrillingmaxspee" Owner="{53D2EC2C-1852-4506-B067-2F9E4EFF52E8}" />
+								<Child Name="TextblockAutodrillsetupdrillingmaxspeedbmo" Owner="{1EDDFCBF-69E2-4879-A968-D930FE284022}" />
+								<Child Name="TextblockAutodrillsetupdrillingmaxspeedbmo2" Owner="{095DD305-1FC0-46CF-B732-873700E585ED}" />
+								<Child Name="TextblockAutodrillsetupdrillingmaxspeedall" Owner="{5AF6855F-7B34-4FFA-A4B0-DC979F7B7929}" />
+								<Child Name="TextblockAutodrillsetupdrillingmaxspeedmax" Owner="{0776DE80-DE17-4A11-A489-870F4FA483A9}" />
+								<Child Name="TextblockAutodrillsetupdrillingmaxspeedmin" Owner="{3FD5D65F-4C33-4B5A-9AE3-CF2049EC5233}" />
+								<Child Name="TextblockAutodrillsetupendofholewateroffse" Owner="{8DFF147B-89FC-4599-B2B2-2BEFD8B043CC}" />
+								<Child Name="TextblockAutodrillsetupendofholewateroffse2" Owner="{90B42AD0-71EB-499A-8137-6E9ADB1C3D48}" />
+								<Child Name="TextblockAutodrillsetupendofholewateroffse3" Owner="{F0FDAECD-180E-4735-9C02-DBE50343DF36}" />
+								<Child Name="TextblockAutodrillsetupendofholewateroffse4" Owner="{F5F3C7E0-540C-407E-A660-FAFE53946AC9}" />
+								<Child Name="TextblockAutodrillsetupendofholewateroffse5" Owner="{D2BBC7F7-F47B-4214-A381-91C09E9DC9F0}" />
+								<Child Name="TextblockAutodrillsetupshowendofholewaters" Owner="{976DF682-EEC3-4921-813F-79BC9CE04F87}" />
+								<Child Name="TextblockAutodrillsetupgrounddetectforcese" Owner="{B305E004-8E06-477C-96E0-5F5793C8E015}" />
+								<Child Name="TextblockAutodrillsetupgrounddetectforcese2" Owner="{1580B0D1-7E76-4F4D-BBA6-469A25B76844}" />
+								<Child Name="TextblockAutodrillsetupgrounddetectforcese3" Owner="{003F22B3-FA20-4583-AD92-7950ACC52BF2}" />
+								<Child Name="TextblockAutodrillsetupgrounddetectforcese4" Owner="{F58FD8D2-ECC3-4EAA-93CF-4742963CFFC9}" />
+								<Child Name="TextblockAutodrillsetupgrounddetectforcese5" Owner="{9C25D6B5-EB61-4B12-9FC1-A97CB86DF45F}" />
+								<Child Name="TextblockAutodrillsetupshowgrounddetectfor" Owner="{DB8A247D-DB76-4D66-9520-F8F65171A894}" />
+								<Child Name="TextblockAutodrillsetupgrounddetecthoistsp" Owner="{7F9E1BB6-EB9F-491D-95B8-02B162D90069}" />
+								<Child Name="TextblockAutodrillsetupgrounddetecthoistsp2" Owner="{C9D9784A-BDA5-4532-9E53-FCD49396D115}" />
+								<Child Name="TextblockAutodrillsetupgrounddetecthoistsp3" Owner="{3AA00BE6-B250-440C-9BE4-EB00FDC0CE0A}" />
+								<Child Name="TextblockAutodrillsetupgrounddetecthoistsp4" Owner="{D693DC55-9D3F-4A77-89EB-2CE2D489C456}" />
+								<Child Name="TextblockAutodrillsetupgrounddetecthoistsp5" Owner="{E8DFD3D7-3E4A-4F62-AE51-76F9A7F4CD0C}" />
+								<Child Name="TextblockAutodrillsetupshowgrounddetecthoi" Owner="{5B6FB13C-D16A-467D-AC1D-81A3CC311CDD}" />
+								<Child Name="TextblockAutodrillsetupshowhoisthighspeedd" Owner="{4D632105-B03E-4C43-B990-1523745C987F}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeeddownr" Owner="{FCF06C56-60F8-4FBD-BBF6-588B01C51290}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeeddownr2" Owner="{A5F2D0D9-7472-4EB0-9120-D84FCBD7DA40}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeeddownr3" Owner="{E7E71AB0-B210-4BAF-A9D6-C2F68FC22EBF}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeeddownr4" Owner="{9A79EB2D-D4DA-4C0A-BA39-05A2E0527E02}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeeddownr5" Owner="{3A8EB1D8-B1E0-4362-B5D0-75C32C2A3912}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeedupref" Owner="{3EC87E13-7FEE-4347-8366-8A8BA80E244A}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeedupref2" Owner="{634C3C76-E881-44A8-8ED5-74C93BD7EEAB}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeedupref3" Owner="{4B8E6879-EBD2-4428-87FF-5EC9EC9D0A9A}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeedupref4" Owner="{B6209BB3-A5DB-420B-9E6C-B08F0B05271B}" />
+								<Child Name="TextblockAutodrillsetuphoisthighspeedupref5" Owner="{667742D1-C677-4684-BA82-92D42D959ED7}" />
+								<Child Name="TextblockAutodrillsetupshowhoisthighspeedu" Owner="{7ECF463A-325A-4A26-B767-A6949CFB2B5F}" />
 							</Child>
 							<Child Name="ListViewItem3" Owner="{5E5FF341-D20A-44FC-8AC2-8BAA0B9224D0}">
 								<Child Name="TextblockAuxiliarycontrolshowsecondaryrods" Owner="{E379A570-FA48-4947-BB7F-DDA53C61A8B9}" />
@@ -19302,7 +20869,9 @@
 								<Child Name="TextblockAutodrillsetupdrillholedepthbmode" Owner="{4DF5F6B0-B2CC-489D-946B-B140F1B9E01C}" />
 								<Child Name="TextblockAutodrillsetupairpressurecollarin" Owner="{05C5E80C-E7C3-4CA1-859B-D19950555928}" />
 							</Child>
-							<Child Name="ListViewItem13" Owner="{61B27C14-464F-4248-82C0-5B08E0C3CB1A}" />
+							<Child Name="ListViewItem13" Owner="{61B27C14-464F-4248-82C0-5B08E0C3CB1A}">
+								<Child Name="TextblockAutodrillsetupairpressurecycletra" Owner="{425402D0-18C3-40B9-98F1-D6FC48788C78}" />
+							</Child>
 							<Child Name="ListViewItem14" Owner="{EC511FFD-7F81-48B8-B644-04455EE929DB}" />
 							<Child Name="ListViewItem15" Owner="{F3FD5531-277A-457B-99E5-0A90BD3BEAE1}" />
 							<Child Name="TextblockAuxiliarycontrolshowsecondaryrods" Owner="{E7770592-DCEA-4811-B1EF-93DDEE8D8222}" />
@@ -19324,6 +20893,8 @@
 							</Child>
 							<Child Name="TextblockAutodrillsetupairpressurecollarin" Owner="{863399AE-E781-48F9-9229-3B622A93A4BE}" />
 							<Child Name="TextblockAutodrillsetupairpressurecollarin2" Owner="{658D2904-F9FD-4BA9-A3F9-C9F3F4029B04}" />
+							<Child Name="ListViewItem17" Owner="{FA085F52-D898-486A-8BCD-8D6D3E0342BD}" />
+							<Child Name="ListViewItem18" Owner="{D02685C6-4E87-455C-92E3-5383261D9716}" />
 						</Child>
 						<Child Name="BoolAppSettingCheckBox" Owner="{7CB06403-5F9E-49AE-81FE-66362425DD08}" />
 						<Child Name="CommitButton" Owner="{D3E8CA84-313B-4D0D-B8A1-DFD533367348}" />
@@ -19358,6 +20929,8 @@
 					<Child Name="MaximumValue" Owner="{9F95ACAE-ACA0-45D9-95ED-A530CC586657}" />
 					<Child Name="MinimumValue" Owner="{B0A7FCE8-2180-498E-889E-BC0232C02AC3}" />
 					<Child Name="ButtonDot" Owner="{72021982-60A5-4416-9045-A5290B4B4C96}" />
+					<Child Name="MinimumBorder" Owner="{D982AED3-DAEA-43B1-B0FB-AAE77A1B44F0}" />
+					<Child Name="MaximumBorder" Owner="{0DEE1FFA-F8A1-4C58-A705-9A1502A71A6C}" />
 				</Child>
 			</Child>
 			<Child Name="HwndSource_MessageQuestion" Owner="{BAEFE5AB-3208-4E07-B1E2-2452625DFF75}">
@@ -19643,6 +21216,20 @@
 				<Child Name="textnodeCollaringPluggedAirPress" Owner="{E350AD08-13B4-4C27-8104-EFB7D6679D40}" />
 				<Child Name="panelCollaringPluggedAirPressure" Owner="{53176937-9EEE-4512-9A31-6D1FF10C4F63}" />
 				<Child Name="panelCollaringCompressorVolume" Owner="{BA4CDDB6-9858-4D63-B790-1A20CBFECDC0}" />
+				<Child Name="panelAirPressureCycleTransition" Owner="{056C750F-6327-4EDF-936C-A2F228FEFB29}" />
+				<Child Name="panelBitSpecifiedDownForceLimit" Owner="{90AE0A22-414A-41F8-AFC7-1916F0F66CED}" />
+				<Child Name="panelBottomOfHoleWaterDistance" Owner="{80DED0B2-6288-42C2-9D31-E2C8BBEACF6C}" />
+				<Child Name="panelBottomOfHoleWaterSetpoint" Owner="{696B2A71-04F4-4D50-A79A-E3C9450F80A5}" />
+				<Child Name="panelCollaringDepth" Owner="{12B50887-08A5-4D8B-8352-3A9D9A045A14}" />
+				<Child Name="panelCollaringDownForceLimit" Owner="{D6349B1A-7F96-440D-AB1B-11A5F527C6F1}" />
+				<Child Name="panelCollaringMaxPenetrationSpee" Owner="{86E790FC-7E31-4C50-B028-ECE6AE092451}" />
+				<Child Name="panelDrillingMaxPenetrationSpeed" Owner="{5BCF8E7C-EB8C-4C7C-AAE6-80F39260346F}" />
+				<Child Name="panelEndOfHoleWaterOffSetpoint" Owner="{1ACC25E7-4339-499C-8B77-C9FDFDAA6528}" />
+				<Child Name="panelDrillingHoistDownSpeed" Owner="{DDEADDDB-7457-42BD-8A2A-B5EDD2B6EC4A}" />
+				<Child Name="panelGroundDetectForceSetpoint" Owner="{18BA555F-2D47-48BA-BB6E-34E4E9942EF4}" />
+				<Child Name="panelGroundDetectHoistSpeed" Owner="{29AF6EBA-9A75-4305-A5BF-939DE08B0825}" />
+				<Child Name="panelHoistHighSpeedDownReference" Owner="{04507D11-C8AE-463C-AB83-387E7A83791F}" />
+				<Child Name="panelHoistHighSpeedUpReference" Owner="{EB19281C-0BA6-4612-A315-CD67585CAB82}" />
 			</Child>
 			<Child Name="wndChrome_WidgetWin_1" Owner="{0E48C02A-83BE-4B9B-8B62-F480EE00411F}" />
 			<Child Name="pageDiagnosticDashboard3" Owner="{DE3B368B-9180-4E0A-9BE9-32B6A44F5568}">
@@ -19652,6 +21239,9 @@
 				<Child Name="textnodeLogin" Owner="{3B23DD7D-D0C9-41FC-9D31-58787553A32C}" />
 			</Child>
 			<Child Name="BrowserWindow3" Owner="{17DEC953-C7E0-40A6-9596-8B82125FF920}" />
+			<Child Name="pageDiagnosticDashboard4" Owner="{D0E5E48F-B82A-4F50-AA29-5C30A86BE330}">
+				<Child Name="textnodeLogin" Owner="{E3B529E5-2F2E-4E93-BCC1-185E37BB01E9}" />
+			</Child>
 		</Child>
 		<Child Name="WindowsTerminal" Owner="{2B88C009-8C06-4D01-A6DF-EA94F43742EA}">
 			<Child Name="wndCASCADIA_HOSTING_WINDOW_CLASS" Owner="{E6C0566B-02D6-48FE-962D-F37BCD946E5B}" />
@@ -19719,6 +21309,15 @@
 				<Child Name="buttonSave1" Owner="{B18CA92B-8AC2-4CBF-B834-46EE45FD7583}" />
 				<Child Name="buttonSave" Owner="{D8911C4B-F407-4926-A609-DB8AF1AA75A3}" />
 				<Child Name="textnodeDrillHoleDepth" Owner="{C78BCDB8-1E32-4BB6-9972-47F31C3EAA69}" />
+				<Child Name="panelAirPressureCycleTransition" Owner="{A988138C-6288-46DF-908E-E45D6F85F0E0}" />
+				<Child Name="panelDrillingCompressorVolume" Owner="{7106E296-9B83-450D-86DB-D3D9C1645937}" />
+				<Child Name="panelBottomOfHoleWaterDistance" Owner="{E430FEE9-47E0-4E3D-8071-8DF9A0D95057}" />
+				<Child Name="panelCollaringDepth" Owner="{5B01804F-8928-48C1-B768-6BCEC0872354}" />
+				<Child Name="panelCollaringDownForceLimit" Owner="{AC5EEE82-925F-4CEC-9EF5-ACED6C429015}" />
+				<Child Name="panelCollaringMaxPenetrationSpee" Owner="{25F425F7-98E5-4465-A7FB-5AEAA00F2B3D}" />
+				<Child Name="panelGroundDetectForceSetpoint" Owner="{FD96D591-B088-4BB7-BE36-7693A162C270}" />
+				<Child Name="panelGroundDetectHoistSpeed" Owner="{3DF33D21-67A6-4AA8-9B6D-D82BE2FBB6C9}" />
+				<Child Name="panelHoistHighSpeedDownReference" Owner="{2B8EAFD4-4F0D-4846-B2C3-23A0860745A2}" />
 			</Child>
 			<Child Name="pageDiagnosticDashboard4" Owner="{AB056A0A-ACB2-40ED-AC0D-9D2058B01CF8}">
 				<Child Name="panelLogin" Owner="{DE7E76B6-497D-4850-8A06-7FE86C249DD4}" />

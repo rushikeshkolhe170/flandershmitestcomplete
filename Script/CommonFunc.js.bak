@@ -503,7 +503,43 @@ function scrollIntoViewBrowser(element)
   
   element.scrollIntoView(true);
   aqUtils.Delay(3000);
-  Aliases.browser.pageDiagnosticDashboard2.Keys("[Up][Up][Up][Up][Up][Up][Up]");
+  //Aliases.browser.pageDiagnosticDashboard2.Keys("[Up][Up][Up][Up][Up][Up][Up]");
+}
+
+function scrollIntoViewDesktop(element, page)
+{
+  /*if (!element.Exists) {
+    Log.Error("Element not found");
+    return;
+  }
+
+  // Wait until visible
+  element.WaitProperty("Visible", true, 5000);*/
+
+  // Bring focus to app/control
+  //element.Click();
+
+  // Scroll using mouse wheel
+  // Positive = scroll up
+  // Negative = scroll down
+  var count = 0;
+  page.HoverMouse();
+  //var pos = scrollBar.wPosition;
+  //var pos = Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ScrollView.wPosition;
+  for (var i = 0; i < 20; i++) {
+    if (element.VisibleOnScreen){
+      Log.Message("found element");
+      break;
+    } else {
+      Log.Message("not found element");
+    }
+      
+    //Sys.Desktop.MouseWheel(-1);   // scroll down
+    page.MouseWheel(-1); 
+    aqUtils.Delay(2000);
+    count++;
+  }
+  return count;
 }
 
 module.exports = {logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, 
@@ -512,4 +548,4 @@ verifyStatusIsOne, verifyStatusIsZero, wstate, wText, checkCheckbox, clickAndHol
 criticalMsgOk, mouseScroll, wpfControlText, selectFromCommDropdown,
 isSelectedStatus, gpsMapToggleButtonsStateChange, visibilityInBooleanStatus, verifyWTextWithExistCheck, 
 searchAndSelectCheckboxComm, searchAndSelectSettingInComm, searchAndDeselectCheckboxComm, searchAndSelectDropdownItemComm, TypeOnKeyboard, checkboxCheckedValidate,
-browserToggleSwitchStatus, scrollIntoViewBrowser, browserAttributeValue};
+browserToggleSwitchStatus, scrollIntoViewBrowser, browserAttributeValue, scrollIntoViewDesktop};

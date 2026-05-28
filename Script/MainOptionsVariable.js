@@ -18,7 +18,15 @@
   GPSMap_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.GpsMapButton,
   ProdMonitor_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.ProductMonitorButton,
   MachineStatus_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.MachineStatusButton,
-  KeyboardWindow : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow
+  KeyboardWindow : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_KeyboardWindow.KeyboardWindow,
+  
+  ArdvarcLogo :Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Ellipse,
+  MainModePass_Box : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MaintenancePasswordWindow.MaintenancePasswordWindow.ActualPassword,
+  MainModePass_Ok_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MaintenancePasswordWindow.MaintenancePasswordWindow.OkButton,
+  Commissioning_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button,
+  CommPass_Box : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_PasswordWindow.PasswordWindow.ActualPassword,
+  DiagnoDash_Btn : Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_TopLeftWindow.TopLeftWindow.Button2
+  
 };
 
 module.exports = {mainOptionVariables};

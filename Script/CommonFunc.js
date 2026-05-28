@@ -506,10 +506,32 @@ function scrollIntoViewBrowser(element)
   //Aliases.browser.pageDiagnosticDashboard2.Keys("[Up][Up][Up][Up][Up][Up][Up]");
 }
 
+function scrollIntoViewDesktop(element, page)
+{
+
+  // Scroll using mouse wheel
+  // Positive = scroll up
+  // Negative = scroll down
+  var count = 0;
+  page.HoverMouse();
+  for (var i = 0; i < 20; i++) {
+    if (element.VisibleOnScreen){
+      Log.Message("found element");
+      break;
+    } else {
+      Log.Message("not found element");
+    }
+    page.MouseWheel(-1); 
+    aqUtils.Delay(2000);
+    count++;
+  }
+  return count;
+}
+
 module.exports = {logIn, checkVisibilityAndClick, verifyWpfControlTextWithExistCheck, 
 verifyElementEnabled, verifyElementDisabled, verifyVisibilityWithExistCheck, 
 verifyStatusIsOne, verifyStatusIsZero, wstate, wText, checkCheckbox, clickAndHoldButton,
 criticalMsgOk, mouseScroll, wpfControlText, selectFromCommDropdown,
 isSelectedStatus, gpsMapToggleButtonsStateChange, visibilityInBooleanStatus, verifyWTextWithExistCheck, 
 searchAndSelectCheckboxComm, searchAndSelectSettingInComm, searchAndDeselectCheckboxComm, searchAndSelectDropdownItemComm, TypeOnKeyboard, checkboxCheckedValidate,
-browserToggleSwitchStatus, scrollIntoViewBrowser, browserAttributeValue};
+browserToggleSwitchStatus, scrollIntoViewBrowser, browserAttributeValue, scrollIntoViewDesktop};

@@ -1,4 +1,4 @@
-﻿//Verifying the change in dashboard for auto drill parameter and cross check in the HMI
+﻿//Verifying the change in dashboard for drill hole depth parameter and cross check in the HMI
 
 const {config, launchHMI, closeHMI, commissioningPass, openDiagnosticDashboard, closeDiagnosticDashboard} = require('GlobalVariables');
 const {logIn, browserToggleSwitchStatus, scrollIntoViewBrowser, browserAttributeValue, searchAndSelectSettingInComm, wstate, wText} = require('CommonFunc');
@@ -30,10 +30,6 @@ function DrillHoleDepth()
   var showDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthShow_Btn());
   if(showDHDStatus == 0 ){
     AutoDrillPara_Variables.DrillHoleDepthShow_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
     Log.Message("Drill Hole Depth show toggle button is already ON");
   }
@@ -41,10 +37,6 @@ function DrillHoleDepth()
   var alldecimalDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthAllowDecimal_Btn());
   if(alldecimalDHDStatus == 0 ){
     AutoDrillPara_Variables.DrillHoleDepthAllowDecimal_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
     Log.Message("Drill Hole Depth allow decimal toggle button is already ON");
   }
@@ -52,10 +44,6 @@ function DrillHoleDepth()
   var isPercentDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthIsPercent_Btn());
   if(isPercentDHDStatus == 0 ){
     AutoDrillPara_Variables.DrillHoleDepthIsPercent_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
     Log.Message("Drill Hole Depth is percentage toggle button is already ON");
   }
@@ -63,10 +51,6 @@ function DrillHoleDepth()
   var showPercentSignDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthshowPercentSign_Btn());
   if(showPercentSignDHDStatus == 0 ){
     AutoDrillPara_Variables.DrillHoleDepthshowPercentSign_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
     Log.Message("Drill Hole Depth show percentage sign toggle button is already ON");
   }
@@ -142,6 +126,50 @@ function DrillHoleDepth()
   mainWindowVariables.CommWindow.Close();
   //Closed HMI
   closeHMI();
+  //Turning off show option
+  AutoDrillPara_Variables.DrillHoleDepthShow_Btn().Click();
+  //Turning off allow decimal option
+  AutoDrillPara_Variables.DrillHoleDepthAllowDecimal_Btn().Click();
+  //Turning off is percentage option
+  AutoDrillPara_Variables.DrillHoleDepthIsPercent_Btn().Click();
+  //Turning off show percentage sign option
+  AutoDrillPara_Variables.DrillHoleDepthshowPercentSign_Btn().Click();
+  //Click on Save option
+  Browser_Variables.Save_Btn().Click();
+  //Click on Save for confirmation pop up
+  Browser_Variables.ConfirmationSave_Btn().Click();
+  //Opening HMi client again
+  logIn();
+  //Opening commissioning screen of HMI
+  commissioningPass();
+  //searching the show option for drill hole depth in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupShowDrillHoleDepth", mainWindowVariables.commDrillHoleDepthShow, "AutoDrillSetupShowDrillHoleDepth");
+  var show = wstate(mainWindowVariables.CommBoolValueBox)
+  if(show == 1){
+    Log.Error("Drill Hole Depth option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the allow decimal option for drill hole depth in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupDrillHoleDepthAllowDecimal", mainWindowVariables.commDrillHoleDepthAllowDecimal, "AutoDrillSetupDrillHoleDepthAllowDecimal");
+  var allowDecimal = wstate(mainWindowVariables.CommBoolValueBox)
+  if(allowDecimal == 1){
+    Log.Error("Drill Hole Depth allow decimal option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the is percentage option for drill hole depth in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupDrillHoleDepthBmode", mainWindowVariables.commDrillHoleDepthIsPercent, "AutoDrillSetupDrillHoleDepthBmode");
+  var isPercent = wstate(mainWindowVariables.CommBoolValueBox)
+  if(isPercent == 1){
+    Log.Error("Drill Hole Depth is percentage option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the show percentage sign option for drill hole depth in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupDrillHoleDepthBmodeShow", mainWindowVariables.commDrillHoleDepthShowPercentSign, "AutoDrillSetupDrillHoleDepthBmodeShow");
+  var showPercentSign = wstate(mainWindowVariables.CommBoolValueBox)
+  if(showPercentSign == 1){
+    Log.Error("Drill Hole Depth option show percentage sign turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //Closes the 'HwndSource_SeriousWindow' window.
+  mainWindowVariables.CommWindow.Close();
+  //Closed HMI
+  closeHMI();
   //Resetting all the values as it is
   if(showDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthShow_Btn())){
     AutoDrillPara_Variables.DrillHoleDepthShow_Btn().Click();
@@ -150,7 +178,7 @@ function DrillHoleDepth()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change show status it is same");
   }
   if(alldecimalDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthAllowDecimal_Btn())){
     AutoDrillPara_Variables.DrillHoleDepthAllowDecimal_Btn().Click();
@@ -159,7 +187,7 @@ function DrillHoleDepth()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change allow decimal status it is same");
   }
   if(isPercentDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthIsPercent_Btn())){
     AutoDrillPara_Variables.DrillHoleDepthIsPercent_Btn().Click();
@@ -168,7 +196,7 @@ function DrillHoleDepth()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change is percent status it is same");
   }
   if(showPercentSignDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillHoleDepthshowPercentSign_Btn())){
     AutoDrillPara_Variables.DrillHoleDepthshowPercentSign_Btn().Click();
@@ -177,7 +205,7 @@ function DrillHoleDepth()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change show percent sign status it is same");
   }
   if(maxValue != browserAttributeValue(AutoDrillPara_Variables.DrillHoleDepthMax_Value(), "value")){
     //Changing the maximum value of drill hole depth
@@ -189,7 +217,7 @@ function DrillHoleDepth()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change maximum value it is same");
   }
   if(minValue != browserAttributeValue(AutoDrillPara_Variables.DrillHoleDepthMin_Value(), "value")){
     //Changing the maximum value of drill hole depth
@@ -201,7 +229,7 @@ function DrillHoleDepth()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change minimum value it is same");
   }
   //closing diagnostic dashboard
   closeDiagnosticDashboard();

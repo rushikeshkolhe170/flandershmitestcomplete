@@ -30,21 +30,13 @@ function CollaringCompressorVolumeCommand()
   var showDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandShow_Btn());
   if(showDHDStatus == 0 ){
     AutoDrillPara_Variables.CollaringCompressorVolumeCommandShow_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("Collaring Plugged Air Pressure Limit show toggle button is already ON");
+    Log.Message("Collaring Compressor Volume Command show toggle button is already ON");
   }
   //Cheking the allow decimal option for Collaring Compressor Volume Command if it's off turning it on
   var alldecimalDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandAllowDecimal_Btn());
   if(alldecimalDHDStatus == 0 ){
     AutoDrillPara_Variables.CollaringCompressorVolumeCommandAllowDecimal_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
     Log.Message("Collaring Compressor Volume Command allow decimal toggle button is already ON");
   }
@@ -52,21 +44,13 @@ function CollaringCompressorVolumeCommand()
   var isPercentDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandIsPercent_Btn());
   if(isPercentDHDStatus == 0 ){
     AutoDrillPara_Variables.CollaringCompressorVolumeCommandIsPercent_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
     Log.Message("Collaring Compressor Volume Command is percentage toggle button is already ON");
   }
   //Cheking the show percentage sign option for Collaring Compressor Volume Command if it's off turning it on
-  var showPercentSignDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandshowPercentSign_Btn());
+  var showPercentSignDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandShowPercentSign_Btn());
   if(showPercentSignDHDStatus == 0 ){
-    AutoDrillPara_Variables.CollaringCompressorVolumeCommandshowPercentSign_Btn().Click();
-    //Click on Save option
-    Browser_Variables.Save_Btn().Click();
-    //Click on Save for confirmation pop up
-    Browser_Variables.ConfirmationSave_Btn().Click();
+    AutoDrillPara_Variables.CollaringCompressorVolumeCommandShowPercentSign_Btn().Click();
   }else{
     Log.Message("Collaring Compressor Volume Command show percentage sign toggle button is already ON");
   }
@@ -142,6 +126,50 @@ function CollaringCompressorVolumeCommand()
   mainWindowVariables.CommWindow.Close();
   //Closed HMI
   closeHMI();
+  //Turning off show option
+  AutoDrillPara_Variables.CollaringCompressorVolumeCommandShow_Btn().Click();
+  //Turning off allow decimal option
+  AutoDrillPara_Variables.CollaringCompressorVolumeCommandAllowDecimal_Btn().Click();
+  //Turning off is percentage option
+  AutoDrillPara_Variables.CollaringCompressorVolumeCommandIsPercent_Btn().Click();
+  //Turning off show percentage sign option
+  AutoDrillPara_Variables.CollaringCompressorVolumeCommandShowPercentSign_Btn().Click();
+  //Click on Save option
+  Browser_Variables.Save_Btn().Click();
+  //Click on Save for confirmation pop up
+  Browser_Variables.ConfirmationSave_Btn().Click();
+  //Opening HMi client again
+  logIn();
+  //Opening commissioning screen of HMI
+  commissioningPass();
+  //searching the show option for Collaring Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureCollaringShow", mainWindowVariables.commCollaringCompressorVolumeCommandShow, "AutoDrillSetupAirPressureCollaringShow");
+  var show = wstate(mainWindowVariables.CommBoolValueBox)
+  if(show == 1){
+    Log.Error("Collaring Compressor Volume Command option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the allow decimal option for Collaring Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureCollaringAllowDecimal", mainWindowVariables.commCollaringCompressorVolumeCommandAllowDecimal, "AutoDrillSetupAirPressureCollaringAllowDecimal");
+  var allowDecimal = wstate(mainWindowVariables.CommBoolValueBox)
+  if(allowDecimal == 1){
+    Log.Error("Collaring Compressor Volume Command allow decimal option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the is percentage option for Collaring Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureCollaringBmode", mainWindowVariables.commCollaringCompressorVolumeCommandIsPercent, "AutoDrillSetupAirPressureCollaringBmode");
+  var isPercent = wstate(mainWindowVariables.CommBoolValueBox)
+  if(isPercent == 1){
+    Log.Error("Collaring Compressor Volume Command is percentage option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the show percentage sign option for Collaring Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureCollaringBmodeShow", mainWindowVariables.commCollaringCompressorVolumeCommandShowPercentSign, "AutoDrillSetupAirPressureCollaringBmodeShow");
+  var showPercentSign = wstate(mainWindowVariables.CommBoolValueBox)
+  if(showPercentSign == 1){
+    Log.Error("Collaring Compressor Volume Command option show percentage sign turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //Closes the 'HwndSource_SeriousWindow' window.
+  mainWindowVariables.CommWindow.Close();
+  //Closed HMI
+  closeHMI();
   //Resetting all the values as it is
   if(showDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandShow_Btn())){
     AutoDrillPara_Variables.CollaringCompressorVolumeCommandShow_Btn().Click();
@@ -150,7 +178,7 @@ function CollaringCompressorVolumeCommand()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change show status it is same");
   }
   if(alldecimalDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandAllowDecimal_Btn())){
     AutoDrillPara_Variables.CollaringCompressorVolumeCommandAllowDecimal_Btn().Click();
@@ -159,7 +187,7 @@ function CollaringCompressorVolumeCommand()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change allow decimal status it is same");
   }
   if(isPercentDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandIsPercent_Btn())){
     AutoDrillPara_Variables.CollaringCompressorVolumeCommandIsPercent_Btn().Click();
@@ -168,16 +196,16 @@ function CollaringCompressorVolumeCommand()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change is percent status it is same");
   }
-  if(showPercentSignDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandshowPercentSign_Btn())){
-    AutoDrillPara_Variables.CollaringCompressorVolumeCommandshowPercentSign_Btn().Click();
+  if(showPercentSignDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.CollaringCompressorVolumeCommandShowPercentSign_Btn())){
+    AutoDrillPara_Variables.CollaringCompressorVolumeCommandShowPercentSign_Btn().Click();
     //Click on Save option
     Browser_Variables.Save_Btn().Click();
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change show percent sign status it is same");
   }
   if(maxValue != browserAttributeValue(AutoDrillPara_Variables.CollaringCompressorVolumeCommandMax_Value(), "value")){
     //Changing the maximum value of Collaring Compressor Volume Command
@@ -189,7 +217,7 @@ function CollaringCompressorVolumeCommand()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change maximum value it is same");
   }
   if(minValue != browserAttributeValue(AutoDrillPara_Variables.CollaringCompressorVolumeCommandMin_Value(), "value")){
     //Changing the maximum value of Collaring Compressor Volume Command
@@ -201,7 +229,7 @@ function CollaringCompressorVolumeCommand()
     //Click on Save for confirmation pop up
     Browser_Variables.ConfirmationSave_Btn().Click();
   }else{
-    Log.Message("No need of change toggle/value status is same");
+    Log.Message("No need of change minimum value it is same");
   }
   //closing diagnostic dashboard
   closeDiagnosticDashboard();

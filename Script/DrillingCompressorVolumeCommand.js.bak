@@ -1,0 +1,276 @@
+﻿//Verifying the change in dashboard for Drilling Compressor Volume Command parameter and cross check in the HMI
+
+const {config, launchHMI, closeHMI, commissioningPass, openDiagnosticDashboard, closeDiagnosticDashboard} = require('GlobalVariables');
+const {logIn, browserToggleSwitchStatus, scrollIntoViewBrowser, browserAttributeValue, searchAndSelectSettingInComm, wstate, wText} = require('CommonFunc');
+const {mainWindowVariables} = require('MainWindowPage');
+const {Browser_Variables, Commissioning_Variables, UI_Variables, AutoDrillPara_Variables} = require('BrowserPage');
+
+function DrillingCompressorVolumeCommand()
+{
+  //Checking if the HMI is open and if yes then it will close first and then open
+  if(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_MainWindow.MainWindow.Exists){
+    closeHMI();
+  }
+  aqUtils.Delay(3000);
+  //open diagnostic dashboard browser.
+  openDiagnosticDashboard();
+  //Clicks the 'linkCommissioning' link.
+  Browser_Variables.CommissioningOption().Click();
+  //Waits until the browser loads the page and is ready to accept user input.
+  Aliases.browser.pageDiagnosticDashboard2.Wait();
+  //Clicks the 'panelUi' control.
+  Commissioning_Variables.UI_Opt().Click();
+  //Clicks the 'buttonAutoDrillParameters' button.
+  UI_Variables.AutoDrillParameter_Btn().Click();
+  //Scroll until the Drilling Compressor Volume Command text gets in the view
+  scrollIntoViewBrowser(AutoDrillPara_Variables.DrillingCompressorVolumeCommand_Panel);
+  //pressing up arrow key to make panel in view and not get overlap on header options
+  Browser_Variables.Page.Keys("[Up][Up][Up][Up][Up][Up][Up]");
+  //Cheking the show option for Drilling Compressor Volume Command if it's off turning it on
+  var showDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandShow_Btn());
+  if(showDHDStatus == 0 ){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandShow_Btn().Click();
+  }else{
+    Log.Message("Drilling Compressor Volume Command show toggle button is already ON");
+  }
+  //Cheking the allow decimal option for Drilling Compressor Volume Command if it's off turning it on
+  var alldecimalDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandAllowDecimal_Btn());
+  if(alldecimalDHDStatus == 0 ){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandAllowDecimal_Btn().Click();
+  }else{
+    Log.Message("Drilling Compressor Volume Command allow decimal toggle button is already ON");
+  }
+  //Cheking the IsPercentage option for Drilling Compressor Volume Command if it's off turning it on
+  var isPercentDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandIsPercent_Btn());
+  if(isPercentDHDStatus == 0 ){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandIsPercent_Btn().Click();
+  }else{
+    Log.Message("Drilling Compressor Volume Command is percentage toggle button is already ON");
+  }
+  //Cheking the show percentage sign option for Drilling Compressor Volume Command if it's off turning it on
+  var showPercentSignDHDStatus = browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandShowPercentSign_Btn());
+  if(showPercentSignDHDStatus == 0 ){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandShowPercentSign_Btn().Click();
+  }else{
+    Log.Message("Drilling Compressor Volume Command show percentage sign toggle button is already ON");
+  }
+  //Capturing the already set maximum value of Drilling Compressor Volume Command
+  var maxValue = browserAttributeValue(AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value(), "value");
+  var newMax = "950";
+  if(maxValue != newMax){
+    //Changing the maximum value of Drilling Compressor Volume Command
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value().Click();
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value().Keys("^a");
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value().SetText(newMax);
+  }else{
+    Log.Message("Not changing the maximum value as new and previous is same")
+  }
+  //Capturing the already set minimum value of Drilling Compressor Volume Command
+  var minValue = browserAttributeValue(AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value(), "value");
+  var newMin = "400";
+  if(minValue != newMin){
+    //Changing the minimum value of Drilling Compressor Volume Command
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value().Click();
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value().Keys("^a");
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value().SetText(newMin);
+  }else{
+    Log.Message("Not changing the minimum value as new and previous is same")
+  }
+  //Click on Save option
+  Browser_Variables.Save_Btn().Click();
+  //Click on Save for confirmation pop up
+  Browser_Variables.ConfirmationSave_Btn().Click();
+  //Closed HMI
+  closeHMI();
+  //Opening HMi client again
+  logIn();
+  //Opening commissioning screen of HMI
+  commissioningPass();
+  //searching the show option for Drilling Compressor Volume Command in commissioning and validating that it is enabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingShow", mainWindowVariables.commDrillingCompressorVolumeCommandShow, "AutoDrillSetupAirPressureDrillingShow");
+  var showOptVisibility = wstate(mainWindowVariables.CommBoolValueBox)
+  if(showOptVisibility == 0){
+    Log.Error("Drilling Compressor Volume Command option turned on from dashobard but it is showing OFF in the HMI commissioning");
+  }
+  //searching the allow decimal option for Drilling Compressor Volume Command in commissioning and validating that it is enabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingAllowDecimal", mainWindowVariables.commDrillingCompressorVolumeCommandAllowDecimal, "AutoDrillSetupAirPressureDrillingAllowDecimal");
+  var allowDecimalVisibility = wstate(mainWindowVariables.CommBoolValueBox)
+  if(allowDecimalVisibility == 0){
+    Log.Error("Drilling Compressor Volume Command allow decimal option turned on from dashobard but it is showing OFF in the HMI commissioning");
+  }
+  //searching the is percentage option for Drilling Compressor Volume Command in commissioning and validating that it is enabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingBmode", mainWindowVariables.commDrillingCompressorVolumeCommandIsPercent, "AutoDrillSetupAirPressureDrillingBmode");
+  var isPercentVisibility = wstate(mainWindowVariables.CommBoolValueBox)
+  if(isPercentVisibility == 0){
+    Log.Error("Drilling Compressor Volume Command is percentage option turned on from dashobard but it is showing OFF in the HMI commissioning");
+  }
+  //searching the show percentage sign option for Drilling Compressor Volume Command in commissioning and validating that it is enabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingBmodeShow", mainWindowVariables.commDrillingCompressorVolumeCommandShowPercentSign, "AutoDrillSetupAirPressureDrillingBmodeShow");
+  var showPercentSignVisibility = wstate(mainWindowVariables.CommBoolValueBox)
+  if(showPercentSignVisibility == 0){
+    Log.Error("Drilling Compressor Volume Command option show percentage sign turned on from dashobard but it is showing OFF in the HMI commissioning");
+  }
+  //searching the maximum option for Drilling Compressor Volume Command in commissioning and validating that it is showing correct value
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingMaximum", mainWindowVariables.commDrillingCompressorVolumeCommandMaximum, "AutoDrillSetupAirPressureDrillingMaximum");
+  var commMaxValue = wText(mainWindowVariables.CommFloatInputValueBox)
+  if(commMaxValue != newMax){
+    Log.Error("Drilling Compressor Volume Command option maximum value from dashobard is not matching with maximum value from HMI commissioning");
+  }
+  //searching the minimum option for Drilling Compressor Volume Command in commissioning and validating that it is showing correct value
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingMinimum", mainWindowVariables.commDrillingCompressorVolumeCommandMinimum, "AutoDrillSetupAirPressureDrillingMinimum");
+  var commMinValue = wText(mainWindowVariables.CommFloatInputValueBox)
+  if(commMinValue != newMin){
+    Log.Error("Drilling Compressor Volume Command option minimum value from dashobard is not matching with minimum value from HMI commissioning");
+  }
+  //Closes the 'HwndSource_SeriousWindow' window.
+  mainWindowVariables.CommWindow.Close();
+  //Closed HMI
+  closeHMI();
+  //Turning off show option
+  AutoDrillPara_Variables.DrillingCompressorVolumeCommandShow_Btn().Click();
+  //Turning off allow decimal option
+  AutoDrillPara_Variables.DrillingCompressorVolumeCommandAllowDecimal_Btn().Click();
+  //Turning off is percentage option
+  AutoDrillPara_Variables.DrillingCompressorVolumeCommandIsPercent_Btn().Click();
+  //Turning off show percentage sign option
+  AutoDrillPara_Variables.DrillingCompressorVolumeCommandShowPercentSign_Btn().Click();
+  //Click on Save option
+  Browser_Variables.Save_Btn().Click();
+  //Click on Save for confirmation pop up
+  Browser_Variables.ConfirmationSave_Btn().Click();
+  //Opening HMi client again
+  logIn();
+  //Opening commissioning screen of HMI
+  commissioningPass();
+  //searching the show option for Drilling Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingShow", mainWindowVariables.commDrillingCompressorVolumeCommandShow, "AutoDrillSetupAirPressureDrillingShow");
+  var show = wstate(mainWindowVariables.CommBoolValueBox)
+  if(show == 1){
+    Log.Error("Drilling Compressor Volume Command option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the allow decimal option for Drilling Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingAllowDecimal", mainWindowVariables.commDrillingCompressorVolumeCommandAllowDecimal, "AutoDrillSetupAirPressureDrillingAllowDecimal");
+  var allowDecimal = wstate(mainWindowVariables.CommBoolValueBox)
+  if(allowDecimal == 1){
+    Log.Error("Drilling Compressor Volume Command allow decimal option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the is percentage option for Drilling Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingBmode", mainWindowVariables.commDrillingCompressorVolumeCommandIsPercent, "AutoDrillSetupAirPressureDrillingBmode");
+  var isPercent = wstate(mainWindowVariables.CommBoolValueBox)
+  if(isPercent == 1){
+    Log.Error("Drilling Compressor Volume Command is percentage option turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //searching the show percentage sign option for Drilling Compressor Volume Command in commissioning and validating that it is disabled
+  searchAndSelectSettingInComm("AutoDrillSetupAirPressureDrillingBmodeShow", mainWindowVariables.commDrillingCompressorVolumeCommandShowPercentSign, "AutoDrillSetupAirPressureDrillingBmodeShow");
+  var showPercentSign = wstate(mainWindowVariables.CommBoolValueBox)
+  if(showPercentSign == 1){
+    Log.Error("Drilling Compressor Volume Command option show percentage sign turned Off from dashobard but it is showing On in the HMI commissioning");
+  }
+  //Closes the 'HwndSource_SeriousWindow' window.
+  mainWindowVariables.CommWindow.Close();
+  //Closed HMI
+  closeHMI();
+  //Resetting all the values as it is
+  if(showDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandShow_Btn())){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandShow_Btn().Click();
+    //Click on Save option
+    Browser_Variables.Save_Btn().Click();
+    //Click on Save for confirmation pop up
+    Browser_Variables.ConfirmationSave_Btn().Click();
+  }else{
+    Log.Message("No need of change show status it is same");
+  }
+  if(alldecimalDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandAllowDecimal_Btn())){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandAllowDecimal_Btn().Click();
+    //Click on Save option
+    Browser_Variables.Save_Btn().Click();
+    //Click on Save for confirmation pop up
+    Browser_Variables.ConfirmationSave_Btn().Click();
+  }else{
+    Log.Message("No need of change allow decimal status it is same");
+  }
+  if(isPercentDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandIsPercent_Btn())){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandIsPercent_Btn().Click();
+    //Click on Save option
+    Browser_Variables.Save_Btn().Click();
+    //Click on Save for confirmation pop up
+    Browser_Variables.ConfirmationSave_Btn().Click();
+  }else{
+    Log.Message("No need of change is percent status it is same");
+  }
+  if(showPercentSignDHDStatus != browserToggleSwitchStatus(AutoDrillPara_Variables.DrillingCompressorVolumeCommandShowPercentSign_Btn())){
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandShowPercentSign_Btn().Click();
+    //Click on Save option
+    Browser_Variables.Save_Btn().Click();
+    //Click on Save for confirmation pop up
+    Browser_Variables.ConfirmationSave_Btn().Click();
+  }else{
+    Log.Message("No need of change show percent sign status it is same");
+  }
+  if(maxValue != browserAttributeValue(AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value(), "value")){
+    //Changing the maximum value of Drilling Compressor Volume Command
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value().Click();
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value().Keys("^a");
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMax_Value().SetText(maxValue);
+    //Click on Save option
+    Browser_Variables.Save_Btn().Click();
+    //Click on Save for confirmation pop up
+    Browser_Variables.ConfirmationSave_Btn().Click();
+  }else{
+    Log.Message("No need of change maximum value it is same");
+  }
+  if(minValue != browserAttributeValue(AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value(), "value")){
+    //Changing the maximum value of Drilling Compressor Volume Command
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value().Click();
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value().Keys("^a");
+    AutoDrillPara_Variables.DrillingCompressorVolumeCommandMin_Value().SetText(minValue);
+    //Click on Save option
+    Browser_Variables.Save_Btn().Click();
+    //Click on Save for confirmation pop up
+    Browser_Variables.ConfirmationSave_Btn().Click();
+  }else{
+    Log.Message("No need of change minimum value it is same");
+  }
+  //closing diagnostic dashboard
+  closeDiagnosticDashboard();
+}
+
+function Test1()
+{
+  //Drags the 'HwndSource_SeriousWindow' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.Drag(759, 21, 231, -200);
+  //Drags the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Drag(389, 21, 344, 22);
+  //Enters the text 'AutoDrillSetupAirPressureDrillingshow' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("AutoDrillSetupAirPressureDrillingshow");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling object equals 'AutoDrillSetupAirPressureDrillingShow'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling, "WPFControlText", cmpEqual, "AutoDrillSetupAirPressureDrillingShow");
+  //Drags the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Drag(386, 21, 79, 2);
+  //Enters the text 'AutoDrillSetupAirPressureDrillingbmode' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("AutoDrillSetupAirPressureDrillingbmode");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling3 object equals 'AutoDrillSetupAirPressureDrillingBmode'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling3, "WPFControlText", cmpEqual, "AutoDrillSetupAirPressureDrillingBmode");
+  //Enters the text 'AutoDrillSetupAirPressureDrillingbmodeshow' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("AutoDrillSetupAirPressureDrillingbmodeshow");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling2 object equals 'AutoDrillSetupAirPressureDrillingBmodeShow'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling2, "WPFControlText", cmpEqual, "AutoDrillSetupAirPressureDrillingBmodeShow");
+  //Drags the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Drag(388, 18, 181, 6);
+  //Enters the text 'AutoDrillSetupAirPressureDrillingallowdecimal' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("AutoDrillSetupAirPressureDrillingallowdecimal");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling4 object equals 'AutoDrillSetupAirPressureDrillingAllowDecimal'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling4, "WPFControlText", cmpEqual, "AutoDrillSetupAirPressureDrillingAllowDecimal");
+  //Drags the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Drag(388, 22, 143, 0);
+  //Enters the text 'AutoDrillSetupAirPressureDrillingmaximum' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("AutoDrillSetupAirPressureDrillingmaximum");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling5 object equals 'AutoDrillSetupAirPressureDrillingMaximum'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling5, "WPFControlText", cmpEqual, "AutoDrillSetupAirPressureDrillingMaximum");
+  //Drags the 'SearchTextBox' object.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.Drag(407, 19, 135, 0);
+  //Enters the text 'AutoDrillSetupAirPressureDrillingminimum' in the 'SearchTextBox' text editor.
+  Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SearchTextBox.SetText("AutoDrillSetupAirPressureDrillingminimum");
+  //Checks whether the 'WPFControlText' property of the Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling6 object equals 'AutoDrillSetupAirPressureDrillingMinimum'.
+  aqObject.CheckProperty(Aliases.Flanders_Ardvarc_Hmi_Client.HwndSource_SeriousWindow.SeriousWindow.TabControl.SettingsListView.ListViewItem2.TextblockAutodrillsetupairpressuredrilling6, "WPFControlText", cmpEqual, "AutoDrillSetupAirPressureDrillingMinimum");
+}
